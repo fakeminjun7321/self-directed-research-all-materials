@@ -2,9 +2,8 @@
 
 LiFSI/Pyr13FSI 이온성 액체 전해질의 분자동역학 연구 작업 공간입니다. GROMACS 입력, Packmol 초기 구조, 분석 코드, 결과 표·그림, 보고서 초안과 팀원용 설치 안내를 관리합니다.
 
-- GitHub 프로젝트: [자율연구](https://github.com/users/fakeminjun7321/projects/2)
-- 연결 저장소: [자율연구 전체 자료](https://github.com/fakeminjun7321/self-directed-research-all-materials)
-- 공개 범위: 프로젝트와 저장소 모두 **공개**입니다. 로그인 없이 열람하고 clone할 수 있습니다.
+- 저장소: [자율연구 전체 자료](https://github.com/fakeminjun7321/self-directed-research-all-materials)
+- 공개 범위: 저장소는 **공개**입니다. 로그인 없이 열람하고 clone할 수 있습니다.
 
 > **진행 중인 연구입니다.** 기존 50 ps 계산은 연습·탐색 자료이며 최종 물성값으로 해석하지 않습니다. 현재 보관된 후속 연구 판정은 `ONE_NS_REPLICA_UNIFORM_EXTENSION_REQUIRED`이고, `equilibrium_validated=false`, `production_ready=false`입니다. GitHub 게시나 파일 다운로드 성공은 물리적 타당성 또는 다른 컴퓨터에서의 재현성을 검증하지 않습니다.
 

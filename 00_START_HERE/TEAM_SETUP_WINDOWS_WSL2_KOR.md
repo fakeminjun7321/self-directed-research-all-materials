@@ -95,7 +95,7 @@ Windows 탐색기 주소창에서 다음 경로로 WSL 파일에 접근할 수 �
 
 프로젝트를 `C:\` 아래에 두고 `/mnt/c/...`에서 직접 장시간 계산하지 않는다. WSL 홈에 복사해야 파일 입출력 성능과 Linux 권한 처리가 안정적이다.
 
-GitHub 프로젝트 [자율연구](https://github.com/users/fakeminjun7321/projects/2)에 연결된 공개 저장소 [자율연구 전체 자료](https://github.com/fakeminjun7321/self-directed-research-all-materials)에서 파일을 받는다. 다운로드에는 GitHub 로그인이나 접근 권한 신청이 필요하지 않다. **Ubuntu/WSL 터미널**에서 다음 명령을 실행한다. 대상 폴더가 이미 있다면 다른 빈 경로를 사용한다.
+GitHub 공개 저장소 [자율연구 전체 자료](https://github.com/fakeminjun7321/self-directed-research-all-materials)에서 파일을 받는다. 다운로드에는 GitHub 로그인이나 접근 권한 신청이 필요하지 않다. **Ubuntu/WSL 터미널**에서 다음 명령을 실행한다. 대상 폴더가 이미 있다면 다른 빈 경로를 사용한다.
 
 ```bash
 git clone --recurse-submodules https://github.com/fakeminjun7321/self-directed-research-all-materials.git "$HOME/cile-md"
