@@ -1,0 +1,23 @@
+{
+  "run_id": "replica_L1P1x2_rho1400_R3",
+  "atom_count": 2300,
+  "requested_density_kg_m3": 1400.0,
+  "calculated_box_nm": 3.0857248974321076,
+  "initial_box_nm": [
+    3.0857,
+    3.0857,
+    3.0857
+  ],
+  "initial_density_kg_m3": 1400.0338886017996,
+  "packmol_seed_requested": 240103,
+  "packmol_seed_observed": 240103,
+  "topology_source": "fftool field.top generated from copied il.ff; charges scaled by script",
+  "canonical_topology_sha256": "b33d32f18fd3765d5ec4e2ea0c23dd0b07f461bebd9c71c428c3734595e0a526",
+  "charge_scaling_retained": 0.75,
+  "molecule_charge_sums": {
+    "Li+": 0.75,
+    "c3c1pyrr+": 0.7500000000000002,
+    "fsi-": -0.7500000000000001
+  },
+  "physics_status": "NOT_VERIFIED"
+}

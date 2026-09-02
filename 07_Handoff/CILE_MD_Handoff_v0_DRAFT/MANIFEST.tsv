@@ -1,0 +1,55 @@
+package_path	kind	system	origin	status_or_provenance
+DRAFT_NOT_FOR_PRODUCTION.txt	status	ALL	package-authoring-session	DRAFT marker
+MANIFEST.tsv	manifest	ALL	package-authoring-session	Package-wide inventory including this file and SHA256SUMS
+README_FIRST_KOR.md	documentation	ALL	package-authoring-session	Korean first-read guide and literal verification levels
+SCIENTIFIC_REVIEW_REQUIRED.md	scientific-review	ALL	package-authoring-session	Known scientific blockers and decisions required
+SCOPE_AND_ASSUMPTIONS.md	scientific-scope	ALL	package-authoring-session	Composition and force-field assumption audit
+SHA256SUMS	integrity	ALL	generated-after-freeze	Package-wide SHA-256 list; excludes itself
+colab/CILE_Linux_Validation.ipynb	colab-validation	ALL	package-authoring-session	Ubuntu/Colab validation notebook
+colab/README_COLAB_KOR.md	documentation	ALL	package-authoring-session	Colab execution guide
+mdp/01_em_strict.mdp	MDP	ALL	02_Processed_Data/MD_Runs/Rigorous_1ns/L1P1/01_em_strict.mdp	Identical SHA-256 across existing rigorous L1P1,L1P2,L2P1,L3P1 copies
+mdp/02_nvt_100ps.mdp	MDP	ALL	02_Processed_Data/MD_Runs/Rigorous_1ns/L1P1/02_nvt_100ps.mdp	Identical SHA-256 across existing rigorous L1P1,L1P2,L2P1,L3P1 copies
+mdp/03_npt_500ps.mdp	MDP	ALL	02_Processed_Data/MD_Runs/Rigorous_1ns/L1P1/03_npt_500ps.mdp	Identical SHA-256 across existing rigorous L1P1,L1P2,L2P1,L3P1 copies
+mdp/04_prod_1ns.mdp	MDP	ALL	02_Processed_Data/MD_Runs/Rigorous_1ns/L1P1/04_prod_1ns.mdp	Identical SHA-256 across existing rigorous L1P1,L1P2,L2P1,L3P1 copies
+operator_prompts/CLAUDE_MAX_REVIEW_PROMPT.md	operator-prompt	ALL	package-authoring-session	Independent scientific review prompt
+operator_prompts/M4PRO_CLAUDE_CODE_REVIEW_PROMPT.md	operator-prompt	ALL	package-authoring-session	M4 Pro Claude Code review prompt
+operator_prompts/M4PRO_CODEX_EXECUTION_PROMPT.md	operator-prompt	ALL	package-authoring-session	M4 Pro Codex execution prompt
+operator_prompts/M4PRO_HANDOFF_GUIDE_KOR.md	documentation	ALL	package-authoring-session	M4 Pro handoff guide
+run_local.sh	runner	ALL	package-authoring-session	Local multi-system orchestration script
+run_one.sh	runner	ALL	package-authoring-session	Single-system staged runner
+run_slurm_template.sh	runner	ALL	package-authoring-session	Slurm template requiring site review
+run_smoke_all.sh	validation-runner	ALL	package-authoring-session	Short smoke-test runner; output root is configurable
+systems/L1P1/initial.gro	coordinate	L1P1	02_Processed_Data/MD_Runs/10ps_Practice/L1P1/em.gro	Existing minimized coordinate copied without content changes
+systems/L1P1/topol.top	topology	L1P1	02_Processed_Data/MD_Runs/10ps_Practice/L1P1/topol.top	Self-contained topology copied without content changes
+systems/L1P2/initial.gro	coordinate	L1P2	02_Processed_Data/MD_Runs/10ps_Practice/L1P2/em.gro	Existing minimized coordinate copied without content changes
+systems/L1P2/topol.top	topology	L1P2	02_Processed_Data/MD_Runs/10ps_Practice/L1P2/topol.top	Self-contained topology copied without content changes
+systems/L1P3/initial.gro	coordinate	L1P3	02_Processed_Data/MD_Runs/10ps_Practice/L1P3/em.gro	Existing minimized coordinate copied without content changes
+systems/L1P3/topol.top	topology	L1P3	02_Processed_Data/MD_Runs/10ps_Practice/L1P3/topol.top	Self-contained topology copied without content changes
+systems/L2P1/initial.gro	coordinate	L2P1	02_Processed_Data/MD_Runs/10ps_Practice/L2P1/em.gro	Existing minimized coordinate copied without content changes
+systems/L2P1/topol.top	topology	L2P1	02_Processed_Data/MD_Runs/10ps_Practice/L2P1/topol.top	Self-contained topology copied without content changes
+systems/L3P1/initial.gro	coordinate	L3P1	02_Processed_Data/MD_Runs/10ps_Practice/L3P1/em.gro	Existing minimized coordinate copied without content changes
+systems/L3P1/topol.top	topology	L3P1	02_Processed_Data/MD_Runs/10ps_Practice/L3P1/topol.top	Self-contained topology copied without content changes
+validate_grompp.sh	validation-script	ALL	package-authoring-session	Static grompp validation without mdrun
+validate_inputs.sh	validation-script	ALL	package-authoring-session	Static package inventory and syntax checks
+validation/colab/README.md	verification-placeholder	ALL	package-authoring-session	Colab verification status; blocked in current session
+validation/local_current/FINAL_ZIP_CLEAN_EXTRACT.md	validation-evidence	ALL	local-current-clean-extract	Pre-final ZIP candidate clean-extract integrity, grompp, and 20-step technical smoke summary
+validation/local_current/SMOKE_SUMMARY.md	validation-evidence	ALL	local-current-20-step-smoke	Five-system technical smoke summary; raw run artifacts retained outside package
+validation/local_current/gromacs_version.txt	validation-evidence	ALL	local-current-static-grompp	Redacted local GROMACS version evidence
+validation/local_current/grompp/L1P1/em_mdout.mdp	validation-evidence	L1P1	local-current-static-grompp	Processed EM settings; generated em.tpr intentionally excluded
+validation/local_current/grompp/L1P1/grompp.stderr.txt	validation-evidence	L1P1	local-current-static-grompp	Captured stderr
+validation/local_current/grompp/L1P1/grompp.stdout.txt	validation-evidence	L1P1	local-current-static-grompp	Captured stdout
+validation/local_current/grompp/L1P2/em_mdout.mdp	validation-evidence	L1P2	local-current-static-grompp	Processed EM settings; generated em.tpr intentionally excluded
+validation/local_current/grompp/L1P2/grompp.stderr.txt	validation-evidence	L1P2	local-current-static-grompp	Captured stderr
+validation/local_current/grompp/L1P2/grompp.stdout.txt	validation-evidence	L1P2	local-current-static-grompp	Captured stdout
+validation/local_current/grompp/L1P3/em_mdout.mdp	validation-evidence	L1P3	local-current-static-grompp	Processed EM settings; generated em.tpr intentionally excluded
+validation/local_current/grompp/L1P3/grompp.stderr.txt	validation-evidence	L1P3	local-current-static-grompp	Captured stderr
+validation/local_current/grompp/L1P3/grompp.stdout.txt	validation-evidence	L1P3	local-current-static-grompp	Captured stdout
+validation/local_current/grompp/L2P1/em_mdout.mdp	validation-evidence	L2P1	local-current-static-grompp	Processed EM settings; generated em.tpr intentionally excluded
+validation/local_current/grompp/L2P1/grompp.stderr.txt	validation-evidence	L2P1	local-current-static-grompp	Captured stderr
+validation/local_current/grompp/L2P1/grompp.stdout.txt	validation-evidence	L2P1	local-current-static-grompp	Captured stdout
+validation/local_current/grompp/L3P1/em_mdout.mdp	validation-evidence	L3P1	local-current-static-grompp	Processed EM settings; generated em.tpr intentionally excluded
+validation/local_current/grompp/L3P1/grompp.stderr.txt	validation-evidence	L3P1	local-current-static-grompp	Captured stderr
+validation/local_current/grompp/L3P1/grompp.stdout.txt	validation-evidence	L3P1	local-current-static-grompp	Captured stdout
+validation/local_current/grompp_summary.csv	validation-evidence	ALL	local-current-static-grompp	Five-system grompp result summary
+validation/local_m4pro/README.md	verification-placeholder	ALL	package-authoring-session	M4 Pro verification status; not yet run
+validation/verification_matrix.csv	verification-matrix	ALL	package-authoring-session	Literal verification levels and evidence pointers

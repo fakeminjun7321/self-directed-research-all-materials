@@ -1,0 +1,64 @@
+                 :-) GROMACS - gmx energy, 2026.1-Homebrew (-:
+
+Executable:   /opt/homebrew/bin/../Cellar/gromacs/2026.1/bin/gmx
+Data prefix:  /opt/homebrew/bin/../Cellar/gromacs/2026.1
+Working dir:  /Users/minjun/구민준/DSHS/연구/2026 연구/2026_자율연구/02_MD_시뮬레이션_결과/03_50ps_MD결과/L1P3
+Command line:
+  gmx energy -f md_50ps.edr -o '/Users/minjun/구민준/DSHS/연구/2026 연구/2026_자율연구/02_MD_시뮬레이션_결과/05_analysis_results/L1P3/L1P3_energy.xvg' -xvg none
+
+Opened md_50ps.edr as single precision energy file
+
+Select the terms you want from the following list by
+selecting either (part of) the name or the number or a combination.
+End your selection with an empty line or a zero.
+-------------------------------------------------------------------
+  1  Bond             2  Angle            3  Fourier-Dih.     4  LJ-14         
+  5  Coulomb-14       6  LJ-(SR)          7  Disper.-corr.    8  Coulomb-(SR)  
+  9  Coul.-recip.    10  Potential       11  Kinetic-En.     12  Total-Energy  
+ 13  Conserved-En.   14  Temperature     15  Pres.-DC        16  Pressure      
+ 17  Constr.-rmsd    18  Vir-XX          19  Vir-XY          20  Vir-XZ        
+ 21  Vir-YX          22  Vir-YY          23  Vir-YZ          24  Vir-ZX        
+ 25  Vir-ZY          26  Vir-ZZ          27  Pres-XX         28  Pres-XY       
+ 29  Pres-XZ         30  Pres-YX         31  Pres-YY         32  Pres-YZ       
+ 33  Pres-ZX         34  Pres-ZY         35  Pres-ZZ         36  #Surf*SurfTen 
+ 37  T-System        38  Lamb-System   
+
+
+Reading energy frame      0 time    0.000         
+Reading energy frame      1 time    1.000         
+Reading energy frame      2 time    2.000         
+Reading energy frame      3 time    3.000         
+Reading energy frame      4 time    4.000         
+Reading energy frame      5 time    5.000         
+Reading energy frame      6 time    6.000         
+Reading energy frame      7 time    7.000         
+Reading energy frame      8 time    8.000         
+Reading energy frame      9 time    9.000         
+Reading energy frame     10 time   10.000         
+Reading energy frame     11 time   11.000         
+Reading energy frame     12 time   12.000         
+Reading energy frame     13 time   13.000         
+Reading energy frame     14 time   14.000         
+Reading energy frame     15 time   15.000         
+Reading energy frame     16 time   16.000         
+Reading energy frame     17 time   17.000         
+Reading energy frame     18 time   18.000         
+Reading energy frame     19 time   19.000         
+Reading energy frame     20 time   20.000         
+Reading energy frame     30 time   30.000         
+Reading energy frame     40 time   40.000         
+Reading energy frame     50 time   50.000         
+Last energy frame read 50 time   50.000         
+
+GROMACS reminds you: "I never thought about breaking barriers, I was just interested in what I was doing and kept going." (Barbara Liskov)
+
+
+Statistics over 50001 steps [ 0.0000 through 50.0000 ps ], 4 data sets
+All statistics are over 501 points
+
+Energy                      Average   Err.Est.       RMSD  Tot-Drift
+-------------------------------------------------------------------------------
+Potential                  -6753.37       1500    3480.71   -9638.23  (kJ/mol)
+Total Energy                2588.99       1500    3620.41    -9829.1  (kJ/mol)
+Temperature                 299.754       0.94    8.89667   -6.12425  (K)
+Pressure                   -6.12475        2.9    111.179   -26.5935  (bar)

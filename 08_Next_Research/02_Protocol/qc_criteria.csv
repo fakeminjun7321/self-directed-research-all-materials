@@ -1,0 +1,13 @@
+criterion_id,metric,stage,analysis_window,lower_limit,upper_limit,trend_rule,approval_status
+QC001,grompp_warnings,preprocess,full_log,0,0,no_-maxwarn,Proposed
+QC002,fatal_error,all,full_log,0,0,none,Proposed
+QC003,nan_count,all,full_log,0,0,none,Proposed
+QC004,lincs_warning,all,full_log,0,0,none,Proposed
+QC005,min_box_over_2rlist,all,final_frame,1.10,,design_margin_recommended,Proposed
+QC006,density_vs_reference,npt,last_20_percent,0.95,1.05,reference_requires_approval,Proposed
+QC007,density_block_difference,npt,last_two_equal_blocks,0,0.01,relative_difference,Proposed
+QC008,temperature,nvt_npt_production,block_average,293,303,298_plus_or_minus_5_K,Proposed
+QC009,independent_replicas,production,per_composition,3,,minimum_recommendation,Proposed
+QC010,maximum_force,em,final_step,,500,strict_em_threshold,Proposed
+QC011,topology_parameter_equivalence,input,active_molecules,1,1,compare_against_legacy_L2P2,Proposed
+QC012,coordinate_species_order,input,all_atoms,1,1,Li_then_Pyr13_then_FSI,Proposed

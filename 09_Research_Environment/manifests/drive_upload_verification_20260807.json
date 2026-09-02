@@ -1,0 +1,91 @@
+{
+  "schema_version": "cile-drive-upload-verification-v1",
+  "verified_at": "2026-08-07T11:15:34+09:00",
+  "drive_root_id": "1-MJEiai9G-a4BE63j-q1rkSJEInsQ37A",
+  "verification_method": [
+    "upload response success",
+    "Drive file metadata readback",
+    "destination folder list readback",
+    "local and Drive size equality"
+  ],
+  "sharing_readback": "not_shared",
+  "content_hash_scope": "SHA-256 values below are local source hashes; the connector did not expose a Drive-side content checksum",
+  "files": [
+    {
+      "name": "DRIVE_README_20260807.md",
+      "drive_id": "1VZW0rMENevJbtkDtJNZyUmtSbdhWCQPd",
+      "parent_folder": "00_README",
+      "size_bytes": 1380,
+      "local_sha256": "c0e274f41c5069e36f8a9d533ab8059631337ca3e87e1767f3eb4fec5dc8e2e1"
+    },
+    {
+      "name": "workspace_manifest_20260807.csv",
+      "drive_id": "1jIECbh-meADIc8EMGHwlMgZC8LKlD21u",
+      "parent_folder": "00_README",
+      "size_bytes": 442414,
+      "local_sha256": "09366dc9fe1e6e7b69953c4ef17881a98162bf48677edc423d8168ac8492a20c"
+    },
+    {
+      "name": "workspace_manifest_summary_20260807.json",
+      "drive_id": "1rQRj_HES5YiqeiP-2bphectPbmst-1WC",
+      "parent_folder": "00_README",
+      "size_bytes": 839,
+      "local_sha256": "d423e8018989e7ea9f7a1748a915729259dd5a3faac5db93423405666a2336a7"
+    },
+    {
+      "name": "preflight_20260807.json",
+      "drive_id": "15z7nYpQuxZdp89VKNdnZvmD49uPA7CJ8",
+      "parent_folder": "00_README",
+      "size_bytes": 3198,
+      "local_sha256": "cea3f804abdd908cafaa7b2cf2ad5053a5c16186958c4d58e7ccc92fca13dfd3"
+    },
+    {
+      "name": "CILE_MD_Systems_20260806.zip",
+      "drive_id": "1v-LpUJLvOoey7_bRibQmS3yokmHJxiyM",
+      "parent_folder": "01_Professor_Handoff",
+      "size_bytes": 140074,
+      "local_sha256": "9da4e4eb5ea33089520a2362cbcb84bf996ccee3093eed20f45b1e0d586eba88"
+    },
+    {
+      "name": "CILE_report_working_20260807.zip",
+      "drive_id": "1pWN4F1Q7ihQVFrP1vrC_kMZ4H8UTM3RU",
+      "parent_folder": "02_Report_Working",
+      "size_bytes": 13047601,
+      "local_sha256": "50ba60884087e574880db20d86585e725169585386970e8d2dde207ec774bada"
+    },
+    {
+      "name": "자율연구_보고서_새초안_20260807.docx",
+      "drive_id": "1vLKKFsXQADBbb28vZoYtPtIWC2pvg3vX",
+      "parent_folder": "02_Report_Working",
+      "size_bytes": 14534,
+      "local_sha256": "6aa620cb5d4f83323b6616136cc3284f5ce8dbdd27e60c95c3674e17acb8c635"
+    },
+    {
+      "name": "CILE_reproducibility_20260807.zip",
+      "drive_id": "1AMj3wnrr2vvXZcvEPG7Mxzd9tsB_w7CJ",
+      "parent_folder": "03_Reproducibility",
+      "size_bytes": 354984,
+      "local_sha256": "6a20a08b4dc32a530425e43066d5b384bd46c130aa7e31ab51115e3bf1a4062e"
+    },
+    {
+      "name": "CILE_selected_results_20260807.zip",
+      "drive_id": "1vS2EgpeMD0hpleJFKsr4JLiAC-yQcla2",
+      "parent_folder": "04_Selected_Results",
+      "size_bytes": 140571,
+      "local_sha256": "577c2ed0f821f984c45f2d8fcf57a166a0fc7c866dbc76a720ed0b77dc52"
+    },
+    {
+      "name": "SHA256SUMS_20260807.txt",
+      "drive_id": "1x6sIAsFoO1K7_ajdJQ2zCzf5WKuAwgzp",
+      "parent_folder": "90_Backup_Archives",
+      "size_bytes": 569,
+      "local_sha256": "5821b4b5d9a88c6e673e3304fbfa73954c37c54a72e036cd29e80d05faa464c7"
+    }
+  ],
+  "not_verified": [
+    "downloaded byte-for-byte SHA-256 round trip from Drive",
+    "fresh environment recreation on another Mac",
+    "laboratory Linux server recreation",
+    "external SSD copy"
+  ]
+}

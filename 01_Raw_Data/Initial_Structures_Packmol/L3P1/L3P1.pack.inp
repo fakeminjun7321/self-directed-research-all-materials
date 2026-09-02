@@ -1,0 +1,19 @@
+# L3P1: LiFSI/Pyr13FSI initial configuration
+tolerance 2.5
+filetype xyz
+output L3P1.xyz
+
+structure Li_pack.xyz
+  number 75
+  inside box 1.5000 1.5000 1.5000 58.1388 58.1388 58.1388
+end structure
+
+structure c3c1pyrr_pack.xyz
+  number 25
+  inside box 1.5000 1.5000 1.5000 58.1388 58.1388 58.1388
+end structure
+
+structure fsi_pack.xyz
+  number 100
+  inside box 1.5000 1.5000 1.5000 58.1388 58.1388 58.1388
+end structure

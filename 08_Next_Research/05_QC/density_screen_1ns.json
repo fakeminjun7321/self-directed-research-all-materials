@@ -1,0 +1,69 @@
+{
+  "chains": [
+    {
+      "chain_id": "screen_L1P1x2_rho1000_20260807",
+      "initial_density_kg_m3": 999.9707312205651,
+      "last500_density_mean": 1491.866216774451,
+      "density_slope_percent_per_ns": 2.4742240379837463,
+      "last_two_block_diff_percent": 0.63796810305686,
+      "min_box_over_2rlist": 1.2487633333333334,
+      "exploratory_verdict": "SCREEN_EXTEND",
+      "hard_fail_reasons": [],
+      "resume_provenance": {
+        "nvt": {
+          "resumed": false
+        },
+        "npt": {
+          "resumed": false
+        }
+      }
+    },
+    {
+      "chain_id": "screen_L1P1x2_rho1200_clean_20260807",
+      "initial_density_kg_m3": 1200.027349971822,
+      "last500_density_mean": 1501.6777165948104,
+      "density_slope_percent_per_ns": 0.5266310100280199,
+      "last_two_block_diff_percent": 0.4840276628164621,
+      "min_box_over_2rlist": 1.2486470833333334,
+      "exploratory_verdict": "SCREEN_EXTEND",
+      "hard_fail_reasons": [],
+      "resume_provenance": {
+        "nvt": {
+          "resumed": false
+        },
+        "npt": {
+          "resumed": false
+        }
+      }
+    },
+    {
+      "chain_id": "pilot_L1P1x2_rho1400_v6",
+      "initial_density_kg_m3": 1400.0338886017996,
+      "last500_density_mean": 1514.631038205589,
+      "density_slope_percent_per_ns": 0.2745069710528487,
+      "last_two_block_diff_percent": 0.1655055614557014,
+      "min_box_over_2rlist": 1.2449675000000002,
+      "exploratory_verdict": "SCREEN_EXTEND",
+      "hard_fail_reasons": [],
+      "resume_provenance": {
+        "nvt": {
+          "resumed": false
+        },
+        "npt": {
+          "resumed": false
+        }
+      }
+    }
+  ],
+  "plateau_spread_percent": 1.5149026984096077,
+  "cross_start_assessment": "SAME_BASIN_CANDIDATE",
+  "best_exploratory_chain": "pilot_L1P1x2_rho1400_v6",
+  "physics_status": "EXPLORATORY_ONLY",
+  "not_verified": [
+    "approved target density",
+    "force-field charge scaling",
+    "long-time equilibrium",
+    "independent replicas",
+    "production and transport properties"
+  ]
+}

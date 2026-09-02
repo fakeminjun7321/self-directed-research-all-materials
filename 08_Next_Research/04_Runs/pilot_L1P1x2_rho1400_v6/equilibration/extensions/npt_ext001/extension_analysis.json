@@ -1,0 +1,235 @@
+{
+  "schema_version": "npt-extension-analysis-v1",
+  "extension_id": "npt_ext001",
+  "chain_id": "pilot_L1P1x2_rho1400_v6",
+  "record_id": "pilot_L1P1x2_rho1400_v6:npt:002",
+  "parent_record_id": "pilot_L1P1x2_rho1400_v6:npt:001",
+  "generated_at": "2026-08-07T03:38:23+09:00",
+  "technical_status": "PASS_COMPLETE",
+  "analysis_status": "PASS_COMPLETE",
+  "source_evidence": {
+    "extension_manifest.json": {
+      "sha256": "88ef65fc4407d21186b668b35f64d7e94cff4e30bda466138cddadc4a3ae9497",
+      "size_bytes": 2761
+    },
+    "extension_metrics.json": {
+      "sha256": "396eefc647a89c56601a0c4e912548e5cb09a3d1d1b36cbe06c66b321ea8471d",
+      "size_bytes": 3272
+    },
+    "npt.edr": {
+      "sha256": "eeadc0f9fbbdfb7e61fc30490f5c15648d8717ed8e6df44fa5333013a24bca53",
+      "size_bytes": 1837316
+    },
+    "npt_ext001.tpr": {
+      "sha256": "28bb9cc7a180cb34d5636fb9ee390136bdb91c1a1ff7fe1a5c0f3f260c18896e",
+      "size_bytes": 69564
+    }
+  },
+  "gromacs": {
+    "executable": "/opt/homebrew/Cellar/gromacs/2026.3/bin/gmx",
+    "version": "GROMACS version:     2026.3-Homebrew"
+  },
+  "extraction": {
+    "source": "equilibration/npt.edr",
+    "method": "one_named_energy_term_per_gmx_energy_call",
+    "terms": [
+      "Temperature",
+      "Pressure",
+      "Potential",
+      "Density",
+      "Volume",
+      "Box-X",
+      "Box-Y",
+      "Box-Z"
+    ],
+    "requested_range_ps": [
+      0.0,
+      3000.0
+    ]
+  },
+  "edr_range_ps": {
+    "first": 0.0,
+    "last": 3000.0,
+    "duration": 3000.0,
+    "rows": 3001
+  },
+  "analysis_window_ps": {
+    "start": 2000.0,
+    "end": 3000.0
+  },
+  "comparison_windows_ps": {
+    "earlier": {
+      "start": 1000.0,
+      "end_exclusive": 2000.0
+    },
+    "final": {
+      "start": 2000.0,
+      "end_inclusive": 3000.0
+    }
+  },
+  "block_definition": {
+    "count": 5,
+    "width_ps": 200.0,
+    "window_start_ps": 2000.0,
+    "window_end_ps": 3000.0
+  },
+  "last_1ns": {
+    "Temperature": {
+      "n": 1001,
+      "mean": 298.14386505294704,
+      "std": 5.683505198471725,
+      "min": 282.035583,
+      "max": 323.788666,
+      "slope_per_ns": 0.2831611957383946
+    },
+    "Pressure": {
+      "n": 1001,
+      "mean": 26.936495112887116,
+      "std": 1148.1311098210533,
+      "min": -3120.388672,
+      "max": 2960.810303,
+      "slope_per_ns": -52.94413544395724
+    },
+    "Potential": {
+      "n": 1001,
+      "mean": -23846.161890854146,
+      "std": 150.6830173868079,
+      "min": -24303.722656,
+      "max": -23326.714844,
+      "slope_per_ns": 15.993363301118043
+    },
+    "Density": {
+      "n": 1001,
+      "mean": 1518.9345911588412,
+      "std": 9.50209421670661,
+      "min": 1488.604004,
+      "max": 1547.341064,
+      "slope_per_ns": -1.7350883012436582
+    },
+    "Volume": {
+      "n": 1001,
+      "mean": 27.08180218281718,
+      "std": 0.1694056545199113,
+      "min": 26.583588,
+      "max": 27.632519,
+      "slope_per_ns": 0.030886141846177703
+    }
+  },
+  "blocks_200ps": [
+    {
+      "index": 1,
+      "start_ps": 2000.0,
+      "end_ps": 2200.0,
+      "n": 200,
+      "Density_mean": 1518.713878755,
+      "Volume_mean": 27.085704385,
+      "Temperature_mean": 298.953761145,
+      "Pressure_mean": 11.691148765000001,
+      "Potential_mean": -23827.084287125
+    },
+    {
+      "index": 2,
+      "start_ps": 2200.0,
+      "end_ps": 2400.0,
+      "n": 200,
+      "Density_mean": 1519.16818173,
+      "Volume_mean": 27.0776944,
+      "Temperature_mean": 297.450071565,
+      "Pressure_mean": 173.25270399000001,
+      "Potential_mean": -23855.161386735002
+    },
+    {
+      "index": 3,
+      "start_ps": 2400.0,
+      "end_ps": 2600.0,
+      "n": 200,
+      "Density_mean": 1520.115701285,
+      "Volume_mean": 27.0607409,
+      "Temperature_mean": 297.46763199000003,
+      "Pressure_mean": -108.33523226,
+      "Potential_mean": -23881.482089840003
+    },
+    {
+      "index": 4,
+      "start_ps": 2600.0,
+      "end_ps": 2800.0,
+      "n": 200,
+      "Density_mean": 1518.62122073,
+      "Volume_mean": 27.08739246,
+      "Temperature_mean": 298.072785345,
+      "Pressure_mean": -39.664928805,
+      "Potential_mean": -23837.41208009
+    },
+    {
+      "index": 5,
+      "start_ps": 2800.0,
+      "end_ps": 3000.0,
+      "n": 201,
+      "Density_mean": 1518.0583544776118,
+      "Volume_mean": 27.097400776119404,
+      "Temperature_mean": 298.77193487064676,
+      "Pressure_mean": 97.38653368159204,
+      "Potential_mean": -23829.75166162687
+    }
+  ],
+  "density_qc": {
+    "slope_percent_per_ns": 0.06116160516690891,
+    "slope_kg_m3_per_ns": -0.9290047773881724,
+    "last_two_block_diff_percent": 0.037071165294065886,
+    "max_adjacent_block_diff_percent": 0.09836195717850332,
+    "first_vs_second_500ps_diff_percent": 0.008339306491841784,
+    "one_to_two_ns_mean_kg_m3": 1519.019028076,
+    "two_to_three_ns_mean_kg_m3": 1518.9345911588412,
+    "one_to_two_vs_two_to_three_ns_diff_percent": 0.005558802255852028
+  },
+  "temperature_qc": {
+    "mean_K": 298.14386505294704,
+    "slope_K_per_ns": 0.2831611957383946
+  },
+  "volume_qc": {
+    "max_adjacent_frame_jump_percent_0_3ns": 1.9994751735480272,
+    "last_1ns": {
+      "n": 1001,
+      "mean": 27.08180218281718,
+      "std": 0.1694056545199113,
+      "min": 26.583588,
+      "max": 27.632519,
+      "slope_per_ns": 0.030886141846177703
+    }
+  },
+  "box_qc": {
+    "rlist_nm": 1.2,
+    "min_box_nm_0_3ns": 2.980318,
+    "min_box_over_2rlist": 1.2417991666666668,
+    "time_extension_allowed_by_margin": true
+  },
+  "thresholds": {
+    "min_box_over_2rlist_candidate_min": 1.1,
+    "min_box_over_2rlist_hard_fail_max": 1.0,
+    "temperature_mean_K_inclusive": [
+      293.0,
+      303.0
+    ],
+    "temperature_abs_slope_K_per_ns_max": 1.0,
+    "density_abs_slope_percent_per_ns_max": 0.5,
+    "density_last_two_block_diff_percent_max": 0.5,
+    "density_max_adjacent_block_diff_percent_max": 1.0,
+    "density_first_vs_second_500ps_diff_percent_max": 1.0,
+    "density_1_2ns_vs_2_3ns_diff_percent_max": 2.0,
+    "max_adjacent_volume_jump_percent_max": 5.0
+  },
+  "hard_fail_reasons": [],
+  "review_reasons": [],
+  "exploratory_verdict": "THREE_NS_STATIONARITY_CANDIDATE",
+  "physics_status": "EXPLORATORY_ONLY",
+  "equilibrium_validated": false,
+  "production_ready": false,
+  "not_verified": [
+    "thermodynamic equilibrium",
+    "independent Packmol and velocity-seed replicas",
+    "production readiness",
+    "structural and transport-property convergence",
+    "cross-start same-basin convergence",
+    "laboratory-server reproduction"
+  ]
+}

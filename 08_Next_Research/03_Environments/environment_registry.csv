@@ -1,0 +1,3 @@
+environment_id,host_class,os,gromacs_version,precision,mpi,gpu,scheduler,command_profile,verification_level
+local_mac_20260806,personal_mac,macOS_26.5.2_arm64,2026.3-Homebrew,mixed,thread_mpi,disabled,none,gmx_CPU,Physical-device-verified_EM_only
+lab_server_TBD,research_server,TBD,TBD,TBD,TBD,TBD,TBD,TBD,Not verified

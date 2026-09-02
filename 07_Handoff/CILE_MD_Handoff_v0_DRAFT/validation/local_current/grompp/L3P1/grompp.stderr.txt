@@ -1,0 +1,23 @@
+                 :-) GROMACS - gmx grompp, 2026.3-Homebrew (-:
+
+Executable:   <REDACTED_EXECUTABLE_PATH>
+Data prefix:  <REDACTED_DATA_PREFIX>
+Working dir:  <REDACTED_WORKING_DIRECTORY>
+Command line:
+  gmx grompp -f 07_Handoff/CILE_MD_Handoff_v0_DRAFT/mdp/01_em_strict.mdp -c 07_Handoff/CILE_MD_Handoff_v0_DRAFT/systems/L3P1/initial.gro -p 07_Handoff/CILE_MD_Handoff_v0_DRAFT/systems/L3P1/topol.top -o 07_Handoff/CILE_MD_Handoff_v0_DRAFT/validation/local_current/grompp/L3P1/em.tpr -po 07_Handoff/CILE_MD_Handoff_v0_DRAFT/validation/local_current/grompp/L3P1/em_mdout.mdp
+
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group rest is 4497.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+NOTE 1 [file 07_Handoff/CILE_MD_Handoff_v0_DRAFT/mdp/01_em_strict.mdp]:
+  The optimal PME mesh load for parallel simulations is below 0.5
+  and for highly parallel simulations between 0.25 and 0.33,
+  for higher performance, increase the cut-off and the PME grid spacing.
+
+
+
+There was 1 NOTE
+
+GROMACS reminds you: "We'll celebrate a woman for anything, as long as it's not her talent." (Colleen McCullough)
+

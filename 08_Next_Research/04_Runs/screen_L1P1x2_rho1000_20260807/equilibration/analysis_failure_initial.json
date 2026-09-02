@@ -1,0 +1,11 @@
+{
+  "chain_id": "screen_L1P1x2_rho1000_20260807",
+  "start": "2026-08-07T00:07:08+09:00",
+  "technical_status": "FAILED",
+  "physics_status": "NOT_EVALUATED",
+  "detail": "ValueError: unexpected nvt thermo column count 4; expected 9",
+  "end": "2026-08-07T00:33:16+09:00",
+  "wall_seconds": 1568.2461176250363,
+  "scope": "post-run analysis only; NVT and NPT mdrun completed and EDR files were preserved",
+  "resolution": "retain this failure record and rerun analysis with stage-specific single-term extraction"
+}

@@ -1,0 +1,51 @@
+# macOS / editors
+.DS_Store
+**/.DS_Store
+*.swp
+*.tmp
+.claude/settings.local.json
+.claude/
+.obsidian/
+/tmp/
+/output/github-publication-preflight/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*service-account*.json
+
+# GROMACS trajectories and restart/runtime artifacts
+*.xtc
+*.trr
+*.edr
+*.cpt
+*.tpr
+*.xvg
+*.log
+*.1#
+
+# Large visualization trajectories and generated archives
+**/*animation*.pdb
+**/*sampled*.pdb
+*.zip
+*.zip.part-*
+09_Research_Environment/backups/
+09_Research_Environment/offload_staging/
+09_Research_Environment/Drive_Restore/
+
+# Historical duplicate backups are preserved locally but not versioned
+99_Old_Backup/
+
+# Keep small, intentional handoff checksums and documentation trackable.
+# Binary handoff ZIPs remain ignored and are backed up to Google Drive.

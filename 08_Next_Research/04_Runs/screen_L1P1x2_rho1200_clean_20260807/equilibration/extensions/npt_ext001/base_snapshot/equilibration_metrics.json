@@ -1,0 +1,160 @@
+{
+  "chain_id": "screen_L1P1x2_rho1200_clean_20260807",
+  "start": "2026-08-07T01:22:26+09:00",
+  "technical_status": "PASS_COMPLETE",
+  "physics_status": "EXPLORATORY_ONLY",
+  "detail": "configured exploratory NVT 100 ps and C-rescale NPT completed and analyzed",
+  "attempt": 1,
+  "attempt_started_record": "attempts/attempt_001_started.json",
+  "resume_requested": false,
+  "seed": 110001,
+  "npt_target_ps": 1000.0,
+  "nvt": {
+    "resumed": false,
+    "first_time_ps": 0.0,
+    "last_time_ps": 100.0,
+    "duration_ps": 100.0,
+    "checkpoint_in_sha256": "",
+    "resume_evidence_file": "",
+    "resume_checkpoint_file": "",
+    "resume_from_time_ps": null
+  },
+  "npt": {
+    "resumed": false,
+    "first_time_ps": 0.0,
+    "last_time_ps": 1000.0,
+    "duration_ps": 1000.0,
+    "checkpoint_in_sha256": "",
+    "resume_evidence_file": "",
+    "resume_checkpoint_file": "",
+    "resume_from_time_ps": null
+  },
+  "nvt_rlist_nm": 1.2,
+  "npt_rlist_nm": 1.2,
+  "bad_markers": {
+    "fatal": 0,
+    "nan": 0,
+    "lincs": 0,
+    "segfault": 0
+  },
+  "grompp_warnings": {
+    "nvt": 0,
+    "npt": 0
+  },
+  "analysis": {
+    "nvt_last_50ps": {
+      "Temperature": {
+        "n": 51.0,
+        "mean": 297.8213154117647,
+        "std": 4.8101483099704545,
+        "min": 287.785828,
+        "max": 312.183105,
+        "slope_per_ns": -34.03923846153872
+      },
+      "temperature_10ps_blocks_K": [
+        300.0019318,
+        296.68755799999997,
+        297.1146546,
+        297.27653499999997,
+        298.00729927272727
+      ],
+      "last_two_temperature_block_diff_K": 0.7307642727272992
+    },
+    "npt_last_500ps": {
+      "Density": {
+        "n": 501.0,
+        "mean": 1501.6777165948104,
+        "std": 10.106667819929978,
+        "min": 1470.791016,
+        "max": 1528.434814,
+        "slope_per_ns": 8.151597803373312
+      },
+      "Volume": {
+        "n": 501.0,
+        "mean": 27.393187365269462,
+        "std": 0.18450993445908626,
+        "min": 26.912418,
+        "max": 27.96718,
+        "slope_per_ns": -0.14793500460433737
+      },
+      "Temperature": {
+        "n": 501.0,
+        "mean": 298.49434060878247,
+        "std": 5.440283471522815,
+        "min": 282.569153,
+        "max": 314.587463,
+        "slope_per_ns": -0.4051993201803571
+      },
+      "Pressure": {
+        "n": 501.0,
+        "mean": -87.49639436726547,
+        "std": 1164.1686085893014,
+        "min": -3491.505615,
+        "max": 4391.076172,
+        "slope_per_ns": -155.49963122503996
+      },
+      "Potential": {
+        "n": 501.0,
+        "mean": -23634.392055722557,
+        "std": 149.75625237824994,
+        "min": -24017.923828,
+        "max": -23255.484375,
+        "slope_per_ns": -105.83571249507285
+      }
+    },
+    "npt_100ps_blocks": {
+      "Density": [
+        1502.1657751500002,
+        1499.9587377999999,
+        1500.51382329,
+        1499.2139636000002,
+        1506.4881785148516
+      ],
+      "Volume": [
+        27.384181400000003,
+        27.42440762,
+        27.41413608,
+        27.438631970000003,
+        27.30545705940594
+      ],
+      "Temperature": [
+        297.61031284,
+        299.65514007,
+        298.7935361,
+        298.47820157,
+        297.94005531683166
+      ],
+      "Pressure": [
+        32.723016660000006,
+        -193.8734856,
+        15.041578220000003,
+        -197.84899864,
+        -93.4644023960396
+      ]
+    },
+    "density_slope_percent_per_ns": 0.5266310100280199,
+    "density_last_two_block_diff_percent": 0.4840276628164621,
+    "density_max_adjacent_block_diff_percent": 0.4840276628164621,
+    "density_first_vs_second_250ps_diff_percent": 0.10946685606166781,
+    "max_adjacent_volume_jump_percent": 1.8602814847908724,
+    "nvt_min_box_nm": 3.2484,
+    "npt_min_box_nm": 2.996753,
+    "nvt_rlist_nm": 1.2,
+    "npt_rlist_nm": 1.2,
+    "nvt_min_box_over_2rlist": 1.3535000000000001,
+    "npt_min_box_over_2rlist": 1.2486470833333334,
+    "hard_fail_reasons": [],
+    "exploratory_verdict": "SCREEN_EXTEND",
+    "physics_status": "EXPLORATORY_ONLY",
+    "equilibrium_validated": false,
+    "production_ready": false
+  },
+  "input_sha256": {
+    "start_em.gro": "90e17420d8b2321b99e70bb78e3000a11ba0d21d15eccc4d8e8db02ce81cfb63",
+    "topol.top": "e411d910eabfcd4598f6a090bae23f4cbb6c95f4e0aad8726d603e1cf76bd4c8",
+    "nvt_100ps.mdp": "38fdc146724182930a61704804eb509f0854dfdf9c4378221c629601221e9a93",
+    "npt_1000ps.mdp": "8b536e02b4036a461de134eed19fe04b6c6ee532a5a0c6e994326eab8906a4e0"
+  },
+  "end": "2026-08-07T01:42:26+09:00",
+  "wall_seconds": 1199.9917883329326
+}

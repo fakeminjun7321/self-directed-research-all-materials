@@ -1,0 +1,55 @@
+                   :-) GROMACS - gmx msd, 2026.1-Homebrew (-:
+
+Executable:   /opt/homebrew/bin/../Cellar/gromacs/2026.1/bin/gmx
+Data prefix:  /opt/homebrew/bin/../Cellar/gromacs/2026.1
+Working dir:  /Users/minjun/구민준/DSHS/연구/2026 연구/2026_자율연구/02_MD_시뮬레이션_결과/03_50ps_MD결과/L3P1
+Command line:
+  gmx msd -f md_50ps.xtc -s md_50ps.tpr -n '/Users/minjun/구민준/DSHS/연구/2026 연구/2026_자율연구/02_MD_시뮬레이션_결과/05_analysis_results/L3P1/L3P1_index.ndx' -o '/Users/minjun/구민준/DSHS/연구/2026 연구/2026_자율연구/02_MD_시뮬레이션_결과/05_analysis_results/L3P1/L3P1_msd_pyr13.xvg' -sel 'group 3' -seltype whole_mol_com -beginfit 10 -endfit 45 -xvg none
+
+Reading file md_50ps.tpr, VERSION 2026.1-Homebrew (single precision)
+Reading file md_50ps.tpr, VERSION 2026.1-Homebrew (single precision)
+
+Reading frame       0 time    0.000   
+Reading frame       1 time    0.250   
+Reading frame       2 time    0.500   
+Reading frame       3 time    0.750   
+Reading frame       4 time    1.000   
+Reading frame       5 time    1.250   
+Reading frame       6 time    1.500   
+Reading frame       7 time    1.750   
+Reading frame       8 time    2.000   
+Reading frame       9 time    2.250   
+Reading frame      10 time    2.500   
+Reading frame      11 time    2.750   
+Reading frame      12 time    3.000   
+Reading frame      13 time    3.250   
+Reading frame      14 time    3.500   
+Reading frame      15 time    3.750   
+Reading frame      16 time    4.000   
+Reading frame      17 time    4.250   
+Reading frame      18 time    4.500   
+Reading frame      19 time    4.750   
+Reading frame      20 time    5.000   
+Reading frame      30 time    7.500   
+Reading frame      40 time   10.000   
+Reading frame      50 time   12.500   
+Reading frame      60 time   15.000   
+Reading frame      70 time   17.500   
+Reading frame      80 time   20.000   
+Reading frame      90 time   22.500   
+Reading frame     100 time   25.000   
+Reading frame     110 time   27.500   
+Reading frame     120 time   30.000   
+Reading frame     130 time   32.500   
+Reading frame     140 time   35.000   
+Reading frame     150 time   37.500   
+Reading frame     160 time   40.000   
+Reading frame     170 time   42.500   
+Reading frame     180 time   45.000   
+Reading frame     190 time   47.500   
+Reading frame     200 time   50.000   
+Last frame        200 time   50.000   
+Analyzed 201 frames, last time 50.000
+
+GROMACS reminds you: "I never thought about breaking barriers, I was just interested in what I was doing and kept going." (Barbara Liskov)
+

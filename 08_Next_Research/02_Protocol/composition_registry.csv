@@ -1,0 +1,7 @@
+system_id,li_count,pyr13_count,fsi_count,atom_count,molality_mol_kg,x_lifsi,current_box_nm,current_density_kg_m3,pilot_density_kg_m3,pilot_box_nm,density_basis,approved_status
+L1P1,25,25,50,1150,3.243,0.500,5.28770,139.11,,,current structure,Needs review
+L1P2,25,50,75,2050,1.621,0.333,6.41140,126.61,,,current structure,Needs review
+L2P1,50,25,75,1400,6.486,0.667,5.64600,157.42,,,current structure; exceeds directly checked experimental composition range,Needs review
+L3P1,75,25,100,1650,9.729,0.750,5.96390,170.18,,,current structure; exceeds directly checked experimental composition range,Needs review
+L1P3,25,75,100,2950,1.081,0.250,7.23840,121.74,,,current structure,Needs review
+L1P1x2,50,50,100,2300,3.243,0.500,,,1400,3.085725,"engineering pilot only; 3.2m experimental density is 1.55 g/cc at 20 C",Proposed

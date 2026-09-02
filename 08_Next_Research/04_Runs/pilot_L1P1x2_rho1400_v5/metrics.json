@@ -1,0 +1,41 @@
+{
+  "run_id": "pilot_L1P1x2_rho1400_v5",
+  "atom_count": 2300,
+  "requested_density_kg_m3": 1400.0,
+  "calculated_box_nm": 3.0857248974321076,
+  "initial_box_nm": [
+    3.0857,
+    3.0857,
+    3.0857
+  ],
+  "initial_density_kg_m3": 1400.0338886017996,
+  "topology_source": "fftool field.top generated from copied il.ff; charges scaled by script",
+  "canonical_topology_sha256": "b33d32f18fd3765d5ec4e2ea0c23dd0b07f461bebd9c71c428c3734595e0a526",
+  "charge_scaling_retained": 0.75,
+  "molecule_charge_sums": {
+    "Li+": 0.75,
+    "c3c1pyrr+": 0.7500000000000002,
+    "fsi-": -0.7500000000000001
+  },
+  "physics_status": "NOT_VERIFIED",
+  "final_box_nm": [
+    3.0857,
+    3.0857,
+    3.0857
+  ],
+  "final_density_kg_m3": 1400.0338886017996,
+  "bad_markers": {
+    "fatal": 0,
+    "nan": 0,
+    "lincs": 0
+  },
+  "grompp_warning_count": 0,
+  "em_summary": {
+    "converged": true,
+    "steps": 821,
+    "potential_energy_kj_mol": -19014.514,
+    "maximum_force_kj_mol_nm": 498.09875
+  },
+  "actual_rlist_nm": 1.26,
+  "min_box_over_2rlist": 1.2244841269841271
+}

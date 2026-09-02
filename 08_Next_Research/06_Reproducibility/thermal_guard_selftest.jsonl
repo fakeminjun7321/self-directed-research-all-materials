@@ -1,0 +1,3 @@
+{"at": "2026-08-07T00:41:34+09:00", "event": "GUARD_STARTED", "target_pid": 88220, "target_pgid": 88220, "high_c": 60.0, "resume_c": 50.0, "poll_seconds": 5.0, "sensor_scope": "battery_and_virtual_thermal_sensors_not_CPU_die"}
+{"at": "2026-08-07T00:41:34+09:00", "event": "SAMPLE", "paused": false, "temperatures_c": {"Temperature": 39.85000000000002, "VirtualTemperature": 39.79}, "max_temperature_c": 39.85000000000002, "sensor_errors": [], "thermal_warning": false, "performance_warning": false, "pmset_summary": ["Note: No thermal warning level has been recorded", "Note: No performance warning level has been recorded", "Note: No CPU power status has been recorded"]}
+{"at": "2026-08-07T00:41:39+09:00", "event": "GUARD_FINISHED", "target_return_code": 0}

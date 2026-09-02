@@ -1,0 +1,168 @@
+{
+  "chain_id": "replica_L1P1x2_rho1400_R3_exec_20260807",
+  "start": "2026-08-07T04:43:29+09:00",
+  "technical_status": "PASS_COMPLETE",
+  "physics_status": "EXPLORATORY_ONLY",
+  "detail": "configured exploratory NVT 100 ps and C-rescale NPT completed and analyzed",
+  "attempt": 1,
+  "attempt_started_record": "attempts/attempt_001_started.json",
+  "resume_requested": false,
+  "seed": 110103,
+  "npt_target_ps": 1000.0,
+  "nvt": {
+    "resumed": false,
+    "first_time_ps": 0.0,
+    "last_time_ps": 100.0,
+    "duration_ps": 100.0,
+    "checkpoint_in_sha256": "",
+    "resume_evidence_file": "",
+    "resume_checkpoint_file": "",
+    "resume_from_time_ps": null
+  },
+  "npt": {
+    "resumed": false,
+    "first_time_ps": 0.0,
+    "last_time_ps": 1000.0,
+    "duration_ps": 1000.0,
+    "checkpoint_in_sha256": "",
+    "resume_evidence_file": "",
+    "resume_checkpoint_file": "",
+    "resume_from_time_ps": null
+  },
+  "nvt_rlist_nm": 1.2,
+  "npt_rlist_nm": 1.2,
+  "bad_markers": {
+    "fatal": 0,
+    "nan": 0,
+    "lincs": 0,
+    "segfault": 0
+  },
+  "grompp_warnings": {
+    "nvt": 0,
+    "npt": 0
+  },
+  "analysis": {
+    "nvt_last_50ps": {
+      "Temperature": {
+        "n": 51.0,
+        "mean": 298.7484274117647,
+        "std": 5.408994834568309,
+        "min": 288.02597,
+        "max": 309.940643,
+        "slope_per_ns": -92.03324054298623
+      },
+      "temperature_10ps_blocks_K": [
+        302.14074089999997,
+        297.5875427,
+        300.9788878,
+        294.9468782,
+        298.14811836363634
+      ],
+      "last_two_temperature_block_diff_K": 3.201240163636328
+    },
+    "npt_last_500ps": {
+      "Density": {
+        "n": 501.0,
+        "mean": 1516.757994984032,
+        "std": 9.210805981153735,
+        "min": 1491.071289,
+        "max": 1543.80188,
+        "slope_per_ns": 0.5764982648567369
+      },
+      "Volume": {
+        "n": 501.0,
+        "mean": 27.120603175648704,
+        "std": 0.16466527900312525,
+        "min": 26.644531,
+        "max": 27.586796,
+        "slope_per_ns": -0.009762238423551173
+      },
+      "Temperature": {
+        "n": 501.0,
+        "mean": 297.87049338323357,
+        "std": 5.529335998933286,
+        "min": 281.831909,
+        "max": 316.560089,
+        "slope_per_ns": 1.1941096846625452
+      },
+      "Pressure": {
+        "n": 501.0,
+        "mean": 34.764921750499,
+        "std": 1187.9021207261937,
+        "min": -3235.060547,
+        "max": 3417.186279,
+        "slope_per_ns": -992.8102131102893
+      },
+      "Potential": {
+        "n": 501.0,
+        "mean": -23759.62469982036,
+        "std": 137.1588475398542,
+        "min": -24128.851562,
+        "max": -23374.066406,
+        "slope_per_ns": -88.01667331908308
+      }
+    },
+    "npt_100ps_blocks": {
+      "Density": [
+        1516.42104369,
+        1519.82858157,
+        1511.5021618600001,
+        1518.59307614,
+        1517.4383085247525
+      ],
+      "Volume": [
+        27.12631104,
+        27.06589555,
+        27.21467294,
+        27.08779087,
+        27.10846684158416
+      ],
+      "Temperature": [
+        297.04477351,
+        298.02948277,
+        298.2840582,
+        298.79449648,
+        297.20629791089107
+      ],
+      "Pressure": [
+        150.82992093,
+        345.90941183,
+        -118.13694247,
+        80.33632056,
+        -281.9469830495049
+      ]
+    },
+    "density_slope_percent_per_ns": 0.052798755809008203,
+    "density_last_two_block_diff_percent": 0.0760708615253645,
+    "density_max_adjacent_block_diff_percent": 0.54935738886602,
+    "density_first_vs_second_250ps_diff_percent": 0.08084282175839108,
+    "max_adjacent_volume_jump_percent": 1.868128697296801,
+    "nvt_min_box_nm": 3.0857,
+    "npt_min_box_nm": 2.986776,
+    "nvt_rlist_nm": 1.2,
+    "npt_rlist_nm": 1.2,
+    "nvt_min_box_over_2rlist": 1.2857083333333335,
+    "npt_min_box_over_2rlist": 1.24449,
+    "hard_fail_reasons": [],
+    "exploratory_verdict": "SCREEN_EXTEND",
+    "physics_status": "EXPLORATORY_ONLY",
+    "equilibrium_validated": false,
+    "production_ready": false
+  },
+  "input_sha256": {
+    "start_em.gro": "6b8c3d543c89c98732accff6394b3dc25e33e2f49ad25948c8e557ca83f7cf25",
+    "topol.top": "e411d910eabfcd4598f6a090bae23f4cbb6c95f4e0aad8726d603e1cf76bd4c8",
+    "nvt_100ps.mdp": "26b5d8a9bce0f624c3aba07eac6277c6accd75db498c2313c2d4dff1b38ed7ad",
+    "npt_1000ps.mdp": "8b536e02b4036a461de134eed19fe04b6c6ee532a5a0c6e994326eab8906a4e0"
+  },
+  "velocity_seed": 110103,
+  "seed_semantics": "gromacs_nvt_gen_seed",
+  "parent_packmol_provenance": {
+    "packmol_seed": 240103,
+    "packmol_input_sha256": "177dfe95912be6dae68120e6c0e7c7ec0b43788d2158b5766cde681b9ae74a3b",
+    "packmol_log_sha256": "cef9645ffa2f91541605551cbddb2399a2f717a9f96e745f461b035c3d49a2de",
+    "packmol_initial_gro_sha256": "bfbc32352cc4689703680a8ea9aca3750ed5dbcf0405bdcfaf0bb9c90e68f57e"
+  },
+  "end": "2026-08-07T05:04:55+09:00",
+  "wall_seconds": 1286.497148833936
+}

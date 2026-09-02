@@ -1,0 +1,5 @@
+stage,file,ensemble,time,main_purpose,temperature_K,pressure_bar
+energy_minimization,01_em_strict.mdp,none,until convergence,remove bad contacts,,
+nvt_equilibration,02_nvt_100ps.mdp,NVT,100 ps,temperature equilibration,298,
+npt_equilibration,03_npt_500ps.mdp,NPT,500 ps,density and box equilibration,298,1
+production,04_prod_1ns.mdp,NPT,1 ns,RDF and coordination number trajectory,298,1

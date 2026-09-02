@@ -1,0 +1,3734 @@
+                  :-) GROMACS - gmx dump, 2026.3-Homebrew (-:
+
+Executable:   /opt/homebrew/bin/../Cellar/gromacs/2026.3/bin/gmx
+Data prefix:  /opt/homebrew/bin/../Cellar/gromacs/2026.3
+Working dir:  /Users/minjun/D/연구/2026 연구/2026_자율연구/08_Next_Research/04_Runs/screen_L1P1x2_rho1000_20260807
+Command line:
+  gmx dump -s em.tpr
+
+Reading file em.tpr, VERSION 2026.3-Homebrew (single precision)
+Reading file em.tpr, VERSION 2026.3-Homebrew (single precision)
+em.tpr:
+inputrec:
+   integrator                     = steep
+   tinit                          = 0
+   dt                             = 0.001
+   nsteps                         = 50000
+   init-step                      = 0
+   simulation-part                = 1
+   mts                            = false
+   mass-repartition-factor        = 1
+   comm-mode                      = Linear
+   nstcomm                        = 100
+   bd-fric                        = 0
+   ld-seed                        = 2146421748
+   emtol                          = 500
+   emstep                         = 0.01
+   niter                          = 20
+   fcstep                         = 0
+   nstcgsteep                     = 1000
+   nbfgscorr                      = 10
+   rtpi                           = 0.05
+   nstxout                        = 0
+   nstvout                        = 0
+   nstfout                        = 0
+   nstlog                         = 500
+   nstcalcenergy                  = 100
+   nstenergy                      = 500
+   nstxout-compressed             = 0
+   compressed-x-precision         = 1000
+   cutoff-scheme                  = Verlet
+   nstlist                        = 10
+   pbc                            = xyz
+   periodic-molecules             = false
+   verlet-buffer-tolerance        = 0.005
+   verlet-buffer-pressure-tolerance = 0.5
+   rlist                          = 1.26
+   coulombtype                    = PME
+   coulomb-modifier               = Potential-shift
+   rcoulomb-switch                = 0
+   rcoulomb                       = 1.2
+   epsilon-r                      = 1
+   epsilon-rf                     = inf
+   vdw-type                       = Cut-off
+   vdw-modifier                   = Potential-shift
+   rvdw-switch                    = 0
+   rvdw                           = 1.2
+   DispCorr                       = EnerPres
+   table-extension                = 1
+   fourierspacing                 = 0.12
+   fourier-nx                     = 32
+   fourier-ny                     = 32
+   fourier-nz                     = 32
+   pme-order                      = 4
+   ewald-rtol                     = 1e-05
+   ewald-rtol-lj                  = 0.001
+   lj-pme-comb-rule               = Geometric
+   ewald-geometry                 = 3d
+   epsilon-surface                = 0
+   ensemble-temperature-setting   = not available
+   tcoupl                         = No
+   nsttcouple                     = -1
+   nh-chain-length                = 0
+   print-nose-hoover-chain-variables = false
+   pcoupl                         = No
+   refcoord-scaling               = No
+   posres-com: not available
+   posres-comB: not available
+   QMMM                           = false
+qm-opts:
+   ngQM                           = 0
+   constraint-algorithm           = Lincs
+   continuation                   = false
+   Shake-SOR                      = false
+   shake-tol                      = 0.0001
+   lincs-order                    = 4
+   lincs-iter                     = 1
+   lincs-warnangle                = 30
+   nwall                          = 0
+   wall-type                      = 9-3
+   wall-r-linpot                  = -1
+   wall-atomtype[0]               = -1
+   wall-atomtype[1]               = -1
+   wall-density[0]                = 0
+   wall-density[1]                = 0
+   wall-ewald-zfac                = 3
+   pull                           = false
+   awh                            = false
+   rotation                       = false
+   interactiveMD                  = false
+   disre                          = No
+   disre-weighting                = Conservative
+   disre-mixed                    = false
+   dr-fc                          = 1000
+   dr-tau                         = 0
+   nstdisreout                    = 100
+   orire-fc                       = 0
+   orire-tau                      = 0
+   nstorireout                    = 100
+   free-energy                    = no
+   cos-acceleration               = 0
+   deform (3x3):
+      deform[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      deform[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      deform[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   simulated-tempering            = false
+   swapcoords                     = no
+   userint1                       = 0
+   userint2                       = 0
+   userint3                       = 0
+   userint4                       = 0
+   userreal1                      = 0
+   userreal2                      = 0
+   userreal3                      = 0
+   userreal4                      = 0
+   applied-forces:
+     electric-field:
+       x:
+         E0                       = 0
+         omega                    = 0
+         t0                       = 0
+         sigma                    = 0
+       y:
+         E0                       = 0
+         omega                    = 0
+         t0                       = 0
+         sigma                    = 0
+       z:
+         E0                       = 0
+         omega                    = 0
+         t0                       = 0
+         sigma                    = 0
+     density-guided-simulation:
+       active                     = false
+       group                      = protein
+       similarity-measure         = inner-product
+       atom-spreading-weight      = unity
+       force-constant             = 1e+09
+       gaussian-transform-spreading-width = 0.2
+       gaussian-transform-spreading-range-in-multiples-of-width = 4
+       reference-density-filename = reference.mrc
+       nst                        = 1
+       normalize-densities        = true
+       adaptive-force-scaling     = false
+       adaptive-force-scaling-time-constant = 4
+       shift-vector               = 
+       transformation-matrix      = 
+     qmmm-cp2k:
+       active                     = false
+       qmgroup                    = System
+       qmmethod                   = PBE
+       qmfilenames                = 
+       qmcharge                   = 0
+       qmmultiplicity             = 1
+     colvars:
+       active                     = false
+       configfile                 = 
+       seed                       = -1
+     nnpot:
+       active                     = false
+       modelfile                  = model.pt
+       input-group                = System
+       link-type                  = H
+       link-distance              = 0.1
+       pair-cutoff                = 0
+       embedding                  = mechanical
+       nnp-charge                 = 0
+       model-input1               = 
+       model-input2               = 
+       model-input3               = 
+       model-input4               = 
+       model-input5               = 
+       model-input6               = 
+       model-input7               = 
+       model-input8               = 
+       model-input9               = 
+   fast-multipole-method:
+     fmm:
+       backend                    = inactive
+       exafmm-order               = 6
+       exafmm-direct-range        = 2
+       exafmm-direct-provider     = GROMACS
+       exafmm-tree-type           = uniform
+       exafmm-tree-depth          = 0
+       exafmm-max-particles-per-cell = 0
+       fmsolvr-order              = 8
+       fmsolvr-direct-range       = 1
+       fmsolvr-direct-provider    = FMM
+       fmsolvr-dipole-compensation = true
+       fmsolvr-tree-depth         = 3
+       fmsolvr-sparse             = false
+grpopts:
+   nrdf:        5997
+   ref-t:           0
+   tau-t:           0
+annealing:          No
+annealing-npoints:           0
+   acc:	           0           0           0
+   nfreeze:           N           N           N
+   energygrp-flags[  0]: 0
+header:
+   bIr    = present
+   bBox   = present
+   bTop   = present
+   bX     = present
+   bV     = not present
+   bF     = not present
+   natoms = 2300
+   lambda = 0.000000e+00
+   buffer size = 41853
+topology:
+   name="simbox"
+   #atoms                         = 2300
+   #molblock                      = 3
+   molblock (0):
+      moltype              = 0 "Li+"
+      #molecules                     = 50
+      #posres_xA                     = 0
+      #posres_xB                     = 0
+   molblock (1):
+      moltype              = 1 "c3c1pyrr+"
+      #molecules                     = 50
+      #posres_xA                     = 0
+      #posres_xB                     = 0
+   molblock (2):
+      moltype              = 2 "fsi-"
+      #molecules                     = 100
+      #posres_xA                     = 0
+      #posres_xB                     = 0
+   bIntermolecularInteractions    = false
+   ffparams:
+      atnr=7
+      ntypes=81
+         functype[0]=LJ_SR, c6= 2.82479778e-05, c12= 2.60835575e-09
+         functype[1]=LJ_SR, c6= 3.07747017e-04, c12= 1.01515766e-07
+         functype[2]=LJ_SR, c6= 2.39492845e-04, c12= 9.86703128e-08
+         functype[3]=LJ_SR, c6= 5.88437360e-05, c12= 8.83507134e-09
+         functype[4]=LJ_SR, c6= 1.62840472e-04, c12= 4.74329731e-08
+         functype[5]=LJ_SR, c6= 4.86378820e-04, c12= 2.09097820e-07
+         functype[6]=LJ_SR, c6= 3.04026587e-04, c12= 9.13130904e-08
+         functype[7]=LJ_SR, c6= 3.07747017e-04, c12= 1.01515766e-07
+         functype[8]=LJ_SR, c6= 3.35274590e-03, c12= 3.95094276e-06
+         functype[9]=LJ_SR, c6= 2.60915095e-03, c12= 3.84019631e-06
+         functype[10]=LJ_SR, c6= 6.41072227e-04, c12= 3.43856414e-07
+         functype[11]=LJ_SR, c6= 1.77406275e-03, c12= 1.84606608e-06
+         functype[12]=LJ_SR, c6= 5.29884314e-03, c12= 8.13796851e-06
+         functype[13]=LJ_SR, c6= 3.31221148e-03, c12= 3.55385487e-06
+         functype[14]=LJ_SR, c6= 2.39492845e-04, c12= 9.86703128e-08
+         functype[15]=LJ_SR, c6= 2.60915095e-03, c12= 3.84019631e-06
+         functype[16]=LJ_SR, c6= 2.03047460e-03, c12= 3.73255102e-06
+         functype[17]=LJ_SR, c6= 4.98890586e-04, c12= 3.34217759e-07
+         functype[18]=LJ_SR, c6= 1.38059945e-03, c12= 1.79432141e-06
+         functype[19]=LJ_SR, c6= 4.12363047e-03, c12= 7.90986360e-06
+         functype[20]=LJ_SR, c6= 2.57760589e-03, c12= 3.45423791e-06
+         functype[21]=LJ_SR, c6= 5.88437360e-05, c12= 8.83507134e-09
+         functype[22]=LJ_SR, c6= 6.41072227e-04, c12= 3.43856414e-07
+         functype[23]=LJ_SR, c6= 4.98890586e-04, c12= 3.34217759e-07
+         functype[24]=LJ_SR, c6= 1.22578131e-04, c12= 2.99263014e-08
+         functype[25]=LJ_SR, c6= 3.39215214e-04, c12= 1.60665920e-07
+         functype[26]=LJ_SR, c6= 1.01318175e-03, c12= 7.08259506e-07
+         functype[27]=LJ_SR, c6= 6.33321470e-04, c12= 3.09297121e-07
+         functype[28]=LJ_SR, c6= 1.62840472e-04, c12= 4.74329731e-08
+         functype[29]=LJ_SR, c6= 1.77406275e-03, c12= 1.84606608e-06
+         functype[30]=LJ_SR, c6= 1.38059945e-03, c12= 1.79432141e-06
+         functype[31]=LJ_SR, c6= 3.39215214e-04, c12= 1.60665920e-07
+         functype[32]=LJ_SR, c6= 9.38723271e-04, c12= 8.62569834e-07
+         functype[33]=LJ_SR, c6= 2.80381716e-03, c12= 3.80244637e-06
+         functype[34]=LJ_SR, c6= 1.75261509e-03, c12= 1.66052928e-06
+         functype[35]=LJ_SR, c6= 4.86378820e-04, c12= 2.09097820e-07
+         functype[36]=LJ_SR, c6= 5.29884314e-03, c12= 8.13796851e-06
+         functype[37]=LJ_SR, c6= 4.12363047e-03, c12= 7.90986360e-06
+         functype[38]=LJ_SR, c6= 1.01318175e-03, c12= 7.08259506e-07
+         functype[39]=LJ_SR, c6= 2.80381716e-03, c12= 3.80244637e-06
+         functype[40]=LJ_SR, c6= 8.37455504e-03, c12= 1.67622293e-05
+         functype[41]=LJ_SR, c6= 5.23478165e-03, c12= 7.32006947e-06
+         functype[42]=LJ_SR, c6= 3.04026587e-04, c12= 9.13130904e-08
+         functype[43]=LJ_SR, c6= 3.31221148e-03, c12= 3.55385487e-06
+         functype[44]=LJ_SR, c6= 2.57760589e-03, c12= 3.45423791e-06
+         functype[45]=LJ_SR, c6= 6.33321470e-04, c12= 3.09297121e-07
+         functype[46]=LJ_SR, c6= 1.75261509e-03, c12= 1.66052928e-06
+         functype[47]=LJ_SR, c6= 5.23478165e-03, c12= 7.32006947e-06
+         functype[48]=LJ_SR, c6= 3.27216741e-03, c12= 3.19667743e-06
+         functype[49]=BONDS, b0A= 1.44800e-01, cbA= 3.19660e+05, b0B= 1.44800e-01, cbB= 3.19660e+05
+         functype[50]=BONDS, b0A= 1.52900e-01, cbA= 2.24200e+05, b0B= 1.52900e-01, cbB= 2.24200e+05
+         functype[51]=ANGLES, thA= 1.07200e+02, ctA= 4.33500e+02, thB= 1.07200e+02, ctB= 4.33500e+02
+         functype[52]=ANGLES, thA= 1.09500e+02, ctA= 4.70300e+02, thB= 1.09500e+02, ctB= 4.70300e+02
+         functype[53]=ANGLES, thA= 1.09500e+02, ctA= 2.92900e+02, thB= 1.09500e+02, ctB= 2.92900e+02
+         functype[54]=ANGLES, thA= 1.10700e+02, ctA= 3.13800e+02, thB= 1.10700e+02, ctB= 3.13800e+02
+         functype[55]=ANGLES, thA= 1.07800e+02, ctA= 2.76100e+02, thB= 1.07800e+02, ctB= 2.76100e+02
+         functype[56]=ANGLES, thA= 1.12700e+02, ctA= 4.88300e+02, thB= 1.12700e+02, ctB= 4.88300e+02
+         functype[57]=FOURDIHS, FourA[0]= 1.74050021e+00, FourA[1]=-5.35600007e-01, FourA[2]= 2.90790009e+00, FourA[3]= 0.00000000e+00
+FourB[0]= 1.74050021e+00, FourB[1]=-5.35600007e-01, FourB[2]= 2.90790009e+00, FourB[3]= 0.00000000e+00
+         functype[58]=FOURDIHS, FourA[0]= 0.00000000e+00, FourA[1]= 0.00000000e+00, FourA[2]= 2.34299994e+00, FourA[3]= 0.00000000e+00
+FourB[0]= 0.00000000e+00, FourB[1]= 0.00000000e+00, FourB[2]= 2.34299994e+00, FourB[3]= 0.00000000e+00
+         functype[59]=FOURDIHS, FourA[0]=-4.23839998e+00, FourA[1]=-2.96650004e+00, FourA[2]= 1.97899997e+00, FourA[3]= 0.00000000e+00
+FourB[0]=-4.23839998e+00, FourB[1]=-2.96650004e+00, FourB[2]= 1.97899997e+00, FourB[3]= 0.00000000e+00
+         functype[60]=FOURDIHS, FourA[0]=-1.19209290e-07, FourA[1]= 0.00000000e+00, FourA[2]= 1.25520003e+00, FourA[3]= 0.00000000e+00
+FourB[0]=-1.19209290e-07, FourB[1]= 0.00000000e+00, FourB[2]= 1.25520003e+00, FourB[3]= 0.00000000e+00
+         functype[61]=FOURDIHS, FourA[0]= 1.00080996e+01, FourA[1]=-2.81999993e+00, FourA[2]= 2.30119991e+00, FourA[3]= 0.00000000e+00
+FourB[0]= 1.00080996e+01, FourB[1]=-2.81999993e+00, FourB[2]= 2.30119991e+00, FourB[3]= 0.00000000e+00
+         functype[62]=FOURDIHS, FourA[0]= 5.43919992e+00, FourA[1]=-2.09199995e-01, FourA[2]= 8.36799979e-01, FourA[3]= 0.00000000e+00
+FourB[0]= 5.43919992e+00, FourB[1]=-2.09199995e-01, FourB[2]= 8.36799979e-01, FourB[3]= 0.00000000e+00
+         functype[63]=LJ14, c6A= 3.20536114e-04, c12A= 1.71928207e-07, c6B= 3.20536114e-04, c12B= 1.71928207e-07
+         functype[64]=LJ14, c6A= 1.30457547e-03, c12A= 1.92009816e-06, c6B= 1.30457547e-03, c12B= 1.92009816e-06
+         functype[65]=LJ14, c6A= 2.49445293e-04, c12A= 1.67108880e-07, c6B= 2.49445293e-04, c12B= 1.67108880e-07
+         functype[66]=LJ14, c6A= 1.01523730e-03, c12A= 1.86627551e-06, c6B= 1.01523730e-03, c12B= 1.86627551e-06
+         functype[67]=LJ14, c6A= 6.12890653e-05, c12A= 1.49631507e-08, c6B= 6.12890653e-05, c12B= 1.49631507e-08
+         functype[68]=CONSTR, dA= 1.08999997e-01, dB= 1.08999997e-01
+         functype[69]=BONDS, b0A= 1.57500e-01, cbA= 1.87900e+05, b0B= 1.57500e-01, cbB= 1.87900e+05
+         functype[70]=BONDS, b0A= 1.57000e-01, cbA= 3.13700e+05, b0B= 1.57000e-01, cbB= 3.13700e+05
+         functype[71]=BONDS, b0A= 1.43700e-01, cbA= 5.33100e+05, b0B= 1.43700e-01, cbB= 5.33100e+05
+         functype[72]=ANGLES, thA= 1.03000e+02, ctA= 9.02000e+02, thB= 1.03000e+02, ctB= 9.02000e+02
+         functype[73]=ANGLES, thA= 1.04100e+02, ctA= 1.07700e+03, thB= 1.04100e+02, ctB= 1.07700e+03
+         functype[74]=ANGLES, thA= 1.13600e+02, ctA= 7.89000e+02, thB= 1.13600e+02, ctB= 7.89000e+02
+         functype[75]=ANGLES, thA= 1.18500e+02, ctA= 9.69000e+02, thB= 1.18500e+02, ctB= 9.69000e+02
+         functype[76]=ANGLES, thA= 1.25600e+02, ctA= 6.71000e+02, thB= 1.25600e+02, ctB= 6.71000e+02
+         functype[77]=FOURDIHS, FourA[0]= 1.14449997e+01, FourA[1]=-1.51859999e+01, FourA[2]=-3.21199989e+00, FourA[3]= 0.00000000e+00
+FourB[0]= 1.14449997e+01, FourB[1]=-1.51859999e+01, FourB[2]=-3.21199989e+00, FourB[3]= 0.00000000e+00
+         functype[78]=FOURDIHS, FourA[0]=-9.31322575e-10, FourA[1]= 0.00000000e+00, FourA[2]=-1.49999997e-02, FourA[3]= 0.00000000e+00
+FourB[0]=-9.31322575e-10, FourB[1]= 0.00000000e+00, FourB[2]=-1.49999997e-02, FourB[3]= 0.00000000e+00
+         functype[79]=LJ14, c6A= 1.40190858e-03, c12A= 1.90122319e-06, c6B= 1.40190858e-03, c12B= 1.90122319e-06
+         functype[80]=LJ14, c6A= 2.61739083e-03, c12A= 3.66003474e-06, c6B= 2.61739083e-03, c12B= 3.66003474e-06
+      reppow                         = 12
+      fudgeQQ                        = 0.5
+cmap
+   moltype (0):
+      name="Li+"
+      atoms:
+         atom (1):
+            atom[     0]={type=  0, typeB=  0, ptype=    Atom, m= 6.94100e+00, q= 7.50000e-01, mB= 6.94100e+00, qB= 7.50000e-01, resind=    0, atomnumber=  3}
+         atom (1):
+            atom[0]={name="Li"}
+         type (1):
+            type[0]={name="Li",nameB="Li"}
+         residue (1):
+            residue[0]={name="Li", nr=1, ic=' '}
+      excls:
+         numLists=1
+         numElements=1
+         excls[0][num=1]={0}
+      Bond:
+         nr: 0
+      G96Bond:
+         nr: 0
+      Morse:
+         nr: 0
+      Cubic Bonds:
+         nr: 0
+      Connect Bonds:
+         nr: 0
+      Harmonic Pot.:
+         nr: 0
+      FENE Bonds:
+         nr: 0
+      Tab. Bonds:
+         nr: 0
+      Tab. Bonds NC:
+         nr: 0
+      Restraint Pot.:
+         nr: 0
+      Angle:
+         nr: 0
+      G96Angle:
+         nr: 0
+      Restr. Angles:
+         nr: 0
+      Lin. Angle:
+         nr: 0
+      Bond-Cross:
+         nr: 0
+      BA-Cross:
+         nr: 0
+      U-B:
+         nr: 0
+      Quartic Angles:
+         nr: 0
+      Tab. Angles:
+         nr: 0
+      Proper Dih.:
+         nr: 0
+      Ryckaert-Bell.:
+         nr: 0
+      Restr. Dih.:
+         nr: 0
+      CBT Dih.:
+         nr: 0
+      Fourier Dih.:
+         nr: 0
+      Improper Dih.:
+         nr: 0
+      Per. Imp. Dih.:
+         nr: 0
+      Tab. Dih.:
+         nr: 0
+      CMAP Dih.:
+         nr: 0
+      GB 1-2 Pol.:
+         nr: 0
+      GB 1-3 Pol.:
+         nr: 0
+      GB 1-4 Pol.:
+         nr: 0
+      GB Polariz.:
+         nr: 0
+      Nonpolar Sol.:
+         nr: 0
+      LJ-14:
+         nr: 0
+      Coulomb-14:
+         nr: 0
+      LJC-14 q:
+         nr: 0
+      LJC Pairs NB:
+         nr: 0
+      LJ (SR):
+         nr: 0
+      Buck.ham (SR):
+         nr: 0
+      LJ:
+         nr: 0
+      B.ham:
+         nr: 0
+      Disper. corr.:
+         nr: 0
+      Coulomb (SR):
+         nr: 0
+      Coul:
+         nr: 0
+      RF excl.:
+         nr: 0
+      Coul. recip.:
+         nr: 0
+      LJ recip.:
+         nr: 0
+      DPD:
+         nr: 0
+      Polarization:
+         nr: 0
+      Water Pol.:
+         nr: 0
+      Thole Pol.:
+         nr: 0
+      Anharm. Pol.:
+         nr: 0
+      Position Rest.:
+         nr: 0
+      Flat-b. P-R.:
+         nr: 0
+      Dis. Rest.:
+         nr: 0
+      D.R.Viol. (nm):
+         nr: 0
+      Orient. Rest.:
+         nr: 0
+      Ori. R. RMSD:
+         nr: 0
+      Angle Rest.:
+         nr: 0
+      Angle Rest. Z:
+         nr: 0
+      Dih. Rest.:
+         nr: 0
+      Dih. Rest. Vi.:
+         nr: 0
+      Constraint:
+         nr: 0
+      Constr. No Co.:
+         nr: 0
+      Settle:
+         nr: 0
+      Virtual site 1:
+         nr: 0
+      Virtual site 2:
+         nr: 0
+      Virt. site 2fd:
+         nr: 0
+      Virtual site 3:
+         nr: 0
+      Virt. site 3fd:
+         nr: 0
+      Vir. site 3fad:
+         nr: 0
+      Vir. site 3out:
+         nr: 0
+      Virt. site 4fd:
+         nr: 0
+      Vir. site 4fdn:
+         nr: 0
+      Virtual site N:
+         nr: 0
+      COM Pull En.:
+         nr: 0
+      Dens. fitting:
+         nr: 0
+      Quantum En.:
+         nr: 0
+      NN Potential:
+         nr: 0
+      Potential:
+         nr: 0
+      Kinetic En.:
+         nr: 0
+      Total Energy:
+         nr: 0
+      Conserved En.:
+         nr: 0
+      Temperature:
+         nr: 0
+      Vir. Temp.:
+         nr: 0
+      Pres. DC:
+         nr: 0
+      Pressure:
+         nr: 0
+      dH/dl constr.:
+         nr: 0
+      dVremain/dl:
+         nr: 0
+      dEkin/dl:
+         nr: 0
+      dVcoul/dl:
+         nr: 0
+      dVvdw/dl:
+         nr: 0
+      dVbonded/dl:
+         nr: 0
+      dVrestraint/dl:
+         nr: 0
+      dVtemp/dl:
+         nr: 0
+   moltype (1):
+      name="c3c1pyrr+"
+      atoms:
+         atom (27):
+            atom[     0]={type=  1, typeB=  1, ptype=    Atom, m= 1.40070e+01, q= 9.00000e-02, mB= 1.40070e+01, qB= 9.00000e-02, resind=    0, atomnumber=  7}
+            atom[     1]={type=  2, typeB=  2, ptype=    Atom, m= 1.20110e+01, q=-1.27500e-01, mB= 1.20110e+01, qB=-1.27500e-01, resind=    0, atomnumber=  6}
+            atom[     2]={type=  2, typeB=  2, ptype=    Atom, m= 1.20110e+01, q=-1.27500e-01, mB= 1.20110e+01, qB=-1.27500e-01, resind=    0, atomnumber=  6}
+            atom[     3]={type=  2, typeB=  2, ptype=    Atom, m= 1.20110e+01, q= 7.50000e-03, mB= 1.20110e+01, qB= 7.50000e-03, resind=    0, atomnumber=  6}
+            atom[     4]={type=  2, typeB=  2, ptype=    Atom, m= 1.20110e+01, q= 7.50000e-03, mB= 1.20110e+01, qB= 7.50000e-03, resind=    0, atomnumber=  6}
+            atom[     5]={type=  2, typeB=  2, ptype=    Atom, m= 1.20110e+01, q=-1.27500e-01, mB= 1.20110e+01, qB=-1.27500e-01, resind=    0, atomnumber=  6}
+            atom[     6]={type=  2, typeB=  2, ptype=    Atom, m= 1.20110e+01, q=-1.27500e-01, mB= 1.20110e+01, qB=-1.27500e-01, resind=    0, atomnumber=  6}
+            atom[     7]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 9.75000e-02, mB= 1.00800e+00, qB= 9.75000e-02, resind=    0, atomnumber=  1}
+            atom[     8]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 9.75000e-02, mB= 1.00800e+00, qB= 9.75000e-02, resind=    0, atomnumber=  1}
+            atom[     9]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 9.75000e-02, mB= 1.00800e+00, qB= 9.75000e-02, resind=    0, atomnumber=  1}
+            atom[    10]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 9.75000e-02, mB= 1.00800e+00, qB= 9.75000e-02, resind=    0, atomnumber=  1}
+            atom[    11]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 4.50000e-02, mB= 1.00800e+00, qB= 4.50000e-02, resind=    0, atomnumber=  1}
+            atom[    12]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 4.50000e-02, mB= 1.00800e+00, qB= 4.50000e-02, resind=    0, atomnumber=  1}
+            atom[    13]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 4.50000e-02, mB= 1.00800e+00, qB= 4.50000e-02, resind=    0, atomnumber=  1}
+            atom[    14]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 4.50000e-02, mB= 1.00800e+00, qB= 4.50000e-02, resind=    0, atomnumber=  1}
+            atom[    15]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 9.75000e-02, mB= 1.00800e+00, qB= 9.75000e-02, resind=    0, atomnumber=  1}
+            atom[    16]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 9.75000e-02, mB= 1.00800e+00, qB= 9.75000e-02, resind=    0, atomnumber=  1}
+            atom[    17]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 9.75000e-02, mB= 1.00800e+00, qB= 9.75000e-02, resind=    0, atomnumber=  1}
+            atom[    18]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 9.75000e-02, mB= 1.00800e+00, qB= 9.75000e-02, resind=    0, atomnumber=  1}
+            atom[    19]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 9.75000e-02, mB= 1.00800e+00, qB= 9.75000e-02, resind=    0, atomnumber=  1}
+            atom[    20]={type=  2, typeB=  2, ptype=    Atom, m= 1.20110e+01, q= 7.50000e-03, mB= 1.20110e+01, qB= 7.50000e-03, resind=    0, atomnumber=  6}
+            atom[    21]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 4.50000e-02, mB= 1.00800e+00, qB= 4.50000e-02, resind=    0, atomnumber=  1}
+            atom[    22]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 4.50000e-02, mB= 1.00800e+00, qB= 4.50000e-02, resind=    0, atomnumber=  1}
+            atom[    23]={type=  2, typeB=  2, ptype=    Atom, m= 1.20110e+01, q=-1.35000e-01, mB= 1.20110e+01, qB=-1.35000e-01, resind=    0, atomnumber=  6}
+            atom[    24]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 4.50000e-02, mB= 1.00800e+00, qB= 4.50000e-02, resind=    0, atomnumber=  1}
+            atom[    25]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 4.50000e-02, mB= 1.00800e+00, qB= 4.50000e-02, resind=    0, atomnumber=  1}
+            atom[    26]={type=  3, typeB=  3, ptype=    Atom, m= 1.00800e+00, q= 4.50000e-02, mB= 1.00800e+00, qB= 4.50000e-02, resind=    0, atomnumber=  1}
+         atom (27):
+            atom[0]={name="N"}
+            atom[1]={name="C1"}
+            atom[2]={name="C2"}
+            atom[3]={name="C3"}
+            atom[4]={name="C4"}
+            atom[5]={name="C5"}
+            atom[6]={name="C6"}
+            atom[7]={name="H1"}
+            atom[8]={name="H2"}
+            atom[9]={name="H3"}
+            atom[10]={name="H4"}
+            atom[11]={name="H5"}
+            atom[12]={name="H6"}
+            atom[13]={name="H7"}
+            atom[14]={name="H8"}
+            atom[15]={name="H9"}
+            atom[16]={name="H10"}
+            atom[17]={name="H11"}
+            atom[18]={name="H12"}
+            atom[19]={name="H13"}
+            atom[20]={name="C7"}
+            atom[21]={name="H14"}
+            atom[22]={name="H15"}
+            atom[23]={name="C8"}
+            atom[24]={name="H16"}
+            atom[25]={name="H17"}
+            atom[26]={name="H18"}
+         type (27):
+            type[0]={name="N4",nameB="N4"}
+            type[1]={name="C1",nameB="C1"}
+            type[2]={name="C1",nameB="C1"}
+            type[3]={name="C2",nameB="C2"}
+            type[4]={name="C2",nameB="C2"}
+            type[5]={name="C1",nameB="C1"}
+            type[6]={name="C1",nameB="C1"}
+            type[7]={name="H1",nameB="H1"}
+            type[8]={name="H1",nameB="H1"}
+            type[9]={name="H1",nameB="H1"}
+            type[10]={name="H1",nameB="H1"}
+            type[11]={name="HC",nameB="HC"}
+            type[12]={name="HC",nameB="HC"}
+            type[13]={name="HC",nameB="HC"}
+            type[14]={name="HC",nameB="HC"}
+            type[15]={name="H1",nameB="H1"}
+            type[16]={name="H1",nameB="H1"}
+            type[17]={name="H1",nameB="H1"}
+            type[18]={name="H1",nameB="H1"}
+            type[19]={name="H1",nameB="H1"}
+            type[20]={name="C2",nameB="C2"}
+            type[21]={name="HC",nameB="HC"}
+            type[22]={name="HC",nameB="HC"}
+            type[23]={name="CT",nameB="CT"}
+            type[24]={name="HC",nameB="HC"}
+            type[25]={name="HC",nameB="HC"}
+            type[26]={name="HC",nameB="HC"}
+         residue (1):
+            residue[0]={name="c3c", nr=1, ic=' '}
+      excls:
+         numLists=27
+         numElements=341
+         excls[0][num=24]={0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 
+            14, 15, 16, 17, 18, 19, 20, 21, 22, 23}
+         excls[1][num=21]={0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 
+            14, 15, 16, 17, 18, 19, 20}
+         excls[2][num=21]={0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 
+            14, 15, 16, 17, 18, 19, 20}
+         excls[3][num=15]={0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 
+            14}
+         excls[4][num=15]={0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 
+            14}
+         excls[5][num=17]={0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 16, 17, 
+            18, 19, 20}
+         excls[6][num=23]={0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 16, 17, 
+            18, 19, 20, 21, 22, 23, 24, 25, 26}
+         excls[7][num=11]={0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12}
+         excls[8][num=11]={0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12}
+         excls[9][num=11]={0, 1, 2, 3, 4, 5, 6, 9, 10, 13, 14}
+         excls[10][num=11]={0, 1, 2, 3, 4, 5, 6, 9, 10, 13, 14}
+         excls[11][num=11]={0, 1, 2, 3, 4, 7, 8, 11, 12, 13, 14}
+         excls[12][num=11]={0, 1, 2, 3, 4, 7, 8, 11, 12, 13, 14}
+         excls[13][num=11]={0, 1, 2, 3, 4, 9, 10, 11, 12, 13, 14}
+         excls[14][num=11]={0, 1, 2, 3, 4, 9, 10, 11, 12, 13, 14}
+         excls[15][num=8]={0, 1, 2, 5, 6, 15, 16, 17}
+         excls[16][num=8]={0, 1, 2, 5, 6, 15, 16, 17}
+         excls[17][num=8]={0, 1, 2, 5, 6, 15, 16, 17}
+         excls[18][num=11]={0, 1, 2, 5, 6, 18, 19, 20, 21, 22, 23}
+         excls[19][num=11]={0, 1, 2, 5, 6, 18, 19, 20, 21, 22, 23}
+         excls[20][num=14]={0, 1, 2, 5, 6, 18, 19, 20, 21, 22, 23, 24, 
+            25, 26}
+         excls[21][num=11]={0, 6, 18, 19, 20, 21, 22, 23, 24, 25, 26}
+         excls[22][num=11]={0, 6, 18, 19, 20, 21, 22, 23, 24, 25, 26}
+         excls[23][num=11]={0, 6, 18, 19, 20, 21, 22, 23, 24, 25, 26}
+         excls[24][num=8]={6, 20, 21, 22, 23, 24, 25, 26}
+         excls[25][num=8]={6, 20, 21, 22, 23, 24, 25, 26}
+         excls[26][num=8]={6, 20, 21, 22, 23, 24, 25, 26}
+      Bond:
+         nr: 27
+         iatoms:
+            0 type=49 (BONDS)   1   0
+            1 type=49 (BONDS)   2   0
+            2 type=50 (BONDS)   3   1
+            3 type=50 (BONDS)   4   2
+            4 type=49 (BONDS)   5   0
+            5 type=49 (BONDS)   6   0
+            6 type=50 (BONDS)  20   6
+            7 type=50 (BONDS)  23  20
+            8 type=50 (BONDS)   4   3
+      G96Bond:
+         nr: 0
+      Morse:
+         nr: 0
+      Cubic Bonds:
+         nr: 0
+      Connect Bonds:
+         nr: 0
+      Harmonic Pot.:
+         nr: 0
+      FENE Bonds:
+         nr: 0
+      Tab. Bonds:
+         nr: 0
+      Tab. Bonds NC:
+         nr: 0
+      Restraint Pot.:
+         nr: 0
+      Angle:
+         nr: 216
+         iatoms:
+            0 type=51 (ANGLES)   1   0   2
+            1 type=51 (ANGLES)   1   0   5
+            2 type=51 (ANGLES)   1   0   6
+            3 type=51 (ANGLES)   2   0   5
+            4 type=51 (ANGLES)   2   0   6
+            5 type=51 (ANGLES)   5   0   6
+            6 type=52 (ANGLES)   0   1   3
+            7 type=53 (ANGLES)   0   1   7
+            8 type=53 (ANGLES)   0   1   8
+            9 type=54 (ANGLES)   3   1   7
+            10 type=54 (ANGLES)   3   1   8
+            11 type=55 (ANGLES)   7   1   8
+            12 type=52 (ANGLES)   0   2   4
+            13 type=53 (ANGLES)   0   2   9
+            14 type=53 (ANGLES)   0   2  10
+            15 type=54 (ANGLES)   4   2   9
+            16 type=54 (ANGLES)   4   2  10
+            17 type=55 (ANGLES)   9   2  10
+            18 type=54 (ANGLES)   1   3  11
+            19 type=54 (ANGLES)   1   3  12
+            20 type=56 (ANGLES)   1   3   4
+            21 type=55 (ANGLES)  11   3  12
+            22 type=54 (ANGLES)  11   3   4
+            23 type=54 (ANGLES)  12   3   4
+            24 type=54 (ANGLES)   2   4  13
+            25 type=54 (ANGLES)   2   4  14
+            26 type=56 (ANGLES)   2   4   3
+            27 type=55 (ANGLES)  13   4  14
+            28 type=54 (ANGLES)  13   4   3
+            29 type=54 (ANGLES)  14   4   3
+            30 type=53 (ANGLES)   0   5  15
+            31 type=53 (ANGLES)   0   5  16
+            32 type=53 (ANGLES)   0   5  17
+            33 type=55 (ANGLES)  15   5  16
+            34 type=55 (ANGLES)  15   5  17
+            35 type=55 (ANGLES)  16   5  17
+            36 type=53 (ANGLES)   0   6  18
+            37 type=53 (ANGLES)   0   6  19
+            38 type=52 (ANGLES)   0   6  20
+            39 type=55 (ANGLES)  18   6  19
+            40 type=54 (ANGLES)  18   6  20
+            41 type=54 (ANGLES)  19   6  20
+            42 type=54 (ANGLES)   6  20  21
+            43 type=54 (ANGLES)   6  20  22
+            44 type=56 (ANGLES)   6  20  23
+            45 type=55 (ANGLES)  21  20  22
+            46 type=54 (ANGLES)  21  20  23
+            47 type=54 (ANGLES)  22  20  23
+            48 type=54 (ANGLES)  20  23  24
+            49 type=54 (ANGLES)  20  23  25
+            50 type=54 (ANGLES)  20  23  26
+            51 type=55 (ANGLES)  24  23  25
+            52 type=55 (ANGLES)  24  23  26
+            53 type=55 (ANGLES)  25  23  26
+      G96Angle:
+         nr: 0
+      Restr. Angles:
+         nr: 0
+      Lin. Angle:
+         nr: 0
+      Bond-Cross:
+         nr: 0
+      BA-Cross:
+         nr: 0
+      U-B:
+         nr: 0
+      Quartic Angles:
+         nr: 0
+      Tab. Angles:
+         nr: 0
+      Proper Dih.:
+         nr: 0
+      Ryckaert-Bell.:
+         nr: 0
+      Restr. Dih.:
+         nr: 0
+      CBT Dih.:
+         nr: 0
+      Fourier Dih.:
+         nr: 405
+         iatoms:
+            0 type=57 (FOURDIHS)   3   1   0   2
+            1 type=57 (FOURDIHS)   3   1   0   5
+            2 type=57 (FOURDIHS)   3   1   0   6
+            3 type=58 (FOURDIHS)   7   1   0   2
+            4 type=58 (FOURDIHS)   7   1   0   5
+            5 type=58 (FOURDIHS)   7   1   0   6
+            6 type=58 (FOURDIHS)   8   1   0   2
+            7 type=58 (FOURDIHS)   8   1   0   5
+            8 type=58 (FOURDIHS)   8   1   0   6
+            9 type=57 (FOURDIHS)   4   2   0   1
+            10 type=57 (FOURDIHS)   4   2   0   5
+            11 type=57 (FOURDIHS)   4   2   0   6
+            12 type=58 (FOURDIHS)   9   2   0   1
+            13 type=58 (FOURDIHS)   9   2   0   5
+            14 type=58 (FOURDIHS)   9   2   0   6
+            15 type=58 (FOURDIHS)  10   2   0   1
+            16 type=58 (FOURDIHS)  10   2   0   5
+            17 type=58 (FOURDIHS)  10   2   0   6
+            18 type=59 (FOURDIHS)  11   3   1   0
+            19 type=60 (FOURDIHS)  11   3   1   7
+            20 type=60 (FOURDIHS)  11   3   1   8
+            21 type=59 (FOURDIHS)  12   3   1   0
+            22 type=60 (FOURDIHS)  12   3   1   7
+            23 type=60 (FOURDIHS)  12   3   1   8
+            24 type=61 (FOURDIHS)   4   3   1   0
+            25 type=60 (FOURDIHS)   4   3   1   7
+            26 type=60 (FOURDIHS)   4   3   1   8
+            27 type=59 (FOURDIHS)  13   4   2   0
+            28 type=60 (FOURDIHS)  13   4   2   9
+            29 type=60 (FOURDIHS)  13   4   2  10
+            30 type=59 (FOURDIHS)  14   4   2   0
+            31 type=60 (FOURDIHS)  14   4   2   9
+            32 type=60 (FOURDIHS)  14   4   2  10
+            33 type=61 (FOURDIHS)   3   4   2   0
+            34 type=60 (FOURDIHS)   3   4   2   9
+            35 type=60 (FOURDIHS)   3   4   2  10
+            36 type=58 (FOURDIHS)  15   5   0   1
+            37 type=58 (FOURDIHS)  15   5   0   2
+            38 type=58 (FOURDIHS)  15   5   0   6
+            39 type=58 (FOURDIHS)  16   5   0   1
+            40 type=58 (FOURDIHS)  16   5   0   2
+            41 type=58 (FOURDIHS)  16   5   0   6
+            42 type=58 (FOURDIHS)  17   5   0   1
+            43 type=58 (FOURDIHS)  17   5   0   2
+            44 type=58 (FOURDIHS)  17   5   0   6
+            45 type=58 (FOURDIHS)  18   6   0   1
+            46 type=58 (FOURDIHS)  18   6   0   2
+            47 type=58 (FOURDIHS)  18   6   0   5
+            48 type=58 (FOURDIHS)  19   6   0   1
+            49 type=58 (FOURDIHS)  19   6   0   2
+            50 type=58 (FOURDIHS)  19   6   0   5
+            51 type=57 (FOURDIHS)  20   6   0   1
+            52 type=57 (FOURDIHS)  20   6   0   2
+            53 type=57 (FOURDIHS)  20   6   0   5
+            54 type=59 (FOURDIHS)  21  20   6   0
+            55 type=60 (FOURDIHS)  21  20   6  18
+            56 type=60 (FOURDIHS)  21  20   6  19
+            57 type=59 (FOURDIHS)  22  20   6   0
+            58 type=60 (FOURDIHS)  22  20   6  18
+            59 type=60 (FOURDIHS)  22  20   6  19
+            60 type=61 (FOURDIHS)  23  20   6   0
+            61 type=60 (FOURDIHS)  23  20   6  18
+            62 type=60 (FOURDIHS)  23  20   6  19
+            63 type=60 (FOURDIHS)  24  23  20   6
+            64 type=60 (FOURDIHS)  24  23  20  21
+            65 type=60 (FOURDIHS)  24  23  20  22
+            66 type=60 (FOURDIHS)  25  23  20   6
+            67 type=60 (FOURDIHS)  25  23  20  21
+            68 type=60 (FOURDIHS)  25  23  20  22
+            69 type=60 (FOURDIHS)  26  23  20   6
+            70 type=60 (FOURDIHS)  26  23  20  21
+            71 type=60 (FOURDIHS)  26  23  20  22
+            72 type=62 (FOURDIHS)   2   4   3   1
+            73 type=60 (FOURDIHS)   2   4   3  11
+            74 type=60 (FOURDIHS)   2   4   3  12
+            75 type=60 (FOURDIHS)  13   4   3   1
+            76 type=60 (FOURDIHS)  13   4   3  11
+            77 type=60 (FOURDIHS)  13   4   3  12
+            78 type=60 (FOURDIHS)  14   4   3   1
+            79 type=60 (FOURDIHS)  14   4   3  11
+            80 type=60 (FOURDIHS)  14   4   3  12
+      Improper Dih.:
+         nr: 0
+      Per. Imp. Dih.:
+         nr: 0
+      Tab. Dih.:
+         nr: 0
+      CMAP Dih.:
+         nr: 0
+      GB 1-2 Pol.:
+         nr: 0
+      GB 1-3 Pol.:
+         nr: 0
+      GB 1-4 Pol.:
+         nr: 0
+      GB Polariz.:
+         nr: 0
+      Nonpolar Sol.:
+         nr: 0
+      LJ-14:
+         nr: 228
+         iatoms:
+            0 type=63 (LJ14)   0  11
+            1 type=63 (LJ14)   0  12
+            2 type=63 (LJ14)   0  13
+            3 type=63 (LJ14)   0  14
+            4 type=63 (LJ14)   0  21
+            5 type=63 (LJ14)   0  22
+            6 type=64 (LJ14)   0  23
+            7 type=65 (LJ14)   1   9
+            8 type=65 (LJ14)   1  10
+            9 type=65 (LJ14)   1  13
+            10 type=65 (LJ14)   1  14
+            11 type=65 (LJ14)   1  15
+            12 type=65 (LJ14)   1  16
+            13 type=65 (LJ14)   1  17
+            14 type=65 (LJ14)   1  18
+            15 type=65 (LJ14)   1  19
+            16 type=66 (LJ14)   1  20
+            17 type=65 (LJ14)   2   7
+            18 type=65 (LJ14)   2   8
+            19 type=65 (LJ14)   2  11
+            20 type=65 (LJ14)   2  12
+            21 type=65 (LJ14)   2  15
+            22 type=65 (LJ14)   2  16
+            23 type=65 (LJ14)   2  17
+            24 type=65 (LJ14)   2  18
+            25 type=65 (LJ14)   2  19
+            26 type=66 (LJ14)   2  20
+            27 type=66 (LJ14)   3   5
+            28 type=66 (LJ14)   3   6
+            29 type=65 (LJ14)   3   9
+            30 type=65 (LJ14)   3  10
+            31 type=66 (LJ14)   4   5
+            32 type=66 (LJ14)   4   6
+            33 type=65 (LJ14)   4   7
+            34 type=65 (LJ14)   4   8
+            35 type=65 (LJ14)   5   7
+            36 type=65 (LJ14)   5   8
+            37 type=65 (LJ14)   5   9
+            38 type=65 (LJ14)   5  10
+            39 type=65 (LJ14)   5  18
+            40 type=65 (LJ14)   5  19
+            41 type=66 (LJ14)   5  20
+            42 type=65 (LJ14)   6   7
+            43 type=65 (LJ14)   6   8
+            44 type=65 (LJ14)   6   9
+            45 type=65 (LJ14)   6  10
+            46 type=65 (LJ14)   6  15
+            47 type=65 (LJ14)   6  16
+            48 type=65 (LJ14)   6  17
+            49 type=65 (LJ14)   6  24
+            50 type=65 (LJ14)   6  25
+            51 type=65 (LJ14)   6  26
+            52 type=67 (LJ14)   7  11
+            53 type=67 (LJ14)   7  12
+            54 type=67 (LJ14)   8  11
+            55 type=67 (LJ14)   8  12
+            56 type=67 (LJ14)   9  13
+            57 type=67 (LJ14)   9  14
+            58 type=67 (LJ14)  10  13
+            59 type=67 (LJ14)  10  14
+            60 type=67 (LJ14)  11  13
+            61 type=67 (LJ14)  11  14
+            62 type=67 (LJ14)  12  13
+            63 type=67 (LJ14)  12  14
+            64 type=67 (LJ14)  18  21
+            65 type=67 (LJ14)  18  22
+            66 type=65 (LJ14)  18  23
+            67 type=67 (LJ14)  19  21
+            68 type=67 (LJ14)  19  22
+            69 type=65 (LJ14)  19  23
+            70 type=67 (LJ14)  21  24
+            71 type=67 (LJ14)  21  25
+            72 type=67 (LJ14)  21  26
+            73 type=67 (LJ14)  22  24
+            74 type=67 (LJ14)  22  25
+            75 type=67 (LJ14)  22  26
+      Coulomb-14:
+         nr: 0
+      LJC-14 q:
+         nr: 0
+      LJC Pairs NB:
+         nr: 0
+      LJ (SR):
+         nr: 0
+      Buck.ham (SR):
+         nr: 0
+      LJ:
+         nr: 0
+      B.ham:
+         nr: 0
+      Disper. corr.:
+         nr: 0
+      Coulomb (SR):
+         nr: 0
+      Coul:
+         nr: 0
+      RF excl.:
+         nr: 0
+      Coul. recip.:
+         nr: 0
+      LJ recip.:
+         nr: 0
+      DPD:
+         nr: 0
+      Polarization:
+         nr: 0
+      Water Pol.:
+         nr: 0
+      Thole Pol.:
+         nr: 0
+      Anharm. Pol.:
+         nr: 0
+      Position Rest.:
+         nr: 0
+      Flat-b. P-R.:
+         nr: 0
+      Dis. Rest.:
+         nr: 0
+      D.R.Viol. (nm):
+         nr: 0
+      Orient. Rest.:
+         nr: 0
+      Ori. R. RMSD:
+         nr: 0
+      Angle Rest.:
+         nr: 0
+      Angle Rest. Z:
+         nr: 0
+      Dih. Rest.:
+         nr: 0
+      Dih. Rest. Vi.:
+         nr: 0
+      Constraint:
+         nr: 54
+         iatoms:
+            0 type=68 (CONSTR)   7   1
+            1 type=68 (CONSTR)   8   1
+            2 type=68 (CONSTR)   9   2
+            3 type=68 (CONSTR)  10   2
+            4 type=68 (CONSTR)  11   3
+            5 type=68 (CONSTR)  12   3
+            6 type=68 (CONSTR)  13   4
+            7 type=68 (CONSTR)  14   4
+            8 type=68 (CONSTR)  15   5
+            9 type=68 (CONSTR)  16   5
+            10 type=68 (CONSTR)  17   5
+            11 type=68 (CONSTR)  18   6
+            12 type=68 (CONSTR)  19   6
+            13 type=68 (CONSTR)  21  20
+            14 type=68 (CONSTR)  22  20
+            15 type=68 (CONSTR)  24  23
+            16 type=68 (CONSTR)  25  23
+            17 type=68 (CONSTR)  26  23
+      Constr. No Co.:
+         nr: 0
+      Settle:
+         nr: 0
+      Virtual site 1:
+         nr: 0
+      Virtual site 2:
+         nr: 0
+      Virt. site 2fd:
+         nr: 0
+      Virtual site 3:
+         nr: 0
+      Virt. site 3fd:
+         nr: 0
+      Vir. site 3fad:
+         nr: 0
+      Vir. site 3out:
+         nr: 0
+      Virt. site 4fd:
+         nr: 0
+      Vir. site 4fdn:
+         nr: 0
+      Virtual site N:
+         nr: 0
+      COM Pull En.:
+         nr: 0
+      Dens. fitting:
+         nr: 0
+      Quantum En.:
+         nr: 0
+      NN Potential:
+         nr: 0
+      Potential:
+         nr: 0
+      Kinetic En.:
+         nr: 0
+      Total Energy:
+         nr: 0
+      Conserved En.:
+         nr: 0
+      Temperature:
+         nr: 0
+      Vir. Temp.:
+         nr: 0
+      Pres. DC:
+         nr: 0
+      Pressure:
+         nr: 0
+      dH/dl constr.:
+         nr: 0
+      dVremain/dl:
+         nr: 0
+      dEkin/dl:
+         nr: 0
+      dVcoul/dl:
+         nr: 0
+      dVvdw/dl:
+         nr: 0
+      dVbonded/dl:
+         nr: 0
+      dVrestraint/dl:
+         nr: 0
+      dVtemp/dl:
+         nr: 0
+   moltype (2):
+      name="fsi-"
+      atoms:
+         atom (9):
+            atom[     0]={type=  4, typeB=  4, ptype=    Atom, m= 1.89980e+01, q=-9.75000e-02, mB= 1.89980e+01, qB=-9.75000e-02, resind=    0, atomnumber=  9}
+            atom[     1]={type=  5, typeB=  5, ptype=    Atom, m= 3.20660e+01, q= 7.65000e-01, mB= 3.20660e+01, qB= 7.65000e-01, resind=    0, atomnumber= 16}
+            atom[     2]={type=  1, typeB=  1, ptype=    Atom, m= 1.40000e+01, q=-4.95000e-01, mB= 1.40000e+01, qB=-4.95000e-01, resind=    0, atomnumber=  7}
+            atom[     3]={type=  6, typeB=  6, ptype=    Atom, m= 1.59990e+01, q=-3.97500e-01, mB= 1.59990e+01, qB=-3.97500e-01, resind=    0, atomnumber=  8}
+            atom[     4]={type=  6, typeB=  6, ptype=    Atom, m= 1.59990e+01, q=-3.97500e-01, mB= 1.59990e+01, qB=-3.97500e-01, resind=    0, atomnumber=  8}
+            atom[     5]={type=  5, typeB=  5, ptype=    Atom, m= 3.20660e+01, q= 7.65000e-01, mB= 3.20660e+01, qB= 7.65000e-01, resind=    0, atomnumber= 16}
+            atom[     6]={type=  6, typeB=  6, ptype=    Atom, m= 1.59990e+01, q=-3.97500e-01, mB= 1.59990e+01, qB=-3.97500e-01, resind=    0, atomnumber=  8}
+            atom[     7]={type=  6, typeB=  6, ptype=    Atom, m= 1.59990e+01, q=-3.97500e-01, mB= 1.59990e+01, qB=-3.97500e-01, resind=    0, atomnumber=  8}
+            atom[     8]={type=  4, typeB=  4, ptype=    Atom, m= 1.89980e+01, q=-9.75000e-02, mB= 1.89980e+01, qB=-9.75000e-02, resind=    0, atomnumber=  9}
+         atom (9):
+            atom[0]={name="F1"}
+            atom[1]={name="S1"}
+            atom[2]={name="N"}
+            atom[3]={name="O1"}
+            atom[4]={name="O2"}
+            atom[5]={name="S2"}
+            atom[6]={name="O3"}
+            atom[7]={name="O4"}
+            atom[8]={name="F2"}
+         type (9):
+            type[0]={name="FSI",nameB="FSI"}
+            type[1]={name="SBT",nameB="SBT"}
+            type[2]={name="NBT",nameB="NBT"}
+            type[3]={name="OBT",nameB="OBT"}
+            type[4]={name="OBT",nameB="OBT"}
+            type[5]={name="SBT",nameB="SBT"}
+            type[6]={name="OBT",nameB="OBT"}
+            type[7]={name="OBT",nameB="OBT"}
+            type[8]={name="FSI",nameB="FSI"}
+         residue (1):
+            residue[0]={name="fsi", nr=1, ic=' '}
+      excls:
+         numLists=9
+         numElements=63
+         excls[0][num=6]={0, 1, 2, 3, 4, 5}
+         excls[1][num=9]={0, 1, 2, 3, 4, 5, 6, 7, 8}
+         excls[2][num=9]={0, 1, 2, 3, 4, 5, 6, 7, 8}
+         excls[3][num=6]={0, 1, 2, 3, 4, 5}
+         excls[4][num=6]={0, 1, 2, 3, 4, 5}
+         excls[5][num=9]={0, 1, 2, 3, 4, 5, 6, 7, 8}
+         excls[6][num=6]={1, 2, 5, 6, 7, 8}
+         excls[7][num=6]={1, 2, 5, 6, 7, 8}
+         excls[8][num=6]={1, 2, 5, 6, 7, 8}
+      Bond:
+         nr: 24
+         iatoms:
+            0 type=69 (BONDS)   1   0
+            1 type=70 (BONDS)   2   1
+            2 type=71 (BONDS)   3   1
+            3 type=71 (BONDS)   4   1
+            4 type=70 (BONDS)   5   2
+            5 type=71 (BONDS)   6   5
+            6 type=71 (BONDS)   7   5
+            7 type=69 (BONDS)   8   5
+      G96Bond:
+         nr: 0
+      Morse:
+         nr: 0
+      Cubic Bonds:
+         nr: 0
+      Connect Bonds:
+         nr: 0
+      Harmonic Pot.:
+         nr: 0
+      FENE Bonds:
+         nr: 0
+      Tab. Bonds:
+         nr: 0
+      Tab. Bonds NC:
+         nr: 0
+      Restraint Pot.:
+         nr: 0
+      Angle:
+         nr: 52
+         iatoms:
+            0 type=72 (ANGLES)   0   1   2
+            1 type=73 (ANGLES)   0   1   3
+            2 type=73 (ANGLES)   0   1   4
+            3 type=74 (ANGLES)   2   1   3
+            4 type=74 (ANGLES)   2   1   4
+            5 type=75 (ANGLES)   3   1   4
+            6 type=76 (ANGLES)   1   2   5
+            7 type=74 (ANGLES)   2   5   6
+            8 type=74 (ANGLES)   2   5   7
+            9 type=72 (ANGLES)   2   5   8
+            10 type=75 (ANGLES)   6   5   7
+            11 type=73 (ANGLES)   6   5   8
+            12 type=73 (ANGLES)   7   5   8
+      G96Angle:
+         nr: 0
+      Restr. Angles:
+         nr: 0
+      Lin. Angle:
+         nr: 0
+      Bond-Cross:
+         nr: 0
+      BA-Cross:
+         nr: 0
+      U-B:
+         nr: 0
+      Quartic Angles:
+         nr: 0
+      Tab. Angles:
+         nr: 0
+      Proper Dih.:
+         nr: 0
+      Ryckaert-Bell.:
+         nr: 0
+      Restr. Dih.:
+         nr: 0
+      CBT Dih.:
+         nr: 0
+      Fourier Dih.:
+         nr: 30
+         iatoms:
+            0 type=77 (FOURDIHS)   5   2   1   0
+            1 type=78 (FOURDIHS)   5   2   1   3
+            2 type=78 (FOURDIHS)   5   2   1   4
+            3 type=78 (FOURDIHS)   6   5   2   1
+            4 type=78 (FOURDIHS)   7   5   2   1
+            5 type=77 (FOURDIHS)   8   5   2   1
+      Improper Dih.:
+         nr: 0
+      Per. Imp. Dih.:
+         nr: 0
+      Tab. Dih.:
+         nr: 0
+      CMAP Dih.:
+         nr: 0
+      GB 1-2 Pol.:
+         nr: 0
+      GB 1-3 Pol.:
+         nr: 0
+      GB 1-4 Pol.:
+         nr: 0
+      GB Polariz.:
+         nr: 0
+      Nonpolar Sol.:
+         nr: 0
+      LJ-14:
+         nr: 18
+         iatoms:
+            0 type=79 (LJ14)   0   5
+            1 type=80 (LJ14)   1   6
+            2 type=80 (LJ14)   1   7
+            3 type=79 (LJ14)   1   8
+            4 type=80 (LJ14)   3   5
+            5 type=80 (LJ14)   4   5
+      Coulomb-14:
+         nr: 0
+      LJC-14 q:
+         nr: 0
+      LJC Pairs NB:
+         nr: 0
+      LJ (SR):
+         nr: 0
+      Buck.ham (SR):
+         nr: 0
+      LJ:
+         nr: 0
+      B.ham:
+         nr: 0
+      Disper. corr.:
+         nr: 0
+      Coulomb (SR):
+         nr: 0
+      Coul:
+         nr: 0
+      RF excl.:
+         nr: 0
+      Coul. recip.:
+         nr: 0
+      LJ recip.:
+         nr: 0
+      DPD:
+         nr: 0
+      Polarization:
+         nr: 0
+      Water Pol.:
+         nr: 0
+      Thole Pol.:
+         nr: 0
+      Anharm. Pol.:
+         nr: 0
+      Position Rest.:
+         nr: 0
+      Flat-b. P-R.:
+         nr: 0
+      Dis. Rest.:
+         nr: 0
+      D.R.Viol. (nm):
+         nr: 0
+      Orient. Rest.:
+         nr: 0
+      Ori. R. RMSD:
+         nr: 0
+      Angle Rest.:
+         nr: 0
+      Angle Rest. Z:
+         nr: 0
+      Dih. Rest.:
+         nr: 0
+      Dih. Rest. Vi.:
+         nr: 0
+      Constraint:
+         nr: 0
+      Constr. No Co.:
+         nr: 0
+      Settle:
+         nr: 0
+      Virtual site 1:
+         nr: 0
+      Virtual site 2:
+         nr: 0
+      Virt. site 2fd:
+         nr: 0
+      Virtual site 3:
+         nr: 0
+      Virt. site 3fd:
+         nr: 0
+      Vir. site 3fad:
+         nr: 0
+      Vir. site 3out:
+         nr: 0
+      Virt. site 4fd:
+         nr: 0
+      Vir. site 4fdn:
+         nr: 0
+      Virtual site N:
+         nr: 0
+      COM Pull En.:
+         nr: 0
+      Dens. fitting:
+         nr: 0
+      Quantum En.:
+         nr: 0
+      NN Potential:
+         nr: 0
+      Potential:
+         nr: 0
+      Kinetic En.:
+         nr: 0
+      Total Energy:
+         nr: 0
+      Conserved En.:
+         nr: 0
+      Temperature:
+         nr: 0
+      Vir. Temp.:
+         nr: 0
+      Pres. DC:
+         nr: 0
+      Pressure:
+         nr: 0
+      dH/dl constr.:
+         nr: 0
+      dVremain/dl:
+         nr: 0
+      dEkin/dl:
+         nr: 0
+      dVcoul/dl:
+         nr: 0
+      dVvdw/dl:
+         nr: 0
+      dVbonded/dl:
+         nr: 0
+      dVrestraint/dl:
+         nr: 0
+      dVtemp/dl:
+         nr: 0
+grp[T-Coupling  ] nr=1, name=[ rest]
+grp[Energy Mon. ] nr=1, name=[ rest]
+grp[Acc. not used] nr=1, name=[ rest]
+grp[Freeze      ] nr=1, name=[ rest]
+grp[User1       ] nr=1, name=[ rest]
+grp[User2       ] nr=1, name=[ rest]
+grp[VCM         ] nr=1, name=[ rest]
+grp[Compressed X] nr=1, name=[ rest]
+grp[Or. Res. Fit] nr=1, name=[ rest]
+grp[QMMM        ] nr=1, name=[ rest]
+   grpname (6):
+      grpname[0]={name="System"}
+      grpname[1]={name="Other"}
+      grpname[2]={name="Li"}
+      grpname[3]={name="c3c"}
+      grpname[4]={name="fsi"}
+      grpname[5]={name="rest"}
+   groups           T-Cou Energ Acc.  Freez User1 User2   VCM Compr Or. R  QMMM
+   allocated            0     0     0     0     0     0     0     0     0     0
+   groupnr[    *] =    0     0     0     0     0     0     0     0     0     0 
+box (3x3):
+   box[    0]={ 3.45200e+00,  0.00000e+00,  0.00000e+00}
+   box[    1]={ 0.00000e+00,  3.45200e+00,  0.00000e+00}
+   box[    2]={ 0.00000e+00,  0.00000e+00,  3.45200e+00}
+box_rel (3x3):
+   box_rel[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   box_rel[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   box_rel[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+boxv (3x3):
+   boxv[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   boxv[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   boxv[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+pres_prev (3x3):
+   pres_prev[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   pres_prev[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   pres_prev[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+svir_prev (3x3):
+   svir_prev[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   svir_prev[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   svir_prev[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+fvir_prev (3x3):
+   fvir_prev[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   fvir_prev[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   fvir_prev[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+nosehoover_xi: not available
+x (2300x3):
+   x[    0]={ 2.49900e+00,  2.47400e+00,  2.81600e+00}
+   x[    1]={ 5.24000e-01,  2.95100e+00,  3.04300e+00}
+   x[    2]={ 2.08500e+00,  7.25000e-01,  1.03200e+00}
+   x[    3]={ 1.95300e+00,  7.53000e-01,  4.28000e-01}
+   x[    4]={ 2.27400e+00,  4.11000e-01,  3.06900e+00}
+   x[    5]={ 1.28500e+00,  8.45000e-01,  1.38900e+00}
+   x[    6]={ 1.72100e+00,  3.07300e+00,  3.26300e+00}
+   x[    7]={ 1.80400e+00,  3.28100e+00,  6.48000e-01}
+   x[    8]={ 1.11100e+00,  2.30300e+00,  2.30500e+00}
+   x[    9]={ 3.28100e+00,  2.55200e+00,  2.71000e+00}
+   x[   10]={ 3.12300e+00,  1.50700e+00,  2.57100e+00}
+   x[   11]={ 2.93100e+00,  1.39500e+00,  2.87400e+00}
+   x[   12]={ 9.80000e-01,  3.15800e+00,  1.98500e+00}
+   x[   13]={ 2.20700e+00,  8.68000e-01,  1.49000e+00}
+   x[   14]={ 9.78000e-01,  3.15000e+00,  2.40000e+00}
+   x[   15]={ 2.02900e+00,  3.13900e+00,  2.39700e+00}
+   x[   16]={ 5.11000e-01,  1.05800e+00,  2.31000e+00}
+   x[   17]={ 2.72100e+00,  2.84600e+00,  2.55700e+00}
+   x[   18]={ 3.80000e-01,  2.02700e+00,  9.29000e-01}
+   x[   19]={ 2.89500e+00,  1.27100e+00,  5.38000e-01}
+   x[   20]={ 8.78000e-01,  8.31000e-01,  6.28000e-01}
+   x[   21]={ 3.11800e+00,  3.15100e+00,  2.61300e+00}
+   x[   22]={ 2.02400e+00,  7.96000e-01,  1.62300e+00}
+   x[   23]={ 2.63600e+00,  2.78800e+00,  2.88200e+00}
+   x[   24]={ 1.17700e+00,  2.38400e+00,  2.11000e+00}
+   x[   25]={ 2.36800e+00,  2.20000e-01,  1.04300e+00}
+   x[   26]={ 2.32400e+00,  3.08700e+00,  1.43100e+00}
+   x[   27]={ 6.53000e-01,  1.66100e+00,  1.50000e-01}
+   x[   28]={ 1.01900e+00,  8.63000e-01,  2.41200e+00}
+   x[   29]={ 3.30000e+00,  1.67700e+00,  6.12000e-01}
+   x[   30]={ 3.04500e+00,  1.57900e+00,  2.79100e+00}
+   x[   31]={ 8.13000e-01,  1.22400e+00,  5.71000e-01}
+   x[   32]={ 5.18000e-01,  1.34600e+00,  1.99900e+00}
+   x[   33]={ 8.19000e-01,  3.15500e+00,  2.93200e+00}
+   x[   34]={ 3.07300e+00,  2.21900e+00,  8.05000e-01}
+   x[   35]={ 2.83500e+00,  1.11900e+00,  2.68300e+00}
+   x[   36]={ 1.03800e+00,  3.30300e+00,  1.12300e+00}
+   x[   37]={ 5.22000e-01,  2.83400e+00,  8.82000e-01}
+   x[   38]={ 8.15000e-01,  1.35500e+00,  3.08300e+00}
+   x[   39]={ 2.59000e-01,  7.08000e-01,  3.97000e-01}
+   x[   40]={ 1.77000e+00,  3.07100e+00,  2.66000e+00}
+   x[   41]={ 3.15100e+00,  1.40800e+00,  2.88000e+00}
+   x[   42]={ 4.90000e-01,  8.22000e-01,  1.57200e+00}
+   x[   43]={ 1.74700e+00,  2.90100e+00,  1.33600e+00}
+   x[   44]={ 2.19700e+00,  2.23200e+00,  2.12300e+00}
+   x[   45]={ 2.50500e+00,  3.27300e+00,  5.55000e-01}
+   x[   46]={ 4.78000e-01,  6.42000e-01,  1.73500e+00}
+   x[   47]={ 1.11200e+00,  9.06000e-01,  1.66400e+00}
+   x[   48]={ 2.37000e+00,  2.80100e+00,  2.35500e+00}
+   x[   49]={ 2.47100e+00,  3.01500e+00,  1.96000e+00}
+   x[   50]={ 2.23000e+00,  2.69800e+00,  3.09700e+00}
+   x[   51]={ 2.24400e+00,  2.67800e+00,  2.95200e+00}
+   x[   52]={ 2.24900e+00,  2.84000e+00,  3.13000e+00}
+   x[   53]={ 2.27300e+00,  2.81300e+00,  2.88500e+00}
+   x[   54]={ 2.27600e+00,  2.91900e+00,  3.00100e+00}
+   x[   55]={ 2.09600e+00,  2.65500e+00,  3.14000e+00}
+   x[   56]={ 2.33200e+00,  2.61800e+00,  3.16700e+00}
+   x[   57]={ 2.15100e+00,  2.63700e+00,  2.91200e+00}
+   x[   58]={ 2.32600e+00,  2.60900e+00,  2.93200e+00}
+   x[   59]={ 2.15900e+00,  2.87900e+00,  3.17800e+00}
+   x[   60]={ 2.33400e+00,  2.85100e+00,  3.19700e+00}
+   x[   61]={ 2.19500e+00,  2.83800e+00,  2.81300e+00}
+   x[   62]={ 2.36800e+00,  2.81000e+00,  2.83200e+00}
+   x[   63]={ 2.20000e+00,  2.99500e+00,  2.98600e+00}
+   x[   64]={ 2.37400e+00,  2.96800e+00,  3.00600e+00}
+   x[   65]={ 2.08200e+00,  2.55000e+00,  3.11600e+00}
+   x[   66]={ 2.08600e+00,  2.67000e+00,  3.24800e+00}
+   x[   67]={ 2.02100e+00,  2.71400e+00,  3.08800e+00}
+   x[   68]={ 2.32200e+00,  2.63200e+00,  3.27400e+00}
+   x[   69]={ 2.31800e+00,  2.51200e+00,  3.14300e+00}
+   x[   70]={ 2.47100e+00,  2.66200e+00,  3.12200e+00}
+   x[   71]={ 2.48600e+00,  2.76700e+00,  3.14700e+00}
+   x[   72]={ 2.48200e+00,  2.64800e+00,  3.01500e+00}
+   x[   73]={ 2.57700e+00,  2.57900e+00,  3.19500e+00}
+   x[   74]={ 2.56300e+00,  2.47300e+00,  3.17100e+00}
+   x[   75]={ 2.56700e+00,  2.59300e+00,  3.30300e+00}
+   x[   76]={ 2.67600e+00,  2.61000e+00,  3.16300e+00}
+   x[   77]={ 1.60100e+00,  3.33000e-01,  1.23700e+00}
+   x[   78]={ 1.51300e+00,  2.15000e-01,  1.22900e+00}
+   x[   79]={ 1.51800e+00,  4.55000e-01,  1.24300e+00}
+   x[   80]={ 1.36700e+00,  2.60000e-01,  1.22900e+00}
+   x[   81]={ 1.37000e+00,  4.17000e-01,  1.23800e+00}
+   x[   82]={ 1.68300e+00,  3.24000e-01,  1.35900e+00}
+   x[   83]={ 1.68800e+00,  3.39000e-01,  1.11900e+00}
+   x[   84]={ 1.53100e+00,  1.50000e-01,  1.31400e+00}
+   x[   85]={ 1.53500e+00,  1.61000e-01,  1.13700e+00}
+   x[   86]={ 1.53900e+00,  5.08000e-01,  1.33600e+00}
+   x[   87]={ 1.54200e+00,  5.19000e-01,  1.15900e+00}
+   x[   88]={ 1.31400e+00,  2.17000e-01,  1.31300e+00}
+   x[   89]={ 1.31700e+00,  2.28000e-01,  1.13700e+00}
+   x[   90]={ 1.31900e+00,  4.51000e-01,  1.32800e+00}
+   x[   91]={ 1.32200e+00,  4.62000e-01,  1.15200e+00}
+   x[   92]={ 1.74500e+00,  2.34000e-01,  1.35500e+00}
+   x[   93]={ 1.74800e+00,  4.11000e-01,  1.36500e+00}
+   x[   94]={ 1.61900e+00,  3.20000e-01,  1.44700e+00}
+   x[   95]={ 1.75300e+00,  4.26000e-01,  1.12600e+00}
+   x[   96]={ 1.74900e+00,  2.48000e-01,  1.11500e+00}
+   x[   97]={ 1.60200e+00,  3.48000e-01,  9.93000e-01}
+   x[   98]={ 1.54100e+00,  4.38000e-01,  9.97000e-01}
+   x[   99]={ 1.53700e+00,  2.61000e-01,  9.86000e-01}
+   x[  100]={ 1.69300e+00,  3.54000e-01,  8.70000e-01}
+   x[  101]={ 1.75400e+00,  2.64000e-01,  8.65000e-01}
+   x[  102]={ 1.75800e+00,  4.41000e-01,  8.77000e-01}
+   x[  103]={ 1.63200e+00,  3.61000e-01,  7.80000e-01}
+   x[  104]={ 3.09000e+00,  1.30000e+00,  1.24900e+00}
+   x[  105]={ 3.00400e+00,  1.22400e+00,  1.15600e+00}
+   x[  106]={ 3.22300e+00,  1.31800e+00,  1.18900e+00}
+   x[  107]={ 3.08300e+00,  1.19100e+00,  1.02900e+00}
+   x[  108]={ 3.22600e+00,  1.25200e+00,  1.05100e+00}
+   x[  109]={ 3.02900e+00,  1.43100e+00,  1.27500e+00}
+   x[  110]={ 3.10300e+00,  1.22500e+00,  1.37500e+00}
+   x[  111]={ 2.91700e+00,  1.28400e+00,  1.13000e+00}
+   x[  112]={ 2.97100e+00,  1.13200e+00,  1.20400e+00}
+   x[  113]={ 3.24400e+00,  1.42400e+00,  1.17900e+00}
+   x[  114]={ 3.29800e+00,  1.27200e+00,  1.25300e+00}
+   x[  115]={ 3.03500e+00,  1.23400e+00,  9.42000e-01}
+   x[  116]={ 3.08900e+00,  1.08300e+00,  1.01500e+00}
+   x[  117]={ 3.24900e+00,  1.32600e+00,  9.74000e-01}
+   x[  118]={ 3.30200e+00,  1.17400e+00,  1.04700e+00}
+   x[  119]={ 2.93100e+00,  1.41800e+00,  1.32000e+00}
+   x[  120]={ 3.09300e+00,  1.48700e+00,  1.34400e+00}
+   x[  121]={ 3.02000e+00,  1.48600e+00,  1.18200e+00}
+   x[  122]={ 3.16600e+00,  1.28100e+00,  1.44400e+00}
+   x[  123]={ 3.00400e+00,  1.21200e+00,  1.42000e+00}
+   x[  124]={ 3.16500e+00,  1.08900e+00,  1.34800e+00}
+   x[  125]={ 3.26400e+00,  1.10200e+00,  1.30300e+00}
+   x[  126]={ 3.10200e+00,  1.03300e+00,  1.27900e+00}
+   x[  127]={ 3.17900e+00,  1.01100e+00,  1.47900e+00}
+   x[  128]={ 3.08000e+00,  9.98000e-01,  1.52300e+00}
+   x[  129]={ 3.24200e+00,  1.06700e+00,  1.54800e+00}
+   x[  130]={ 3.22400e+00,  9.14000e-01,  1.45900e+00}
+   x[  131]={ 3.33000e-01,  1.97800e+00,  1.37200e+00}
+   x[  132]={ 2.19000e-01,  1.89000e+00,  1.40300e+00}
+   x[  133]={ 4.57000e-01,  1.89900e+00,  1.37700e+00}
+   x[  134]={ 2.69000e-01,  1.74800e+00,  1.43000e+00}
+   x[  135]={ 4.25000e-01,  1.75400e+00,  1.41300e+00}
+   x[  136]={ 3.16000e-01,  2.03400e+00,  1.23700e+00}
+   x[  137]={ 3.39000e-01,  2.08700e+00,  1.47000e+00}
+   x[  138]={ 1.50000e-01,  1.88900e+00,  1.31800e+00}
+   x[  139]={ 1.67000e-01,  1.92800e+00,  1.49100e+00}
+   x[  140]={ 5.07000e-01,  1.90300e+00,  1.28000e+00}
+   x[  141]={ 5.23000e-01,  1.94200e+00,  1.45300e+00}
+   x[  142]={ 2.25000e-01,  1.67800e+00,  1.35900e+00}
+   x[  143]={ 2.42000e-01,  1.71600e+00,  1.53000e+00}
+   x[  144]={ 4.58000e-01,  1.68700e+00,  1.33400e+00}
+   x[  145]={ 4.75000e-01,  1.72500e+00,  1.50500e+00}
+   x[  146]={ 2.24000e-01,  2.09200e+00,  1.23300e+00}
+   x[  147]={ 4.01000e-01,  2.09900e+00,  1.21400e+00}
+   x[  148]={ 3.12000e-01,  1.95300e+00,  1.16400e+00}
+   x[  149]={ 4.24000e-01,  2.15100e+00,  1.44700e+00}
+   x[  150]={ 2.47000e-01,  2.14500e+00,  1.46600e+00}
+   x[  151]={ 3.56000e-01,  2.02800e+00,  1.61000e+00}
+   x[  152]={ 4.49000e-01,  1.97000e+00,  1.61400e+00}
+   x[  153]={ 2.72000e-01,  1.96300e+00,  1.63300e+00}
+   x[  154]={ 3.63000e-01,  2.14100e+00,  1.71300e+00}
+   x[  155]={ 2.71000e-01,  2.19900e+00,  1.70900e+00}
+   x[  156]={ 4.47000e-01,  2.20600e+00,  1.69000e+00}
+   x[  157]={ 3.75000e-01,  2.09900e+00,  1.81300e+00}
+   x[  158]={ 1.44500e+00,  2.73300e+00,  3.44000e-01}
+   x[  159]={ 1.46400e+00,  2.83200e+00,  2.38000e-01}
+   x[  160]={ 1.33000e+00,  2.77100e+00,  4.28000e-01}
+   x[  161]={ 1.35700e+00,  2.94100e+00,  2.50000e-01}
+   x[  162]={ 1.27000e+00,  2.90100e+00,  3.75000e-01}
+   x[  163]={ 1.42000e+00,  2.60100e+00,  2.84000e-01}
+   x[  164]={ 1.56600e+00,  2.72600e+00,  4.28000e-01}
+   x[  165]={ 1.45500e+00,  2.78400e+00,  1.41000e-01}
+   x[  166]={ 1.56300e+00,  2.87700e+00,  2.47000e-01}
+   x[  167]={ 1.25500e+00,  2.69200e+00,  4.24000e-01}
+   x[  168]={ 1.36300e+00,  2.78500e+00,  5.30000e-01}
+   x[  169]={ 1.29700e+00,  2.94600e+00,  1.60000e-01}
+   x[  170]={ 1.40400e+00,  3.03900e+00,  2.66000e-01}
+   x[  171]={ 1.16600e+00,  2.88600e+00,  3.45000e-01}
+   x[  172]={ 1.27300e+00,  2.97900e+00,  4.51000e-01}
+   x[  173]={ 1.50600e+00,  2.57200e+00,  2.23000e-01}
+   x[  174]={ 1.40600e+00,  2.52700e+00,  3.63000e-01}
+   x[  175]={ 1.33100e+00,  2.60500e+00,  2.22000e-01}
+   x[  176]={ 1.55200e+00,  2.65200e+00,  5.07000e-01}
+   x[  177]={ 1.65100e+00,  2.69800e+00,  3.66000e-01}
+   x[  178]={ 1.59200e+00,  2.86400e+00,  4.91000e-01}
+   x[  179]={ 1.50600e+00,  2.89200e+00,  5.52000e-01}
+   x[  180]={ 1.60600e+00,  2.93800e+00,  4.12000e-01}
+   x[  181]={ 1.71700e+00,  2.85700e+00,  5.77000e-01}
+   x[  182]={ 1.80300e+00,  2.82900e+00,  5.16000e-01}
+   x[  183]={ 1.70300e+00,  2.78300e+00,  6.56000e-01}
+   x[  184]={ 1.73600e+00,  2.95500e+00,  6.22000e-01}
+   x[  185]={ 1.75000e+00,  1.79500e+00,  1.25500e+00}
+   x[  186]={ 1.71800e+00,  1.79100e+00,  1.11100e+00}
+   x[  187]={ 1.71400e+00,  1.92600e+00,  1.31000e+00}
+   x[  188]={ 1.65700e+00,  1.92500e+00,  1.06900e+00}
+   x[  189]={ 1.65400e+00,  2.01300e+00,  1.20000e+00}
+   x[  190]={ 1.67600e+00,  1.68900e+00,  1.32400e+00}
+   x[  191]={ 1.89500e+00,  1.77300e+00,  1.27300e+00}
+   x[  192]={ 1.64600e+00,  1.71100e+00,  1.09200e+00}
+   x[  193]={ 1.80900e+00,  1.77300e+00,  1.05400e+00}
+   x[  194]={ 1.64000e+00,  1.91200e+00,  1.38900e+00}
+   x[  195]={ 1.80200e+00,  1.97400e+00,  1.35100e+00}
+   x[  196]={ 1.55600e+00,  1.91100e+00,  1.03000e+00}
+   x[  197]={ 1.71800e+00,  1.97300e+00,  9.92000e-01}
+   x[  198]={ 1.55200e+00,  2.04300e+00,  1.22400e+00}
+   x[  199]={ 1.71300e+00,  2.10400e+00,  1.18700e+00}
+   x[  200]={ 1.70300e+00,  1.59200e+00,  1.28300e+00}
+   x[  201]={ 1.70000e+00,  1.69100e+00,  1.43100e+00}
+   x[  202]={ 1.56900e+00,  1.70500e+00,  1.31100e+00}
+   x[  203]={ 1.91900e+00,  1.77500e+00,  1.37900e+00}
+   x[  204]={ 1.92200e+00,  1.67600e+00,  1.23200e+00}
+   x[  205]={ 1.97300e+00,  1.88200e+00,  1.20100e+00}
+   x[  206]={ 1.94500e+00,  1.98000e+00,  1.24200e+00}
+   x[  207]={ 1.94900e+00,  1.88000e+00,  1.09400e+00}
+   x[  208]={ 2.12300e+00,  1.86000e+00,  1.21900e+00}
+   x[  209]={ 2.15000e+00,  1.76200e+00,  1.17800e+00}
+   x[  210]={ 2.14700e+00,  1.86200e+00,  1.32600e+00}
+   x[  211]={ 2.17800e+00,  1.93800e+00,  1.16800e+00}
+   x[  212]={ 5.94000e-01,  3.29000e-01,  1.98000e+00}
+   x[  213]={ 6.34000e-01,  4.59000e-01,  1.92400e+00}
+   x[  214]={ 6.26000e-01,  2.22000e-01,  1.88400e+00}
+   x[  215]={ 6.95000e-01,  4.38000e-01,  1.78600e+00}
+   x[  216]={ 6.89000e-01,  2.83000e-01,  1.75900e+00}
+   x[  217]={ 6.67000e-01,  3.05000e-01,  2.10600e+00}
+   x[  218]={ 4.50000e-01,  3.30000e-01,  2.00800e+00}
+   x[  219]={ 7.08000e-01,  5.06000e-01,  1.99000e+00}
+   x[  220]={ 5.47000e-01,  5.24000e-01,  1.91700e+00}
+   x[  221]={ 6.95000e-01,  1.52000e-01,  1.93000e+00}
+   x[  222]={ 5.34000e-01,  1.70000e-01,  1.85700e+00}
+   x[  223]={ 7.98000e-01,  4.74000e-01,  1.78200e+00}
+   x[  224]={ 6.37000e-01,  4.92000e-01,  1.71000e+00}
+   x[  225]={ 7.89000e-01,  2.43000e-01,  1.74300e+00}
+   x[  226]={ 6.29000e-01,  2.61000e-01,  1.67100e+00}
+   x[  227]={ 6.44000e-01,  3.84000e-01,  2.17700e+00}
+   x[  228]={ 6.38000e-01,  2.09000e-01,  2.14800e+00}
+   x[  229]={ 7.75000e-01,  3.05000e-01,  2.08600e+00}
+   x[  230]={ 4.20000e-01,  2.34000e-01,  2.04900e+00}
+   x[  231]={ 4.26000e-01,  4.09000e-01,  2.07900e+00}
+   x[  232]={ 3.73000e-01,  3.55000e-01,  1.87700e+00}
+   x[  233]={ 3.97000e-01,  2.75000e-01,  1.80600e+00}
+   x[  234]={ 4.03000e-01,  4.51000e-01,  1.83600e+00}
+   x[  235]={ 2.23000e-01,  3.55000e-01,  1.90600e+00}
+   x[  236]={ 2.00000e-01,  4.35000e-01,  1.97700e+00}
+   x[  237]={ 1.93000e-01,  2.59000e-01,  1.94700e+00}
+   x[  238]={ 1.69000e-01,  3.73000e-01,  1.81300e+00}
+   x[  239]={ 1.50300e+00,  2.14900e+00,  6.32000e-01}
+   x[  240]={ 1.38500e+00,  2.06500e+00,  6.58000e-01}
+   x[  241]={ 1.49100e+00,  2.27600e+00,  7.06000e-01}
+   x[  242]={ 1.29000e+00,  2.13800e+00,  7.52000e-01}
+   x[  243]={ 1.35900e+00,  2.27600e+00,  7.84000e-01}
+   x[  244]={ 1.62500e+00,  2.07800e+00,  6.76000e-01}
+   x[  245]={ 1.51300e+00,  2.17700e+00,  4.88000e-01}
+   x[  246]={ 1.41700e+00,  1.97100e+00,  7.03000e-01}
+   x[  247]={ 1.33400e+00,  2.04500e+00,  5.64000e-01}
+   x[  248]={ 1.57400e+00,  2.28600e+00,  7.75000e-01}
+   x[  249]={ 1.49200e+00,  2.35900e+00,  6.36000e-01}
+   x[  250]={ 1.27500e+00,  2.08100e+00,  8.44000e-01}
+   x[  251]={ 1.19300e+00,  2.15400e+00,  7.05000e-01}
+   x[  252]={ 1.37800e+00,  2.28600e+00,  8.91000e-01}
+   x[  253]={ 1.29600e+00,  2.35900e+00,  7.52000e-01}
+   x[  254]={ 1.63400e+00,  1.98500e+00,  6.22000e-01}
+   x[  255]={ 1.71200e+00,  2.14100e+00,  6.57000e-01}
+   x[  256]={ 1.61700e+00,  2.05700e+00,  7.83000e-01}
+   x[  257]={ 1.60100e+00,  2.23900e+00,  4.69000e-01}
+   x[  258]={ 1.52300e+00,  2.08400e+00,  4.33000e-01}
+   x[  259]={ 1.38800e+00,  2.25100e+00,  4.42000e-01}
+   x[  260]={ 1.37800e+00,  2.34500e+00,  4.97000e-01}
+   x[  261]={ 1.30000e+00,  2.18900e+00,  4.61000e-01}
+   x[  262]={ 1.39800e+00,  2.28000e+00,  2.92000e-01}
+   x[  263]={ 1.40700e+00,  2.18700e+00,  2.37000e-01}
+   x[  264]={ 1.48500e+00,  2.34200e+00,  2.73000e-01}
+   x[  265]={ 1.30800e+00,  2.33300e+00,  2.59000e-01}
+   x[  266]={ 1.42300e+00,  3.01000e+00,  2.32700e+00}
+   x[  267]={ 1.52700e+00,  2.90700e+00,  2.32100e+00}
+   x[  268]={ 1.44000e+00,  3.10400e+00,  2.21500e+00}
+   x[  269]={ 1.61800e+00,  2.93200e+00,  2.20100e+00}
+   x[  270]={ 1.56100e+00,  3.06200e+00,  2.13200e+00}
+   x[  271]={ 1.29000e+00,  2.94700e+00,  2.31700e+00}
+   x[  272]={ 1.43300e+00,  3.08300e+00,  2.45400e+00}
+   x[  273]={ 1.48000e+00,  2.80900e+00,  2.31100e+00}
+   x[  274]={ 1.58600e+00,  2.91000e+00,  2.41300e+00}
+   x[  275]={ 1.35100e+00,  3.10400e+00,  2.15300e+00}
+   x[  276]={ 1.45700e+00,  3.20500e+00,  2.25400e+00}
+   x[  277]={ 1.61600e+00,  2.84800e+00,  2.13300e+00}
+   x[  278]={ 1.72100e+00,  2.94800e+00,  2.23300e+00}
+   x[  279]={ 1.53100e+00,  3.04000e+00,  2.02900e+00}
+   x[  280]={ 1.63600e+00,  3.14100e+00,  2.12900e+00}
+   x[  281]={ 1.27700e+00,  2.87800e+00,  2.40000e+00}
+   x[  282]={ 1.21300e+00,  3.02400e+00,  2.32200e+00}
+   x[  283]={ 1.28200e+00,  2.89300e+00,  2.22300e+00}
+   x[  284]={ 1.35500e+00,  3.16000e+00,  2.45800e+00}
+   x[  285]={ 1.42000e+00,  3.01400e+00,  2.53700e+00}
+   x[  286]={ 1.57000e+00,  3.14900e+00,  2.46400e+00}
+   x[  287]={ 1.58400e+00,  3.21900e+00,  2.38200e+00}
+   x[  288]={ 1.64800e+00,  3.07300e+00,  2.46000e+00}
+   x[  289]={ 1.58100e+00,  3.22500e+00,  2.59700e+00}
+   x[  290]={ 1.56800e+00,  3.15600e+00,  2.68000e+00}
+   x[  291]={ 1.50300e+00,  3.30200e+00,  2.60100e+00}
+   x[  292]={ 1.67900e+00,  3.27200e+00,  2.60400e+00}
+   x[  293]={ 2.21000e+00,  4.86000e-01,  1.31000e+00}
+   x[  294]={ 2.17600e+00,  4.16000e-01,  1.18400e+00}
+   x[  295]={ 2.17400e+00,  4.00000e-01,  1.42400e+00}
+   x[  296]={ 2.11600e+00,  2.79000e-01,  1.21600e+00}
+   x[  297]={ 2.11500e+00,  2.68000e-01,  1.37200e+00}
+   x[  298]={ 2.35400e+00,  5.15000e-01,  1.31300e+00}
+   x[  299]={ 2.13400e+00,  6.11000e-01,  1.31800e+00}
+   x[  300]={ 2.26600e+00,  4.04000e-01,  1.12400e+00}
+   x[  301]={ 2.10400e+00,  4.75000e-01,  1.12800e+00}
+   x[  302]={ 2.26400e+00,  3.79000e-01,  1.48200e+00}
+   x[  303]={ 2.10100e+00,  4.51000e-01,  1.48600e+00}
+   x[  304]={ 2.17700e+00,  2.00000e-01,  1.17200e+00}
+   x[  305]={ 2.01500e+00,  2.71000e-01,  1.17600e+00}
+   x[  306]={ 2.17500e+00,  1.84000e-01,  1.40600e+00}
+   x[  307]={ 2.01400e+00,  2.55000e-01,  1.41000e+00}
+   x[  308]={ 2.38000e+00,  5.78000e-01,  1.22800e+00}
+   x[  309]={ 2.37800e+00,  5.66000e-01,  1.40600e+00}
+   x[  310]={ 2.41000e+00,  4.21000e-01,  1.30700e+00}
+   x[  311]={ 2.15900e+00,  6.63000e-01,  1.41100e+00}
+   x[  312]={ 2.16000e+00,  6.75000e-01,  1.23300e+00}
+   x[  313]={ 1.98400e+00,  5.81000e-01,  1.31500e+00}
+   x[  314]={ 1.95800e+00,  5.18000e-01,  1.39900e+00}
+   x[  315]={ 1.95900e+00,  5.30000e-01,  1.22200e+00}
+   x[  316]={ 1.90600e+00,  7.12000e-01,  1.32300e+00}
+   x[  317]={ 1.93200e+00,  7.76000e-01,  1.23900e+00}
+   x[  318]={ 1.93000e+00,  7.63000e-01,  1.41600e+00}
+   x[  319]={ 1.79900e+00,  6.91000e-01,  1.32100e+00}
+   x[  320]={ 2.97000e+00,  1.75300e+00,  2.29500e+00}
+   x[  321]={ 3.11500e+00,  1.77000e+00,  2.31500e+00}
+   x[  322]={ 2.90200e+00,  1.75400e+00,  2.42500e+00}
+   x[  323]={ 3.14500e+00,  1.78400e+00,  2.46400e+00}
+   x[  324]={ 3.00500e+00,  1.77300e+00,  2.53600e+00}
+   x[  325]={ 2.91800e+00,  1.86300e+00,  2.21100e+00}
+   x[  326]={ 2.94500e+00,  1.62500e+00,  2.22700e+00}
+   x[  327]={ 3.14800e+00,  1.86000e+00,  2.26300e+00}
+   x[  328]={ 3.16800e+00,  1.68400e+00,  2.27400e+00}
+   x[  329]={ 2.83000e+00,  1.83600e+00,  2.42800e+00}
+   x[  330]={ 2.85000e+00,  1.66000e+00,  2.44000e+00}
+   x[  331]={ 3.19200e+00,  1.87900e+00,  2.48500e+00}
+   x[  332]={ 3.21100e+00,  1.70400e+00,  2.49700e+00}
+   x[  333]={ 2.98500e+00,  1.86400e+00,  2.59300e+00}
+   x[  334]={ 3.00400e+00,  1.68900e+00,  2.60500e+00}
+   x[  335]={ 2.96900e+00,  1.86200e+00,  2.11500e+00}
+   x[  336]={ 2.81100e+00,  1.85000e+00,  2.19700e+00}
+   x[  337]={ 2.93700e+00,  1.95800e+00,  2.26100e+00}
+   x[  338]={ 2.83700e+00,  1.61200e+00,  2.21300e+00}
+   x[  339]={ 2.99500e+00,  1.62400e+00,  2.13100e+00}
+   x[  340]={ 2.99800e+00,  1.51000e+00,  2.31400e+00}
+   x[  341]={ 2.94800e+00,  1.51100e+00,  2.41100e+00}
+   x[  342]={ 3.10500e+00,  1.52300e+00,  2.32900e+00}
+   x[  343]={ 2.97200e+00,  1.37700e+00,  2.24400e+00}
+   x[  344]={ 3.02200e+00,  1.37600e+00,  2.14700e+00}
+   x[  345]={ 2.86500e+00,  1.36400e+00,  2.22900e+00}
+   x[  346]={ 3.01000e+00,  1.29600e+00,  2.30600e+00}
+   x[  347]={ 1.90600e+00,  1.15300e+00,  1.73200e+00}
+   x[  348]={ 1.77100e+00,  1.10100e+00,  1.76000e+00}
+   x[  349]={ 1.96300e+00,  1.20900e+00,  1.85500e+00}
+   x[  350]={ 1.73600e+00,  1.12500e+00,  1.90700e+00}
+   x[  351]={ 1.86200e+00,  1.19600e+00,  1.96900e+00}
+   x[  352]={ 1.99100e+00,  1.04300e+00,  1.68400e+00}
+   x[  353]={ 1.89800e+00,  1.25700e+00,  1.62900e+00}
+   x[  354]={ 1.76700e+00,  9.95000e-01,  1.73800e+00}
+   x[  355]={ 1.69900e+00,  1.15300e+00,  1.69700e+00}
+   x[  356]={ 2.05400e+00,  1.15600e+00,  1.88100e+00}
+   x[  357]={ 1.98600e+00,  1.31500e+00,  1.83900e+00}
+   x[  358]={ 1.71600e+00,  1.03000e+00,  1.95700e+00}
+   x[  359]={ 1.64800e+00,  1.18800e+00,  1.91600e+00}
+   x[  360]={ 1.90400e+00,  1.13600e+00,  2.05000e+00}
+   x[  361]={ 1.83600e+00,  1.29300e+00,  2.00900e+00}
+   x[  362]={ 1.94900e+00,  1.00100e+00,  1.59300e+00}
+   x[  363]={ 2.09100e+00,  1.08100e+00,  1.66400e+00}
+   x[  364]={ 1.99700e+00,  9.65000e-01,  1.76100e+00}
+   x[  365]={ 1.99900e+00,  1.29500e+00,  1.60800e+00}
+   x[  366]={ 1.85600e+00,  1.21500e+00,  1.53700e+00}
+   x[  367]={ 1.81000e+00,  1.37200e+00,  1.67800e+00}
+   x[  368]={ 1.85200e+00,  1.41400e+00,  1.76900e+00}
+   x[  369]={ 1.71000e+00,  1.33400e+00,  1.69800e+00}
+   x[  370]={ 1.80200e+00,  1.48000e+00,  1.57100e+00}
+   x[  371]={ 1.76000e+00,  1.43800e+00,  1.47900e+00}
+   x[  372]={ 1.90200e+00,  1.51800e+00,  1.55000e+00}
+   x[  373]={ 1.73900e+00,  1.56200e+00,  1.60600e+00}
+   x[  374]={ 1.79400e+00,  2.52700e+00,  2.28800e+00}
+   x[  375]={ 1.82600e+00,  2.52000e+00,  2.14500e+00}
+   x[  376]={ 1.91800e+00,  2.52000e+00,  2.36600e+00}
+   x[  377]={ 1.97700e+00,  2.50900e+00,  2.12600e+00}
+   x[  378]={ 2.03700e+00,  2.50900e+00,  2.27200e+00}
+   x[  379]={ 1.72400e+00,  2.65300e+00,  2.31700e+00}
+   x[  380]={ 1.70700e+00,  2.41300e+00,  2.32400e+00}
+   x[  381]={ 1.79000e+00,  2.61100e+00,  2.09500e+00}
+   x[  382]={ 1.77700e+00,  2.43400e+00,  2.10000e+00}
+   x[  383]={ 1.92800e+00,  2.61000e+00,  2.42700e+00}
+   x[  384]={ 1.91500e+00,  2.43200e+00,  2.43100e+00}
+   x[  385]={ 2.01500e+00,  2.59300e+00,  2.06900e+00}
+   x[  386]={ 2.00300e+00,  2.41700e+00,  2.07300e+00}
+   x[  387]={ 2.10600e+00,  2.59300e+00,  2.28500e+00}
+   x[  388]={ 2.09300e+00,  2.41700e+00,  2.29000e+00}
+   x[  389]={ 1.63200e+00,  2.65800e+00,  2.26000e+00}
+   x[  390]={ 1.70100e+00,  2.65700e+00,  2.42400e+00}
+   x[  391]={ 1.78800e+00,  2.73700e+00,  2.29100e+00}
+   x[  392]={ 1.68300e+00,  2.41800e+00,  2.43000e+00}
+   x[  393]={ 1.61500e+00,  2.41800e+00,  2.26600e+00}
+   x[  394]={ 1.77900e+00,  2.28200e+00,  2.29300e+00}
+   x[  395]={ 1.87100e+00,  2.27700e+00,  2.35100e+00}
+   x[  396]={ 1.80300e+00,  2.27700e+00,  2.18700e+00}
+   x[  397]={ 1.68900e+00,  2.16400e+00,  2.33100e+00}
+   x[  398]={ 1.59700e+00,  2.16900e+00,  2.27300e+00}
+   x[  399]={ 1.66500e+00,  2.16900e+00,  2.43700e+00}
+   x[  400]={ 1.74000e+00,  2.07100e+00,  2.30900e+00}
+   x[  401]={ 2.67000e+00,  2.22100e+00,  2.17400e+00}
+   x[  402]={ 2.68600e+00,  2.07600e+00,  2.18800e+00}
+   x[  403]={ 2.52700e+00,  2.25500e+00,  2.16900e+00}
+   x[  404]={ 2.54800e+00,  2.01000e+00,  2.19400e+00}
+   x[  405]={ 2.44400e+00,  2.12800e+00,  2.18100e+00}
+   x[  406]={ 2.73400e+00,  2.28900e+00,  2.28800e+00}
+   x[  407]={ 2.73500e+00,  2.26500e+00,  2.04900e+00}
+   x[  408]={ 2.74000e+00,  2.05400e+00,  2.28000e+00}
+   x[  409]={ 2.74100e+00,  2.03600e+00,  2.10300e+00}
+   x[  410]={ 2.50300e+00,  2.32200e+00,  2.25200e+00}
+   x[  411]={ 2.50400e+00,  2.30500e+00,  2.07500e+00}
+   x[  412]={ 2.53400e+00,  1.95700e+00,  2.28800e+00}
+   x[  413]={ 2.53600e+00,  1.93900e+00,  2.11200e+00}
+   x[  414]={ 2.38000e+00,  2.13200e+00,  2.26900e+00}
+   x[  415]={ 2.38100e+00,  2.11500e+00,  2.09400e+00}
+   x[  416]={ 2.83900e+00,  2.26400e+00,  2.29100e+00}
+   x[  417]={ 2.72200e+00,  2.39700e+00,  2.27700e+00}
+   x[  418]={ 2.68600e+00,  2.25700e+00,  2.38000e+00}
+   x[  419]={ 2.72400e+00,  2.37300e+00,  2.03800e+00}
+   x[  420]={ 2.84100e+00,  2.24000e+00,  2.05200e+00}
+   x[  421]={ 2.66900e+00,  2.19500e+00,  1.93000e+00}
+   x[  422]={ 2.56300e+00,  2.22000e+00,  1.92700e+00}
+   x[  423]={ 2.68100e+00,  2.08700e+00,  1.94100e+00}
+   x[  424]={ 2.73600e+00,  2.24100e+00,  1.80000e+00}
+   x[  425]={ 2.84200e+00,  2.21600e+00,  1.80300e+00}
+   x[  426]={ 2.72500e+00,  2.34900e+00,  1.79000e+00}
+   x[  427]={ 2.69000e+00,  2.19100e+00,  1.71500e+00}
+   x[  428]={ 2.99000e+00,  2.24000e+00,  1.43700e+00}
+   x[  429]={ 3.03400e+00,  2.35600e+00,  1.51700e+00}
+   x[  430]={ 3.08900e+00,  2.13200e+00,  1.44900e+00}
+   x[  431]={ 3.16800e+00,  2.32300e+00,  1.58500e+00}
+   x[  432]={ 3.20300e+00,  2.17700e+00,  1.54000e+00}
+   x[  433]={ 2.86000e+00,  2.19300e+00,  1.48700e+00}
+   x[  434]={ 2.97800e+00,  2.28000e+00,  1.29600e+00}
+   x[  435]={ 2.96000e+00,  2.37800e+00,  1.59300e+00}
+   x[  436]={ 3.04700e+00,  2.44200e+00,  1.45200e+00}
+   x[  437]={ 3.04100e+00,  2.04400e+00,  1.49100e+00}
+   x[  438]={ 3.12900e+00,  2.10800e+00,  1.35000e+00}
+   x[  439]={ 3.15800e+00,  2.32900e+00,  1.69300e+00}
+   x[  440]={ 3.24500e+00,  2.39300e+00,  1.55300e+00}
+   x[  441]={ 3.21200e+00,  2.11100e+00,  1.62700e+00}
+   x[  442]={ 3.29800e+00,  2.17500e+00,  1.48700e+00}
+   x[  443]={ 2.78700e+00,  2.27300e+00,  1.47800e+00}
+   x[  444]={ 2.82700e+00,  2.10800e+00,  1.42700e+00}
+   x[  445]={ 2.86900e+00,  2.16400e+00,  1.59100e+00}
+   x[  446]={ 2.94500e+00,  2.19500e+00,  1.23700e+00}
+   x[  447]={ 2.90500e+00,  2.36100e+00,  1.28800e+00}
+   x[  448]={ 3.11300e+00,  2.32900e+00,  1.24500e+00}
+   x[  449]={ 3.18700e+00,  2.24900e+00,  1.25300e+00}
+   x[  450]={ 3.14600e+00,  2.41400e+00,  1.30400e+00}
+   x[  451]={ 3.10000e+00,  2.37000e+00,  1.09800e+00}
+   x[  452]={ 3.02700e+00,  2.45100e+00,  1.08900e+00}
+   x[  453]={ 3.06800e+00,  2.28500e+00,  1.03900e+00}
+   x[  454]={ 3.19700e+00,  2.40500e+00,  1.06200e+00}
+   x[  455]={ 1.41700e+00,  3.03700e+00,  8.93000e-01}
+   x[  456]={ 1.33800e+00,  3.15700e+00,  9.26000e-01}
+   x[  457]={ 1.32500e+00,  2.92500e+00,  8.65000e-01}
+   x[  458]={ 1.18900e+00,  3.12400e+00,  9.20000e-01}
+   x[  459]={ 1.18100e+00,  2.97200e+00,  8.80000e-01}
+   x[  460]={ 1.49900e+00,  3.06300e+00,  7.74000e-01}
+   x[  461]={ 1.50400e+00,  3.00200e+00,  1.00600e+00}
+   x[  462]={ 1.36100e+00,  3.23600e+00,  8.54000e-01}
+   x[  463]={ 1.36400e+00,  3.19100e+00,  1.02600e+00}
+   x[  464]={ 1.34200e+00,  2.88900e+00,  7.63000e-01}
+   x[  465]={ 1.34500e+00,  2.84400e+00,  9.35000e-01}
+   x[  466]={ 1.13900e+00,  3.18600e+00,  8.46000e-01}
+   x[  467]={ 1.14200e+00,  3.14100e+00,  1.01600e+00}
+   x[  468]={ 1.12600e+00,  2.95900e+00,  7.86000e-01}
+   x[  469]={ 1.12900e+00,  2.91400e+00,  9.57000e-01}
+   x[  470]={ 1.56700e+00,  3.14600e+00,  7.94000e-01}
+   x[  471]={ 1.55700e+00,  2.97400e+00,  7.49000e-01}
+   x[  472]={ 1.43500e+00,  3.08900e+00,  6.90000e-01}
+   x[  473]={ 1.56200e+00,  2.91300e+00,  9.82000e-01}
+   x[  474]={ 1.57100e+00,  3.08500e+00,  1.02700e+00}
+   x[  475]={ 1.41800e+00,  2.97400e+00,  1.13000e+00}
+   x[  476]={ 1.35000e+00,  2.89100e+00,  1.10900e+00}
+   x[  477]={ 1.36000e+00,  3.06300e+00,  1.15400e+00}
+   x[  478]={ 1.50800e+00,  2.93800e+00,  1.24700e+00}
+   x[  479]={ 1.57600e+00,  3.02100e+00,  1.26800e+00}
+   x[  480]={ 1.56600e+00,  2.84900e+00,  1.22300e+00}
+   x[  481]={ 1.44700e+00,  2.91800e+00,  1.33600e+00}
+   x[  482]={ 4.43000e-01,  5.88000e-01,  2.48100e+00}
+   x[  483]={ 4.66000e-01,  7.30000e-01,  2.45100e+00}
+   x[  484]={ 2.99000e-01,  5.58000e-01,  2.46800e+00}
+   x[  485]={ 3.33000e-01,  7.97000e-01,  2.41700e+00}
+   x[  486]={ 2.24000e-01,  6.84000e-01,  2.42800e+00}
+   x[  487]={ 5.19000e-01,  5.05000e-01,  2.38600e+00}
+   x[  488]={ 4.87000e-01,  5.59000e-01,  2.61800e+00}
+   x[  489]={ 5.34000e-01,  7.39000e-01,  2.36600e+00}
+   x[  490]={ 5.10000e-01,  7.79000e-01,  2.53800e+00}
+   x[  491]={ 2.85000e-01,  4.81000e-01,  2.39200e+00}
+   x[  492]={ 2.61000e-01,  5.21000e-01,  2.56300e+00}
+   x[  493]={ 3.35000e-01,  8.39000e-01,  2.31600e+00}
+   x[  494]={ 3.12000e-01,  8.78000e-01,  2.48600e+00}
+   x[  495]={ 1.73000e-01,  6.70000e-01,  2.33300e+00}
+   x[  496]={ 1.49000e-01,  7.10000e-01,  2.50300e+00}
+   x[  497]={ 6.25000e-01,  5.27000e-01,  2.39600e+00}
+   x[  498]={ 5.02000e-01,  4.00000e-01,  2.40800e+00}
+   x[  499]={ 4.86000e-01,  5.26000e-01,  2.28400e+00}
+   x[  500]={ 4.70000e-01,  4.54000e-01,  2.64000e+00}
+   x[  501]={ 5.93000e-01,  5.81000e-01,  2.62800e+00}
+   x[  502]={ 4.08000e-01,  6.45000e-01,  2.71600e+00}
+   x[  503]={ 3.01000e-01,  6.23000e-01,  2.70700e+00}
+   x[  504]={ 4.25000e-01,  7.51000e-01,  2.69400e+00}
+   x[  505]={ 4.53000e-01,  6.15000e-01,  2.85900e+00}
+   x[  506]={ 5.60000e-01,  6.37000e-01,  2.86900e+00}
+   x[  507]={ 4.37000e-01,  5.10000e-01,  2.88100e+00}
+   x[  508]={ 3.97000e-01,  6.76000e-01,  2.92900e+00}
+   x[  509]={ 6.92000e-01,  2.95200e+00,  1.91800e+00}
+   x[  510]={ 5.62000e-01,  2.97200e+00,  1.85100e+00}
+   x[  511]={ 6.94000e-01,  3.02900e+00,  2.04300e+00}
+   x[  512]={ 4.75000e-01,  3.06500e+00,  1.93500e+00}
+   x[  513]={ 5.61000e-01,  3.10200e+00,  2.06100e+00}
+   x[  514]={ 7.10000e-01,  2.80900e+00,  1.94700e+00}
+   x[  515]={ 8.00000e-01,  2.99900e+00,  1.83000e+00}
+   x[  516]={ 5.12000e-01,  2.87600e+00,  1.83900e+00}
+   x[  517]={ 5.78000e-01,  3.01600e+00,  1.75300e+00}
+   x[  518]={ 7.09000e-01,  2.96100e+00,  2.12700e+00}
+   x[  519]={ 7.75000e-01,  3.10100e+00,  2.04000e+00}
+   x[  520]={ 3.82000e-01,  3.01500e+00,  1.96400e+00}
+   x[  521]={ 4.48000e-01,  3.15400e+00,  1.87800e+00}
+   x[  522]={ 5.11000e-01,  3.07100e+00,  2.15200e+00}
+   x[  523]={ 5.77000e-01,  3.21000e+00,  2.06600e+00}
+   x[  524]={ 7.09000e-01,  2.75300e+00,  1.85500e+00}
+   x[  525]={ 8.06000e-01,  2.79500e+00,  1.99700e+00}
+   x[  526]={ 6.30000e-01,  2.77500e+00,  2.01300e+00}
+   x[  527]={ 8.96000e-01,  2.98400e+00,  1.88000e+00}
+   x[  528]={ 7.98000e-01,  2.94200e+00,  1.73700e+00}
+   x[  529]={ 7.80000e-01,  3.14700e+00,  1.79900e+00}
+   x[  530]={ 7.82000e-01,  3.20400e+00,  1.89300e+00}
+   x[  531]={ 6.85000e-01,  3.16200e+00,  1.75000e+00}
+   x[  532]={ 8.93000e-01,  3.19600e+00,  1.70800e+00}
+   x[  533]={ 8.91000e-01,  3.13900e+00,  1.61500e+00}
+   x[  534]={ 9.89000e-01,  3.18100e+00,  1.75800e+00}
+   x[  535]={ 8.79000e-01,  3.30200e+00,  1.68600e+00}
+   x[  536]={ 2.46500e+00,  2.42300e+00,  7.38000e-01}
+   x[  537]={ 2.34500e+00,  2.34900e+00,  6.95000e-01}
+   x[  538]={ 2.58500e+00,  2.35500e+00,  6.86000e-01}
+   x[  539]={ 2.38700e+00,  2.22800e+00,  6.12000e-01}
+   x[  540]={ 2.54400e+00,  2.23200e+00,  6.06000e-01}
+   x[  541]={ 2.46000e+00,  2.56000e+00,  6.85000e-01}
+   x[  542]={ 2.47000e+00,  2.42700e+00,  8.85000e-01}
+   x[  543]={ 2.28200e+00,  2.41400e+00,  6.35000e-01}
+   x[  544]={ 2.29000e+00,  2.31600e+00,  7.83000e-01}
+   x[  545]={ 2.64000e+00,  2.42400e+00,  6.22000e-01}
+   x[  546]={ 2.64800e+00,  2.32500e+00,  7.69000e-01}
+   x[  547]={ 2.34400e+00,  2.23300e+00,  5.12000e-01}
+   x[  548]={ 2.35200e+00,  2.13500e+00,  6.58000e-01}
+   x[  549]={ 2.57900e+00,  2.23900e+00,  5.03000e-01}
+   x[  550]={ 2.58600e+00,  2.14100e+00,  6.50000e-01}
+   x[  551]={ 2.37100e+00,  2.61000e+00,  7.23000e-01}
+   x[  552]={ 2.54900e+00,  2.61500e+00,  7.16000e-01}
+   x[  553]={ 2.45600e+00,  2.55700e+00,  5.76000e-01}
+   x[  554]={ 2.55900e+00,  2.48200e+00,  9.16000e-01}
+   x[  555]={ 2.38200e+00,  2.47700e+00,  9.23000e-01}
+   x[  556]={ 2.47600e+00,  2.28400e+00,  9.39000e-01}
+   x[  557]={ 2.56500e+00,  2.23400e+00,  9.01000e-01}
+   x[  558]={ 2.38700e+00,  2.23000e+00,  9.08000e-01}
+   x[  559]={ 2.48200e+00,  2.28900e+00,  1.09200e+00}
+   x[  560]={ 2.39300e+00,  2.33900e+00,  1.13000e+00}
+   x[  561]={ 2.57100e+00,  2.34300e+00,  1.12400e+00}
+   x[  562]={ 2.48600e+00,  2.18700e+00,  1.13100e+00}
+   x[  563]={ 6.51000e-01,  2.25600e+00,  1.95300e+00}
+   x[  564]={ 7.61000e-01,  2.31200e+00,  2.03300e+00}
+   x[  565]={ 6.59000e-01,  2.30800e+00,  1.81500e+00}
+   x[  566]={ 8.46000e-01,  2.40300e+00,  1.94500e+00}
+   x[  567]={ 7.80000e-01,  2.40100e+00,  1.80300e+00}
+   x[  568]={ 6.60000e-01,  2.11000e+00,  1.95100e+00}
+   x[  569]={ 5.22000e-01,  2.29600e+00,  2.01300e+00}
+   x[  570]={ 8.23000e-01,  2.23000e+00,  2.07100e+00}
+   x[  571]={ 7.21000e-01,  2.36900e+00,  2.11600e+00}
+   x[  572]={ 6.70000e-01,  2.22400e+00,  1.74600e+00}
+   x[  573]={ 5.68000e-01,  2.36300e+00,  1.79100e+00}
+   x[  574]={ 9.49000e-01,  2.36700e+00,  1.94000e+00}
+   x[  575]={ 8.48000e-01,  2.50500e+00,  1.98500e+00}
+   x[  576]={ 8.50000e-01,  2.36300e+00,  1.72800e+00}
+   x[  577]={ 7.48000e-01,  2.50100e+00,  1.77300e+00}
+   x[  578]={ 6.54000e-01,  2.07200e+00,  2.05300e+00}
+   x[  579]={ 5.78000e-01,  2.06900e+00,  1.89200e+00}
+   x[  580]={ 7.55000e-01,  2.08000e+00,  1.90700e+00}
+   x[  581]={ 4.40000e-01,  2.25600e+00,  1.95300e+00}
+   x[  582]={ 5.16000e-01,  2.25900e+00,  2.11500e+00}
+   x[  583]={ 5.12000e-01,  2.44900e+00,  2.01400e+00}
+   x[  584]={ 5.18000e-01,  2.48700e+00,  1.91200e+00}
+   x[  585]={ 5.94000e-01,  2.49000e+00,  2.07300e+00}
+   x[  586]={ 3.79000e-01,  2.49100e+00,  2.07600e+00}
+   x[  587]={ 3.72000e-01,  2.45300e+00,  2.17800e+00}
+   x[  588]={ 2.97000e-01,  2.45000e+00,  2.01700e+00}
+   x[  589]={ 3.72000e-01,  2.60000e+00,  2.07700e+00}
+   x[  590]={ 2.54100e+00,  4.81000e-01,  1.77300e+00}
+   x[  591]={ 2.60100e+00,  3.54000e-01,  1.81600e+00}
+   x[  592]={ 2.39700e+00,  4.62000e-01,  1.75000e+00}
+   x[  593]={ 2.49300e+00,  2.46000e-01,  1.82100e+00}
+   x[  594]={ 2.36000e+00,  3.17000e-01,  1.77800e+00}
+   x[  595]={ 2.56100e+00,  5.82000e-01,  1.87900e+00}
+   x[  596]={ 2.60500e+00,  5.27000e-01,  1.64900e+00}
+   x[  597]={ 2.64600e+00,  3.66000e-01,  1.91500e+00}
+   x[  598]={ 2.67800e+00,  3.25000e-01,  1.74500e+00}
+   x[  599]={ 2.34100e+00,  5.28000e-01,  1.81600e+00}
+   x[  600]={ 2.37400e+00,  4.87000e-01,  1.64600e+00}
+   x[  601]={ 2.48500e+00,  2.05000e-01,  1.92100e+00}
+   x[  602]={ 2.51700e+00,  1.64000e-01,  1.75300e+00}
+   x[  603]={ 2.28500e+00,  3.11000e-01,  1.85700e+00}
+   x[  604]={ 2.31800e+00,  2.70000e-01,  1.68900e+00}
+   x[  605]={ 2.66800e+00,  5.96000e-01,  1.89600e+00}
+   x[  606]={ 2.51600e+00,  6.77000e-01,  1.84700e+00}
+   x[  607]={ 2.51300e+00,  5.49000e-01,  1.97100e+00}
+   x[  608]={ 2.56100e+00,  6.21000e-01,  1.61800e+00}
+   x[  609]={ 2.71200e+00,  5.41000e-01,  1.66600e+00}
+   x[  610]={ 2.58500e+00,  4.22000e-01,  1.54000e+00}
+   x[  611]={ 2.47800e+00,  4.08000e-01,  1.52200e+00}
+   x[  612]={ 2.62900e+00,  3.28000e-01,  1.57100e+00}
+   x[  613]={ 2.65100e+00,  4.70000e-01,  1.41100e+00}
+   x[  614]={ 2.75800e+00,  4.84000e-01,  1.42800e+00}
+   x[  615]={ 2.60700e+00,  5.64000e-01,  1.37900e+00}
+   x[  616]={ 2.63700e+00,  3.95000e-01,  1.33200e+00}
+   x[  617]={ 1.48200e+00,  8.60000e-01,  5.56000e-01}
+   x[  618]={ 1.57900e+00,  8.96000e-01,  6.61000e-01}
+   x[  619]={ 1.41500e+00,  7.35000e-01,  5.91000e-01}
+   x[  620]={ 1.57600e+00,  7.90000e-01,  7.71000e-01}
+   x[  621]={ 1.46900e+00,  6.84000e-01,  7.25000e-01}
+   x[  622]={ 1.38200e+00,  9.67000e-01,  5.43000e-01}
+   x[  623]={ 1.55300e+00,  8.44000e-01,  4.28000e-01}
+   x[  624]={ 1.55200e+00,  9.93000e-01,  7.03000e-01}
+   x[  625]={ 1.67900e+00,  9.01000e-01,  6.18000e-01}
+   x[  626]={ 1.30800e+00,  7.52000e-01,  6.00000e-01}
+   x[  627]={ 1.43400e+00,  6.60000e-01,  5.14000e-01}
+   x[  628]={ 1.54800e+00,  8.34000e-01,  8.67000e-01}
+   x[  629]={ 1.67400e+00,  7.43000e-01,  7.82000e-01}
+   x[  630]={ 1.38800e+00,  6.76000e-01,  7.99000e-01}
+   x[  631]={ 1.51400e+00,  5.86000e-01,  7.14000e-01}
+   x[  632]={ 1.43200e+00,  1.06100e+00,  5.17000e-01}
+   x[  633]={ 1.31000e+00,  9.41000e-01,  4.65000e-01}
+   x[  634]={ 1.33000e+00,  9.80000e-01,  6.38000e-01}
+   x[  635]={ 1.48100e+00,  8.18000e-01,  3.50000e-01}
+   x[  636]={ 1.60200e+00,  9.37000e-01,  4.01000e-01}
+   x[  637]={ 1.65700e+00,  7.33000e-01,  4.41000e-01}
+   x[  638]={ 1.60700e+00,  6.39000e-01,  4.67000e-01}
+   x[  639]={ 1.72800e+00,  7.59000e-01,  5.19000e-01}
+   x[  640]={ 1.73000e+00,  7.15000e-01,  3.08000e-01}
+   x[  641]={ 1.78000e+00,  8.09000e-01,  2.82000e-01}
+   x[  642]={ 1.65800e+00,  6.89000e-01,  2.30000e-01}
+   x[  643]={ 1.80400e+00,  6.36000e-01,  3.17000e-01}
+   x[  644]={ 2.31300e+00,  1.78700e+00,  3.14800e+00}
+   x[  645]={ 2.31100e+00,  1.77900e+00,  3.00100e+00}
+   x[  646]={ 2.29300e+00,  1.65200e+00,  3.20400e+00}
+   x[  647]={ 2.29000e+00,  1.63400e+00,  2.95800e+00}
+   x[  648]={ 2.27800e+00,  1.55100e+00,  3.09100e+00}
+   x[  649]={ 2.44300e+00,  1.84000e+00,  3.19300e+00}
+   x[  650]={ 2.20500e+00,  1.87500e+00,  3.19400e+00}
+   x[  651]={ 2.40700e+00,  1.81500e+00,  2.96200e+00}
+   x[  652]={ 2.23000e+00,  1.84100e+00,  2.96300e+00}
+   x[  653]={ 2.37900e+00,  1.62500e+00,  3.26600e+00}
+   x[  654]={ 2.20400e+00,  1.65100e+00,  3.26600e+00}
+   x[  655]={ 2.37400e+00,  1.59900e+00,  2.89800e+00}
+   x[  656]={ 2.19900e+00,  1.62500e+00,  2.89800e+00}
+   x[  657]={ 2.35600e+00,  1.47500e+00,  3.09600e+00}
+   x[  658]={ 2.18100e+00,  1.50100e+00,  3.09700e+00}
+   x[  659]={ 2.45700e+00,  1.94000e+00,  3.15100e+00}
+   x[  660]={ 2.44400e+00,  1.84600e+00,  3.30200e+00}
+   x[  661]={ 2.52300e+00,  1.77400e+00,  3.15900e+00}
+   x[  662]={ 2.20600e+00,  1.88100e+00,  3.30300e+00}
+   x[  663]={ 2.22000e+00,  1.97500e+00,  3.15200e+00}
+   x[  664]={ 2.07000e+00,  1.82000e+00,  3.14800e+00}
+   x[  665]={ 2.05600e+00,  1.72000e+00,  3.18900e+00}
+   x[  666]={ 2.06900e+00,  1.81400e+00,  3.03900e+00}
+   x[  667]={ 1.95800e+00,  1.91200e+00,  3.19500e+00}
+   x[  668]={ 1.97200e+00,  2.01200e+00,  3.15300e+00}
+   x[  669]={ 1.95900e+00,  1.91800e+00,  3.30400e+00}
+   x[  670]={ 1.86200e+00,  1.87200e+00,  3.16200e+00}
+   x[  671]={ 9.00000e-01,  1.81400e+00,  2.14400e+00}
+   x[  672]={ 8.07000e-01,  1.77500e+00,  2.03700e+00}
+   x[  673]={ 1.03800e+00,  1.78600e+00,  2.10100e+00}
+   x[  674]={ 8.85000e-01,  1.71900e+00,  1.91900e+00}
+   x[  675]={ 1.03600e+00,  1.72600e+00,  1.96000e+00}
+   x[  676]={ 8.86000e-01,  1.95700e+00,  2.17200e+00}
+   x[  677]={ 8.71000e-01,  1.73700e+00,  2.26600e+00}
+   x[  678]={ 7.49000e-01,  1.86200e+00,  2.00600e+00}
+   x[  679]={ 7.38000e-01,  1.69900e+00,  2.07500e+00}
+   x[  680]={ 1.09500e+00,  1.87900e+00,  2.10000e+00}
+   x[  681]={ 1.08400e+00,  1.71500e+00,  2.17000e+00}
+   x[  682]={ 8.66000e-01,  1.77800e+00,  1.82900e+00}
+   x[  683]={ 8.55000e-01,  1.61600e+00,  1.89800e+00}
+   x[  684]={ 1.09200e+00,  1.78900e+00,  1.89100e+00}
+   x[  685]={ 1.08100e+00,  1.62700e+00,  1.96000e+00}
+   x[  686]={ 7.83000e-01,  1.97800e+00,  2.20400e+00}
+   x[  687]={ 9.55000e-01,  1.98600e+00,  2.25100e+00}
+   x[  688]={ 9.08000e-01,  2.01400e+00,  2.08200e+00}
+   x[  689]={ 9.40000e-01,  1.76600e+00,  2.34500e+00}
+   x[  690]={ 7.68000e-01,  1.75700e+00,  2.29800e+00}
+   x[  691]={ 8.86000e-01,  1.58700e+00,  2.23700e+00}
+   x[  692]={ 9.88000e-01,  1.56700e+00,  2.20500e+00}
+   x[  693]={ 8.16000e-01,  1.55800e+00,  2.15800e+00}
+   x[  694]={ 8.55000e-01,  1.50700e+00,  2.36400e+00}
+   x[  695]={ 7.53000e-01,  1.52800e+00,  2.39600e+00}
+   x[  696]={ 9.24000e-01,  1.53600e+00,  2.44300e+00}
+   x[  697]={ 8.66000e-01,  1.40100e+00,  2.34300e+00}
+   x[  698]={ 2.43300e+00,  7.96000e-01,  2.80700e+00}
+   x[  699]={ 2.39400e+00,  9.34000e-01,  2.84000e+00}
+   x[  700]={ 2.52700e+00,  7.46000e-01,  2.90800e+00}
+   x[  701]={ 2.46500e+00,  9.77000e-01,  2.96900e+00}
+   x[  702]={ 2.55200e+00,  8.54000e-01,  3.01300e+00}
+   x[  703]={ 2.31300e+00,  7.11000e-01,  2.80400e+00}
+   x[  704]={ 2.49700e+00,  7.94000e-01,  2.67400e+00}
+   x[  705]={ 2.28600e+00,  9.39000e-01,  2.85500e+00}
+   x[  706]={ 2.42300e+00,  1.00100e+00,  2.75900e+00}
+   x[  707]={ 2.48500e+00,  6.57000e-01,  2.95600e+00}
+   x[  708]={ 2.62100e+00,  7.19000e-01,  2.86000e+00}
+   x[  709]={ 2.39300e+00,  1.00300e+00,  3.04600e+00}
+   x[  710]={ 2.52800e+00,  1.06400e+00,  2.95100e+00}
+   x[  711]={ 2.52200e+00,  8.19000e-01,  3.11200e+00}
+   x[  712]={ 2.65800e+00,  8.80000e-01,  3.01600e+00}
+   x[  713]={ 2.24300e+00,  7.48000e-01,  2.72900e+00}
+   x[  714]={ 2.34200e+00,  6.09000e-01,  2.77900e+00}
+   x[  715]={ 2.26500e+00,  7.12000e-01,  2.90200e+00}
+   x[  716]={ 2.52600e+00,  6.92000e-01,  2.64900e+00}
+   x[  717]={ 2.42800e+00,  8.32000e-01,  2.59900e+00}
+   x[  718]={ 2.62200e+00,  8.83000e-01,  2.67700e+00}
+   x[  719]={ 2.69200e+00,  8.45000e-01,  2.75200e+00}
+   x[  720]={ 2.59300e+00,  9.85000e-01,  2.70200e+00}
+   x[  721]={ 2.68900e+00,  8.81000e-01,  2.54000e+00}
+   x[  722]={ 2.61900e+00,  9.18000e-01,  2.46500e+00}
+   x[  723]={ 2.71700e+00,  7.79000e-01,  2.51500e+00}
+   x[  724]={ 2.77800e+00,  9.44000e-01,  2.54100e+00}
+   x[  725]={ 2.44000e+00,  2.08100e+00,  2.65100e+00}
+   x[  726]={ 2.46300e+00,  1.99400e+00,  2.76700e+00}
+   x[  727]={ 2.47900e+00,  2.01000e+00,  2.52800e+00}
+   x[  728]={ 2.51900e+00,  1.86000e+00,  2.72100e+00}
+   x[  729]={ 2.52900e+00,  1.87000e+00,  2.56400e+00}
+   x[  730]={ 2.29700e+00,  2.11700e+00,  2.64300e+00}
+   x[  731]={ 2.52100e+00,  2.20300e+00,  2.66400e+00}
+   x[  732]={ 2.36800e+00,  1.97800e+00,  2.81900e+00}
+   x[  733]={ 2.53300e+00,  2.04200e+00,  2.83500e+00}
+   x[  734]={ 2.39300e+00,  2.00100e+00,  2.46200e+00}
+   x[  735]={ 2.55800e+00,  2.06500e+00,  2.47800e+00}
+   x[  736]={ 2.45300e+00,  1.77800e+00,  2.75000e+00}
+   x[  737]={ 2.61700e+00,  1.84200e+00,  2.76500e+00}
+   x[  738]={ 2.46900e+00,  1.79300e+00,  2.51600e+00}
+   x[  739]={ 2.63300e+00,  1.85700e+00,  2.53200e+00}
+   x[  740]={ 2.26800e+00,  2.17000e+00,  2.73400e+00}
+   x[  741]={ 2.28100e+00,  2.18100e+00,  2.55700e+00}
+   x[  742]={ 2.23700e+00,  2.02700e+00,  2.63300e+00}
+   x[  743]={ 2.50400e+00,  2.26800e+00,  2.57800e+00}
+   x[  744]={ 2.49200e+00,  2.25600e+00,  2.75500e+00}
+   x[  745]={ 2.66900e+00,  2.16600e+00,  2.67200e+00}
+   x[  746]={ 2.69800e+00,  2.11300e+00,  2.58100e+00}
+   x[  747]={ 2.68600e+00,  2.10200e+00,  2.75800e+00}
+   x[  748]={ 2.75300e+00,  2.29300e+00,  2.68600e+00}
+   x[  749]={ 2.72400e+00,  2.34600e+00,  2.77600e+00}
+   x[  750]={ 2.73600e+00,  2.35800e+00,  2.59900e+00}
+   x[  751]={ 2.85800e+00,  2.26700e+00,  2.69100e+00}
+   x[  752]={ 2.21700e+00,  1.64800e+00,  2.11100e+00}
+   x[  753]={ 2.08300e+00,  1.70700e+00,  2.12100e+00}
+   x[  754]={ 2.31400e+00,  1.73200e+00,  2.18300e+00}
+   x[  755]={ 2.09100e+00,  1.83700e+00,  2.20200e+00}
+   x[  756]={ 2.24100e+00,  1.85300e+00,  2.24300e+00}
+   x[  757]={ 2.21600e+00,  1.51300e+00,  2.17100e+00}
+   x[  758]={ 2.25700e+00,  1.63800e+00,  1.97000e+00}
+   x[  759]={ 2.01600e+00,  1.63700e+00,  2.17000e+00}
+   x[  760]={ 2.04600e+00,  1.73000e+00,  2.02000e+00}
+   x[  761]={ 2.36100e+00,  1.67400e+00,  2.26300e+00}
+   x[  762]={ 2.39100e+00,  1.76700e+00,  2.11400e+00}
+   x[  763]={ 2.02700e+00,  1.83000e+00,  2.29000e+00}
+   x[  764]={ 2.05700e+00,  1.92200e+00,  2.14300e+00}
+   x[  765]={ 2.25200e+00,  1.85400e+00,  2.35100e+00}
+   x[  766]={ 2.28300e+00,  1.94600e+00,  2.20400e+00}
+   x[  767]={ 2.14400e+00,  1.45100e+00,  2.11700e+00}
+   x[  768]={ 2.31500e+00,  1.46900e+00,  2.16400e+00}
+   x[  769]={ 2.18700e+00,  1.52100e+00,  2.27600e+00}
+   x[  770]={ 2.35600e+00,  1.59400e+00,  1.96200e+00}
+   x[  771]={ 2.18500e+00,  1.57600e+00,  1.91600e+00}
+   x[  772]={ 2.25900e+00,  1.77800e+00,  1.90700e+00}
+   x[  773]={ 2.33000e+00,  1.84000e+00,  1.96100e+00}
+   x[  774]={ 2.15900e+00,  1.82200e+00,  1.91400e+00}
+   x[  775]={ 2.30000e+00,  1.76800e+00,  1.76000e+00}
+   x[  776]={ 2.22800e+00,  1.70500e+00,  1.70700e+00}
+   x[  777]={ 2.39900e+00,  1.72400e+00,  1.75300e+00}
+   x[  778]={ 2.30100e+00,  1.86700e+00,  1.71600e+00}
+   x[  779]={ 2.62800e+00,  9.88000e-01,  1.00500e+00}
+   x[  780]={ 2.48700e+00,  9.65000e-01,  1.03800e+00}
+   x[  781]={ 2.67900e+00,  8.74000e-01,  9.27000e-01}
+   x[  782]={ 2.44200e+00,  8.31000e-01,  9.81000e-01}
+   x[  783]={ 2.56800e+00,  7.71000e-01,  9.08000e-01}
+   x[  784]={ 2.64000e+00,  1.11100e+00,  9.25000e-01}
+   x[  785]={ 2.70700e+00,  1.00200e+00,  1.12800e+00}
+   x[  786]={ 2.42600e+00,  1.04500e+00,  9.96000e-01}
+   x[  787]={ 2.47500e+00,  9.64000e-01,  1.14700e+00}
+   x[  788]={ 2.71300e+00,  9.09000e-01,  8.29000e-01}
+   x[  789]={ 2.76300e+00,  8.28000e-01,  9.80000e-01}
+   x[  790]={ 2.35900e+00,  8.44000e-01,  9.11000e-01}
+   x[  791]={ 2.40800e+00,  7.64000e-01,  1.06100e+00}
+   x[  792]={ 2.54700e+00,  7.56000e-01,  8.02000e-01}
+   x[  793]={ 2.59600e+00,  6.75000e-01,  9.51000e-01}
+   x[  794]={ 2.60200e+00,  1.19600e+00,  9.83000e-01}
+   x[  795]={ 2.74500e+00,  1.12800e+00,  9.00000e-01}
+   x[  796]={ 2.58200e+00,  1.10100e+00,  8.33000e-01}
+   x[  797]={ 2.81100e+00,  1.01900e+00,  1.10300e+00}
+   x[  798]={ 2.66900e+00,  1.08600e+00,  1.18600e+00}
+   x[  799]={ 2.69500e+00,  8.74000e-01,  1.21100e+00}
+   x[  800]={ 2.73200e+00,  7.90000e-01,  1.15300e+00}
+   x[  801]={ 2.59000e+00,  8.57000e-01,  1.23600e+00}
+   x[  802]={ 2.77600e+00,  8.88000e-01,  1.33900e+00}
+   x[  803]={ 2.73900e+00,  9.73000e-01,  1.39700e+00}
+   x[  804]={ 2.88100e+00,  9.06000e-01,  1.31400e+00}
+   x[  805]={ 2.76800e+00,  7.97000e-01,  1.39800e+00}
+   x[  806]={ 1.89700e+00,  1.26600e+00,  2.40500e+00}
+   x[  807]={ 1.75600e+00,  1.30800e+00,  2.40500e+00}
+   x[  808]={ 1.90700e+00,  1.13100e+00,  2.34800e+00}
+   x[  809]={ 1.66900e+00,  1.19800e+00,  2.34500e+00}
+   x[  810]={ 1.76800e+00,  1.08100e+00,  2.30800e+00}
+   x[  811]={ 1.97700e+00,  1.35900e+00,  2.32500e+00}
+   x[  812]={ 1.94800e+00,  1.26400e+00,  2.54300e+00}
+   x[  813]={ 1.74600e+00,  1.39900e+00,  2.34500e+00}
+   x[  814]={ 1.72400e+00,  1.32800e+00,  2.50700e+00}
+   x[  815]={ 1.97100e+00,  1.13300e+00,  2.26000e+00}
+   x[  816]={ 1.95000e+00,  1.06300e+00,  2.42100e+00}
+   x[  817]={ 1.61600e+00,  1.23400e+00,  2.25700e+00}
+   x[  818]={ 1.59500e+00,  1.16400e+00,  2.41800e+00}
+   x[  819]={ 1.76400e+00,  1.06000e+00,  2.20100e+00}
+   x[  820]={ 1.74200e+00,  9.90000e-01,  2.36200e+00}
+   x[  821]={ 1.96900e+00,  1.45900e+00,  2.36700e+00}
+   x[  822]={ 2.08100e+00,  1.32800e+00,  2.32500e+00}
+   x[  823]={ 1.93900e+00,  1.36000e+00,  2.22200e+00}
+   x[  824]={ 2.05200e+00,  1.23200e+00,  2.54300e+00}
+   x[  825]={ 1.94000e+00,  1.36400e+00,  2.58600e+00}
+   x[  826]={ 1.86500e+00,  1.16600e+00,  2.62700e+00}
+   x[  827]={ 1.87200e+00,  1.06600e+00,  2.58400e+00}
+   x[  828]={ 1.76100e+00,  1.19800e+00,  2.62700e+00}
+   x[  829]={ 1.91800e+00,  1.16500e+00,  2.77000e+00}
+   x[  830]={ 1.91000e+00,  1.26500e+00,  2.81300e+00}
+   x[  831]={ 2.02200e+00,  1.13300e+00,  2.77000e+00}
+   x[  832]={ 1.85900e+00,  1.09500e+00,  2.83000e+00}
+   x[  833]={ 5.38000e-01,  1.64600e+00,  8.74000e-01}
+   x[  834]={ 4.54000e-01,  1.76100e+00,  9.11000e-01}
+   x[  835]={ 4.54000e-01,  1.54200e+00,  8.13000e-01}
+   x[  836]={ 3.09000e-01,  1.73200e+00,  8.74000e-01}
+   x[  837]={ 3.08000e-01,  1.58900e+00,  8.10000e-01}
+   x[  838]={ 6.40000e-01,  1.68900e+00,  7.77000e-01}
+   x[  839]={ 6.04000e-01,  1.59200e+00,  9.93000e-01}
+   x[  840]={ 4.89000e-01,  1.85000e+00,  8.58000e-01}
+   x[  841]={ 4.62000e-01,  1.77800e+00,  1.01900e+00}
+   x[  842]={ 4.88000e-01,  1.52200e+00,  7.11000e-01}
+   x[  843]={ 4.61000e-01,  1.45000e+00,  8.72000e-01}
+   x[  844]={ 2.72000e-01,  1.80700e+00,  8.04000e-01}
+   x[  845]={ 2.45000e-01,  1.73500e+00,  9.63000e-01}
+   x[  846]={ 2.71000e-01,  1.59300e+00,  7.08000e-01}
+   x[  847]={ 2.44000e-01,  1.52100e+00,  8.67000e-01}
+   x[  848]={ 7.03000e-01,  1.76600e+00,  8.22000e-01}
+   x[  849]={ 7.02000e-01,  1.60300e+00,  7.49000e-01}
+   x[  850]={ 5.91000e-01,  1.72900e+00,  6.88000e-01}
+   x[  851]={ 6.66000e-01,  1.50600e+00,  9.66000e-01}
+   x[  852]={ 6.66000e-01,  1.66900e+00,  1.03900e+00}
+   x[  853]={ 4.98000e-01,  1.54700e+00,  1.09400e+00}
+   x[  854]={ 4.35000e-01,  1.47000e+00,  1.04900e+00}
+   x[  855]={ 4.36000e-01,  1.63200e+00,  1.12200e+00}
+   x[  856]={ 5.66000e-01,  1.49000e+00,  1.21900e+00}
+   x[  857]={ 6.29000e-01,  1.56700e+00,  1.26400e+00}
+   x[  858]={ 6.28000e-01,  1.40500e+00,  1.19100e+00}
+   x[  859]={ 4.91000e-01,  1.45900e+00,  1.29100e+00}
+   x[  860]={ 1.32700e+00,  7.15000e-01,  1.88200e+00}
+   x[  861]={ 1.37900e+00,  8.42000e-01,  1.82800e+00}
+   x[  862]={ 1.42600e+00,  6.09000e-01,  1.86200e+00}
+   x[  863]={ 1.51900e+00,  8.18000e-01,  1.77000e+00}
+   x[  864]={ 1.54900e+00,  6.66000e-01,  1.79300e+00}
+   x[  865]={ 1.29900e+00,  7.31000e-01,  2.02500e+00}
+   x[  866]={ 1.20200e+00,  6.80000e-01,  1.81100e+00}
+   x[  867]={ 1.38500e+00,  9.16000e-01,  1.90800e+00}
+   x[  868]={ 1.31300e+00,  8.78000e-01,  1.74900e+00}
+   x[  869]={ 1.45500e+00,  5.67000e-01,  1.95900e+00}
+   x[  870]={ 1.38300e+00,  5.30000e-01,  1.80000e+00}
+   x[  871]={ 1.59200e+00,  8.81000e-01,  1.82100e+00}
+   x[  872]={ 1.52100e+00,  8.43000e-01,  1.66400e+00}
+   x[  873]={ 1.63800e+00,  6.53000e-01,  1.85500e+00}
+   x[  874]={ 1.56700e+00,  6.16000e-01,  1.69700e+00}
+   x[  875]={ 1.22500e+00,  8.10000e-01,  2.04000e+00}
+   x[  876]={ 1.26000e+00,  6.37000e-01,  2.06500e+00}
+   x[  877]={ 1.39100e+00,  7.57000e-01,  2.07700e+00}
+   x[  878]={ 1.16300e+00,  5.86000e-01,  1.85100e+00}
+   x[  879]={ 1.12900e+00,  7.59000e-01,  1.82600e+00}
+   x[  880]={ 1.23100e+00,  6.64000e-01,  1.66200e+00}
+   x[  881]={ 1.30400e+00,  5.85000e-01,  1.64800e+00}
+   x[  882]={ 1.27000e+00,  7.57000e-01,  1.62200e+00}
+   x[  883]={ 1.10200e+00,  6.27000e-01,  1.58900e+00}
+   x[  884]={ 1.02800e+00,  7.06000e-01,  1.60400e+00}
+   x[  885]={ 1.06300e+00,  5.33000e-01,  1.62900e+00}
+   x[  886]={ 1.12200e+00,  6.15000e-01,  1.48300e+00}
+   x[  887]={ 3.23000e-01,  1.10400e+00,  1.28400e+00}
+   x[  888]={ 2.24000e-01,  1.00000e+00,  1.25300e+00}
+   x[  889]={ 4.57000e-01,  1.04200e+00,  1.29200e+00}
+   x[  890]={ 2.93000e-01,  8.64000e-01,  1.24100e+00}
+   x[  891]={ 4.46000e-01,  8.92000e-01,  1.26600e+00}
+   x[  892]={ 3.23000e-01,  1.20500e+00,  1.17700e+00}
+   x[  893]={ 2.91000e-01,  1.16700e+00,  1.41200e+00}
+   x[  894]={ 1.74000e-01,  1.02400e+00,  1.16000e+00}
+   x[  895]={ 1.50000e-01,  9.96000e-01,  1.33400e+00}
+   x[  896]={ 5.22000e-01,  1.08700e+00,  1.21700e+00}
+   x[  897]={ 4.99000e-01,  1.05900e+00,  1.39100e+00}
+   x[  898]={ 2.78000e-01,  8.22000e-01,  1.14200e+00}
+   x[  899]={ 2.54000e-01,  7.94000e-01,  1.31500e+00}
+   x[  900]={ 5.05000e-01,  8.63000e-01,  1.18000e+00}
+   x[  901]={ 4.82000e-01,  8.36000e-01,  1.35200e+00}
+   x[  902]={ 2.24000e-01,  1.25000e+00,  1.17100e+00}
+   x[  903]={ 3.96000e-01,  1.28200e+00,  1.20000e+00}
+   x[  904]={ 3.47000e-01,  1.15800e+00,  1.08200e+00}
+   x[  905]={ 3.64000e-01,  1.24400e+00,  1.43500e+00}
+   x[  906]={ 1.92000e-01,  1.21200e+00,  1.40600e+00}
+   x[  907]={ 2.92000e-01,  1.06200e+00,  1.52300e+00}
+   x[  908]={ 3.91000e-01,  1.01600e+00,  1.52900e+00}
+   x[  909]={ 2.18000e-01,  9.85000e-01,  1.50100e+00}
+   x[  910]={ 2.58000e-01,  1.12800e+00,  1.65700e+00}
+   x[  911]={ 1.59000e-01,  1.17300e+00,  1.65100e+00}
+   x[  912]={ 3.31000e-01,  1.20500e+00,  1.67900e+00}
+   x[  913]={ 2.58000e-01,  1.05300e+00,  1.73600e+00}
+   x[  914]={ 3.07200e+00,  7.87000e-01,  2.03700e+00}
+   x[  915]={ 3.21100e+00,  7.41000e-01,  2.03600e+00}
+   x[  916]={ 2.99500e+00,  7.15000e-01,  1.93500e+00}
+   x[  917]={ 3.22900e+00,  6.34000e-01,  1.92800e+00}
+   x[  918]={ 3.08700e+00,  6.18000e-01,  1.86100e+00}
+   x[  919]={ 3.01300e+00,  7.61000e-01,  2.17000e+00}
+   x[  920]={ 3.06800e+00,  9.32000e-01,  2.01000e+00}
+   x[  921]={ 3.23700e+00,  6.99000e-01,  2.13300e+00}
+   x[  922]={ 3.27700e+00,  8.25000e-01,  2.01400e+00}
+   x[  923]={ 2.91400e+00,  6.60000e-01,  1.98200e+00}
+   x[  924]={ 2.95400e+00,  7.87000e-01,  1.86300e+00}
+   x[  925]={ 3.26200e+00,  5.40000e-01,  1.97100e+00}
+   x[  926]={ 3.30200e+00,  6.66000e-01,  1.85400e+00}
+   x[  927]={ 3.05100e+00,  5.15000e-01,  1.87300e+00}
+   x[  928]={ 3.09100e+00,  6.41000e-01,  1.75500e+00}
+   x[  929]={ 3.07000e+00,  8.14000e-01,  2.24600e+00}
+   x[  930]={ 2.91000e+00,  7.95000e-01,  2.17100e+00}
+   x[  931]={ 3.01600e+00,  6.54000e-01,  2.19000e+00}
+   x[  932]={ 2.96400e+00,  9.66000e-01,  2.01100e+00}
+   x[  933]={ 3.12500e+00,  9.85000e-01,  2.08600e+00}
+   x[  934]={ 3.12800e+00,  9.59000e-01,  1.87200e+00}
+   x[  935]={ 3.07200e+00,  9.06000e-01,  1.79600e+00}
+   x[  936]={ 3.23200e+00,  9.25000e-01,  1.87100e+00}
+   x[  937]={ 3.12400e+00,  1.10900e+00,  1.84300e+00}
+   x[  938]={ 3.18100e+00,  1.16300e+00,  1.91900e+00}
+   x[  939]={ 3.02000e+00,  1.14300e+00,  1.84500e+00}
+   x[  940]={ 3.16700e+00,  1.12900e+00,  1.74500e+00}
+   x[  941]={ 1.17700e+00,  1.45900e+00,  2.81000e+00}
+   x[  942]={ 1.25700e+00,  1.54300e+00,  2.72000e+00}
+   x[  943]={ 1.15400e+00,  1.32700e+00,  2.74800e+00}
+   x[  944]={ 1.28900e+00,  1.46400e+00,  2.59200e+00}
+   x[  945]={ 1.22100e+00,  1.32400e+00,  2.61100e+00}
+   x[  946]={ 1.24900e+00,  1.44000e+00,  2.93700e+00}
+   x[  947]={ 1.04800e+00,  1.52400e+00,  2.83600e+00}
+   x[  948]={ 1.35000e+00,  1.57100e+00,  2.77000e+00}
+   x[  949]={ 1.20100e+00,  1.63200e+00,  2.69400e+00}
+   x[  950]={ 1.19600e+00,  1.24900e+00,  2.81100e+00}
+   x[  951]={ 1.04700e+00,  1.31100e+00,  2.73600e+00}
+   x[  952]={ 1.39700e+00,  1.45400e+00,  2.57900e+00}
+   x[  953]={ 1.24900e+00,  1.51500e+00,  2.50500e+00}
+   x[  954]={ 1.29600e+00,  1.24400e+00,  2.60700e+00}
+   x[  955]={ 1.14800e+00,  1.30500e+00,  2.53200e+00}
+   x[  956]={ 1.26600e+00,  1.53800e+00,  2.98400e+00}
+   x[  957]={ 1.18900e+00,  1.37800e+00,  3.00400e+00}
+   x[  958]={ 1.34400e+00,  1.39200e+00,  2.91800e+00}
+   x[  959]={ 9.88000e-01,  1.46200e+00,  2.90300e+00}
+   x[  960]={ 1.06400e+00,  1.62100e+00,  2.88200e+00}
+   x[  961]={ 9.73000e-01,  1.54300e+00,  2.70400e+00}
+   x[  962]={ 9.56000e-01,  1.44600e+00,  2.65800e+00}
+   x[  963]={ 1.03200e+00,  1.60500e+00,  2.63700e+00}
+   x[  964]={ 8.38000e-01,  1.61100e+00,  2.73100e+00}
+   x[  965]={ 8.55000e-01,  1.70800e+00,  2.77700e+00}
+   x[  966]={ 7.79000e-01,  1.54800e+00,  2.79700e+00}
+   x[  967]={ 7.85000e-01,  1.62400e+00,  2.63600e+00}
+   x[  968]={ 1.21100e+00,  5.59000e-01,  2.53000e+00}
+   x[  969]={ 1.33300e+00,  5.44000e-01,  2.61100e+00}
+   x[  970]={ 1.24600e+00,  6.17000e-01,  2.39900e+00}
+   x[  971]={ 1.45400e+00,  5.95000e-01,  2.53200e+00}
+   x[  972]={ 1.39700e+00,  6.43000e-01,  2.39400e+00}
+   x[  973]={ 1.15000e+00,  4.26000e-01,  2.50900e+00}
+   x[  974]={ 1.11600e+00,  6.46000e-01,  2.59900e+00}
+   x[  975]={ 1.34800e+00,  4.39000e-01,  2.63600e+00}
+   x[  976]={ 1.32200e+00,  6.02000e-01,  2.70300e+00}
+   x[  977]={ 1.21800e+00,  5.48000e-01,  2.32000e+00}
+   x[  978]={ 1.19300e+00,  7.11000e-01,  2.38600e+00}
+   x[  979]={ 1.52700e+00,  5.16000e-01,  2.51900e+00}
+   x[  980]={ 1.50200e+00,  6.78000e-01,  2.58500e+00}
+   x[  981]={ 1.44200e+00,  5.87000e-01,  2.31200e+00}
+   x[  982]={ 1.41700e+00,  7.49000e-01,  2.37800e+00}
+   x[  983]={ 1.12400e+00,  3.83000e-01,  2.60500e+00}
+   x[  984]={ 1.06000e+00,  4.37000e-01,  2.44800e+00}
+   x[  985]={ 1.22100e+00,  3.61000e-01,  2.45700e+00}
+   x[  986]={ 1.02600e+00,  6.57000e-01,  2.53800e+00}
+   x[  987]={ 1.09000e+00,  6.03000e-01,  2.69500e+00}
+   x[  988]={ 1.17900e+00,  7.84000e-01,  2.62000e+00}
+   x[  989]={ 1.20500e+00,  8.27000e-01,  2.52300e+00}
+   x[  990]={ 1.26900e+00,  7.74000e-01,  2.68100e+00}
+   x[  991]={ 1.08000e+00,  8.75000e-01,  2.69200e+00}
+   x[  992]={ 1.05400e+00,  8.32000e-01,  2.78900e+00}
+   x[  993]={ 9.89000e-01,  8.86000e-01,  2.63200e+00}
+   x[  994]={ 1.12500e+00,  9.73000e-01,  2.70700e+00}
+   x[  995]={ 2.61900e+00,  1.39100e+00,  1.62100e+00}
+   x[  996]={ 2.74500e+00,  1.46800e+00,  1.61700e+00}
+   x[  997]={ 2.65000e+00,  1.24800e+00,  1.63200e+00}
+   x[  998]={ 2.86400e+00,  1.37200e+00,  1.62500e+00}
+   x[  999]={ 2.80100e+00,  1.22800e+00,  1.63500e+00}
+   x[ 1000]={ 2.54000e+00,  1.43300e+00,  1.73800e+00}
+   x[ 1001]={ 2.54300e+00,  1.41600e+00,  1.49800e+00}
+   x[ 1002]={ 2.74800e+00,  1.53700e+00,  1.70100e+00}
+   x[ 1003]={ 2.75000e+00,  1.52400e+00,  1.52400e+00}
+   x[ 1004]={ 2.60600e+00,  1.20800e+00,  1.72400e+00}
+   x[ 1005]={ 2.60800e+00,  1.19500e+00,  1.54600e+00}
+   x[ 1006]={ 2.92500e+00,  1.39300e+00,  1.71300e+00}
+   x[ 1007]={ 2.92700e+00,  1.38100e+00,  1.53700e+00}
+   x[ 1008]={ 2.83200e+00,  1.17900e+00,  1.72700e+00}
+   x[ 1009]={ 2.83400e+00,  1.16600e+00,  1.55100e+00}
+   x[ 1010]={ 2.51700e+00,  1.53900e+00,  1.73000e+00}
+   x[ 1011]={ 2.44700e+00,  1.37600e+00,  1.74100e+00}
+   x[ 1012]={ 2.59700e+00,  1.41500e+00,  1.82900e+00}
+   x[ 1013]={ 2.44900e+00,  1.35900e+00,  1.50100e+00}
+   x[ 1014]={ 2.52000e+00,  1.52200e+00,  1.49000e+00}
+   x[ 1015]={ 2.62500e+00,  1.37200e+00,  1.37700e+00}
+   x[ 1016]={ 2.64700e+00,  1.26500e+00,  1.38500e+00}
+   x[ 1017]={ 2.71800e+00,  1.42900e+00,  1.37400e+00}
+   x[ 1018]={ 2.54500e+00,  1.39700e+00,  1.24900e+00}
+   x[ 1019]={ 2.52200e+00,  1.50400e+00,  1.24100e+00}
+   x[ 1020]={ 2.45200e+00,  1.34100e+00,  1.25200e+00}
+   x[ 1021]={ 2.60300e+00,  1.36600e+00,  1.16300e+00}
+   x[ 1022]={ 2.45800e+00,  3.00500e+00,  8.72000e-01}
+   x[ 1023]={ 2.56400e+00,  3.10600e+00,  8.79000e-01}
+   x[ 1024]={ 2.47100e+00,  2.92800e+00,  7.47000e-01}
+   x[ 1025]={ 2.65200e+00,  3.09700e+00,  7.54000e-01}
+   x[ 1026]={ 2.59100e+00,  2.98100e+00,  6.68000e-01}
+   x[ 1027]={ 2.46900e+00,  2.91400e+00,  9.86000e-01}
+   x[ 1028]={ 2.32600e+00,  3.07100e+00,  8.74000e-01}
+   x[ 1029]={ 2.62500e+00,  3.08900e+00,  9.67000e-01}
+   x[ 1030]={ 2.51900e+00,  3.20600e+00,  8.84000e-01}
+   x[ 1031]={ 2.48600e+00,  2.82300e+00,  7.70000e-01}
+   x[ 1032]={ 2.38100e+00,  2.94000e+00,  6.87000e-01}
+   x[ 1033]={ 2.75500e+00,  3.07600e+00,  7.81000e-01}
+   x[ 1034]={ 2.65000e+00,  3.19100e+00,  6.99000e-01}
+   x[ 1035]={ 2.66500e+00,  2.90200e+00,  6.52000e-01}
+   x[ 1036]={ 2.56000e+00,  3.01700e+00,  5.70000e-01}
+   x[ 1037]={ 2.45900e+00,  2.97000e+00,  1.07900e+00}
+   x[ 1038]={ 2.39000e+00,  2.83900e+00,  9.81000e-01}
+   x[ 1039]={ 2.56600e+00,  2.86500e+00,  9.84000e-01}
+   x[ 1040]={ 2.24700e+00,  2.99600e+00,  8.69000e-01}
+   x[ 1041]={ 2.31600e+00,  3.12800e+00,  9.67000e-01}
+   x[ 1042]={ 2.31400e+00,  3.16600e+00,  7.55000e-01}
+   x[ 1043]={ 2.32400e+00,  3.10900e+00,  6.62000e-01}
+   x[ 1044]={ 2.39300e+00,  3.24100e+00,  7.60000e-01}
+   x[ 1045]={ 2.17800e+00,  3.23400e+00,  7.58000e-01}
+   x[ 1046]={ 2.16800e+00,  3.29100e+00,  8.50000e-01}
+   x[ 1047]={ 2.09900e+00,  3.15900e+00,  7.52000e-01}
+   x[ 1048]={ 2.16900e+00,  3.30200e+00,  6.73000e-01}
+   x[ 1049]={ 3.44000e-01,  1.72000e+00,  3.29000e-01}
+   x[ 1050]={ 2.90000e-01,  1.67700e+00,  4.59000e-01}
+   x[ 1051]={ 3.46000e-01,  1.60600e+00,  2.37000e-01}
+   x[ 1052]={ 2.56000e-01,  1.52800e+00,  4.54000e-01}
+   x[ 1053]={ 2.92000e-01,  1.48200e+00,  3.08000e-01}
+   x[ 1054]={ 2.58000e-01,  1.82600e+00,  2.73000e-01}
+   x[ 1055]={ 4.80000e-01,  1.77200e+00,  3.47000e-01}
+   x[ 1056]={ 2.00000e-01,  1.73500e+00,  4.82000e-01}
+   x[ 1057]={ 3.65000e-01,  1.69400e+00,  5.37000e-01}
+   x[ 1058]={ 2.84000e-01,  1.62800e+00,  1.50000e-01}
+   x[ 1059]={ 4.49000e-01,  1.58700e+00,  2.04000e-01}
+   x[ 1060]={ 1.50000e-01,  1.51300e+00,  4.74000e-01}
+   x[ 1061]={ 3.13000e-01,  1.47300e+00,  5.28000e-01}
+   x[ 1062]={ 2.05000e-01,  1.44300e+00,  2.57000e-01}
+   x[ 1063]={ 3.68000e-01,  1.40300e+00,  3.11000e-01}
+   x[ 1064]={ 2.56000e-01,  1.91100e+00,  3.42000e-01}
+   x[ 1065]={ 2.98000e-01,  1.85800e+00,  1.77000e-01}
+   x[ 1066]={ 1.57000e-01,  1.78800e+00,  2.60000e-01}
+   x[ 1067]={ 5.20000e-01,  1.80400e+00,  2.50000e-01}
+   x[ 1068]={ 4.78000e-01,  1.85700e+00,  4.15000e-01}
+   x[ 1069]={ 5.69000e-01,  1.66200e+00,  4.05000e-01}
+   x[ 1070]={ 5.71000e-01,  1.57700e+00,  3.36000e-01}
+   x[ 1071]={ 5.30000e-01,  1.63000e+00,  5.01000e-01}
+   x[ 1072]={ 7.11000e-01,  1.71600e+00,  4.23000e-01}
+   x[ 1073]={ 7.10000e-01,  1.80100e+00,  4.91000e-01}
+   x[ 1074]={ 7.51000e-01,  1.74800e+00,  3.26000e-01}
+   x[ 1075]={ 7.75000e-01,  1.63800e+00,  4.64000e-01}
+   x[ 1076]={ 1.86500e+00,  2.60900e+00,  1.68000e+00}
+   x[ 1077]={ 1.85700e+00,  2.62800e+00,  1.82500e+00}
+   x[ 1078]={ 1.92000e+00,  2.73100e+00,  1.61700e+00}
+   x[ 1079]={ 1.90800e+00,  2.76800e+00,  1.86200e+00}
+   x[ 1080]={ 1.94900e+00,  2.83500e+00,  1.72500e+00}
+   x[ 1081]={ 1.95400e+00,  2.49500e+00,  1.65000e+00}
+   x[ 1082]={ 1.73100e+00,  2.58200e+00,  1.62600e+00}
+   x[ 1083]={ 1.91800e+00,  2.55300e+00,  1.87600e+00}
+   x[ 1084]={ 1.75300e+00,  2.61800e+00,  1.85700e+00}
+   x[ 1085]={ 2.01200e+00,  2.70700e+00,  1.56500e+00}
+   x[ 1086]={ 1.84700e+00,  2.77100e+00,  1.54700e+00}
+   x[ 1087]={ 1.99300e+00,  2.76200e+00,  1.92900e+00}
+   x[ 1088]={ 1.82900e+00,  2.82600e+00,  1.91100e+00}
+   x[ 1089]={ 2.05500e+00,  2.86200e+00,  1.72600e+00}
+   x[ 1090]={ 1.89100e+00,  2.92600e+00,  1.70800e+00}
+   x[ 1091]={ 1.91300e+00,  2.40500e+00,  1.69600e+00}
+   x[ 1092]={ 1.96000e+00,  2.48100e+00,  1.54300e+00}
+   x[ 1093]={ 2.05300e+00,  2.51500e+00,  1.69000e+00}
+   x[ 1094]={ 1.73800e+00,  2.56800e+00,  1.51800e+00}
+   x[ 1095]={ 1.69100e+00,  2.49300e+00,  1.67200e+00}
+   x[ 1096]={ 1.63900e+00,  2.70100e+00,  1.65600e+00}
+   x[ 1097]={ 1.68000e+00,  2.79100e+00,  1.61000e+00}
+   x[ 1098]={ 1.63300e+00,  2.71500e+00,  1.76400e+00}
+   x[ 1099]={ 1.50000e+00,  2.67300e+00,  1.60000e+00}
+   x[ 1100]={ 1.45900e+00,  2.58300e+00,  1.64600e+00}
+   x[ 1101]={ 1.50600e+00,  2.65900e+00,  1.49200e+00}
+   x[ 1102]={ 1.43400e+00,  2.75700e+00,  1.62200e+00}
+   x[ 1103]={ 1.67700e+00,  1.66600e+00,  2.96100e+00}
+   x[ 1104]={ 1.64400e+00,  1.58500e+00,  2.84200e+00}
+   x[ 1105]={ 1.80900e+00,  1.62700e+00,  3.01200e+00}
+   x[ 1106]={ 1.76000e+00,  1.48900e+00,  2.81300e+00}
+   x[ 1107]={ 1.86800e+00,  1.51700e+00,  2.92400e+00}
+   x[ 1108]={ 1.67800e+00,  1.80800e+00,  2.92400e+00}
+   x[ 1109]={ 1.57500e+00,  1.64300e+00,  3.06500e+00}
+   x[ 1110]={ 1.62900e+00,  1.65000e+00,  2.75600e+00}
+   x[ 1111]={ 1.55400e+00,  1.52700e+00,  2.86100e+00}
+   x[ 1112]={ 1.87500e+00,  1.71400e+00,  3.01000e+00}
+   x[ 1113]={ 1.80000e+00,  1.59100e+00,  3.11400e+00}
+   x[ 1114]={ 1.80100e+00,  1.50700e+00,  2.71400e+00}
+   x[ 1115]={ 1.72600e+00,  1.38500e+00,  2.81700e+00}
+   x[ 1116]={ 1.96200e+00,  1.54900e+00,  2.87900e+00}
+   x[ 1117]={ 1.88700e+00,  1.42700e+00,  2.98300e+00}
+   x[ 1118]={ 1.57900e+00,  1.83700e+00,  2.88600e+00}
+   x[ 1119]={ 1.70100e+00,  1.86800e+00,  3.01200e+00}
+   x[ 1120]={ 1.75300e+00,  1.82500e+00,  2.84700e+00}
+   x[ 1121]={ 1.59900e+00,  1.70300e+00,  3.15300e+00}
+   x[ 1122]={ 1.47700e+00,  1.67100e+00,  3.02700e+00}
+   x[ 1123]={ 1.57400e+00,  1.49500e+00,  3.10300e+00}
+   x[ 1124]={ 1.67300e+00,  1.46600e+00,  3.14100e+00}
+   x[ 1125]={ 1.55100e+00,  1.43400e+00,  3.01600e+00}
+   x[ 1126]={ 1.46900e+00,  1.47000e+00,  3.21200e+00}
+   x[ 1127]={ 1.37100e+00,  1.49900e+00,  3.17400e+00}
+   x[ 1128]={ 1.49300e+00,  1.53100e+00,  3.29900e+00}
+   x[ 1129]={ 1.46900e+00,  1.36500e+00,  3.23900e+00}
+   x[ 1130]={ 1.18100e+00,  1.95000e+00,  1.58900e+00}
+   x[ 1131]={ 1.20800e+00,  2.04900e+00,  1.48300e+00}
+   x[ 1132]={ 1.21100e+00,  1.81500e+00,  1.53800e+00}
+   x[ 1133]={ 1.25800e+00,  1.97800e+00,  1.35800e+00}
+   x[ 1134]={ 1.26000e+00,  1.82500e+00,  1.39300e+00}
+   x[ 1135]={ 1.26500e+00,  1.97800e+00,  1.70600e+00}
+   x[ 1136]={ 1.03900e+00,  1.95700e+00,  1.62800e+00}
+   x[ 1137]={ 1.28400e+00,  2.11900e+00,  1.51800e+00}
+   x[ 1138]={ 1.11600e+00,  2.10300e+00,  1.46000e+00}
+   x[ 1139]={ 1.28900e+00,  1.77000e+00,  1.59900e+00}
+   x[ 1140]={ 1.12100e+00,  1.75400e+00,  1.54200e+00}
+   x[ 1141]={ 1.35700e+00,  2.01300e+00,  1.33100e+00}
+   x[ 1142]={ 1.19100e+00,  1.99700e+00,  1.27300e+00}
+   x[ 1143]={ 1.36100e+00,  1.78500e+00,  1.38400e+00}
+   x[ 1144]={ 1.19500e+00,  1.76900e+00,  1.32700e+00}
+   x[ 1145]={ 1.24300e+00,  2.07800e+00,  1.74300e+00}
+   x[ 1146]={ 1.24600e+00,  1.90500e+00,  1.78300e+00}
+   x[ 1147]={ 1.37000e+00,  1.97300e+00,  1.67700e+00}
+   x[ 1148]={ 1.02000e+00,  1.88300e+00,  1.70600e+00}
+   x[ 1149]={ 1.01700e+00,  2.05600e+00,  1.66500e+00}
+   x[ 1150]={ 9.51000e-01,  1.92700e+00,  1.50600e+00}
+   x[ 1151]={ 9.74000e-01,  1.82700e+00,  1.46900e+00}
+   x[ 1152]={ 9.71000e-01,  2.00000e+00,  1.42800e+00}
+   x[ 1153]={ 8.04000e-01,  1.93400e+00,  1.54700e+00}
+   x[ 1154]={ 7.81000e-01,  2.03400e+00,  1.58400e+00}
+   x[ 1155]={ 7.84000e-01,  1.86100e+00,  1.62500e+00}
+   x[ 1156]={ 7.41000e-01,  1.91300e+00,  1.46000e+00}
+   x[ 1157]={ 3.47000e-01,  2.49200e+00,  9.60000e-01}
+   x[ 1158]={ 2.51000e-01,  2.59700e+00,  9.24000e-01}
+   x[ 1159]={ 4.37000e-01,  2.54100e+00,  1.06600e+00}
+   x[ 1160]={ 2.78000e-01,  2.72200e+00,  1.00800e+00}
+   x[ 1161]={ 4.00000e-01,  2.68500e+00,  1.10100e+00}
+   x[ 1162]={ 2.74000e-01,  2.37400e+00,  1.01000e+00}
+   x[ 1163]={ 4.26000e-01,  2.45400e+00,  8.42000e-01}
+   x[ 1164]={ 1.49000e-01,  2.56200e+00,  9.43000e-01}
+   x[ 1165]={ 2.62000e-01,  2.62200e+00,  8.18000e-01}
+   x[ 1166]={ 4.27000e-01,  2.47800e+00,  1.15400e+00}
+   x[ 1167]={ 5.40000e-01,  2.53800e+00,  1.03000e+00}
+   x[ 1168]={ 1.91000e-01,  2.74800e+00,  1.06800e+00}
+   x[ 1169]={ 3.02000e-01,  2.80700e+00,  9.45000e-01}
+   x[ 1170]={ 3.72000e-01,  2.69300e+00,  1.20600e+00}
+   x[ 1171]={ 4.84000e-01,  2.75200e+00,  1.08300e+00}
+   x[ 1172]={ 2.07000e-01,  2.33700e+00,  9.32000e-01}
+   x[ 1173]={ 3.45000e-01,  2.29600e+00,  1.03600e+00}
+   x[ 1174]={ 2.15000e-01,  2.40100e+00,  1.09700e+00}
+   x[ 1175]={ 4.97000e-01,  2.37600e+00,  8.69000e-01}
+   x[ 1176]={ 3.59000e-01,  2.41800e+00,  7.64000e-01}
+   x[ 1177]={ 5.02000e-01,  2.57700e+00,  7.90000e-01}
+   x[ 1178]={ 5.69000e-01,  2.61400e+00,  8.68000e-01}
+   x[ 1179]={ 4.31000e-01,  2.65500e+00,  7.64000e-01}
+   x[ 1180]={ 5.84000e-01,  2.53800e+00,  6.68000e-01}
+   x[ 1181]={ 5.17000e-01,  2.50100e+00,  5.89000e-01}
+   x[ 1182]={ 6.55000e-01,  2.46000e+00,  6.94000e-01}
+   x[ 1183]={ 6.38000e-01,  2.62500e+00,  6.31000e-01}
+   x[ 1184]={ 1.89800e+00,  3.61000e-01,  2.39000e+00}
+   x[ 1185]={ 2.01600e+00,  4.42000e-01,  2.35500e+00}
+   x[ 1186]={ 1.90600e+00,  2.31000e-01,  2.32100e+00}
+   x[ 1187]={ 2.10600e+00,  3.63000e-01,  2.26000e+00}
+   x[ 1188]={ 2.03400e+00,  2.25000e-01,  2.23800e+00}
+   x[ 1189]={ 1.89400e+00,  3.40000e-01,  2.53500e+00}
+   x[ 1190]={ 1.77600e+00,  4.31000e-01,  2.34700e+00}
+   x[ 1191]={ 2.07100e+00,  4.66000e-01,  2.44600e+00}
+   x[ 1192]={ 1.98400e+00,  5.34000e-01,  2.30600e+00}
+   x[ 1193]={ 1.90700e+00,  1.51000e-01,  2.39500e+00}
+   x[ 1194]={ 1.82000e+00,  2.18000e-01,  2.25600e+00}
+   x[ 1195]={ 2.20500e+00,  3.49000e-01,  2.30400e+00}
+   x[ 1196]={ 2.11800e+00,  4.16000e-01,  2.16600e+00}
+   x[ 1197]={ 2.09800e+00,  1.42000e-01,  2.27100e+00}
+   x[ 1198]={ 2.01100e+00,  2.10000e-01,  2.13300e+00}
+   x[ 1199]={ 1.88800e+00,  4.36000e-01,  2.58600e+00}
+   x[ 1200]={ 1.80600e+00,  2.79000e-01,  2.56000e+00}
+   x[ 1201]={ 1.98400e+00,  2.88000e-01,  2.56700e+00}
+   x[ 1202]={ 1.68900e+00,  3.71000e-01,  2.37200e+00}
+   x[ 1203]={ 1.77000e+00,  5.27000e-01,  2.39700e+00}
+   x[ 1204]={ 1.78000e+00,  4.53000e-01,  2.19500e+00}
+   x[ 1205]={ 1.78600e+00,  3.56000e-01,  2.14500e+00}
+   x[ 1206]={ 1.86700e+00,  5.13000e-01,  2.17000e+00}
+   x[ 1207]={ 1.65300e+00,  5.26000e-01,  2.15100e+00}
+   x[ 1208]={ 1.64700e+00,  6.22000e-01,  2.20100e+00}
+   x[ 1209]={ 1.56600e+00,  4.65000e-01,  2.17700e+00}
+   x[ 1210]={ 1.65600e+00,  5.41000e-01,  2.04300e+00}
+   x[ 1211]={ 1.17400e+00,  1.46800e+00,  3.57000e-01}
+   x[ 1212]={ 1.22400e+00,  1.33000e+00,  3.62000e-01}
+   x[ 1213]={ 1.28100e+00,  1.56100e+00,  3.94000e-01}
+   x[ 1214]={ 1.37100e+00,  1.33100e+00,  4.04000e-01}
+   x[ 1215]={ 1.40800e+00,  1.48300e+00,  4.25000e-01}
+   x[ 1216]={ 1.12800e+00,  1.49900e+00,  2.21000e-01}
+   x[ 1217]={ 1.06100e+00,  1.48300e+00,  4.51000e-01}
+   x[ 1218]={ 1.21500e+00,  1.28500e+00,  2.63000e-01}
+   x[ 1219]={ 1.16600e+00,  1.27300e+00,  4.34000e-01}
+   x[ 1220]={ 1.30000e+00,  1.63000e+00,  3.12000e-01}
+   x[ 1221]={ 1.25100e+00,  1.61800e+00,  4.82000e-01}
+   x[ 1222]={ 1.43400e+00,  1.28700e+00,  3.27000e-01}
+   x[ 1223]={ 1.38500e+00,  1.27500e+00,  4.96000e-01}
+   x[ 1224]={ 1.48900e+00,  1.51200e+00,  3.59000e-01}
+   x[ 1225]={ 1.44100e+00,  1.50100e+00,  5.28000e-01}
+   x[ 1226]={ 1.04800e+00,  1.43000e+00,  1.93000e-01}
+   x[ 1227]={ 1.09000e+00,  1.60100e+00,  2.17000e-01}
+   x[ 1228]={ 1.21100e+00,  1.48800e+00,  1.51000e-01}
+   x[ 1229]={ 1.02400e+00,  1.58500e+00,  4.47000e-01}
+   x[ 1230]={ 9.82000e-01,  1.41400e+00,  4.23000e-01}
+   x[ 1231]={ 1.10900e+00,  1.45100e+00,  5.93000e-01}
+   x[ 1232]={ 1.18900e+00,  1.52000e+00,  6.20000e-01}
+   x[ 1233]={ 1.14700e+00,  1.34900e+00,  5.96000e-01}
+   x[ 1234]={ 9.93000e-01,  1.46600e+00,  6.90000e-01}
+   x[ 1235]={ 9.13000e-01,  1.39700e+00,  6.63000e-01}
+   x[ 1236]={ 9.55000e-01,  1.56900e+00,  6.87000e-01}
+   x[ 1237]={ 1.02700e+00,  1.44400e+00,  7.91000e-01}
+   x[ 1238]={ 1.08500e+00,  2.15600e+00,  2.63200e+00}
+   x[ 1239]={ 9.71000e-01,  2.14600e+00,  2.54000e+00}
+   x[ 1240]={ 1.07900e+00,  2.04600e+00,  2.73000e+00}
+   x[ 1241]={ 8.85000e-01,  2.02400e+00,  2.57800e+00}
+   x[ 1242]={ 9.56000e-01,  1.95900e+00,  2.70200e+00}
+   x[ 1243]={ 1.21000e+00,  2.14700e+00,  2.55600e+00}
+   x[ 1244]={ 1.08000e+00,  2.28400e+00,  2.70400e+00}
+   x[ 1245]={ 1.00700e+00,  2.13400e+00,  2.43800e+00}
+   x[ 1246]={ 9.10000e-01,  2.23600e+00,  2.54800e+00}
+   x[ 1247]={ 1.16900e+00,  1.98500e+00,  2.72200e+00}
+   x[ 1248]={ 1.07200e+00,  2.08700e+00,  2.83100e+00}
+   x[ 1249]={ 8.80000e-01,  1.95400e+00,  2.49500e+00}
+   x[ 1250]={ 7.84000e-01,  2.05500e+00,  2.60300e+00}
+   x[ 1251]={ 9.86000e-01,  1.85600e+00,  2.68000e+00}
+   x[ 1252]={ 8.90000e-01,  1.95700e+00,  2.78900e+00}
+   x[ 1253]={ 1.21500e+00,  2.22800e+00,  2.48400e+00}
+   x[ 1254]={ 1.29500e+00,  2.15400e+00,  2.62400e+00}
+   x[ 1255]={ 1.21400e+00,  2.05200e+00,  2.50400e+00}
+   x[ 1256]={ 1.16400e+00,  2.29200e+00,  2.77200e+00}
+   x[ 1257]={ 1.08400e+00,  2.36600e+00,  2.63100e+00}
+   x[ 1258]={ 9.49000e-01,  2.29300e+00,  2.78300e+00}
+   x[ 1259]={ 9.45000e-01,  2.21200e+00,  2.85500e+00}
+   x[ 1260]={ 8.64000e-01,  2.28600e+00,  2.71500e+00}
+   x[ 1261]={ 9.44000e-01,  2.42700e+00,  2.85700e+00}
+   x[ 1262]={ 9.48000e-01,  2.50900e+00,  2.78500e+00}
+   x[ 1263]={ 1.02900e+00,  2.43500e+00,  2.92500e+00}
+   x[ 1264]={ 8.51000e-01,  2.43400e+00,  2.91400e+00}
+   x[ 1265]={ 2.91000e-01,  1.57800e+00,  1.93300e+00}
+   x[ 1266]={ 4.35000e-01,  1.60800e+00,  1.93200e+00}
+   x[ 1267]={ 2.14000e-01,  1.70400e+00,  1.93300e+00}
+   x[ 1268]={ 4.55000e-01,  1.75900e+00,  1.93200e+00}
+   x[ 1269]={ 3.11000e-01,  1.82200e+00,  1.93300e+00}
+   x[ 1270]={ 2.57000e-01,  1.50000e+00,  1.81200e+00}
+   x[ 1271]={ 2.57000e-01,  1.50000e+00,  2.05300e+00}
+   x[ 1272]={ 4.81000e-01,  1.56500e+00,  1.84300e+00}
+   x[ 1273]={ 4.81000e-01,  1.56500e+00,  2.02100e+00}
+   x[ 1274]={ 1.51000e-01,  1.70800e+00,  1.84400e+00}
+   x[ 1275]={ 1.52000e-01,  1.70800e+00,  2.02200e+00}
+   x[ 1276]={ 5.11000e-01,  1.79100e+00,  1.84400e+00}
+   x[ 1277]={ 5.11000e-01,  1.79100e+00,  2.02100e+00}
+   x[ 1278]={ 2.96000e-01,  1.88400e+00,  1.84400e+00}
+   x[ 1279]={ 2.96000e-01,  1.88400e+00,  2.02100e+00}
+   x[ 1280]={ 3.13000e-01,  1.40700e+00,  1.81200e+00}
+   x[ 1281]={ 1.50000e-01,  1.47800e+00,  1.81200e+00}
+   x[ 1282]={ 2.82000e-01,  1.55800e+00,  1.72300e+00}
+   x[ 1283]={ 1.50000e-01,  1.47700e+00,  2.05300e+00}
+   x[ 1284]={ 3.13000e-01,  1.40700e+00,  2.05300e+00}
+   x[ 1285]={ 2.92000e-01,  1.58100e+00,  2.17800e+00}
+   x[ 1286]={ 2.35000e-01,  1.67400e+00,  2.17800e+00}
+   x[ 1287]={ 3.99000e-01,  1.60300e+00,  2.17800e+00}
+   x[ 1288]={ 2.57000e-01,  1.50000e+00,  2.30200e+00}
+   x[ 1289]={ 3.13000e-01,  1.40600e+00,  2.30200e+00}
+   x[ 1290]={ 1.50000e-01,  1.47700e+00,  2.30200e+00}
+   x[ 1291]={ 2.82000e-01,  1.55700e+00,  2.39100e+00}
+   x[ 1292]={ 2.89000e+00,  1.13300e+00,  3.14700e+00}
+   x[ 1293]={ 3.00200e+00,  1.10500e+00,  3.05600e+00}
+   x[ 1294]={ 2.76700e+00,  1.15600e+00,  3.06900e+00}
+   x[ 1295]={ 2.95300e+00,  1.11200e+00,  2.91100e+00}
+   x[ 1296]={ 2.79900e+00,  1.14500e+00,  2.92000e+00}
+   x[ 1297]={ 2.87000e+00,  1.01700e+00,  3.23600e+00}
+   x[ 1298]={ 2.92000e+00,  1.25100e+00,  3.22800e+00}
+   x[ 1299]={ 3.04200e+00,  1.00600e+00,  3.07600e+00}
+   x[ 1300]={ 3.08000e+00,  1.18000e+00,  3.07100e+00}
+   x[ 1301]={ 2.69200e+00,  1.08200e+00,  3.09600e+00}
+   x[ 1302]={ 2.73000e+00,  1.25600e+00,  3.09100e+00}
+   x[ 1303]={ 2.96900e+00,  1.01600e+00,  2.86100e+00}
+   x[ 1304]={ 3.00600e+00,  1.18900e+00,  2.85500e+00}
+   x[ 1305]={ 2.74000e+00,  1.06600e+00,  2.87400e+00}
+   x[ 1306]={ 2.77700e+00,  1.23800e+00,  2.86800e+00}
+   x[ 1307]={ 2.96000e+00,  9.99000e-01,  3.29400e+00}
+   x[ 1308]={ 2.78600e+00,  1.03700e+00,  3.30300e+00}
+   x[ 1309]={ 2.84700e+00,  9.29000e-01,  3.17600e+00}
+   x[ 1310]={ 2.83700e+00,  1.27100e+00,  3.29600e+00}
+   x[ 1311]={ 3.01100e+00,  1.23400e+00,  3.28600e+00}
+   x[ 1312]={ 2.94100e+00,  1.37200e+00,  3.13600e+00}
+   x[ 1313]={ 2.85000e+00,  1.39000e+00,  3.07900e+00}
+   x[ 1314]={ 3.02400e+00,  1.35200e+00,  3.06900e+00}
+   x[ 1315]={ 2.97300e+00,  1.49500e+00,  3.22100e+00}
+   x[ 1316]={ 3.06300e+00,  1.47800e+00,  3.27900e+00}
+   x[ 1317]={ 2.88900e+00,  1.51500e+00,  3.28800e+00}
+   x[ 1318]={ 2.98700e+00,  1.58100e+00,  3.15500e+00}
+   x[ 1319]={ 1.37700e+00,  1.28300e+00,  8.94000e-01}
+   x[ 1320]={ 1.29400e+00,  1.27100e+00,  1.01500e+00}
+   x[ 1321]={ 1.51700e+00,  1.25200e+00,  9.26000e-01}
+   x[ 1322]={ 1.38300e+00,  1.23100e+00,  1.13300e+00}
+   x[ 1323]={ 1.52800e+00,  1.21800e+00,  1.07500e+00}
+   x[ 1324]={ 1.32800e+00,  1.18900e+00,  7.92000e-01}
+   x[ 1325]={ 1.36800e+00,  1.42000e+00,  8.42000e-01}
+   x[ 1326]={ 1.21700e+00,  1.19600e+00,  9.99000e-01}
+   x[ 1327]={ 1.24700e+00,  1.36700e+00,  1.03600e+00}
+   x[ 1328]={ 1.54900e+00,  1.16600e+00,  8.67000e-01}
+   x[ 1329]={ 1.57900e+00,  1.33800e+00,  9.04000e-01}
+   x[ 1330]={ 1.34900e+00,  1.13600e+00,  1.17500e+00}
+   x[ 1331]={ 1.37900e+00,  1.30600e+00,  1.21200e+00}
+   x[ 1332]={ 1.56600e+00,  1.11600e+00,  1.08900e+00}
+   x[ 1333]={ 1.59600e+00,  1.28600e+00,  1.12500e+00}
+   x[ 1334]={ 1.22400e+00,  1.21200e+00,  7.68000e-01}
+   x[ 1335]={ 1.38900e+00,  1.19700e+00,  7.02000e-01}
+   x[ 1336]={ 1.33400e+00,  1.08700e+00,  8.30000e-01}
+   x[ 1337]={ 1.42900e+00,  1.42900e+00,  7.52000e-01}
+   x[ 1338]={ 1.26500e+00,  1.44400e+00,  8.17000e-01}
+   x[ 1339]={ 1.41900e+00,  1.51800e+00,  9.47000e-01}
+   x[ 1340]={ 1.52300e+00,  1.49500e+00,  9.71000e-01}
+   x[ 1341]={ 1.35800e+00,  1.51000e+00,  1.03700e+00}
+   x[ 1342]={ 1.41000e+00,  1.66100e+00,  8.93000e-01}
+   x[ 1343]={ 1.30700e+00,  1.68400e+00,  8.69000e-01}
+   x[ 1344]={ 1.47200e+00,  1.66900e+00,  8.03000e-01}
+   x[ 1345]={ 1.44700e+00,  1.73100e+00,  9.69000e-01}
+   x[ 1346]={ 1.76300e+00,  1.82800e+00,  1.86000e+00}
+   x[ 1347]={ 1.75000e+00,  1.86900e+00,  1.71900e+00}
+   x[ 1348]={ 1.63300e+00,  1.84200e+00,  1.92800e+00}
+   x[ 1349]={ 1.60500e+00,  1.91200e+00,  1.69200e+00}
+   x[ 1350]={ 1.52900e+00,  1.89400e+00,  1.82800e+00}
+   x[ 1351]={ 1.80700e+00,  1.68800e+00,  1.86600e+00}
+   x[ 1352]={ 1.86200e+00,  1.91400e+00,  1.92700e+00}
+   x[ 1353]={ 1.77600e+00,  1.78600e+00,  1.65400e+00}
+   x[ 1354]={ 1.81600e+00,  1.95300e+00,  1.69900e+00}
+   x[ 1355]={ 1.60200e+00,  1.74500e+00,  1.96600e+00}
+   x[ 1356]={ 1.64200e+00,  1.91200e+00,  2.01000e+00}
+   x[ 1357]={ 1.56100e+00,  1.85000e+00,  1.61400e+00}
+   x[ 1358]={ 1.60100e+00,  2.01600e+00,  1.65900e+00}
+   x[ 1359]={ 1.44700e+00,  1.82300e+00,  1.81800e+00}
+   x[ 1360]={ 1.48700e+00,  1.98900e+00,  1.86200e+00}
+   x[ 1361]={ 1.90300e+00,  1.67800e+00,  1.81600e+00}
+   x[ 1362]={ 1.81700e+00,  1.65800e+00,  1.97000e+00}
+   x[ 1363]={ 1.73300e+00,  1.62500e+00,  1.81700e+00}
+   x[ 1364]={ 1.87200e+00,  1.88300e+00,  2.03100e+00}
+   x[ 1365]={ 1.95800e+00,  1.90400e+00,  1.87700e+00}
+   x[ 1366]={ 1.81600e+00,  2.05900e+00,  1.92000e+00}
+   x[ 1367]={ 1.72000e+00,  2.07000e+00,  1.97000e+00}
+   x[ 1368]={ 1.80600e+00,  2.09000e+00,  1.81600e+00}
+   x[ 1369]={ 1.92000e+00,  2.14800e+00,  1.99000e+00}
+   x[ 1370]={ 2.01600e+00,  2.13800e+00,  1.94000e+00}
+   x[ 1371]={ 1.93000e+00,  2.11800e+00,  2.09400e+00}
+   x[ 1372]={ 1.88700e+00,  2.25200e+00,  1.98500e+00}
+   x[ 1373]={ 9.32000e-01,  3.27000e-01,  6.08000e-01}
+   x[ 1374]={ 1.02200e+00,  2.11000e-01,  6.07000e-01}
+   x[ 1375]={ 1.01000e+00,  4.51000e-01,  6.09000e-01}
+   x[ 1376]={ 1.16700e+00,  2.60000e-01,  6.08000e-01}
+   x[ 1377]={ 1.16000e+00,  4.17000e-01,  6.09000e-01}
+   x[ 1378]={ 8.47000e-01,  3.24000e-01,  4.88000e-01}
+   x[ 1379]={ 8.47000e-01,  3.22000e-01,  7.28000e-01}
+   x[ 1380]={ 1.00400e+00,  1.52000e-01,  5.17000e-01}
+   x[ 1381]={ 1.00400e+00,  1.50000e-01,  6.95000e-01}
+   x[ 1382]={ 9.87000e-01,  5.10000e-01,  5.21000e-01}
+   x[ 1383]={ 9.87000e-01,  5.09000e-01,  6.99000e-01}
+   x[ 1384]={ 1.22000e+00,  2.25000e-01,  5.19000e-01}
+   x[ 1385]={ 1.22000e+00,  2.23000e-01,  6.96000e-01}
+   x[ 1386]={ 1.20900e+00,  4.59000e-01,  5.21000e-01}
+   x[ 1387]={ 1.20800e+00,  4.57000e-01,  6.98000e-01}
+   x[ 1388]={ 7.88000e-01,  2.32000e-01,  4.87000e-01}
+   x[ 1389]={ 7.80000e-01,  4.10000e-01,  4.88000e-01}
+   x[ 1390]={ 9.10000e-01,  3.28000e-01,  3.99000e-01}
+   x[ 1391]={ 7.79000e-01,  4.07000e-01,  7.29000e-01}
+   x[ 1392]={ 7.88000e-01,  2.30000e-01,  7.27000e-01}
+   x[ 1393]={ 9.34000e-01,  3.25000e-01,  8.53000e-01}
+   x[ 1394]={ 9.93000e-01,  4.17000e-01,  8.54000e-01}
+   x[ 1395]={ 1.00200e+00,  2.39000e-01,  8.52000e-01}
+   x[ 1396]={ 8.46000e-01,  3.19000e-01,  9.78000e-01}
+   x[ 1397]={ 7.88000e-01,  2.28000e-01,  9.77000e-01}
+   x[ 1398]={ 7.79000e-01,  4.05000e-01,  9.78000e-01}
+   x[ 1399]={ 9.09000e-01,  3.22000e-01,  1.06700e+00}
+   x[ 1400]={ 2.29300e+00,  2.82000e+00,  1.33600e+00}
+   x[ 1401]={ 2.17500e+00,  2.76200e+00,  1.42200e+00}
+   x[ 1402]={ 2.05800e+00,  2.84500e+00,  1.38000e+00}
+   x[ 1403]={ 2.16800e+00,  2.62300e+00,  1.38300e+00}
+   x[ 1404]={ 2.21800e+00,  2.78300e+00,  1.55900e+00}
+   x[ 1405]={ 1.97200e+00,  2.80200e+00,  1.26500e+00}
+   x[ 1406]={ 2.06600e+00,  2.72900e+00,  1.18200e+00}
+   x[ 1407]={ 1.92600e+00,  2.92700e+00,  1.21100e+00}
+   x[ 1408]={ 1.86200e+00,  2.71400e+00,  1.33500e+00}
+   x[ 1409]={ 1.80600e+00,  7.90000e-01,  2.90200e+00}
+   x[ 1410]={ 1.69000e+00,  6.86000e-01,  2.88300e+00}
+   x[ 1411]={ 1.76300e+00,  5.55000e-01,  2.87700e+00}
+   x[ 1412]={ 1.60800e+00,  7.03000e-01,  3.00000e+00}
+   x[ 1413]={ 1.62700e+00,  7.25000e-01,  2.75900e+00}
+   x[ 1414]={ 1.78900e+00,  4.77000e-01,  3.00300e+00}
+   x[ 1415]={ 1.80000e+00,  5.82000e-01,  3.10200e+00}
+   x[ 1416]={ 1.91200e+00,  4.08000e-01,  2.97200e+00}
+   x[ 1417]={ 1.66200e+00,  3.86000e-01,  3.01500e+00}
+   x[ 1418]={ 1.09900e+00,  9.87000e-01,  1.38600e+00}
+   x[ 1419]={ 9.95000e-01,  1.09200e+00,  1.44200e+00}
+   x[ 1420]={ 1.07100e+00,  1.22100e+00,  1.43600e+00}
+   x[ 1421]={ 8.84000e-01,  1.08300e+00,  1.35100e+00}
+   x[ 1422]={ 9.66000e-01,  1.04500e+00,  1.57600e+00}
+   x[ 1423]={ 1.06500e+00,  1.30600e+00,  1.31200e+00}
+   x[ 1424]={ 1.04500e+00,  1.20800e+00,  1.20800e+00}
+   x[ 1425]={ 1.19400e+00,  1.37000e+00,  1.31200e+00}
+   x[ 1426]={ 9.42000e-01,  1.40000e+00,  1.34000e+00}
+   x[ 1427]={ 4.82000e-01,  2.17100e+00,  7.91000e-01}
+   x[ 1428]={ 6.11000e-01,  2.19700e+00,  7.04000e-01}
+   x[ 1429]={ 7.04000e-01,  2.26400e+00,  8.02000e-01}
+   x[ 1430]={ 6.52000e-01,  2.06600e+00,  6.61000e-01}
+   x[ 1431]={ 5.65000e-01,  2.28300e+00,  5.97000e-01}
+   x[ 1432]={ 7.97000e-01,  2.18100e+00,  8.85000e-01}
+   x[ 1433]={ 7.24000e-01,  2.05700e+00,  9.00000e-01}
+   x[ 1434]={ 8.11000e-01,  2.26000e+00,  1.00500e+00}
+   x[ 1435]={ 9.26000e-01,  2.17200e+00,  7.95000e-01}
+   x[ 1436]={ 7.30000e-01,  2.25100e+00,  2.92700e+00}
+   x[ 1437]={ 6.40000e-01,  2.30900e+00,  3.04300e+00}
+   x[ 1438]={ 7.18000e-01,  2.42900e+00,  3.08900e+00}
+   x[ 1439]={ 5.15000e-01,  2.33900e+00,  2.97900e+00}
+   x[ 1440]={ 6.33000e-01,  2.20200e+00,  3.13900e+00}
+   x[ 1441]={ 6.93000e-01,  2.56300e+00,  3.02600e+00}
+   x[ 1442]={ 6.53000e-01,  2.52700e+00,  2.89100e+00}
+   x[ 1443]={ 8.22000e-01,  2.62700e+00,  3.03600e+00}
+   x[ 1444]={ 5.80000e-01,  2.62400e+00,  3.11600e+00}
+   x[ 1445]={ 5.37000e-01,  2.34200e+00,  2.37900e+00}
+   x[ 1446]={ 6.69000e-01,  2.28800e+00,  2.44500e+00}
+   x[ 1447]={ 7.75000e-01,  2.32500e+00,  2.34500e+00}
+   x[ 1448]={ 6.77000e-01,  2.35800e+00,  2.57000e+00}
+   x[ 1449]={ 6.46000e-01,  2.14600e+00,  2.45800e+00}
+   x[ 1450]={ 8.44000e-01,  2.45800e+00,  2.35500e+00}
+   x[ 1451]={ 7.43000e-01,  2.54200e+00,  2.41500e+00}
+   x[ 1452]={ 8.75000e-01,  2.48800e+00,  2.21800e+00}
+   x[ 1453]={ 9.68000e-01,  2.42600e+00,  2.44700e+00}
+   x[ 1454]={ 1.47800e+00,  2.48200e+00,  8.38000e-01}
+   x[ 1455]={ 1.41500e+00,  2.62500e+00,  8.59000e-01}
+   x[ 1456]={ 1.26800e+00,  2.59900e+00,  8.42000e-01}
+   x[ 1457]={ 1.45500e+00,  2.66100e+00,  9.93000e-01}
+   x[ 1458]={ 1.47500e+00,  2.70500e+00,  7.56000e-01}
+   x[ 1459]={ 1.18400e+00,  2.56300e+00,  9.61000e-01}
+   x[ 1460]={ 1.27800e+00,  2.49300e+00,  1.04600e+00}
+   x[ 1461]={ 1.08100e+00,  2.48000e+00,  9.03000e-01}
+   x[ 1462]={ 1.13600e+00,  2.70300e+00,  1.01500e+00}
+   x[ 1463]={ 2.27400e+00,  8.93000e-01,  2.20500e+00}
+   x[ 1464]={ 2.30300e+00,  8.10000e-01,  2.07400e+00}
+   x[ 1465]={ 2.36600e+00,  6.85000e-01,  2.12700e+00}
+   x[ 1466]={ 2.17300e+00,  7.92000e-01,  2.01500e+00}
+   x[ 1467]={ 2.39100e+00,  8.95000e-01,  1.99800e+00}
+   x[ 1468]={ 2.28100e+00,  5.67000e-01,  2.16300e+00}
+   x[ 1469]={ 2.15700e+00,  6.29000e-01,  2.20300e+00}
+   x[ 1470]={ 2.35600e+00,  5.04000e-01,  2.26900e+00}
+   x[ 1471]={ 2.27400e+00,  4.86000e-01,  2.02800e+00}
+   x[ 1472]={ 2.96500e+00,  2.41100e+00,  1.99000e+00}
+   x[ 1473]={ 2.95700e+00,  2.54700e+00,  2.06900e+00}
+   x[ 1474]={ 3.01900e+00,  2.64500e+00,  1.97400e+00}
+   x[ 1475]={ 2.81600e+00,  2.56500e+00,  2.09200e+00}
+   x[ 1476]={ 3.03400e+00,  2.52200e+00,  2.18900e+00}
+   x[ 1477]={ 2.93300e+00,  2.71700e+00,  1.87400e+00}
+   x[ 1478]={ 2.82700e+00,  2.62200e+00,  1.84900e+00}
+   x[ 1479]={ 3.02300e+00,  2.73900e+00,  1.76400e+00}
+   x[ 1480]={ 2.89000e+00,  2.84700e+00,  1.95200e+00}
+   x[ 1481]={ 7.55000e-01,  2.88900e+00,  1.13900e+00}
+   x[ 1482]={ 7.85000e-01,  2.98000e+00,  1.01400e+00}
+   x[ 1483]={ 7.15000e-01,  3.10800e+00,  1.04700e+00}
+   x[ 1484]={ 9.29000e-01,  2.98900e+00,  1.01200e+00}
+   x[ 1485]={ 7.29000e-01,  2.90700e+00,  9.03000e-01}
+   x[ 1486]={ 7.87000e-01,  3.21600e+00,  1.12200e+00}
+   x[ 1487]={ 8.81000e-01,  3.14200e+00,  1.20300e+00}
+   x[ 1488]={ 6.80000e-01,  3.28100e+00,  1.19500e+00}
+   x[ 1489]={ 8.51000e-01,  3.30200e+00,  1.00700e+00}
+   x[ 1490]={ 3.20100e+00,  1.58900e+00,  7.93000e-01}
+   x[ 1491]={ 3.15900e+00,  1.66800e+00,  9.23000e-01}
+   x[ 1492]={ 3.01200e+00,  1.68900e+00,  9.02000e-01}
+   x[ 1493]={ 3.19200e+00,  1.57800e+00,  1.03100e+00}
+   x[ 1494]={ 3.23800e+00,  1.78800e+00,  9.18000e-01}
+   x[ 1495]={ 2.91300e+00,  1.58800e+00,  9.52000e-01}
+   x[ 1496]={ 2.98800e+00,  1.46500e+00,  9.43000e-01}
+   x[ 1497]={ 2.80400e+00,  1.60000e+00,  8.58000e-01}
+   x[ 1498]={ 2.88200e+00,  1.63800e+00,  1.09800e+00}
+   x[ 1499]={ 2.04100e+00,  1.70400e+00,  9.96000e-01}
+   x[ 1500]={ 2.00500e+00,  1.67700e+00,  8.45000e-01}
+   x[ 1501]={ 2.04300e+00,  1.53300e+00,  8.26000e-01}
+   x[ 1502]={ 1.86300e+00,  1.70300e+00,  8.38000e-01}
+   x[ 1503]={ 2.08600e+00,  1.77100e+00,  7.72000e-01}
+   x[ 1504]={ 1.94300e+00,  1.42500e+00,  8.52000e-01}
+   x[ 1505]={ 1.85900e+00,  1.48300e+00,  9.55000e-01}
+   x[ 1506]={ 2.02600e+00,  1.31500e+00,  8.95000e-01}
+   x[ 1507]={ 1.87400e+00,  1.40600e+00,  7.12000e-01}
+   x[ 1508]={ 2.04600e+00,  3.05800e+00,  9.81000e-01}
+   x[ 1509]={ 1.89700e+00,  3.05300e+00,  9.31000e-01}
+   x[ 1510]={ 1.89700e+00,  2.93400e+00,  8.39000e-01}
+   x[ 1511]={ 1.82000e+00,  3.03600e+00,  1.05200e+00}
+   x[ 1512]={ 1.87800e+00,  3.18000e+00,  8.66000e-01}
+   x[ 1513]={ 1.86500e+00,  2.79800e+00,  8.92000e-01}
+   x[ 1514]={ 1.91300e+00,  2.80600e+00,  1.02800e+00}
+   x[ 1515]={ 1.94100e+00,  2.71200e+00,  8.05000e-01}
+   x[ 1516]={ 1.70900e+00,  2.78900e+00,  8.76000e-01}
+   x[ 1517]={ 1.17900e+00,  1.39500e+00,  1.75100e+00}
+   x[ 1518]={ 1.02600e+00,  1.35900e+00,  1.75700e+00}
+   x[ 1519]={ 9.59000e-01,  1.49300e+00,  1.74800e+00}
+   x[ 1520]={ 1.00500e+00,  1.27400e+00,  1.64200e+00}
+   x[ 1521]={ 1.01000e+00,  1.29200e+00,  1.88400e+00}
+   x[ 1522]={ 9.23000e-01,  1.55100e+00,  1.61500e+00}
+   x[ 1523]={ 1.02400e+00,  1.49500e+00,  1.52800e+00}
+   x[ 1524]={ 9.33000e-01,  1.69300e+00,  1.63800e+00}
+   x[ 1525]={ 7.77000e-01,  1.49600e+00,  1.59100e+00}
+   x[ 1526]={ 2.05900e+00,  2.70300e+00,  5.36000e-01}
+   x[ 1527]={ 2.17400e+00,  2.80800e+00,  5.11000e-01}
+   x[ 1528]={ 2.16900e+00,  2.82900e+00,  3.63000e-01}
+   x[ 1529]={ 2.13500e+00,  2.92200e+00,  5.90000e-01}
+   x[ 1530]={ 2.29300e+00,  2.74100e+00,  5.58000e-01}
+   x[ 1531]={ 2.08200e+00,  2.93700e+00,  3.06000e-01}
+   x[ 1532]={ 1.97400e+00,  2.94400e+00,  4.02000e-01}
+   x[ 1533]={ 2.04600e+00,  2.88400e+00,  1.76000e-01}
+   x[ 1534]={ 2.17700e+00,  3.06200e+00,  3.03000e-01}
+   x[ 1535]={ 2.81000e+00,  2.40600e+00,  2.97300e+00}
+   x[ 1536]={ 2.95900e+00,  2.45600e+00,  2.99000e+00}
+   x[ 1537]={ 2.94100e+00,  2.60100e+00,  3.02700e+00}
+   x[ 1538]={ 3.01200e+00,  2.37300e+00,  3.09600e+00}
+   x[ 1539]={ 3.01900e+00,  2.43400e+00,  2.86100e+00}
+   x[ 1540]={ 2.92900e+00,  2.64000e+00,  3.17100e+00}
+   x[ 1541]={ 2.86700e+00,  2.52400e+00,  3.23100e+00}
+   x[ 1542]={ 2.84600e+00,  2.75800e+00,  3.16400e+00}
+   x[ 1543]={ 3.07900e+00,  2.66600e+00,  3.21300e+00}
+   x[ 1544]={ 2.23400e+00,  2.13000e-01,  8.63000e-01}
+   x[ 1545]={ 2.25600e+00,  2.96000e-01,  7.32000e-01}
+   x[ 1546]={ 2.25100e+00,  4.38000e-01,  7.80000e-01}
+   x[ 1547]={ 2.38500e+00,  2.53000e-01,  6.84000e-01}
+   x[ 1548]={ 2.14500e+00,  2.58000e-01,  6.47000e-01}
+   x[ 1549]={ 2.37800e+00,  5.06000e-01,  8.25000e-01}
+   x[ 1550]={ 2.45700e+00,  3.96000e-01,  8.75000e-01}
+   x[ 1551]={ 2.33000e+00,  5.98000e-01,  9.25000e-01}
+   x[ 1552]={ 2.43100e+00,  5.72000e-01,  6.92000e-01}
+   x[ 1553]={ 2.16400e+00,  9.26000e-01,  3.08800e+00}
+   x[ 1554]={ 2.08400e+00,  8.00000e-01,  3.13700e+00}
+   x[ 1555]={ 2.18000e+00,  6.87000e-01,  3.11400e+00}
+   x[ 1556]={ 2.05600e+00,  8.28000e-01,  3.27600e+00}
+   x[ 1557]={ 1.96700e+00,  7.98000e-01,  3.05300e+00}
+   x[ 1558]={ 2.27600e+00,  6.47000e-01,  3.22100e+00}
+   x[ 1559]={ 2.29900e+00,  7.71000e-01,  3.29200e+00}
+   x[ 1560]={ 2.38900e+00,  5.97000e-01,  3.14600e+00}
+   x[ 1561]={ 2.19600e+00,  5.38000e-01,  3.30200e+00}
+   x[ 1562]={ 1.89500e+00,  2.06000e-01,  5.19000e-01}
+   x[ 1563]={ 1.78300e+00,  3.01000e-01,  5.75000e-01}
+   x[ 1564]={ 1.85600e+00,  3.81000e-01,  6.79000e-01}
+   x[ 1565]={ 1.74100e+00,  3.77000e-01,  4.60000e-01}
+   x[ 1566]={ 1.68300e+00,  2.11000e-01,  6.27000e-01}
+   x[ 1567]={ 1.92400e+00,  5.09000e-01,  6.42000e-01}
+   x[ 1568]={ 1.96100e+00,  4.87000e-01,  5.05000e-01}
+   x[ 1569]={ 2.03400e+00,  5.15000e-01,  7.35000e-01}
+   x[ 1570]={ 1.81100e+00,  6.17000e-01,  6.65000e-01}
+   x[ 1571]={ 3.14100e+00,  6.46000e-01,  2.78200e+00}
+   x[ 1572]={ 3.21100e+00,  5.98000e-01,  2.91500e+00}
+   x[ 1573]={ 3.27700e+00,  7.23000e-01,  2.96500e+00}
+   x[ 1574]={ 3.10200e+00,  5.50000e-01,  2.99700e+00}
+   x[ 1575]={ 3.30200e+00,  4.95000e-01,  2.87100e+00}
+   x[ 1576]={ 3.20300e+00,  8.15000e-01,  3.05700e+00}
+   x[ 1577]={ 3.06600e+00,  7.95000e-01,  3.01800e+00}
+   x[ 1578]={ 3.26000e+00,  9.44000e-01,  3.02500e+00}
+   x[ 1579]={ 3.24100e+00,  7.59000e-01,  3.20000e+00}
+   x[ 1580]={ 2.57500e+00,  2.02100e+00,  8.47000e-01}
+   x[ 1581]={ 2.70300e+00,  1.93700e+00,  8.85000e-01}
+   x[ 1582]={ 2.75400e+00,  1.89100e+00,  7.51000e-01}
+   x[ 1583]={ 2.78800e+00,  2.03100e+00,  9.53000e-01}
+   x[ 1584]={ 2.65100e+00,  1.83100e+00,  9.69000e-01}
+   x[ 1585]={ 2.85300e+00,  1.97500e+00,  6.76000e-01}
+   x[ 1586]={ 2.81900e+00,  2.10900e+00,  7.19000e-01}
+   x[ 1587]={ 2.82200e+00,  1.94500e+00,  5.39000e-01}
+   x[ 1588]={ 2.99100e+00,  1.92100e+00,  7.28000e-01}
+   x[ 1589]={ 3.16800e+00,  9.61000e-01,  8.49000e-01}
+   x[ 1590]={ 3.01500e+00,  9.22000e-01,  8.48000e-01}
+   x[ 1591]={ 2.94600e+00,  1.05500e+00,  8.50000e-01}
+   x[ 1592]={ 2.99900e+00,  8.47000e-01,  7.26000e-01}
+   x[ 1593]={ 2.99800e+00,  8.43000e-01,  9.68000e-01}
+   x[ 1594]={ 2.91200e+00,  1.12400e+00,  7.21000e-01}
+   x[ 1595]={ 3.01600e+00,  1.07800e+00,  6.32000e-01}
+   x[ 1596]={ 2.91900e+00,  1.26300e+00,  7.57000e-01}
+   x[ 1597]={ 2.76800e+00,  1.07000e+00,  6.89000e-01}
+   x[ 1598]={ 2.43500e+00,  1.04100e+00,  2.17500e+00}
+   x[ 1599]={ 2.29600e+00,  1.11200e+00,  2.15600e+00}
+   x[ 1600]={ 2.33400e+00,  1.25300e+00,  2.12500e+00}
+   x[ 1601]={ 2.23400e+00,  1.04100e+00,  2.04700e+00}
+   x[ 1602]={ 2.22900e+00,  1.09400e+00,  2.28300e+00}
+   x[ 1603]={ 2.35600e+00,  1.29600e+00,  1.98300e+00}
+   x[ 1604]={ 2.40300e+00,  1.17400e+00,  1.92100e+00}
+   x[ 1605]={ 2.45500e+00,  1.40000e+00,  1.99600e+00}
+   x[ 1606]={ 2.21300e+00,  1.34400e+00,  1.93800e+00}
+   x[ 1607]={ 1.51900e+00,  3.47000e-01,  1.82300e+00}
+   x[ 1608]={ 1.50400e+00,  2.86000e-01,  1.67800e+00}
+   x[ 1609]={ 1.39000e+00,  1.90000e-01,  1.69300e+00}
+   x[ 1610]={ 1.47600e+00,  4.00000e-01,  1.59500e+00}
+   x[ 1611]={ 1.63200e+00,  2.24000e-01,  1.65300e+00}
+   x[ 1612]={ 1.24900e+00,  2.37000e-01,  1.67000e+00}
+   x[ 1613]={ 1.25500e+00,  3.76000e-01,  1.70700e+00}
+   x[ 1614]={ 1.17200e+00,  1.53000e-01,  1.75800e+00}
+   x[ 1615]={ 1.22800e+00,  2.10000e-01,  1.51600e+00}
+   x[ 1616]={ 7.90000e-01,  1.02500e+00,  2.80000e-01}
+   x[ 1617]={ 6.86000e-01,  9.72000e-01,  3.85000e-01}
+   x[ 1618]={ 6.66000e-01,  1.09000e+00,  4.76000e-01}
+   x[ 1619]={ 5.71000e-01,  9.37000e-01,  3.06000e-01}
+   x[ 1620]={ 7.53000e-01,  8.60000e-01,  4.47000e-01}
+   x[ 1621]={ 5.59000e-01,  1.19100e+00,  4.46000e-01}
+   x[ 1622]={ 5.50000e-01,  1.18500e+00,  3.02000e-01}
+   x[ 1623]={ 6.14000e-01,  1.31300e+00,  5.00000e-01}
+   x[ 1624]={ 4.34000e-01,  1.13300e+00,  5.23000e-01}
+   x[ 1625]={ 6.20000e-01,  3.15000e+00,  5.67000e-01}
+   x[ 1626]={ 7.73000e-01,  3.11300e+00,  5.78000e-01}
+   x[ 1627]={ 7.73000e-01,  2.96400e+00,  5.64000e-01}
+   x[ 1628]={ 8.34000e-01,  3.18400e+00,  4.68000e-01}
+   x[ 1629]={ 8.12000e-01,  3.16200e+00,  7.08000e-01}
+   x[ 1630]={ 7.85000e-01,  2.90100e+00,  4.28000e-01}
+   x[ 1631]={ 7.23000e-01,  2.99900e+00,  3.43000e-01}
+   x[ 1632]={ 7.12000e-01,  2.77800e+00,  4.44000e-01}
+   x[ 1633]={ 9.41000e-01,  2.88500e+00,  4.10000e-01}
+   x[ 1634]={ 3.30200e+00,  2.81300e+00,  1.56100e+00}
+   x[ 1635]={ 3.21900e+00,  2.68000e+00,  1.54700e+00}
+   x[ 1636]={ 3.07700e+00,  2.72800e+00,  1.55100e+00}
+   x[ 1637]={ 3.26000e+00,  2.62500e+00,  1.42000e+00}
+   x[ 1638]={ 3.25900e+00,  2.60100e+00,  1.66100e+00}
+   x[ 1639]={ 3.00700e+00,  2.76500e+00,  1.42300e+00}
+   x[ 1640]={ 3.11500e+00,  2.81100e+00,  1.34000e+00}
+   x[ 1641]={ 2.91400e+00,  2.86700e+00,  1.46700e+00}
+   x[ 1642]={ 2.94000e+00,  2.62900e+00,  1.37900e+00}
+   x[ 1643]={ 1.31400e+00,  1.70200e+00,  2.25600e+00}
+   x[ 1644]={ 1.24100e+00,  1.75500e+00,  2.38400e+00}
+   x[ 1645]={ 1.34600e+00,  1.74300e+00,  2.49100e+00}
+   x[ 1646]={ 1.20500e+00,  1.89100e+00,  2.35100e+00}
+   x[ 1647]={ 1.12800e+00,  1.66600e+00,  2.40000e+00}
+   x[ 1648]={ 1.43900e+00,  1.85700e+00,  2.51700e+00}
+   x[ 1649]={ 1.44900e+00,  1.92100e+00,  2.38800e+00}
+   x[ 1650]={ 1.55900e+00,  1.79000e+00,  2.56300e+00}
+   x[ 1651]={ 1.36300e+00,  1.94000e+00,  2.62700e+00}
+   x[ 1652]={ 1.84600e+00,  2.79100e+00,  2.52100e+00}
+   x[ 1653]={ 1.98200e+00,  2.86400e+00,  2.55100e+00}
+   x[ 1654]={ 2.07000e+00,  2.82000e+00,  2.43800e+00}
+   x[ 1655]={ 1.94800e+00,  3.00400e+00,  2.55000e+00}
+   x[ 1656]={ 2.02100e+00,  2.81300e+00,  2.68100e+00}
+   x[ 1657]={ 2.07500e+00,  2.90000e+00,  2.31200e+00}
+   x[ 1658]={ 1.94300e+00,  2.95800e+00,  2.30600e+00}
+   x[ 1659]={ 2.10300e+00,  2.80000e+00,  2.21200e+00}
+   x[ 1660]={ 2.19200e+00,  3.00200e+00,  2.33900e+00}
+   x[ 1661]={ 2.32000e+00,  3.22800e+00,  1.64700e+00}
+   x[ 1662]={ 2.27600e+00,  3.08700e+00,  1.70200e+00}
+   x[ 1663]={ 2.36300e+00,  2.99200e+00,  1.62600e+00}
+   x[ 1664]={ 2.30300e+00,  3.09500e+00,  1.84300e+00}
+   x[ 1665]={ 2.13500e+00,  3.08000e+00,  1.66900e+00}
+   x[ 1666]={ 2.49700e+00,  2.95200e+00,  1.68100e+00}
+   x[ 1667]={ 2.53500e+00,  3.06900e+00,  1.75700e+00}
+   x[ 1668]={ 2.57400e+00,  2.92700e+00,  1.56200e+00}
+   x[ 1669]={ 2.46300e+00,  2.82500e+00,  1.76700e+00}
+   x[ 1670]={ 2.13200e+00,  6.68000e-01,  1.80700e+00}
+   x[ 1671]={ 2.02900e+00,  5.60000e-01,  1.85700e+00}
+   x[ 1672]={ 1.89600e+00,  6.26000e-01,  1.83000e+00}
+   x[ 1673]={ 2.05600e+00,  4.44000e-01,  1.77500e+00}
+   x[ 1674]={ 2.06000e+00,  5.43000e-01,  1.99700e+00}
+   x[ 1675]={ 1.82800e+00,  6.05000e-01,  1.69800e+00}
+   x[ 1676]={ 1.93900e+00,  5.86000e-01,  1.60700e+00}
+   x[ 1677]={ 1.75500e+00,  7.28000e-01,  1.68100e+00}
+   x[ 1678]={ 1.74000e+00,  4.77000e-01,  1.72300e+00}
+   x[ 1679]={ 9.88000e-01,  2.13100e+00,  1.03100e+00}
+   x[ 1680]={ 1.10000e+00,  2.24100e+00,  1.01900e+00}
+   x[ 1681]={ 1.04300e+00,  2.35600e+00,  1.09700e+00}
+   x[ 1682]={ 1.21600e+00,  2.18000e+00,  1.08000e+00}
+   x[ 1683]={ 1.11200e+00,  2.26400e+00,  8.77000e-01}
+   x[ 1684]={ 1.07000e+00,  2.36900e+00,  1.24400e+00}
+   x[ 1685]={ 1.08400e+00,  2.23100e+00,  1.28500e+00}
+   x[ 1686]={ 9.51000e-01,  2.43600e+00,  1.29200e+00}
+   x[ 1687]={ 1.20200e+00,  2.45400e+00,  1.24800e+00}
+   x[ 1688]={ 2.84100e+00,  2.85900e+00,  2.92700e+00}
+   x[ 1689]={ 2.83600e+00,  2.88600e+00,  2.77200e+00}
+   x[ 1690]={ 2.95400e+00,  2.97600e+00,  2.74900e+00}
+   x[ 1691]={ 2.84800e+00,  2.75500e+00,  2.71300e+00}
+   x[ 1692]={ 2.70800e+00,  2.94900e+00,  2.75100e+00}
+   x[ 1693]={ 3.08800e+00,  2.91600e+00,  2.71700e+00}
+   x[ 1694]={ 3.08300e+00,  2.78900e+00,  2.78500e+00}
+   x[ 1695]={ 3.18000e+00,  3.01300e+00,  2.77300e+00}
+   x[ 1696]={ 3.08700e+00,  2.90800e+00,  2.55900e+00}
+   x[ 1697]={ 7.87000e-01,  3.20700e+00,  2.49400e+00}
+   x[ 1698]={ 8.35000e-01,  3.13300e+00,  2.62500e+00}
+   x[ 1699]={ 7.39000e-01,  3.18400e+00,  2.72900e+00}
+   x[ 1700]={ 8.20000e-01,  2.99300e+00,  2.59300e+00}
+   x[ 1701]={ 9.71000e-01,  3.17600e+00,  2.64200e+00}
+   x[ 1702]={ 6.11000e-01,  3.11100e+00,  2.75500e+00}
+   x[ 1703]={ 5.81000e-01,  3.05400e+00,  2.62600e+00}
+   x[ 1704]={ 5.23000e-01,  3.21700e+00,  2.79700e+00}
+   x[ 1705]={ 6.50000e-01,  3.00800e+00,  2.86700e+00}
+   x[ 1706]={ 5.78000e-01,  2.95600e+00,  2.32800e+00}
+   x[ 1707]={ 4.69000e-01,  2.85800e+00,  2.38700e+00}
+   x[ 1708]={ 3.42000e-01,  2.93600e+00,  2.37300e+00}
+   x[ 1709]={ 4.78000e-01,  2.74100e+00,  2.30400e+00}
+   x[ 1710]={ 5.12000e-01,  2.83700e+00,  2.52400e+00}
+   x[ 1711]={ 2.60000e-01,  2.92300e+00,  2.24700e+00}
+   x[ 1712]={ 3.60000e-01,  2.89500e+00,  2.14700e+00}
+   x[ 1713]={ 1.98000e-01,  3.05300e+00,  2.23700e+00}
+   x[ 1714]={ 1.63000e-01,  2.80400e+00,  2.28100e+00}
+   x[ 1715]={ 2.05800e+00,  6.72000e-01,  2.01000e-01}
+   x[ 1716]={ 2.20700e+00,  6.42000e-01,  2.44000e-01}
+   x[ 1717]={ 2.27400e+00,  7.75000e-01,  2.28000e-01}
+   x[ 1718]={ 2.19600e+00,  5.96000e-01,  3.80000e-01}
+   x[ 1719]={ 2.25100e+00,  5.41000e-01,  1.50000e-01}
+   x[ 1720]={ 2.27900e+00,  8.71000e-01,  3.44000e-01}
+   x[ 1721]={ 2.15700e+00,  8.39000e-01,  4.15000e-01}
+   x[ 1722]={ 2.28000e+00,  9.99000e-01,  2.78000e-01}
+   x[ 1723]={ 2.41200e+00,  8.32000e-01,  4.17000e-01}
+   x[ 1724]={ 2.50200e+00,  2.11000e-01,  2.63700e+00}
+   x[ 1725]={ 2.45600e+00,  3.57000e-01,  2.67000e+00}
+   x[ 1726]={ 2.30700e+00,  3.47000e-01,  2.67200e+00}
+   x[ 1727]={ 2.51600e+00,  3.85000e-01,  2.79900e+00}
+   x[ 1728]={ 2.51000e+00,  4.36000e-01,  2.56200e+00}
+   x[ 1729]={ 2.23500e+00,  3.14000e-01,  2.80000e+00}
+   x[ 1730]={ 2.33200e+00,  2.33000e-01,  2.87000e+00}
+   x[ 1731]={ 2.11800e+00,  2.43000e-01,  2.75300e+00}
+   x[ 1732]={ 2.20800e+00,  4.55000e-01,  2.86200e+00}
+   x[ 1733]={ 6.33000e-01,  6.62000e-01,  1.49100e+00}
+   x[ 1734]={ 6.79000e-01,  6.05000e-01,  1.35200e+00}
+   x[ 1735]={ 6.03000e-01,  4.76000e-01,  1.34200e+00}
+   x[ 1736]={ 6.38000e-01,  7.06000e-01,  1.25800e+00}
+   x[ 1737]={ 8.22000e-01,  5.90000e-01,  1.36500e+00}
+   x[ 1738]={ 4.67000e-01,  4.74000e-01,  1.27900e+00}
+   x[ 1739]={ 4.16000e-01,  6.05000e-01,  1.30900e+00}
+   x[ 1740]={ 4.02000e-01,  3.65000e-01,  1.34900e+00}
+   x[ 1741]={ 4.98000e-01,  4.47000e-01,  1.12700e+00}
+   x[ 1742]={ 1.11900e+00,  1.96000e+00,  6.33000e-01}
+   x[ 1743]={ 1.14700e+00,  1.82900e+00,  5.49000e-01}
+   x[ 1744]={ 1.06200e+00,  1.85000e+00,  4.27000e-01}
+   x[ 1745]={ 1.28900e+00,  1.83300e+00,  5.25000e-01}
+   x[ 1746]={ 1.10300e+00,  1.72200e+00,  6.35000e-01}
+   x[ 1747]={ 1.12000e+00,  1.92000e+00,  3.07000e-01}
+   x[ 1748]={ 1.21600e+00,  2.01000e+00,  3.66000e-01}
+   x[ 1749]={ 1.00400e+00,  1.98300e+00,  2.49000e-01}
+   x[ 1750]={ 1.18100e+00,  1.80100e+00,  2.23000e-01}
+   x[ 1751]={ 1.31900e+00,  1.02500e+00,  2.61800e+00}
+   x[ 1752]={ 1.46500e+00,  9.95000e-01,  2.66900e+00}
+   x[ 1753]={ 1.53200e+00,  1.12900e+00,  2.66200e+00}
+   x[ 1754]={ 1.44700e+00,  9.44000e-01,  2.80300e+00}
+   x[ 1755]={ 1.51500e+00,  8.97000e-01,  2.57500e+00}
+   x[ 1756]={ 1.52900e+00,  1.22100e+00,  2.78000e+00}
+   x[ 1757]={ 1.40400e+00,  1.18600e+00,  2.84300e+00}
+   x[ 1758]={ 1.53200e+00,  1.35100e+00,  2.71900e+00}
+   x[ 1759]={ 1.65800e+00,  1.18000e+00,  2.86000e+00}
+   x[ 1760]={ 2.17500e+00,  2.35100e+00,  3.09700e+00}
+   x[ 1761]={ 2.23700e+00,  2.21100e+00,  3.05900e+00}
+   x[ 1762]={ 2.11500e+00,  2.12700e+00,  3.03300e+00}
+   x[ 1763]={ 2.31800e+00,  2.23800e+00,  2.94300e+00}
+   x[ 1764]={ 2.31200e+00,  2.17300e+00,  3.17700e+00}
+   x[ 1765]={ 2.05800e+00,  2.12000e+00,  2.89400e+00}
+   x[ 1766]={ 2.09200e+00,  2.24900e+00,  2.83900e+00}
+   x[ 1767]={ 1.91800e+00,  2.09800e+00,  2.91900e+00}
+   x[ 1768]={ 2.13500e+00,  1.99800e+00,  2.83000e+00}
+   x[ 1769]={ 1.10000e+00,  9.98000e-01,  2.25800e+00}
+   x[ 1770]={ 1.11100e+00,  1.11500e+00,  2.36300e+00}
+   x[ 1771]={ 9.90000e-01,  1.19800e+00,  2.33200e+00}
+   x[ 1772]={ 1.10700e+00,  1.04800e+00,  2.49100e+00}
+   x[ 1773]={ 1.23700e+00,  1.17800e+00,  2.33200e+00}
+   x[ 1774]={ 8.60000e-01,  1.17100e+00,  2.40200e+00}
+   x[ 1775]={ 8.67000e-01,  1.02800e+00,  2.42700e+00}
+   x[ 1776]={ 7.62000e-01,  1.21100e+00,  2.30400e+00}
+   x[ 1777]={ 8.68000e-01,  1.26200e+00,  2.53000e+00}
+   x[ 1778]={ 1.34100e+00,  2.62100e+00,  2.58500e+00}
+   x[ 1779]={ 1.46400e+00,  2.60200e+00,  2.68100e+00}
+   x[ 1780]={ 1.51400e+00,  2.74200e+00,  2.70100e+00}
+   x[ 1781]={ 1.40700e+00,  2.54100e+00,  2.79900e+00}
+   x[ 1782]={ 1.55400e+00,  2.51600e+00,  2.60800e+00}
+   x[ 1783]={ 1.46000e+00,  2.82500e+00,  2.81400e+00}
+   x[ 1784]={ 1.32600e+00,  2.77400e+00,  2.82900e+00}
+   x[ 1785]={ 1.46900e+00,  2.95900e+00,  2.76200e+00}
+   x[ 1786]={ 1.55800e+00,  2.79200e+00,  2.93300e+00}
+   x[ 1787]={ 1.11900e+00,  1.10200e+00,  1.86000e+00}
+   x[ 1788]={ 1.25700e+00,  1.13900e+00,  1.92700e+00}
+   x[ 1789]={ 1.23800e+00,  1.28300e+00,  1.96600e+00}
+   x[ 1790]={ 1.26700e+00,  1.04800e+00,  2.03900e+00}
+   x[ 1791]={ 1.35400e+00,  1.11700e+00,  1.82300e+00}
+   x[ 1792]={ 1.18200e+00,  1.31800e+00,  2.10000e+00}
+   x[ 1793]={ 1.09700e+00,  1.20500e+00,  2.12900e+00}
+   x[ 1794]={ 1.11400e+00,  1.44200e+00,  2.07500e+00}
+   x[ 1795]={ 1.31100e+00,  1.32900e+00,  2.19000e+00}
+   x[ 1796]={ 2.80000e+00,  1.93400e+00,  2.86300e+00}
+   x[ 1797]={ 2.86500e+00,  1.79300e+00,  2.89100e+00}
+   x[ 1798]={ 2.75500e+00,  1.69700e+00,  2.85600e+00}
+   x[ 1799]={ 2.97900e+00,  1.78900e+00,  2.80200e+00}
+   x[ 1800]={ 2.89900e+00,  1.79700e+00,  3.03100e+00}
+   x[ 1801]={ 2.74200e+00,  1.64500e+00,  2.71600e+00}
+   x[ 1802]={ 2.79500e+00,  1.75300e+00,  2.63700e+00}
+   x[ 1803]={ 2.60000e+00,  1.62200e+00,  2.70400e+00}
+   x[ 1804]={ 2.83100e+00,  1.51400e+00,  2.71900e+00}
+   x[ 1805]={ 1.84700e+00,  6.51000e-01,  2.56200e+00}
+   x[ 1806]={ 1.94900e+00,  7.24000e-01,  2.65700e+00}
+   x[ 1807]={ 2.08100e+00,  7.01000e-01,  2.58900e+00}
+   x[ 1808]={ 1.90500e+00,  8.61000e-01,  2.65700e+00}
+   x[ 1809]={ 1.93400e+00,  6.57000e-01,  2.78300e+00}
+   x[ 1810]={ 2.13100e+00,  7.99000e-01,  2.48700e+00}
+   x[ 1811]={ 2.00900e+00,  8.51000e-01,  2.43100e+00}
+   x[ 1812]={ 2.20900e+00,  7.16000e-01,  2.39800e+00}
+   x[ 1813]={ 2.21400e+00,  9.01000e-01,  2.57300e+00}
+   x[ 1814]={ 1.54400e+00,  1.39000e+00,  2.06100e+00}
+   x[ 1815]={ 1.46500e+00,  1.52000e+00,  2.02300e+00}
+   x[ 1816]={ 1.51200e+00,  1.54800e+00,  1.88300e+00}
+   x[ 1817]={ 1.32600e+00,  1.48200e+00,  2.03300e+00}
+   x[ 1818]={ 1.50700e+00,  1.61700e+00,  2.12100e+00}
+   x[ 1819]={ 1.43800e+00,  1.49000e+00,  1.76600e+00}
+   x[ 1820]={ 1.38600e+00,  1.36700e+00,  1.82100e+00}
+   x[ 1821]={ 1.54300e+00,  1.47400e+00,  1.66800e+00}
+   x[ 1822]={ 1.33100e+00,  1.60000e+00,  1.73300e+00}
+   x[ 1823]={ 3.52000e-01,  2.03700e+00,  2.86900e+00}
+   x[ 1824]={ 4.20000e-01,  2.04800e+00,  2.72700e+00}
+   x[ 1825]={ 5.46000e-01,  1.96800e+00,  2.74500e+00}
+   x[ 1826]={ 3.24000e-01,  1.99000e+00,  2.63700e+00}
+   x[ 1827]={ 4.41000e-01,  2.18900e+00,  2.70900e+00}
+   x[ 1828]={ 5.46000e-01,  1.82100e+00,  2.71500e+00}
+   x[ 1829]={ 4.10000e-01,  1.78200e+00,  2.74500e+00}
+   x[ 1830]={ 6.46000e-01,  1.77000e+00,  2.80600e+00}
+   x[ 1831]={ 5.85000e-01,  1.81600e+00,  2.56200e+00}
+   x[ 1832]={ 5.67000e-01,  2.44300e+00,  1.44000e+00}
+   x[ 1833]={ 6.42000e-01,  2.36500e+00,  1.32500e+00}
+   x[ 1834]={ 6.39000e-01,  2.46100e+00,  1.21100e+00}
+   x[ 1835]={ 7.74000e-01,  2.34100e+00,  1.38000e+00}
+   x[ 1836]={ 5.64000e-01,  2.24600e+00,  1.30600e+00}
+   x[ 1837]={ 7.50000e-01,  2.56100e+00,  1.19300e+00}
+   x[ 1838]={ 7.94000e-01,  2.58400e+00,  1.32800e+00}
+   x[ 1839]={ 6.83000e-01,  2.67200e+00,  1.13000e+00}
+   x[ 1840]={ 8.53000e-01,  2.48400e+00,  1.10200e+00}
+   x[ 1841]={ 2.80500e+00,  1.70700e+00,  1.29200e+00}
+   x[ 1842]={ 2.94000e+00,  1.78400e+00,  1.31900e+00}
+   x[ 1843]={ 2.99300e+00,  1.80900e+00,  1.18000e+00}
+   x[ 1844]={ 2.89900e+00,  1.90300e+00,  1.38900e+00}
+   x[ 1845]={ 3.01800e+00,  1.69200e+00,  1.39800e+00}
+   x[ 1846]={ 2.95500e+00,  1.93400e+00,  1.10700e+00}
+   x[ 1847]={ 2.82400e+00,  1.96300e+00,  1.15900e+00}
+   x[ 1848]={ 2.95800e+00,  1.89200e+00,  9.69000e-01}
+   x[ 1849]={ 3.06800e+00,  2.03500e+00,  1.14900e+00}
+   x[ 1850]={ 1.46100e+00,  3.09200e+00,  4.71000e-01}
+   x[ 1851]={ 1.38800e+00,  3.23100e+00,  4.60000e-01}
+   x[ 1852]={ 1.25200e+00,  3.19400e+00,  4.09000e-01}
+   x[ 1853]={ 1.39000e+00,  3.28200e+00,  5.95000e-01}
+   x[ 1854]={ 1.46900e+00,  3.30600e+00,  3.67000e-01}
+   x[ 1855]={ 1.14100e+00,  3.16200e+00,  5.06000e-01}
+   x[ 1856]={ 1.21300e+00,  3.10800e+00,  6.19000e-01}
+   x[ 1857]={ 1.06100e+00,  3.06800e+00,  4.32000e-01}
+   x[ 1858]={ 1.07400e+00,  3.30300e+00,  5.30000e-01}
+   x[ 1859]={ 7.29000e-01,  7.95000e-01,  2.28200e+00}
+   x[ 1860]={ 7.03000e-01,  6.89000e-01,  2.16800e+00}
+   x[ 1861]={ 7.77000e-01,  7.48000e-01,  2.05100e+00}
+   x[ 1862]={ 7.59000e-01,  5.67000e-01,  2.22000e+00}
+   x[ 1863]={ 5.59000e-01,  6.88000e-01,  2.15400e+00}
+   x[ 1864]={ 9.21000e-01,  7.12000e-01,  2.02800e+00}
+   x[ 1865]={ 9.69000e-01,  6.88000e-01,  2.16100e+00}
+   x[ 1866]={ 9.72000e-01,  8.30000e-01,  1.96300e+00}
+   x[ 1867]={ 9.11000e-01,  5.84000e-01,  1.93600e+00}
+   x[ 1868]={ 2.88300e+00,  5.48000e-01,  1.21900e+00}
+   x[ 1869]={ 2.97200e+00,  4.22000e-01,  1.18800e+00}
+   x[ 1870]={ 3.07200e+00,  4.74000e-01,  1.09000e+00}
+   x[ 1871]={ 3.02600e+00,  3.85000e-01,  1.31700e+00}
+   x[ 1872]={ 2.87900e+00,  3.26000e-01,  1.13400e+00}
+   x[ 1873]={ 3.20200e+00,  5.32000e-01,  1.13900e+00}
+   x[ 1874]={ 3.16500e+00,  5.86000e-01,  1.26800e+00}
+   x[ 1875]={ 3.23300e+00,  6.30000e-01,  1.03700e+00}
+   x[ 1876]={ 3.29700e+00,  4.07000e-01,  1.14300e+00}
+   x[ 1877]={ 2.15900e+00,  2.17800e+00,  8.94000e-01}
+   x[ 1878]={ 2.03400e+00,  2.14400e+00,  9.83000e-01}
+   x[ 1879]={ 1.94400e+00,  2.26200e+00,  9.63000e-01}
+   x[ 1880]={ 1.98400e+00,  2.02000e+00,  9.28000e-01}
+   x[ 1881]={ 2.08800e+00,  2.13200e+00,  1.11700e+00}
+   x[ 1882]={ 1.84300e+00,  2.26200e+00,  8.52000e-01}
+   x[ 1883]={ 1.90700e+00,  2.17900e+00,  7.52000e-01}
+   x[ 1884]={ 1.83300e+00,  2.40200e+00,  8.18000e-01}
+   x[ 1885]={ 1.71600e+00,  2.19900e+00,  9.20000e-01}
+   x[ 1886]={ 1.55800e+00,  7.35000e-01,  1.11800e+00}
+   x[ 1887]={ 1.43800e+00,  7.75000e-01,  1.21200e+00}
+   x[ 1888]={ 1.34600e+00,  8.48000e-01,  1.11800e+00}
+   x[ 1889]={ 1.38800e+00,  6.49000e-01,  1.26000e+00}
+   x[ 1890]={ 1.49800e+00,  8.58000e-01,  1.31300e+00}
+   x[ 1891]={ 1.24000e+00,  7.72000e-01,  1.04300e+00}
+   x[ 1892]={ 1.30000e+00,  6.42000e-01,  1.02700e+00}
+   x[ 1893]={ 1.22600e+00,  8.49000e-01,  9.22000e-01}
+   x[ 1894]={ 1.11700e+00,  7.77000e-01,  1.14100e+00}
+   x[ 1895]={ 1.73300e+00,  2.05500e+00,  3.75000e-01}
+   x[ 1896]={ 1.74000e+00,  2.11900e+00,  2.32000e-01}
+   x[ 1897]={ 1.69200e+00,  2.25900e+00,  2.56000e-01}
+   x[ 1898]={ 1.88000e+00,  2.10900e+00,  1.96000e-01}
+   x[ 1899]={ 1.65200e+00,  2.03700e+00,  1.52000e-01}
+   x[ 1900]={ 1.78900e+00,  2.36800e+00,  2.91000e-01}
+   x[ 1901]={ 1.89300e+00,  2.29500e+00,  3.61000e-01}
+   x[ 1902]={ 1.71000e+00,  2.45600e+00,  3.72000e-01}
+   x[ 1903]={ 1.83100e+00,  2.42500e+00,  1.50000e-01}
+   x[ 1904]={ 4.67000e-01,  2.45200e+00,  2.78000e-01}
+   x[ 1905]={ 6.02000e-01,  2.53200e+00,  2.89000e-01}
+   x[ 1906]={ 6.79000e-01,  2.45500e+00,  3.92000e-01}
+   x[ 1907]={ 6.57000e-01,  2.52500e+00,  1.56000e-01}
+   x[ 1908]={ 5.62000e-01,  2.66500e+00,  3.29000e-01}
+   x[ 1909]={ 7.68000e-01,  2.34200e+00,  3.51000e-01}
+   x[ 1910]={ 7.03000e-01,  2.29300e+00,  2.32000e-01}
+   x[ 1911]={ 7.63000e-01,  2.25500e+00,  4.65000e-01}
+   x[ 1912]={ 9.07000e-01,  2.41400e+00,  3.27000e-01}
+   x[ 1913]={ 5.99000e-01,  4.81000e-01,  3.86000e-01}
+   x[ 1914]={ 6.67000e-01,  6.22000e-01,  3.78000e-01}
+   x[ 1915]={ 8.13000e-01,  5.89000e-01,  3.64000e-01}
+   x[ 1916]={ 6.08000e-01,  6.84000e-01,  2.62000e-01}
+   x[ 1917]={ 6.32000e-01,  6.85000e-01,  5.03000e-01}
+   x[ 1918]={ 8.73000e-01,  5.72000e-01,  2.27000e-01}
+   x[ 1919]={ 7.61000e-01,  5.23000e-01,  1.50000e-01}
+   x[ 1920]={ 9.78000e-01,  4.76000e-01,  2.51000e-01}
+   x[ 1921]={ 9.21000e-01,  7.17000e-01,  1.91000e-01}
+   x[ 1922]={ 2.11300e+00,  2.03800e+00,  1.77000e+00}
+   x[ 1923]={ 2.10000e+00,  1.98300e+00,  1.62300e+00}
+   x[ 1924]={ 1.98800e+00,  2.06500e+00,  1.56600e+00}
+   x[ 1925]={ 2.22900e+00,  2.00900e+00,  1.56400e+00}
+   x[ 1926]={ 2.07000e+00,  1.84300e+00,  1.64100e+00}
+   x[ 1927]={ 2.01700e+00,  2.19400e+00,  1.49700e+00}
+   x[ 1928]={ 2.13600e+00,  2.24000e+00,  1.56400e+00}
+   x[ 1929]={ 1.89800e+00,  2.27100e+00,  1.52300e+00}
+   x[ 1930]={ 2.03700e+00,  2.15000e+00,  1.34700e+00}
+   x[ 1931]={ 2.59900e+00,  1.04400e+00,  1.94200e+00}
+   x[ 1932]={ 2.75000e+00,  1.00100e+00,  1.95700e+00}
+   x[ 1933]={ 2.82300e+00,  1.13000e+00,  1.94200e+00}
+   x[ 1934]={ 2.75700e+00,  9.42000e-01,  2.08900e+00}
+   x[ 1935]={ 2.77000e+00,  9.07000e-01,  1.84900e+00}
+   x[ 1936]={ 2.85300e+00,  1.21400e+00,  2.06200e+00}
+   x[ 1937]={ 2.74300e+00,  1.18300e+00,  2.15100e+00}
+   x[ 1938]={ 2.85400e+00,  1.34800e+00,  2.00900e+00}
+   x[ 1939]={ 2.99400e+00,  1.16100e+00,  2.10900e+00}
+   x[ 1940]={ 1.24200e+00,  5.44000e-01,  2.97400e+00}
+   x[ 1941]={ 1.37100e+00,  4.54000e-01,  2.97600e+00}
+   x[ 1942]={ 1.31500e+00,  3.17000e-01,  3.00100e+00}
+   x[ 1943]={ 1.42800e+00,  4.72000e-01,  2.84500e+00}
+   x[ 1944]={ 1.45000e+00,  5.07000e-01,  3.08300e+00}
+   x[ 1945]={ 1.27500e+00,  2.29000e-01,  2.88600e+00}
+   x[ 1946]={ 1.23500e+00,  3.25000e-01,  2.78600e+00}
+   x[ 1947]={ 1.16800e+00,  1.50000e-01,  2.94300e+00}
+   x[ 1948]={ 1.40700e+00,  1.50000e-01,  2.85500e+00}
+   x[ 1949]={ 1.35600e+00,  3.30200e+00,  1.51700e+00}
+   x[ 1950]={ 1.42900e+00,  3.16400e+00,  1.49600e+00}
+   x[ 1951]={ 1.35600e+00,  3.07300e+00,  1.58900e+00}
+   x[ 1952]={ 1.41000e+00,  3.13600e+00,  1.35600e+00}
+   x[ 1953]={ 1.56600e+00,  3.19100e+00,  1.53300e+00}
+   x[ 1954]={ 1.23500e+00,  2.99700e+00,  1.54100e+00}
+   x[ 1955]={ 1.18100e+00,  3.08600e+00,  1.44100e+00}
+   x[ 1956]={ 1.15600e+00,  2.98400e+00,  1.66100e+00}
+   x[ 1957]={ 1.29700e+00,  2.86300e+00,  1.48600e+00}
+   x[ 1958]={ 2.18900e+00,  1.15300e+00,  7.29000e-01}
+   x[ 1959]={ 2.34600e+00,  1.16100e+00,  7.30000e-01}
+   x[ 1960]={ 2.38800e+00,  1.01700e+00,  7.36000e-01}
+   x[ 1961]={ 2.37800e+00,  1.22800e+00,  6.06000e-01}
+   x[ 1962]={ 2.37600e+00,  1.23800e+00,  8.48000e-01}
+   x[ 1963]={ 2.40900e+00,  9.40000e-01,  6.09000e-01}
+   x[ 1964]={ 2.31700e+00,  1.00300e+00,  5.17000e-01}
+   x[ 1965]={ 2.37500e+00,  8.05000e-01,  6.48000e-01}
+   x[ 1966]={ 2.56200e+00,  9.65000e-01,  5.78000e-01}
+   x[ 1967]={ 2.93300e+00,  1.04400e+00,  4.32000e-01}
+   x[ 1968]={ 2.79700e+00,  9.72000e-01,  3.95000e-01}
+   x[ 1969]={ 2.69500e+00,  1.07900e+00,  4.22000e-01}
+   x[ 1970]={ 2.81200e+00,  9.37000e-01,  2.56000e-01}
+   x[ 1971]={ 2.79200e+00,  8.60000e-01,  4.85000e-01}
+   x[ 1972]={ 2.65500e+00,  1.17300e+00,  3.13000e-01}
+   x[ 1973]={ 2.77500e+00,  1.18200e+00,  2.33000e-01}
+   x[ 1974]={ 2.62000e+00,  1.29300e+00,  3.86000e-01}
+   x[ 1975]={ 2.53400e+00,  1.09900e+00,  2.44000e-01}
+   x[ 1976]={ 1.77600e+00,  9.73000e-01,  9.10000e-01}
+   x[ 1977]={ 1.90500e+00,  8.83000e-01,  9.20000e-01}
+   x[ 1978]={ 2.01300e+00,  9.82000e-01,  9.51000e-01}
+   x[ 1979]={ 1.87500e+00,  7.91000e-01,  1.02700e+00}
+   x[ 1980]={ 1.91500e+00,  8.22000e-01,  7.90000e-01}
+   x[ 1981]={ 2.04600e+00,  1.01500e+00,  1.09400e+00}
+   x[ 1982]={ 1.91900e+00,  9.96000e-01,  1.16100e+00}
+   x[ 1983]={ 2.09200e+00,  1.15100e+00,  1.08500e+00}
+   x[ 1984]={ 2.15700e+00,  9.09000e-01,  1.13000e+00}
+   x[ 1985]={ 2.50700e+00,  2.81000e+00,  1.28200e+00}
+   x[ 1986]={ 2.51400e+00,  2.65400e+00,  1.26300e+00}
+   x[ 1987]={ 2.61900e+00,  2.61200e+00,  1.36300e+00}
+   x[ 1988]={ 2.38100e+00,  2.60800e+00,  1.29300e+00}
+   x[ 1989]={ 2.55300e+00,  2.63700e+00,  1.12500e+00}
+   x[ 1990]={ 2.57900e+00,  2.57600e+00,  1.50300e+00}
+   x[ 1991]={ 2.46100e+00,  2.65700e+00,  1.52300e+00}
+   x[ 1992]={ 2.69500e+00,  2.61400e+00,  1.57900e+00}
+   x[ 1993]={ 2.55300e+00,  2.42100e+00,  1.49300e+00}
+   x[ 1994]={ 6.45000e-01,  8.40000e-01,  2.84600e+00}
+   x[ 1995]={ 5.70000e-01,  9.74000e-01,  2.81200e+00}
+   x[ 1996]={ 6.79000e-01,  1.07600e+00,  2.81600e+00}
+   x[ 1997]={ 5.14000e-01,  9.51000e-01,  2.68100e+00}
+   x[ 1998]={ 4.71000e-01,  9.87000e-01,  2.91700e+00}
+   x[ 1999]={ 7.57000e-01,  1.10800e+00,  2.69200e+00}
+   x[ 2000]={ 7.53000e-01,  9.84000e-01,  2.62000e+00}
+   x[ 2001]={ 8.86000e-01,  1.14500e+00,  2.74400e+00}
+   x[ 2002]={ 6.74000e-01,  1.22600e+00,  2.62800e+00}
+   x[ 2003]={ 3.69000e-01,  3.15700e+00,  1.47400e+00}
+   x[ 2004]={ 5.20000e-01,  3.18400e+00,  1.51100e+00}
+   x[ 2005]={ 5.75000e-01,  3.04700e+00,  1.53500e+00}
+   x[ 2006]={ 5.73000e-01,  3.25100e+00,  1.39400e+00}
+   x[ 2007]={ 5.13000e-01,  3.26800e+00,  1.62900e+00}
+   x[ 2008]={ 6.34000e-01,  2.96900e+00,  1.42100e+00}
+   x[ 2009]={ 5.60000e-01,  3.01800e+00,  1.30700e+00}
+   x[ 2010]={ 6.07000e-01,  2.83200e+00,  1.45900e+00}
+   x[ 2011]={ 7.86000e-01,  3.01100e+00,  1.42500e+00}
+   x[ 2012]={ 2.27600e+00,  1.54900e+00,  2.82000e-01}
+   x[ 2013]={ 2.33200e+00,  1.49400e+00,  4.18000e-01}
+   x[ 2014]={ 2.24600e+00,  1.56200e+00,  5.20000e-01}
+   x[ 2015]={ 2.31300e+00,  1.35200e+00,  4.08000e-01}
+   x[ 2016]={ 2.47000e+00,  1.53600e+00,  4.18000e-01}
+   x[ 2017]={ 2.11900e+00,  1.49800e+00,  5.66000e-01}
+   x[ 2018]={ 2.07800e+00,  1.42200e+00,  4.50000e-01}
+   x[ 2019]={ 2.03600e+00,  1.61100e+00,  5.99000e-01}
+   x[ 2020]={ 2.16500e+00,  1.41100e+00,  6.89000e-01}
+   x[ 2021]={ 2.19700e+00,  2.52300e+00,  1.19000e+00}
+   x[ 2022]={ 2.13500e+00,  2.37900e+00,  1.19400e+00}
+   x[ 2023]={ 2.00200e+00,  2.40100e+00,  1.25900e+00}
+   x[ 2024]={ 2.12800e+00,  2.34000e+00,  1.05500e+00}
+   x[ 2025]={ 2.22900e+00,  2.30200e+00,  1.27200e+00}
+   x[ 2026]={ 1.88200e+00,  2.43300e+00,  1.17500e+00}
+   x[ 2027]={ 1.93900e+00,  2.50200e+00,  1.06200e+00}
+   x[ 2028]={ 1.80200e+00,  2.51400e+00,  1.26400e+00}
+   x[ 2029]={ 1.82200e+00,  2.29000e+00,  1.14400e+00}
+   x[ 2030]={ 2.35700e+00,  2.43500e+00,  1.59200e+00}
+   x[ 2031]={ 2.42800e+00,  2.44000e+00,  1.73200e+00}
+   x[ 2032]={ 2.34300e+00,  2.53700e+00,  1.80900e+00}
+   x[ 2033]={ 2.42100e+00,  2.30400e+00,  1.77900e+00}
+   x[ 2034]={ 2.56100e+00,  2.48700e+00,  1.70300e+00}
+   x[ 2035]={ 2.22600e+00,  2.48800e+00,  1.88900e+00}
+   x[ 2036]={ 2.18400e+00,  2.37200e+00,  1.81500e+00}
+   x[ 2037]={ 2.13600e+00,  2.60100e+00,  1.88500e+00}
+   x[ 2038]={ 2.28900e+00,  2.45800e+00,  2.03000e+00}
+   x[ 2039]={ 1.50200e+00,  2.06400e+00,  2.10500e+00}
+   x[ 2040]={ 1.36400e+00,  2.14100e+00,  2.10500e+00}
+   x[ 2041]={ 1.40500e+00,  2.28300e+00,  2.07600e+00}
+   x[ 2042]={ 1.28900e+00,  2.07800e+00,  1.99900e+00}
+   x[ 2043]={ 1.31100e+00,  2.11800e+00,  2.23700e+00}
+   x[ 2044]={ 1.41300e+00,  2.33200e+00,  1.93500e+00}
+   x[ 2045]={ 1.44700e+00,  2.21200e+00,  1.86200e+00}
+   x[ 2046]={ 1.51600e+00,  2.43200e+00,  1.94200e+00}
+   x[ 2047]={ 1.26700e+00,  2.38600e+00,  1.90800e+00}
+   x[ 2048]={ 8.31000e-01,  1.17000e+00,  1.76600e+00}
+   x[ 2049]={ 7.02000e-01,  1.09500e+00,  1.81900e+00}
+   x[ 2050]={ 7.57000e-01,  1.00600e+00,  1.92600e+00}
+   x[ 2051]={ 6.17000e-01,  1.20100e+00,  1.86600e+00}
+   x[ 2052]={ 6.51000e-01,  1.02600e+00,  1.70300e+00}
+   x[ 2053]={ 7.66000e-01,  1.05500e+00,  2.06800e+00}
+   x[ 2054]={ 7.85000e-01,  1.19700e+00,  2.05000e+00}
+   x[ 2055]={ 8.79000e-01,  9.83000e-01,  2.11900e+00}
+   x[ 2056]={ 6.27000e-01,  1.01400e+00,  2.12800e+00}
+   x[ 2057]={ 8.07000e-01,  5.75000e-01,  2.57500e+00}
+   x[ 2058]={ 7.98000e-01,  4.26000e-01,  2.52500e+00}
+   x[ 2059]={ 9.06000e-01,  3.58000e-01,  2.60500e+00}
+   x[ 2060]={ 6.64000e-01,  3.85000e-01,  2.55900e+00}
+   x[ 2061]={ 8.24000e-01,  4.34000e-01,  2.38400e+00}
+   x[ 2062]={ 8.74000e-01,  2.97000e-01,  2.73800e+00}
+   x[ 2063]={ 7.66000e-01,  3.81000e-01,  2.78600e+00}
+   x[ 2064]={ 9.98000e-01,  3.10000e-01,  2.80900e+00}
+   x[ 2065]={ 8.32000e-01,  1.50000e-01,  2.70100e+00}
+   x[ 2066]={ 1.00600e+00,  2.28500e+00,  5.85000e-01}
+   x[ 2067]={ 9.78000e-01,  2.42300e+00,  6.54000e-01}
+   x[ 2068]={ 1.11500e+00,  2.47400e+00,  6.86000e-01}
+   x[ 2069]={ 9.07000e-01,  2.49900e+00,  5.54000e-01}
+   x[ 2070]={ 8.99000e-01,  2.38900e+00,  7.70000e-01}
+   x[ 2071]={ 1.18900e+00,  2.55800e+00,  5.85000e-01}
+   x[ 2072]={ 1.13700e+00,  2.51000e+00,  4.60000e-01}
+   x[ 2073]={ 1.32700e+00,  2.52600e+00,  6.12000e-01}
+   x[ 2074]={ 1.14500e+00,  2.70400e+00,  6.24000e-01}
+   x[ 2075]={ 2.38800e+00,  1.97400e+00,  4.93000e-01}
+   x[ 2076]={ 2.27500e+00,  1.86700e+00,  4.69000e-01}
+   x[ 2077]={ 2.14900e+00,  1.94800e+00,  4.84000e-01}
+   x[ 2078]={ 2.30000e+00,  1.81800e+00,  3.36000e-01}
+   x[ 2079]={ 2.29600e+00,  1.77000e+00,  5.74000e-01}
+   x[ 2080]={ 2.08900e+00,  2.01400e+00,  3.64000e-01}
+   x[ 2081]={ 2.20400e+00,  2.04100e+00,  2.81000e-01}
+   x[ 2082]={ 2.02500e+00,  2.13000e+00,  4.21000e-01}
+   x[ 2083]={ 1.99100e+00,  1.90400e+00,  3.08000e-01}
+   x[ 2084]={ 3.03200e+00,  2.92600e+00,  4.15000e-01}
+   x[ 2085]={ 2.87700e+00,  2.92200e+00,  3.89000e-01}
+   x[ 2086]={ 2.84100e+00,  3.06800e+00,  3.75000e-01}
+   x[ 2087]={ 2.86300e+00,  2.84600e+00,  2.67000e-01}
+   x[ 2088]={ 2.82300e+00,  2.85800e+00,  5.06000e-01}
+   x[ 2089]={ 2.84500e+00,  3.13400e+00,  2.41000e-01}
+   x[ 2090]={ 2.94800e+00,  3.06000e+00,  1.72000e-01}
+   x[ 2091]={ 2.87800e+00,  3.27000e+00,  2.74000e-01}
+   x[ 2092]={ 2.69900e+00,  3.11200e+00,  1.86000e-01}
+   x[ 2093]={ 3.01400e+00,  1.03800e+00,  2.40800e+00}
+   x[ 2094]={ 3.07700e+00,  1.11800e+00,  2.52900e+00}
+   x[ 2095]={ 3.03600e+00,  1.03700e+00,  2.64800e+00}
+   x[ 2096]={ 3.21900e+00,  1.11700e+00,  2.50100e+00}
+   x[ 2097]={ 3.01600e+00,  1.24800e+00,  2.52000e+00}
+   x[ 2098]={ 3.12400e+00,  9.26000e-01,  2.69700e+00}
+   x[ 2099]={ 3.18900e+00,  8.81000e-01,  2.57600e+00}
+   x[ 2100]={ 3.03000e+00,  8.34000e-01,  2.75500e+00}
+   x[ 2101]={ 3.21800e+00,  9.99000e-01,  2.80100e+00}
+   x[ 2102]={ 2.89900e+00,  1.75100e+00,  1.72300e+00}
+   x[ 2103]={ 2.90200e+00,  1.74800e+00,  1.88000e+00}
+   x[ 2104]={ 2.78900e+00,  1.83900e+00,  1.91800e+00}
+   x[ 2105]={ 2.88200e+00,  1.60900e+00,  1.91300e+00}
+   x[ 2106]={ 3.03400e+00,  1.79800e+00,  1.91400e+00}
+   x[ 2107]={ 2.65100e+00,  1.78300e+00,  1.93700e+00}
+   x[ 2108]={ 2.65000e+00,  1.67100e+00,  1.84600e+00}
+   x[ 2109]={ 2.56700e+00,  1.89400e+00,  1.89900e+00}
+   x[ 2110]={ 2.64800e+00,  1.74500e+00,  2.09000e+00}
+   x[ 2111]={ 7.62000e-01,  1.73800e+00,  1.22400e+00}
+   x[ 2112]={ 8.92000e-01,  1.79800e+00,  1.15900e+00}
+   x[ 2113]={ 9.94000e-01,  1.69100e+00,  1.18400e+00}
+   x[ 2114]={ 8.56000e-01,  1.81600e+00,  1.02000e+00}
+   x[ 2115]={ 9.15000e-01,  1.92100e+00,  1.23100e+00}
+   x[ 2116]={ 1.01400e+00,  1.58100e+00,  1.08300e+00}
+   x[ 2117]={ 8.83000e-01,  1.56900e+00,  1.02400e+00}
+   x[ 2118]={ 1.05600e+00,  1.47000e+00,  1.16500e+00}
+   x[ 2119]={ 1.12500e+00,  1.64000e+00,  9.88000e-01}
+   x[ 2120]={ 1.70500e+00,  9.51000e-01,  1.21500e+00}
+   x[ 2121]={ 1.73300e+00,  1.10000e+00,  1.25500e+00}
+   x[ 2122]={ 1.59900e+00,  1.14800e+00,  1.30400e+00}
+   x[ 2123]={ 1.83500e+00,  1.09200e+00,  1.35700e+00}
+   x[ 2124]={ 1.77700e+00,  1.16200e+00,  1.13200e+00}
+   x[ 2125]={ 1.56300e+00,  1.13400e+00,  1.44900e+00}
+   x[ 2126]={ 1.63700e+00,  1.01600e+00,  1.48800e+00}
+   x[ 2127]={ 1.42000e+00,  1.11800e+00,  1.44400e+00}
+   x[ 2128]={ 1.61400e+00,  1.26900e+00,  1.51100e+00}
+   x[ 2129]={ 2.01600e+00,  2.49400e+00,  2.77900e+00}
+   x[ 2130]={ 2.16900e+00,  2.46200e+00,  2.76000e+00}
+   x[ 2131]={ 2.16800e+00,  2.35100e+00,  2.65900e+00}
+   x[ 2132]={ 2.22500e+00,  2.58600e+00,  2.71100e+00}
+   x[ 2133]={ 2.21400e+00,  2.42500e+00,  2.89100e+00}
+   x[ 2134]={ 2.17300e+00,  2.38100e+00,  2.51300e+00}
+   x[ 2135]={ 2.10800e+00,  2.51000e+00,  2.50500e+00}
+   x[ 2136]={ 2.10000e+00,  2.27100e+00,  2.45500e+00}
+   x[ 2137]={ 2.32800e+00,  2.38300e+00,  2.48300e+00}
+   x[ 2138]={ 2.85600e+00,  7.10000e-01,  2.69900e+00}
+   x[ 2139]={ 2.93300e+00,  5.80000e-01,  2.65100e+00}
+   x[ 2140]={ 2.96600e+00,  5.12000e-01,  2.78000e+00}
+   x[ 2141]={ 2.83600e+00,  5.11000e-01,  2.56900e+00}
+   x[ 2142]={ 3.04600e+00,  6.31000e-01,  2.57900e+00}
+   x[ 2143]={ 2.87100e+00,  4.13000e-01,  2.84000e+00}
+   x[ 2144]={ 2.74300e+00,  4.62000e-01,  2.79500e+00}
+   x[ 2145]={ 2.89600e+00,  4.26000e-01,  2.98100e+00}
+   x[ 2146]={ 2.91600e+00,  2.76000e-01,  2.77600e+00}
+   x[ 2147]={ 2.57900e+00,  2.92800e+00,  2.20100e+00}
+   x[ 2148]={ 2.69800e+00,  2.88600e+00,  2.10700e+00}
+   x[ 2149]={ 2.79400e+00,  3.00000e+00,  2.12000e+00}
+   x[ 2150]={ 2.74500e+00,  2.76200e+00,  2.16400e+00}
+   x[ 2151]={ 2.63800e+00,  2.87200e+00,  1.97700e+00}
+   x[ 2152]={ 2.89900e+00,  2.99900e+00,  2.22700e+00}
+   x[ 2153]={ 2.83600e+00,  2.92200e+00,  2.33200e+00}
+   x[ 2154]={ 2.91700e+00,  3.13900e+00,  2.25500e+00}
+   x[ 2155]={ 3.02100e+00,  2.92800e+00,  2.15600e+00}
+   x[ 2156]={ 1.54900e+00,  2.63400e+00,  1.26700e+00}
+   x[ 2157]={ 1.42000e+00,  2.54500e+00,  1.25500e+00}
+   x[ 2158]={ 1.46000e+00,  2.44000e+00,  1.15700e+00}
+   x[ 2159]={ 1.39700e+00,  2.49800e+00,  1.39000e+00}
+   x[ 2160]={ 1.31900e+00,  2.63700e+00,  1.20700e+00}
+   x[ 2161]={ 1.52200e+00,  2.31200e+00,  1.20600e+00}
+   x[ 2162]={ 1.59000e+00,  2.35400e+00,  1.32600e+00}
+   x[ 2163]={ 1.60800e+00,  2.27500e+00,  1.09600e+00}
+   x[ 2164]={ 1.39800e+00,  2.21800e+00,  1.22900e+00}
+   x[ 2165]={ 2.72200e+00,  1.30400e+00,  2.41300e+00}
+   x[ 2166]={ 2.65700e+00,  1.16200e+00,  2.39300e+00}
+   x[ 2167]={ 2.58900e+00,  1.13700e+00,  2.52400e+00}
+   x[ 2168]={ 2.56700e+00,  1.18100e+00,  2.28200e+00}
+   x[ 2169]={ 2.76800e+00,  1.07500e+00,  2.36500e+00}
+   x[ 2170]={ 2.44700e+00,  1.18100e+00,  2.54600e+00}
+   x[ 2171]={ 2.43700e+00,  1.29600e+00,  2.46000e+00}
+   x[ 2172]={ 2.44300e+00,  1.20800e+00,  2.68700e+00}
+   x[ 2173]={ 2.36400e+00,  1.05500e+00,  2.49900e+00}
+   x[ 2174]={ 1.05600e+00,  2.88800e+00,  1.46800e+00}
+   x[ 2175]={ 1.09
+GROMACS reminds you: "I think it would be a good idea." (Mahatma Gandhi, when asked what he thought of Western civilization)
+
+800e+00,  2.75400e+00,  1.39600e+00}
+   x[ 2176]={ 1.15000e+00,  2.67000e+00,  1.50900e+00}
+   x[ 2177]={ 9.76000e-01,  2.70600e+00,  1.33600e+00}
+   x[ 2178]={ 1.19900e+00,  2.79600e+00,  1.30100e+00}
+   x[ 2179]={ 1.05600e+00,  2.58000e+00,  1.58400e+00}
+   x[ 2180]={ 9.30000e-01,  2.65000e+00,  1.57400e+00}
+   x[ 2181]={ 1.11400e+00,  2.57600e+00,  1.71600e+00}
+   x[ 2182]={ 1.06400e+00,  2.44500e+00,  1.50300e+00}
+   x[ 2183]={ 9.67000e-01,  7.70000e-01,  3.23000e+00}
+   x[ 2184]={ 1.01700e+00,  8.21000e-01,  3.08900e+00}
+   x[ 2185]={ 9.38000e-01,  9.47000e-01,  3.06900e+00}
+   x[ 2186]={ 1.15900e+00,  8.42000e-01,  3.10800e+00}
+   x[ 2187]={ 9.84000e-01,  7.14000e-01,  2.99900e+00}
+   x[ 2188]={ 9.92000e-01,  1.07900e+00,  3.11700e+00}
+   x[ 2189]={ 1.07100e+00,  1.04000e+00,  3.23100e+00}
+   x[ 2190]={ 8.72000e-01,  1.15200e+00,  3.14800e+00}
+   x[ 2191]={ 1.07300e+00,  1.13100e+00,  2.99300e+00}
+   x[ 2192]={ 2.28400e+00,  3.08700e+00,  3.16800e+00}
+   x[ 2193]={ 2.37100e+00,  3.21600e+00,  3.14100e+00}
+   x[ 2194]={ 2.48300e+00,  3.16400e+00,  3.05500e+00}
+   x[ 2195]={ 2.28100e+00,  3.30600e+00,  3.07400e+00}
+   x[ 2196]={ 2.41200e+00,  3.25900e+00,  3.27200e+00}
+   x[ 2197]={ 2.46800e+00,  3.16300e+00,  2.90500e+00}
+   x[ 2198]={ 2.32600e+00,  3.14700e+00,  2.88800e+00}
+   x[ 2199]={ 2.54900e+00,  3.04900e+00,  2.86700e+00}
+   x[ 2200]={ 2.52600e+00,  3.30300e+00,  2.86400e+00}
+   x[ 2201]={ 2.00300e+00,  1.16100e+00,  5.34000e-01}
+   x[ 2202]={ 1.84500e+00,  1.15600e+00,  5.26000e-01}
+   x[ 2203]={ 1.80700e+00,  1.30100e+00,  5.28000e-01}
+   x[ 2204]={ 1.81900e+00,  1.08800e+00,  4.02000e-01}
+   x[ 2205]={ 1.80700e+00,  1.08200e+00,  6.44000e-01}
+   x[ 2206]={ 1.79400e+00,  1.37600e+00,  3.99000e-01}
+   x[ 2207]={ 1.89000e+00,  1.31000e+00,  3.14000e-01}
+   x[ 2208]={ 1.82900e+00,  1.51100e+00,  4.38000e-01}
+   x[ 2209]={ 1.64300e+00,  1.35500e+00,  3.60000e-01}
+   x[ 2210]={ 3.07300e+00,  4.79000e-01,  1.60700e+00}
+   x[ 2211]={ 3.01100e+00,  3.34000e-01,  1.60500e+00}
+   x[ 2212]={ 3.02600e+00,  2.89000e-01,  1.74700e+00}
+   x[ 2213]={ 2.87500e+00,  3.55000e-01,  1.56300e+00}
+   x[ 2214]={ 3.09200e+00,  2.62000e-01,  1.51000e+00}
+   x[ 2215]={ 2.91700e+00,  3.16000e-01,  1.84700e+00}
+   x[ 2216]={ 2.85900e+00,  4.38000e-01,  1.79700e+00}
+   x[ 2217]={ 2.99000e+00,  3.28000e-01,  1.97100e+00}
+   x[ 2218]={ 2.82600e+00,  1.89000e-01,  1.83500e+00}
+   x[ 2219]={ 2.82000e+00,  5.68000e-01,  7.05000e-01}
+   x[ 2220]={ 2.82900e+00,  5.01000e-01,  8.48000e-01}
+   x[ 2221]={ 2.71300e+00,  4.07000e-01,  8.48000e-01}
+   x[ 2222]={ 2.95800e+00,  4.38000e-01,  8.49000e-01}
+   x[ 2223]={ 2.81700e+00,  6.12000e-01,  9.39000e-01}
+   x[ 2224]={ 2.73000e+00,  2.66000e-01,  7.99000e-01}
+   x[ 2225]={ 2.83500e+00,  2.80000e-01,  7.01000e-01}
+   x[ 2226]={ 2.60000e+00,  2.35000e-01,  7.47000e-01}
+   x[ 2227]={ 2.77000e+00,  1.88000e-01,  9.30000e-01}
+   x[ 2228]={ 1.94200e+00,  2.03200e+00,  2.56200e+00}
+   x[ 2229]={ 1.84000e+00,  1.94100e+00,  2.64100e+00}
+   x[ 2230]={ 1.75600e+00,  1.88200e+00,  2.53200e+00}
+   x[ 2231]={ 1.92400e+00,  1.84700e+00,  2.71100e+00}
+   x[ 2232]={ 1.77000e+00,  2.03300e+00,  2.72700e+00}
+   x[ 2233]={ 1.79600e+00,  1.75200e+00,  2.46800e+00}
+   x[ 2234]={ 1.94000e+00,  1.75500e+00,  2.48000e+00}
+   x[ 2235]={ 1.74500e+00,  1.76500e+00,  2.33400e+00}
+   x[ 2236]={ 1.72400e+00,  1.64500e+00,  2.55800e+00}
+   x[ 2237]={ 6.45000e-01,  8.74000e-01,  8.95000e-01}
+   x[ 2238]={ 5.72000e-01,  1.01300e+00,  9.04000e-01}
+   x[ 2239]={ 6.82000e-01,  1.10700e+00,  9.43000e-01}
+   x[ 2240]={ 5.19000e-01,  1.03400e+00,  7.71000e-01}
+   x[ 2241]={ 4.71000e-01,  9.93000e-01,  1.00500e+00}
+   x[ 2242]={ 7.63000e-01,  1.17600e+00,  8.37000e-01}
+   x[ 2243]={ 7.60000e-01,  1.08100e+00,  7.29000e-01}
+   x[ 2244]={ 8.91000e-01,  1.19200e+00,  9.02000e-01}
+   x[ 2245]={ 6.83000e-01,  1.30900e+00,  8.12000e-01}
+   x[ 2246]={ 2.61700e+00,  3.28100e+00,  2.41000e+00}
+   x[ 2247]={ 2.58300e+00,  3.15100e+00,  2.49200e+00}
+   x[ 2248]={ 2.45200e+00,  3.18500e+00,  2.55700e+00}
+   x[ 2249]={ 2.57500e+00,  3.04800e+00,  2.39100e+00}
+   x[ 2250]={ 2.69400e+00,  3.13700e+00,  2.58300e+00}
+   x[ 2251]={ 2.32300e+00,  3.15400e+00,  2.48700e+00}
+   x[ 2252]={ 2.36000e+00,  3.16500e+00,  2.34700e+00}
+   x[ 2253]={ 2.23500e+00,  3.25700e+00,  2.53600e+00}
+   x[ 2254]={ 2.29000e+00,  3.00800e+00,  2.53600e+00}
+   x[ 2255]={ 1.39600e+00,  1.49000e-01,  2.13300e+00}
+   x[ 2256]={ 1.33100e+00,  2.92000e-01,  2.13600e+00}
+   x[ 2257]={ 1.19100e+00,  2.67000e-01,  2.08800e+00}
+   x[ 2258]={ 1.34000e+00,  3.32000e-01,  2.27500e+00}
+   x[ 2259]={ 1.41300e+00,  3.70000e-01,  2.04700e+00}
+   x[ 2260]={ 1.08200e+00,  2.34000e-01,  2.18500e+00}
+   x[ 2261]={ 1.15400e+00,  1.67000e-01,  2.29100e+00}
+   x[ 2262]={ 9.94000e-01,  1.50000e-01,  2.10800e+00}
+   x[ 2263]={ 1.02400e+00,  3.75000e-01,  2.22300e+00}
+   x[ 2264]={ 2.57000e+00,  1.30700e+00,  2.83700e+00}
+   x[ 2265]={ 2.48500e+00,  1.36000e+00,  2.95800e+00}
+   x[ 2266]={ 2.34900e+00,  1.38000e+00,  2.89800e+00}
+   x[ 2267]={ 2.49300e+00,  1.25400e+00,  3.05600e+00}
+   x[ 2268]={ 2.55200e+00,  1.48200e+00,  2.99700e+00}
+   x[ 2269]={ 2.25000e+00,  1.26800e+00,  2.89900e+00}
+   x[ 2270]={ 2.33400e+00,  1.15100e+00,  2.89400e+00}
+   x[ 2271]={ 2.17200e+00,  1.29300e+00,  2.78000e+00}
+   x[ 2272]={ 2.17300e+00,  1.29000e+00,  3.03500e+00}
+   x[ 2273]={ 1.39800e+00,  3.61000e-01,  1.84000e-01}
+   x[ 2274]={ 1.44800e+00,  4.81000e-01,  2.73000e-01}
+   x[ 2275]={ 1.37800e+00,  5.99000e-01,  2.14000e-01}
+   x[ 2276]={ 1.40600e+00,  4.45000e-01,  4.07000e-01}
+   x[ 2277]={ 1.59200e+00,  4.81000e-01,  2.55000e-01}
+   x[ 2278]={ 1.24200e+00,  6.39000e-01,  2.66000e-01}
+   x[ 2279]={ 1.18700e+00,  5.13000e-01,  3.09000e-01}
+   x[ 2280]={ 1.18000e+00,  6.98000e-01,  1.50000e-01}
+   x[ 2281]={ 1.27800e+00,  7.40000e-01,  3.82000e-01}
+   x[ 2282]={ 2.58000e+00,  1.70700e+00,  1.59300e+00}
+   x[ 2283]={ 2.68100e+00,  1.82400e+00,  1.56100e+00}
+   x[ 2284]={ 2.61200e+00,  1.90000e+00,  1.45200e+00}
+   x[ 2285]={ 2.69300e+00,  1.89500e+00,  1.68600e+00}
+   x[ 2286]={ 2.80200e+00,  1.75500e+00,  1.52000e+00}
+   x[ 2287]={ 2.51900e+00,  2.01200e+00,  1.48700e+00}
+   x[ 2288]={ 2.46700e+00,  1.97200e+00,  1.61500e+00}
+   x[ 2289]={ 2.42400e+00,  2.00900e+00,  1.37800e+00}
+   x[ 2290]={ 2.61400e+00,  2.13700e+00,  1.48900e+00}
+   x[ 2291]={ 2.05300e+00,  1.66900e+00,  2.71900e+00}
+   x[ 2292]={ 2.19000e+00,  1.71500e+00,  2.65700e+00}
+   x[ 2293]={ 2.27400e+00,  1.59000e+00,  2.66400e+00}
+   x[ 2294]={ 2.15600e+00,  1.75700e+00,  2.52300e+00}
+   x[ 2295]={ 2.23400e+00,  1.82200e+00,  2.74300e+00}
+   x[ 2296]={ 2.27400e+00,  1.49300e+00,  2.55000e+00}
+   x[ 2297]={ 2.14100e+00,  1.51000e+00,  2.49400e+00}
+   x[ 2298]={ 2.29800e+00,  1.36700e+00,  2.61500e+00}
+   x[ 2299]={ 2.39100e+00,  1.54600e+00,  2.45900e+00}
+v: not available
+Group statistics
+T-Coupling  :    2300  (total 2300 atoms)
+Energy Mon. :    2300  (total 2300 atoms)
+Acc. not used:    2300  (total 2300 atoms)
+Freeze      :    2300  (total 2300 atoms)
+User1       :    2300  (total 2300 atoms)
+User2       :    2300  (total 2300 atoms)
+VCM         :    2300  (total 2300 atoms)
+Compressed X:    2300  (total 2300 atoms)
+Or. Res. Fit:    2300  (total 2300 atoms)
+QMMM        :    2300  (total 2300 atoms)

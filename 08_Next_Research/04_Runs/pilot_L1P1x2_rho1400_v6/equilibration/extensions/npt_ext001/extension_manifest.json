@@ -1,0 +1,84 @@
+{
+  "schema_version": "npt-extension-v1",
+  "extension_id": "npt_ext001",
+  "chain_id": "pilot_L1P1x2_rho1400_v6",
+  "record_id": "pilot_L1P1x2_rho1400_v6:npt:002",
+  "record_label": "npt:002",
+  "parent_record_id": "pilot_L1P1x2_rho1400_v6:npt:001",
+  "parent_record_label": "npt:001",
+  "stage": "npt",
+  "segment_no": 2,
+  "mode": "EXTEND",
+  "created_at": "2026-08-07T02:59:50+09:00",
+  "start_step": 1000000,
+  "target_step": 2000000,
+  "target_step_semantics": "extension segment length; cumulative target is target_total_steps",
+  "base_steps": 1000000,
+  "extension_steps": 2000000,
+  "target_total_steps": 3000000,
+  "dt_ps": 0.001,
+  "base_duration_ps": 1000.0,
+  "extension_duration_ps": 2000.0,
+  "target_total_duration_ps": 3000.0,
+  "base_edr_range_ps": {
+    "first": 0.0,
+    "last": 1000.0,
+    "duration": 1000.0
+  },
+  "expected_final_edr_last_ps": 3000.0,
+  "base_finished_mdrun_markers": 1,
+  "base_tpr_shape": {
+    "nsteps": 1000000,
+    "dt_ps": 0.001,
+    "init_step": 0,
+    "tinit_ps": 0.0
+  },
+  "extended_tpr_shape": {
+    "nsteps": 3000000,
+    "dt_ps": 0.001,
+    "init_step": 0,
+    "tinit_ps": 0.0
+  },
+  "extended_tpr_path": "npt_ext001.tpr",
+  "extended_tpr_sha256": "28bb9cc7a180cb34d5636fb9ee390136bdb91c1a1ff7fe1a5c0f3f260c18896e",
+  "output_prefix": "npt",
+  "checkpoint_in_sha256": "cda7b99e9990bb9e15a1b59dfa12fb4f99c195bdcce537bf8f79077e07fcbe8e",
+  "base_snapshot": {
+    "npt.tpr": {
+      "sha256": "2f5d8576756f3b6003d50cbe2d8d69216bb1f26521dde18649fec862bcf6b461",
+      "size_bytes": 69564
+    },
+    "npt.cpt": {
+      "sha256": "cda7b99e9990bb9e15a1b59dfa12fb4f99c195bdcce537bf8f79077e07fcbe8e",
+      "size_bytes": 57208
+    },
+    "npt.edr": {
+      "sha256": "44e01404c01082d09460514a19ba7e43ac970ac8eab0ec5b456ebb11deda5542",
+      "size_bytes": 613316
+    },
+    "npt.xtc": {
+      "sha256": "bb23cf8f38ddae9d3073d0441e816fb31c8f00c7d619bda19c0b81897ba31a76",
+      "size_bytes": 9102048
+    },
+    "npt.log": {
+      "sha256": "3554ccbaf48776c38ee14b121fda546903c72b845c8505c6efe443644fd805ba",
+      "size_bytes": 630750
+    },
+    "npt.gro": {
+      "sha256": "b194c14666fc2765166e676500dde4cc81b73347fd0eb48d031897f83c5a163c",
+      "size_bytes": 158744
+    },
+    "equilibration_metrics.json": {
+      "sha256": "a815a04388f002cd38acf6fade659045682ad41b2a4fe43f61526c03c3638369",
+      "size_bytes": 4140
+    }
+  },
+  "base_snapshot_path": "base_snapshot",
+  "base_metrics_sha256": "a815a04388f002cd38acf6fade659045682ad41b2a4fe43f61526c03c3638369",
+  "chain_manifest_sha256": "1f99f08639c12e7007380445b0a27aac34f52287cb76c31fb59b03160805b124",
+  "gmx_bin": "/opt/homebrew/Cellar/gromacs/2026.3/bin/gmx",
+  "gromacs_version": "GROMACS version:     2026.3-Homebrew",
+  "allowed_threads": [
+    6
+  ]
+}

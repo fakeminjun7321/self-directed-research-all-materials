@@ -1,0 +1,3 @@
+[submodule "fftool"]
+	path = 90_Reproduce_Scripts/tools/fftool
+	url = https://github.com/paduagroup/fftool.git

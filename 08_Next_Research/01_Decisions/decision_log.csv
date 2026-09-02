@@ -1,0 +1,6 @@
+decision_id,topic,current_assumption,decision,status,decided_by,decided_at,evidence,protocol_version
+D001,system_scope,"five neat LiFSI/Pyr13FSI compositions",,Proposed,,,QUESTIONS_FOR_PROFESSOR.md,v0.2-candidate
+D002,charge_scaling,"uniform 0.75 scaling retained from current topology",,Proposed,,,current topol.top,v0.2-candidate
+D003,target_density,"1400 kg/m3 is an engineering pilot start for L1P1x2, not an approved physical target",,Proposed,,,composition_registry.csv,v0.2-candidate
+D004,production_protocol,"no production claim before equilibration criteria and duration are approved",,Proposed,,,PROTOCOL_SPEC.md,v0.2-candidate
+D005,initial_density_screen,"run 1000/1200/1400 kg/m3 starts at the same 298 K and 1 bar state for NVT100ps plus C-rescale NPT1ns","authorized as exploratory technical work only; physics remains unverified",Provisional,user,2026-08-07,PROTOCOL_SPEC.md,v0.3-exploratory

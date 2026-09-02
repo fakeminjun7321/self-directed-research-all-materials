@@ -1,0 +1,28 @@
+captured_at=2026-08-07T02:13:23Z
+architecture=arm64
+macos=26.5.2
+gromacs_path=/opt/homebrew/bin/gmx
+                     :-) GROMACS - gmx, 2026.3-Homebrew (-:
+
+Executable:   /opt/homebrew/bin/../Cellar/gromacs/2026.3/bin/gmx
+Data prefix:  /opt/homebrew/bin/../Cellar/gromacs/2026.3
+Working dir:  /Users/minjun/D/연구/2026 연구/2026_자율연구
+Command line:
+  gmx --version
+
+GROMACS version:     2026.3-Homebrew
+Precision:           mixed
+Memory model:        64 bit
+MPI library:         thread_mpi
+
+packmol_path=/opt/homebrew/bin/packmol
+packmol 21.2.3
+python_path=/opt/anaconda3/bin/python
+Python 3.13.9
+pandoc_path=/opt/homebrew/bin/pandoc
+pandoc 3.10
+Features: +server +lua
+latexmk_path=/opt/homebrew/bin/latexmk
+Latexmk, John Collins, 15 June 2025. Version 4.87
+git_path=/usr/bin/git
+git version 2.50.1 (Apple Git-155)

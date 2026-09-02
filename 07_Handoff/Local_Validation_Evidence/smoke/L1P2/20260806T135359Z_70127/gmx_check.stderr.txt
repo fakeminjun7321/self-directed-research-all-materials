@@ -1,0 +1,25 @@
+                  :-) GROMACS - gmx check, 2026.3-Homebrew (-:
+
+Executable:   /opt/homebrew/bin/../Cellar/gromacs/2026.3/bin/gmx
+Data prefix:  /opt/homebrew/bin/../Cellar/gromacs/2026.3
+Working dir:  /Users/minjun/D/연구/2026 연구/2026_자율연구
+Command line:
+  gmx check -f 07_Handoff/Local_Validation_Evidence/smoke/L1P2/20260806T135359Z_70127/prod_1ns.xtc
+
+Reading frame       0 time    0.000   
+# Atoms  2050
+Precision 0.001 (nm)
+Last frame          0 time    0.000   
+
+
+Item        #frames Timestep (ps)
+Step             1
+Time             1
+Lambda           0
+Coords           1
+Velocities       0
+Forces           0
+Box              1
+
+GROMACS reminds you: "I was detained, I was restrained" (The Smiths)
+

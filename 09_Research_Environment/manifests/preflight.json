@@ -1,0 +1,123 @@
+{
+  "schema_version": "cile-environment-preflight-v1",
+  "status": "READY_WITH_WARNINGS",
+  "checks": {
+    "command:gmx": {
+      "status": "PASS",
+      "path": "/opt/homebrew/bin/gmx",
+      "version_line": ":-) GROMACS - gmx, 2026.3-Homebrew (-:"
+    },
+    "command:packmol": {
+      "status": "AVAILABLE_NONZERO_VERSION",
+      "path": "/opt/homebrew/bin/packmol",
+      "version_line": "################################################################################"
+    },
+    "command:pandoc": {
+      "status": "PASS",
+      "path": "/opt/homebrew/bin/pandoc",
+      "version_line": "pandoc 3.10"
+    },
+    "command:latexmk": {
+      "status": "PASS",
+      "path": "/opt/homebrew/bin/latexmk",
+      "version_line": "Latexmk, John Collins, 15 June 2025. Version 4.87"
+    },
+    "command:git": {
+      "status": "PASS",
+      "path": "/usr/bin/git",
+      "version_line": "git version 2.50.1 (Apple Git-155)"
+    },
+    "command:zip": {
+      "status": "PASS",
+      "path": "/usr/bin/zip",
+      "version_line": "Copyright (c) 1990-2008 Info-ZIP - Type 'zip \"-L\"' for software license."
+    },
+    "python:numpy": {
+      "status": "PASS",
+      "version": "2.3.5"
+    },
+    "python:pandas": {
+      "status": "PASS",
+      "version": "2.3.3"
+    },
+    "python:scipy": {
+      "status": "PASS",
+      "version": "1.16.3"
+    },
+    "python:matplotlib": {
+      "status": "PASS",
+      "version": "3.10.6"
+    },
+    "python:seaborn": {
+      "status": "PASS",
+      "version": "0.13.2"
+    },
+    "python:jupyter": {
+      "status": "PASS",
+      "version": "1.1.1"
+    },
+    "python:notebook": {
+      "status": "PASS",
+      "version": "7.4.5"
+    },
+    "python:jupyterlab": {
+      "status": "PASS",
+      "version": "4.4.7"
+    },
+    "python:openpyxl": {
+      "status": "PASS",
+      "version": "3.1.5"
+    },
+    "file:environment.yml": {
+      "status": "PASS"
+    },
+    "file:Brewfile": {
+      "status": "PASS"
+    },
+    "file:.gitignore": {
+      "status": "PASS"
+    },
+    "file:05_Report/2026_Final/report_source.md": {
+      "status": "PASS"
+    },
+    "file:05_Report/2026_Final/RESULTS_TABLE.csv": {
+      "status": "PASS"
+    },
+    "file:05_Report/2026_Final/FIGURE_MANIFEST.csv": {
+      "status": "PASS"
+    },
+    "file:09_Research_Environment/backup_policy.json": {
+      "status": "PASS"
+    },
+    "file:09_Research_Environment/drive_folder_map.json": {
+      "status": "PASS"
+    },
+    "professor_handoff": {
+      "status": "PASS",
+      "sha256": "9da4e4eb5ea33089520a2362cbcb84bf996ccee3093eed20f45b1e0d586eba88"
+    },
+    "disk_free": {
+      "status": "WARN",
+      "gib": 51.70859146118164
+    },
+    "git_repository": {
+      "status": "PASS"
+    },
+    "google_drive_desktop": {
+      "status": "OPTIONAL_MISSING"
+    }
+  },
+  "warnings": [
+    "free disk is 51.7 GiB; 80 GiB or more is recommended",
+    "Google Drive desktop is not installed; connector uploads are used"
+  ],
+  "failures": [],
+  "verification_scope": {
+    "implemented": "local configuration and read-only preflight",
+    "not_verified": [
+      "fresh conda environment recreation",
+      "laboratory Linux server recreation",
+      "external SSD backup"
+    ]
+  }
+}

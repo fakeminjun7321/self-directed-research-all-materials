@@ -1,0 +1,16 @@
+name: cile-md-report
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - numpy=2.3.5
+  - pandas=2.3.3
+  - scipy=1.16.3
+  - matplotlib=3.10.6
+  - seaborn=0.13.2
+  - jupyter=1.1.1
+  - notebook=7.4.5
+  - jupyterlab=4.4.7
+  - openpyxl=3.1.5
+  - pyyaml
+  - pip

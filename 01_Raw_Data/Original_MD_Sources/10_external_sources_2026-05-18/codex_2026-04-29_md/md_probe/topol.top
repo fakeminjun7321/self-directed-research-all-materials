@@ -1,0 +1,21 @@
+[ defaults ]
+; nbfunc  comb-rule  gen-pairs  fudgeLJ  fudgeQQ
+1         1          no         1.0      1.0
+
+[ atomtypes ]
+; name  bond_type  mass     charge  ptype  sigma    epsilon
+AR      AR         39.948   0.0     A      0.3405   0.997
+
+[ moleculetype ]
+; name  nrexcl
+ARG     1
+
+[ atoms ]
+; nr  type  resnr  resid  atom  cgnr  charge  mass
+1     AR    1      ARG    AR    1     0.0     39.948
+
+[ system ]
+Tiny argon MD probe
+
+[ molecules ]
+ARG 2

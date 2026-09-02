@@ -1,0 +1,42 @@
+{
+  "schema_version": "cile-backup-policy-v1",
+  "policy_date": "2026-08-07",
+  "drive_root_name": "2026_자율연구_CILE_MD",
+  "drive_selected_categories": [
+    "professor_handoff",
+    "report_sources",
+    "report_figures",
+    "protocols_and_scripts",
+    "qc_json_csv_reports",
+    "environment_manifests"
+  ],
+  "external_or_server_only_extensions": [
+    ".xtc",
+    ".trr",
+    ".edr",
+    ".cpt",
+    ".tpr"
+  ],
+  "large_visualization_patterns": [
+    "*animation*.pdb",
+    "*sampled*.pdb"
+  ],
+  "local_archive_patterns": [
+    "99_Old_Backup/**",
+    "*.zip"
+  ],
+  "never_upload_patterns": [
+    ".env",
+    ".env.*",
+    "*.pem",
+    "*.key",
+    "*credentials*.json",
+    "*service-account*.json"
+  ],
+  "minimum_recommended_free_disk_gib": 80,
+  "notes": [
+    "Google Drive is not the only copy for raw trajectories.",
+    "Every excluded large file remains listed by size and SHA-256 in workspace_manifest.csv.",
+    "No API key, password, SSH private key, or service-account credential belongs in a package."
+  ]
+}

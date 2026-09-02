@@ -1,0 +1,10 @@
+result_id,scope,replica_or_chain,window,metric,value,unit,verdict,verification_level,source_artifact
+R001,initial_density_screen,rho1000,2-3_ns,density_mean,1505.34918,kg_m3,THREE_NS_STATIONARITY_CANDIDATE,Physical-device-verified,08_Next_Research/05_QC/three_ns_screen.json
+R002,initial_density_screen,rho1200_clean,2-3_ns,density_mean,1524.38785,kg_m3,THREE_NS_STATIONARITY_CANDIDATE,Physical-device-verified,08_Next_Research/05_QC/three_ns_screen.json
+R003,initial_density_screen,rho1400,2-3_ns,density_mean,1518.93459,kg_m3,THREE_NS_STATIONARITY_CANDIDATE,Physical-device-verified,08_Next_Research/05_QC/three_ns_screen.json
+R004,initial_density_screen,three_chains,2-3_ns,density_spread,1.25566369,percent,THREE_NS_SAME_BASIN_CANDIDATE,Physical-device-verified,08_Next_Research/05_QC/three_ns_screen.json
+R101,independent_replica,R1,last_500_ps,density_mean,1513.96126,kg_m3,SCREEN_EXTEND,Physical-device-verified,08_Next_Research/05_QC/replica_1ns_comparison.json
+R102,independent_replica,R2,last_500_ps,density_mean,1515.56498,kg_m3,SCREEN_EXTEND,Physical-device-verified,08_Next_Research/05_QC/replica_1ns_comparison.json
+R103,independent_replica,R3,last_500_ps,density_mean,1516.75799,kg_m3,SCREEN_EXTEND,Physical-device-verified,08_Next_Research/05_QC/replica_1ns_comparison.json
+R104,independent_replica,three_replicas,last_500_ps,density_spread,0.18455078,percent,ONE_NS_REPLICA_UNIFORM_EXTENSION_REQUIRED,Physical-device-verified,08_Next_Research/05_QC/replica_1ns_comparison.json
+R105,independent_replica,three_replicas,last_500_ps,replica_density_mean,1515.42808,kg_m3,EXPLORATORY_ONLY_NOT_EQUILIBRIUM,Physical-device-verified,08_Next_Research/05_QC/replica_1ns_comparison.json

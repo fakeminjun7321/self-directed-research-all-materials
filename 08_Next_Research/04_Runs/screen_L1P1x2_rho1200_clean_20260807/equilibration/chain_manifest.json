@@ -1,0 +1,16 @@
+{
+  "protocol_version": "eq-screen-v2",
+  "seed": 110001,
+  "npt_ps": 1000.0,
+  "npt_steps": 1000000,
+  "dt_ps": 0.001,
+  "input_sha256": {
+    "start_em.gro": "90e17420d8b2321b99e70bb78e3000a11ba0d21d15eccc4d8e8db02ce81cfb63",
+    "topol.top": "e411d910eabfcd4598f6a090bae23f4cbb6c95f4e0aad8726d603e1cf76bd4c8",
+    "nvt_100ps.mdp": "38fdc146724182930a61704804eb509f0854dfdf9c4378221c629601221e9a93",
+    "npt_1000ps.mdp": "8b536e02b4036a461de134eed19fe04b6c6ee532a5a0c6e994326eab8906a4e0"
+  },
+  "parent_em_sha256": "90e17420d8b2321b99e70bb78e3000a11ba0d21d15eccc4d8e8db02ce81cfb63",
+  "parent_topology_sha256": "e411d910eabfcd4598f6a090bae23f4cbb6c95f4e0aad8726d603e1cf76bd4c8",
+  "gromacs_version": "GROMACS version:     2026.3-Homebrew"
+}

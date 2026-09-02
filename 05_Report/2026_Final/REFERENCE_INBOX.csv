@@ -1,0 +1,6 @@
+reference_id,status,topic,url,report_use,notes
+REF001,METADATA_PENDING,C3mpyrFSI LiFSI composition range,https://pubs.rsc.org/en/content/articlelanding/2015/cp/c4cp05333h,조성 범위와 상 상태,DOI와 저자·제목을 Zotero에서 확인
+REF002,METADATA_PENDING,3.2 mol kg density supporting information,https://www.rsc.org/suppdata/d1/ee/d1ee02929k/d1ee02929k1.pdf,20C 밀도 기준,본 논문 metadata와 Table S3 확인
+REF003,METADATA_PENDING,GROMACS minimum image and cutoff,https://manual.gromacs.org/current/manual-2026.0.pdf,cutoff와 시스템 크기,사용한 GROMACS 버전과 문서 버전 구분
+REF004,METADATA_PENDING,polarizable MD and charge scaling,https://pubs.rsc.org/en/content/articlehtml/2016/cp/c5cp05111h,전하 스케일링 한계,현재 0.75를 직접 검증하지 않음
+REF005,METADATA_PENDING,0.7 scale in related C3mpyrFSI NaFSI system,https://pubs.rsc.org/en/content/articlepdf/2023/ee/d3ee00864a,유사계 전하 축소 사례,현재 Li 계에 직접 전이하지 않음

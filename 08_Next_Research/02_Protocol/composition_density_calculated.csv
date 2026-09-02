@@ -1,0 +1,7 @@
+system_id,li_count,pyr13_count,fsi_count,atom_count,total_mass_u,molality_mol_kg,x_lifsi,current_box_nm,current_density_kg_m3,box_at_1200_kg_m3_nm,box_at_1200_cutoff_ok,box_at_1400_kg_m3_nm,box_at_1400_cutoff_ok,box_at_1500_kg_m3_nm,box_at_1500_cutoff_ok,box_at_1550_kg_m3_nm,box_at_1550_cutoff_ok
+L1P1,25,25,50,1150,12385.700,3.243,0.500,5.28770,139.11,2.578276,True,2.449141,True,2.393460,False,2.367442,False
+L1P2,25,50,75,2050,20094.775,1.621,0.333,6.41140,126.61,3.029589,True,2.877849,True,2.812421,True,2.781849,True
+L2P1,50,25,75,1400,17062.325,6.486,0.667,5.64600,157.42,2.868812,True,2.725125,True,2.663169,True,2.634219,True
+L3P1,75,25,100,1650,21738.950,9.729,0.750,5.96390,170.18,3.110060,True,2.954291,True,2.887124,True,2.855740,True
+L1P3,25,75,100,2950,27803.850,1.081,0.250,7.23840,121.74,3.375911,True,3.206826,True,3.133918,True,3.099851,True
+L1P1x2,50,50,100,2300,24771.400,3.243,0.500,,,3.248425,True,3.085725,True,3.015570,True,2.982790,True

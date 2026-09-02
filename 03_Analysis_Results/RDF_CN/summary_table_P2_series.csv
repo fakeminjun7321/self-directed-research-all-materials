@@ -1,0 +1,7 @@
+system,pair,selection_atom,rdf_peak_r_nm,first_minimum_r_nm,coordination_number,trajectory_length_ps
+L1P2,Li-O(FSI),OBT,0.23,0.33,4.479,50
+L1P2,Li-N(FSI),NBT,0.37,0.57,3.199,50
+L2P2,Li-O(FSI),OBT,0.22,0.33,4.295,50
+L2P2,Li-N(FSI),NBT,0.37,0.56,3.337,50
+L3P2,Li-O(FSI),OBT,0.22,0.32,4.101,50
+L3P2,Li-N(FSI),NBT,0.37,0.55,3.23,50

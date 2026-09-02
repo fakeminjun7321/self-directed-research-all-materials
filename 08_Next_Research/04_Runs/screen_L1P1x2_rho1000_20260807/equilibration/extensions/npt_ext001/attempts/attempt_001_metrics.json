@@ -1,0 +1,30 @@
+{
+  "attempt": 1,
+  "started_at": "2026-08-07T01:43:37+09:00",
+  "ended_at": "2026-08-07T02:21:13+09:00",
+  "wall_seconds": 2256.432391042006,
+  "exit_code": 0,
+  "technical_status": "FAILED",
+  "threads": 6,
+  "command": [
+    "/opt/homebrew/Cellar/gromacs/2026.3/bin/gmx",
+    "mdrun",
+    "-s",
+    "/Users/minjun/D/연구/2026 연구/2026_자율연구/08_Next_Research/04_Runs/screen_L1P1x2_rho1000_20260807/equilibration/extensions/npt_ext001/npt_ext001.tpr",
+    "-deffnm",
+    "npt",
+    "-cpi",
+    "npt.cpt",
+    "-append",
+    "-ntmpi",
+    "1",
+    "-ntomp",
+    "6",
+    "-pin",
+    "auto",
+    "-cpt",
+    "5"
+  ],
+  "detail": "ExtensionError: extension Finished mdrun marker is missing",
+  "console_log": "attempt_001_mdrun_console.log"
+}

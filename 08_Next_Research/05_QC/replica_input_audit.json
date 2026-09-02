@@ -1,0 +1,225 @@
+{
+  "schema_version": "replica-input-audit-v1",
+  "technical_status": "PASS_INPUT_READY",
+  "md_execution_status": "NOT_EXECUTED",
+  "physics_status": "NOT_EVALUATED",
+  "replica_count": 3,
+  "packmol_seeds_unique": true,
+  "initial_coordinate_hashes_unique": true,
+  "topology_hashes_identical": true,
+  "em_mdp_hashes_identical": true,
+  "chains": [
+    {
+      "chain_id": "replica_L1P1x2_rho1400_R1",
+      "packmol_seed": 240101,
+      "requested_density_kg_m3": 1400.0,
+      "initial_density_kg_m3": 1400.0338886017996,
+      "atom_count": 2300,
+      "technical_status": "BUILT_NOT_EXECUTED",
+      "initial_gro": {
+        "sha256": "dc84a241d4e7f371466f8ec6d18fd0b9ee6feaeb0e12a36dc41f1dc4f47a7d6a",
+        "size_bytes": 103555
+      },
+      "topol_top": {
+        "sha256": "e411d910eabfcd4598f6a090bae23f4cbb6c95f4e0aad8726d603e1cf76bd4c8",
+        "size_bytes": 15404
+      },
+      "em_mdp": {
+        "sha256": "d4012298897879684de9882f5df65ff8ae36fe31b454e3bb71cb33edd871f9a8",
+        "size_bytes": 854
+      },
+      "source_evidence": {
+        "metrics.json": {
+          "sha256": "9c1b873c5ba99e7a9ea64a4ebcb8c0c35c59e21a16dc2f51c73a043c598027ee",
+          "size_bytes": 710
+        },
+        "RUN_RECORD.md": {
+          "sha256": "8eb51af4d5eb8608015d7e812b309f09bed05f6f461c23bf6625f31ec402b364",
+          "size_bytes": 606
+        },
+        "commands.log": {
+          "sha256": "d88ae5b6be3f2112dbcc7d93ddfcaf73e0aee86769ac928e145f00dbb29f4152",
+          "size_bytes": 22480
+        },
+        "INPUT_SHA256SUMS": {
+          "sha256": "277c335c54beceec068986e4e0e27e5d2039cc4b99e16be997030d6776e36880",
+          "size_bytes": 524
+        },
+        "input/pack.inp": {
+          "sha256": "5e8f57880da60298c44cf54fb04731cf0327c77b12ed70ee00ecfadcb3a6b96e",
+          "size_bytes": 406
+        }
+      },
+      "validated_checksum_entries": {
+        "input/initial.gro": {
+          "sha256": "dc84a241d4e7f371466f8ec6d18fd0b9ee6feaeb0e12a36dc41f1dc4f47a7d6a",
+          "size_bytes": 103555
+        },
+        "input/topol.top": {
+          "sha256": "e411d910eabfcd4598f6a090bae23f4cbb6c95f4e0aad8726d603e1cf76bd4c8",
+          "size_bytes": 15404
+        },
+        "input/em.mdp": {
+          "sha256": "d4012298897879684de9882f5df65ff8ae36fe31b454e3bb71cb33edd871f9a8",
+          "size_bytes": 854
+        },
+        "input/field_full_charge_REFERENCE_ONLY.top": {
+          "sha256": "72b3fb4664d98471637310278ff349ab65f161fb53697e88afe445be17990514",
+          "size_bytes": 16269
+        },
+        "input/pack.inp": {
+          "sha256": "5e8f57880da60298c44cf54fb04731cf0327c77b12ed70ee00ecfadcb3a6b96e",
+          "size_bytes": 406
+        },
+        "input/README_INPUTS.md": {
+          "sha256": "d6a1c9fc95bda35ac312138e0564d3f6216ef78e2980c1d9c0e95e2490a396c0",
+          "size_bytes": 427
+        }
+      }
+    },
+    {
+      "chain_id": "replica_L1P1x2_rho1400_R2",
+      "packmol_seed": 240102,
+      "requested_density_kg_m3": 1400.0,
+      "initial_density_kg_m3": 1400.0338886017996,
+      "atom_count": 2300,
+      "technical_status": "BUILT_NOT_EXECUTED",
+      "initial_gro": {
+        "sha256": "46604333933c8b3dcb5289eae8eac21a979f814d52fd2f7f8b8f53d385a56508",
+        "size_bytes": 103555
+      },
+      "topol_top": {
+        "sha256": "e411d910eabfcd4598f6a090bae23f4cbb6c95f4e0aad8726d603e1cf76bd4c8",
+        "size_bytes": 15404
+      },
+      "em_mdp": {
+        "sha256": "d4012298897879684de9882f5df65ff8ae36fe31b454e3bb71cb33edd871f9a8",
+        "size_bytes": 854
+      },
+      "source_evidence": {
+        "metrics.json": {
+          "sha256": "6a59085dc1cb9b4960c3d94e1f8c9be5f2a5de9cf65d67baa23590a6343728c8",
+          "size_bytes": 710
+        },
+        "RUN_RECORD.md": {
+          "sha256": "1a861e3feaffd959eed6e87252a6d688c9f5a07ba8f50520755b3f2d01eaf19d",
+          "size_bytes": 606
+        },
+        "commands.log": {
+          "sha256": "2d4e9dd68e3733a74b08af852b3e37fde7c85c6b08c50a171103fa2fdbd240a8",
+          "size_bytes": 22513
+        },
+        "INPUT_SHA256SUMS": {
+          "sha256": "f58da1ecbdc8de2b59fe5e3dd4119a98fd770e74e4f69598912f2a6840c31f04",
+          "size_bytes": 524
+        },
+        "input/pack.inp": {
+          "sha256": "61ca2461b295919d8873ea4411db1d238a8a92a7e7807ed811f7dc36188ad681",
+          "size_bytes": 406
+        }
+      },
+      "validated_checksum_entries": {
+        "input/initial.gro": {
+          "sha256": "46604333933c8b3dcb5289eae8eac21a979f814d52fd2f7f8b8f53d385a56508",
+          "size_bytes": 103555
+        },
+        "input/topol.top": {
+          "sha256": "e411d910eabfcd4598f6a090bae23f4cbb6c95f4e0aad8726d603e1cf76bd4c8",
+          "size_bytes": 15404
+        },
+        "input/em.mdp": {
+          "sha256": "d4012298897879684de9882f5df65ff8ae36fe31b454e3bb71cb33edd871f9a8",
+          "size_bytes": 854
+        },
+        "input/field_full_charge_REFERENCE_ONLY.top": {
+          "sha256": "72b3fb4664d98471637310278ff349ab65f161fb53697e88afe445be17990514",
+          "size_bytes": 16269
+        },
+        "input/pack.inp": {
+          "sha256": "61ca2461b295919d8873ea4411db1d238a8a92a7e7807ed811f7dc36188ad681",
+          "size_bytes": 406
+        },
+        "input/README_INPUTS.md": {
+          "sha256": "a427d9c3acfdd6c2ad762dbb7ee965f753d0c8171e36c433f363f6f773edaba5",
+          "size_bytes": 427
+        }
+      }
+    },
+    {
+      "chain_id": "replica_L1P1x2_rho1400_R3",
+      "packmol_seed": 240103,
+      "requested_density_kg_m3": 1400.0,
+      "initial_density_kg_m3": 1400.0338886017996,
+      "atom_count": 2300,
+      "technical_status": "BUILT_NOT_EXECUTED",
+      "initial_gro": {
+        "sha256": "bfbc32352cc4689703680a8ea9aca3750ed5dbcf0405bdcfaf0bb9c90e68f57e",
+        "size_bytes": 103555
+      },
+      "topol_top": {
+        "sha256": "e411d910eabfcd4598f6a090bae23f4cbb6c95f4e0aad8726d603e1cf76bd4c8",
+        "size_bytes": 15404
+      },
+      "em_mdp": {
+        "sha256": "d4012298897879684de9882f5df65ff8ae36fe31b454e3bb71cb33edd871f9a8",
+        "size_bytes": 854
+      },
+      "source_evidence": {
+        "metrics.json": {
+          "sha256": "c1881e00aa49d96dbf3abf7763de503f76ae13f62fea6f6a73da04ed28b463e6",
+          "size_bytes": 710
+        },
+        "RUN_RECORD.md": {
+          "sha256": "bbd1e3878d046b0636531aa3259bd940871fb268708373f79474ad88c6e17367",
+          "size_bytes": 606
+        },
+        "commands.log": {
+          "sha256": "367669f277402cb0dfafcac85e3c58642975146488c4e534e23309f50082b74f",
+          "size_bytes": 24172
+        },
+        "INPUT_SHA256SUMS": {
+          "sha256": "c1f3f51d4e427e95c52ab99a7c7e933ac93113a08691650693a95d2c29fcb90e",
+          "size_bytes": 524
+        },
+        "input/pack.inp": {
+          "sha256": "177dfe95912be6dae68120e6c0e7c7ec0b43788d2158b5766cde681b9ae74a3b",
+          "size_bytes": 406
+        }
+      },
+      "validated_checksum_entries": {
+        "input/initial.gro": {
+          "sha256": "bfbc32352cc4689703680a8ea9aca3750ed5dbcf0405bdcfaf0bb9c90e68f57e",
+          "size_bytes": 103555
+        },
+        "input/topol.top": {
+          "sha256": "e411d910eabfcd4598f6a090bae23f4cbb6c95f4e0aad8726d603e1cf76bd4c8",
+          "size_bytes": 15404
+        },
+        "input/em.mdp": {
+          "sha256": "d4012298897879684de9882f5df65ff8ae36fe31b454e3bb71cb33edd871f9a8",
+          "size_bytes": 854
+        },
+        "input/field_full_charge_REFERENCE_ONLY.top": {
+          "sha256": "72b3fb4664d98471637310278ff349ab65f161fb53697e88afe445be17990514",
+          "size_bytes": 16269
+        },
+        "input/pack.inp": {
+          "sha256": "177dfe95912be6dae68120e6c0e7c7ec0b43788d2158b5766cde681b9ae74a3b",
+          "size_bytes": 406
+        },
+        "input/README_INPUTS.md": {
+          "sha256": "72a8197b1ea5dee1c9812f8e5678a21621dc43c9508d1e6341388989cccf6bf2",
+          "size_bytes": 427
+        }
+      }
+    }
+  ],
+  "not_verified": [
+    "same-seed byte-exact Packmol reproduction",
+    "energy minimization",
+    "independent GROMACS velocity seeds",
+    "NVT and NPT execution",
+    "replica stationarity and convergence",
+    "equilibrium and production readiness"
+  ]
+}

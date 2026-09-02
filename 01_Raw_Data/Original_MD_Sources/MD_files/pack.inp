@@ -1,0 +1,29 @@
+# created by fftool
+tolerance 2.5
+filetype xyz
+output simbox.xyz
+
+structure Li_pack.xyz
+  number 70
+  inside box 1.5000 1.5000 1.5000 82.7404 82.7404 82.7404
+end structure
+
+structure c3c1pyrr_pack.xyz
+  number 85
+  inside box 1.5000 1.5000 1.5000 82.7404 82.7404 82.7404
+end structure
+
+structure fsi_pack.xyz
+  number 150
+  inside box 1.5000 1.5000 1.5000 82.7404 82.7404 82.7404
+end structure
+
+structure PF6_pack.xyz
+  number 5
+  inside box 1.5000 1.5000 1.5000 82.7404 82.7404 82.7404
+end structure
+
+structure UNL_pack.xyz
+  number 50
+  inside box 1.5000 1.5000 1.5000 82.7404 82.7404 82.7404
+end structure

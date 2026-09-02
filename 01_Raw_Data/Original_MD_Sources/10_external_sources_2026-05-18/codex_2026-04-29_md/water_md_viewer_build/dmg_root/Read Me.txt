@@ -1,0 +1,9 @@
+Water MD Viewer
+
+Open "Water MD Viewer.app" to view the bundled nvt_final.pdb structure.
+
+This viewer was made for the small GROMACS water-box practice result:
+- oxygen atoms: red
+- hydrogen atoms: white
+- simulation box: blue outline
+

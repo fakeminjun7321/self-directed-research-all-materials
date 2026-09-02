@@ -1,0 +1,13 @@
+{
+  "schema_version": "eq-attempt-v1",
+  "attempt": 1,
+  "chain_id": "replica_L1P1x2_rho1400_R2_exec_20260807",
+  "ended_at": "2026-08-07T04:42:38+09:00",
+  "technical_status": "PASS_COMPLETE",
+  "physics_status": "EXPLORATORY_ONLY",
+  "metrics_snapshot": "attempts/attempt_001_metrics.json",
+  "metrics_evidence": {
+    "sha256": "acfd08f0f677379789ab5d99ba9730f830d835352b1953f96ce86e8fc0e97b2e",
+    "size_bytes": 4961
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "chain_id": "pilot_L1P1x2_rho1400_v6",
+  "start": "2026-08-07T00:59:01+09:00",
+  "technical_status": "PASS_COMPLETE",
+  "physics_status": "EXPLORATORY_ONLY",
+  "detail": "configured exploratory NVT 100 ps and C-rescale NPT completed and analyzed",
+  "seed": 110001,
+  "npt_target_ps": 1000.0,
+  "nvt": {
+    "resumed": false,
+    "first_time_ps": 0.0,
+    "last_time_ps": 100.0,
+    "duration_ps": 100.0
+  },
+  "npt": {
+    "resumed": false,
+    "first_time_ps": 0.0,
+    "last_time_ps": 1000.0,
+    "duration_ps": 1000.0
+  },
+  "nvt_rlist_nm": 1.2,
+  "npt_rlist_nm": 1.2,
+  "bad_markers": {
+    "fatal": 0,
+    "nan": 0,
+    "lincs": 0,
+    "segfault": 0
+  },
+  "grompp_warnings": {
+    "nvt": 0,
+    "npt": 0
+  },
+  "analysis": {
+    "nvt_last_50ps": {
+      "Temperature": {
+        "n": 51.0,
+        "mean": 298.656998,
+        "std": 4.570618390414723,
+        "min": 288.241577,
+        "max": 307.88623,
+        "slope_per_ns": 39.33419565610862
+      },
+      "temperature_10ps_blocks_K": [
+        298.16325070000005,
+        297.6399902,
+        298.5433014,
+        300.35194110000003,
+        298.59291490909095
+      ],
+      "last_two_temperature_block_diff_K": 1.7590261909090827
+    },
+    "npt_last_500ps": {
+      "Density": {
+        "n": 501.0,
+        "mean": 1514.631038205589,
+        "std": 8.672195541488504,
+        "min": 1491.315796,
+        "max": 1542.026123,
+        "slope_per_ns": 5.203033439893141
+      },
+      "Volume": {
+        "n": 501.0,
+        "mean": 27.158577285429143,
+        "std": 0.15553802079570242,
+        "min": 26.675215,
+        "max": 27.582272,
+        "slope_per_ns": -0.09303123372378778
+      },
+      "Temperature": {
+        "n": 501.0,
+        "mean": 297.97488109780437,
+        "std": 5.38566498831492,
+        "min": 280.731354,
+        "max": 315.106873,
+        "slope_per_ns": 0.46682398835794825
+      },
+      "Pressure": {
+        "n": 501.0,
+        "mean": -26.479910900199606,
+        "std": 1165.5976128866498,
+        "min": -3850.791992,
+        "max": 3592.935547,
+        "slope_per_ns": 143.4437097965981
+      },
+      "Potential": {
+        "n": 501.0,
+        "mean": -23747.093722686626,
+        "std": 144.00865690258203,
+        "min": -24124.121094,
+        "max": -23310.802734,
+        "slope_per_ns": -34.863165239783314
+      }
+    },
+    "npt_100ps_blocks": {
+      "Density": [
+        1514.57210693,
+        1514.79191281,
+        1512.54427857,
+        1514.35805785,
+        1516.8664804455445
+      ],
+      "Volume": [
+        27.159522619999997,
+        27.155568589999998,
+        27.196038079999997,
+        27.16379136,
+        27.11836787128713
+      ],
+      "Temperature": [
+        297.7913818,
+        297.80669403,
+        297.82147036,
+        298.90506013,
+        297.5540079009901
+      ],
+      "Pressure": [
+        -87.97175347000001,
+        -12.343472920000002,
+        -91.72918411,
+        79.19919998,
+        -19.62291395049505
+      ]
+    },
+    "density_slope_percent_per_ns": 0.2745069710528487,
+    "density_last_two_block_diff_percent": 0.1655055614557014,
+    "density_max_adjacent_block_diff_percent": 0.1655055614557014,
+    "density_first_vs_second_250ps_diff_percent": 0.12689548579380897,
+    "max_adjacent_volume_jump_percent": 1.9994751735480272,
+    "nvt_min_box_nm": 3.0857,
+    "npt_min_box_nm": 2.987922,
+    "nvt_rlist_nm": 1.2,
+    "npt_rlist_nm": 1.2,
+    "nvt_min_box_over_2rlist": 1.2857083333333335,
+    "npt_min_box_over_2rlist": 1.2449675000000002,
+    "hard_fail_reasons": [],
+    "exploratory_verdict": "SCREEN_EXTEND",
+    "physics_status": "EXPLORATORY_ONLY",
+    "equilibrium_validated": false,
+    "production_ready": false
+  },
+  "input_sha256": {
+    "start_em.gro": "dcdb88a1da153d9b3fd87cb001fa2011c79b8dc546b41b38b8596bfa895f7591",
+    "topol.top": "e411d910eabfcd4598f6a090bae23f4cbb6c95f4e0aad8726d603e1cf76bd4c8",
+    "nvt_100ps.mdp": "38fdc146724182930a61704804eb509f0854dfdf9c4378221c629601221e9a93",
+    "npt_1000ps.mdp": "8b536e02b4036a461de134eed19fe04b6c6ee532a5a0c6e994326eab8906a4e0"
+  },
+  "end": "2026-08-07T01:21:11+09:00",
+  "wall_seconds": 1330.913482917007
+}

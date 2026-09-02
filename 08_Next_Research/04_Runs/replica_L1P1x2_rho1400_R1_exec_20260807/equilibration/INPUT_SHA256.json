@@ -1,0 +1,6 @@
+{
+  "start_em.gro": "d714b06b5963d6b5f57af87f876bc03ad9ef77b24422226c9051367428deb2a9",
+  "topol.top": "e411d910eabfcd4598f6a090bae23f4cbb6c95f4e0aad8726d603e1cf76bd4c8",
+  "nvt_100ps.mdp": "a41982b1ef7c8d6dabcebc65633aaa52487577f76e1eb4d3265e359e1f763a6b",
+  "npt_1000ps.mdp": "8b536e02b4036a461de134eed19fe04b6c6ee532a5a0c6e994326eab8906a4e0"
+}

@@ -1,0 +1,13 @@
+{
+  "chain_id": "screen_L1P1x2_rho1200_20260807",
+  "start": "2026-08-07T00:34:46+09:00",
+  "end": "2026-08-07T00:39:06+09:00",
+  "technical_status": "INTERRUPTED_BY_SAFETY_POLICY_CHANGE",
+  "physics_status": "NOT_EVALUATED_AT_INTERRUPTION",
+  "detail": "The user lowered the thermal pause threshold by 10 C and prioritized Mac safety; GROMACS received SIGTERM at approximately 139 ps and wrote npt.cpt.",
+  "old_policy": {"threads": 8, "pause_c": 70, "resume_c": 60},
+  "new_policy": {"threads": 6, "pause_c": 60, "resume_c": 50},
+  "resume_command_mode": "gmx mdrun -cpi npt.cpt -append",
+  "original_worker_wall_seconds": 259.8056979170069,
+  "note": "This is a preserved interruption record; final chain status is written separately after checkpoint resume."
+}

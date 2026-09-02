@@ -1,0 +1,9 @@
+run_id,metric,window,value,unit,criterion_id,verdict,evidence_file,reviewer
+pilot_L1P1x2_rho1400_v6,grompp_warnings,full_grompp_log,0,count,QC001,PASS,04_Runs/pilot_L1P1x2_rho1400_v6/commands.log,Codex
+pilot_L1P1x2_rho1400_v6,fatal_error,build_to_em,0,count,QC002,PASS,04_Runs/pilot_L1P1x2_rho1400_v6/metrics.json,Codex
+pilot_L1P1x2_rho1400_v6,nan_count,build_to_em,0,count,QC003,PASS,04_Runs/pilot_L1P1x2_rho1400_v6/metrics.json,Codex
+pilot_L1P1x2_rho1400_v6,lincs_warning,build_to_em,0,count,QC004,PASS,04_Runs/pilot_L1P1x2_rho1400_v6/metrics.json,Codex
+pilot_L1P1x2_rho1400_v6,min_box_over_2rlist,em_final,1.224484,ratio,QC005,PASS,04_Runs/pilot_L1P1x2_rho1400_v6/metrics.json,Codex
+pilot_L1P1x2_rho1400_v6,maximum_force,em_final,440.67331,kJ_mol_nm,QC010,PASS,04_Runs/pilot_L1P1x2_rho1400_v6/em.log,Codex
+pilot_L1P1x2_rho1400_v6,topology_parameter_equivalence,active_molecules,1,boolean,QC011,PASS,04_Runs/pilot_L1P1x2_rho1400_v6/validation.json,Codex
+pilot_L1P1x2_rho1400_v6,coordinate_species_order,all_2300_atoms,1,boolean,QC012,PASS,04_Runs/pilot_L1P1x2_rho1400_v6/validation.json,Codex

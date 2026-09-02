@@ -1,0 +1,7 @@
+figure_id,status,title,source_data,generator_or_source,output_path,allowed_use
+FIG01,PLANNED,전체 연구 workflow,08_Next_Research/README_FIRST_KOR.md,manual_diagram,05_Report/2026_Final/figures/FIG01_workflow.png,방법 설명
+FIG02,PLANNED,초기 밀도 세 체인의 3 ns 밀도 수렴,08_Next_Research/05_QC/three_ns_screen.json,TBD,05_Report/2026_Final/figures/FIG02_density_screen_3ns.png,탐색 결과
+FIG03,PLANNED,독립 replica 마지막 500 ps 밀도 비교,08_Next_Research/05_QC/replica_1ns_comparison.json,TBD,05_Report/2026_Final/figures/FIG03_replica_density.png,탐색 결과
+FIG04,PLANNED,실행별 열 안전 기록,08_Next_Research/06_Reproducibility/thermal_guard_replica_*.jsonl,TBD,05_Report/2026_Final/figures/FIG04_thermal_guard.png,안전 방법
+OLD01,HISTORICAL_PRACTICE,기존 50 ps RDF/CN 그림,03_Analysis_Results/RDF_CN,existing,04_Figures_For_Report/RDF_CN,workflow 설명만 가능
+OLD02,HISTORICAL_PRACTICE,기존 50 ps MSD/diffusion 그림,03_Analysis_Results/General_Analysis,existing,04_Figures_For_Report/Overview,workflow 설명만 가능

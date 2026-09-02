@@ -1,0 +1,6 @@
+system,result,observable_result,warning_count,fatal_count,scope
+L1P1,PASS,em.tpr created,0,0,EM-stage grompp only
+L1P2,PASS,em.tpr created,0,0,EM-stage grompp only
+L2P1,PASS,em.tpr created,0,0,EM-stage grompp only
+L3P1,PASS,em.tpr created,0,0,EM-stage grompp only
+L1P3,PASS,em.tpr created,0,0,EM-stage grompp only

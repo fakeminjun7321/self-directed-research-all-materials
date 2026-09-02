@@ -1,0 +1,13 @@
+{
+  "schema_version": "eq-attempt-v1",
+  "attempt": 1,
+  "chain_id": "screen_L1P1x2_rho1200_clean_20260807",
+  "ended_at": "2026-08-07T01:42:26+09:00",
+  "technical_status": "PASS_COMPLETE",
+  "physics_status": "EXPLORATORY_ONLY",
+  "metrics_snapshot": "attempts/attempt_001_metrics.json",
+  "metrics_evidence": {
+    "sha256": "5ba034619f6f06f09d10dd0c8dbcbbc80a4ede871f04413c35d5d09a2631cd66",
+    "size_bytes": 4548
+  }
+}

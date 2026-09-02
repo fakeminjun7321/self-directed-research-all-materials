@@ -1,0 +1,16 @@
+{
+  "schema_version": "registry-quarantine-v1",
+  "entries": [
+    {
+      "chain_id": "screen_L1P1x2_rho1200_20260807",
+      "reason_code": "UNRECOVERABLE_RESUME_INPUT_CHECKPOINT_PROVENANCE",
+      "reason": "The NPT resume input checkpoint bytes were not snapshotted before -cpi/-append, so checkpoint_in_sha256 cannot be reconstructed without substituting a later checkpoint.",
+      "replacement_chain_id": "screen_L1P1x2_rho1200_clean_20260807",
+      "evidence_sha256": {
+        "equilibration/chain_manifest.json": "1b8a226461a7217f93a48abd106f995aa3a69c39eca97840416b112d5e3e724a",
+        "equilibration/equilibration_metrics.json": "3027a074c40bb3d5638f567ff3006f6cd391a171d2fb0dc0d10fa87685683664",
+        "equilibration/safety_thread_reduction_record.json": "e2334eff760193d931da1a64b4983d4f92647f3ac3f22c6466a57289ea626f08"
+      }
+    }
+  ]
+}

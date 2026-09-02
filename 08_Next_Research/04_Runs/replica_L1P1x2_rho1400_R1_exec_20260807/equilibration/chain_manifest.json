@@ -1,0 +1,24 @@
+{
+  "protocol_version": "eq-screen-v2",
+  "seed": 110101,
+  "velocity_seed": 110101,
+  "seed_semantics": "gromacs_nvt_gen_seed",
+  "npt_ps": 1000.0,
+  "npt_steps": 1000000,
+  "dt_ps": 0.001,
+  "input_sha256": {
+    "start_em.gro": "d714b06b5963d6b5f57af87f876bc03ad9ef77b24422226c9051367428deb2a9",
+    "topol.top": "e411d910eabfcd4598f6a090bae23f4cbb6c95f4e0aad8726d603e1cf76bd4c8",
+    "nvt_100ps.mdp": "a41982b1ef7c8d6dabcebc65633aaa52487577f76e1eb4d3265e359e1f763a6b",
+    "npt_1000ps.mdp": "8b536e02b4036a461de134eed19fe04b6c6ee532a5a0c6e994326eab8906a4e0"
+  },
+  "parent_em_sha256": "d714b06b5963d6b5f57af87f876bc03ad9ef77b24422226c9051367428deb2a9",
+  "parent_topology_sha256": "e411d910eabfcd4598f6a090bae23f4cbb6c95f4e0aad8726d603e1cf76bd4c8",
+  "gromacs_version": "GROMACS version:     2026.3-Homebrew",
+  "parent_packmol_provenance": {
+    "packmol_seed": 240101,
+    "packmol_input_sha256": "5e8f57880da60298c44cf54fb04731cf0327c77b12ed70ee00ecfadcb3a6b96e",
+    "packmol_log_sha256": "d653c257b2d46a34f8c7993d75e9dbde76a29483ecffff3de3986cc930ec2a62",
+    "packmol_initial_gro_sha256": "dc84a241d4e7f371466f8ec6d18fd0b9ee6feaeb0e12a36dc41f1dc4f47a7d6a"
+  }
+}

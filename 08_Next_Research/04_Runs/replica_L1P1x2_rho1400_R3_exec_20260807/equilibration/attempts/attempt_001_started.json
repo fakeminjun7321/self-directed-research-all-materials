@@ -1,0 +1,15 @@
+{
+  "schema_version": "eq-attempt-v1",
+  "attempt": 1,
+  "chain_id": "replica_L1P1x2_rho1400_R3_exec_20260807",
+  "started_at": "2026-08-07T04:43:29+09:00",
+  "resume_requested": false,
+  "requested_seed": 110103,
+  "requested_velocity_seed": 110103,
+  "seed_semantics": "gromacs_nvt_gen_seed",
+  "inherited_packmol_seed": 240103,
+  "requested_npt_ps": 1000.0,
+  "requested_threads": 6,
+  "previous_metrics_snapshot": "",
+  "previous_metrics_evidence": null
+}

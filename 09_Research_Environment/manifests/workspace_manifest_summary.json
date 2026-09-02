@@ -1,0 +1,25 @@
+{
+  "schema_version": "cile-workspace-manifest-summary-v1",
+  "generated_at": "2026-08-07T03:39:40+00:00",
+  "root_name": "2026_자율연구",
+  "file_count": 2060,
+  "total_size_bytes": 455052228,
+  "secret_like_files_omitted_count": 0,
+  "counts_by_storage_class": {
+    "LOCAL_REVIEW": 1413,
+    "VERSION_CONTROL_REVIEW": 177,
+    "EXTERNAL_OR_SERVER_ONLY": 305,
+    "DRIVE_SELECTED_PACKAGE": 163,
+    "LOCAL_ARCHIVE_ONLY": 1,
+    "DRIVE_PROFESSOR_HANDOFF": 1
+  },
+  "bytes_by_storage_class": {
+    "LOCAL_REVIEW": 85278789,
+    "VERSION_CONTROL_REVIEW": 432116,
+    "EXTERNAL_OR_SERVER_ONLY": 351527448,
+    "DRIVE_SELECTED_PACKAGE": 17472115,
+    "LOCAL_ARCHIVE_ONLY": 201686,
+    "DRIVE_PROFESSOR_HANDOFF": 140074
+  },
+  "manifest_sha256": "72f819d6490ff3b1e58e46d68a502e9138b97dbff4a1d6e79a2ebdf28cc81191"
+}

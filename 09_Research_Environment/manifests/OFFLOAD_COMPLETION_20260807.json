@@ -1,0 +1,50 @@
+{
+  "schema_version": "cile-mac-storage-offload-completion-v1",
+  "completed_at": "2026-08-07T12:39:40+09:00",
+  "status": "PASS_REMOTE_VERIFIED_LOCAL_REMOVED",
+  "drive_folder": {
+    "id": "1c1igOtCwHcCjBybwTcK7nBrw-ur7IH0T",
+    "url": "https://drive.google.com/drive/folders/1c1igOtCwHcCjBybwTcK7nBrw-ur7IH0T",
+    "sharing": "not_shared"
+  },
+  "remote_binary_file_count": 6,
+  "remote_manifest_file_id": "1TJe5-ha9QUvYvjhG6K49iUiTTeq9t2Al",
+  "verification": {
+    "upload_success": true,
+    "remote_name_size_parent_readback": true,
+    "remote_folder_list_readback": true,
+    "remote_downloadable": true,
+    "remote_sha256_readback": false,
+    "local_archives_tested_before_upload": true,
+    "split_parts_reassembled_to_original_sha256_before_upload": true
+  },
+  "local_removal": {
+    "permanent": true,
+    "source_bytes_selected": 904985812,
+    "source_mib_selected": 863.06,
+    "paths": [
+      "자율연구.zip",
+      "99_Old_Backup",
+      "03_Analysis_Results/VMD_View/10_external_vmd_viewer_2026-05-18",
+      "03_Analysis_Results/VMD_View/20_portable_package",
+      "10 files matching 02_Processed_Data/**/*sampled*.pdb",
+      "09_Research_Environment/offload_staging/20260807"
+    ],
+    "existence_check_after_removal": "PASS"
+  },
+  "workspace_manifest": {
+    "before_size_bytes": 1360037655,
+    "after_size_bytes": 455052228,
+    "difference_bytes": 904985427,
+    "after_file_count": 2060,
+    "after_manifest_sha256": "72f819d6490ff3b1e58e46d68a502e9138b97dbff4a1d6e79a2ebdf28cc81191",
+    "after_summary_sha256": "94f6909a31f6cb18dd16a78df2f97abc3cdeb66e02f6dcc7236f1734653b5fc9"
+  },
+  "mac_disk_free_after_gib": 51.70859146118164,
+  "preserved_and_reverified": [
+    "08_Next_Research/04_Runs",
+    "primary VMD animation files",
+    "original XTC, EDR, GRO, TOP, protocol, QC, report, and handoff files"
+  ],
+  "unit_verification": "4 tests passed after local removal"
+}

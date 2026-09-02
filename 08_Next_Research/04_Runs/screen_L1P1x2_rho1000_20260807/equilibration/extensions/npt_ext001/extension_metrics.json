@@ -1,0 +1,98 @@
+{
+  "schema_version": "npt-extension-v1",
+  "extension_id": "npt_ext001",
+  "chain_id": "screen_L1P1x2_rho1000_20260807",
+  "record_id": "screen_L1P1x2_rho1000_20260807:npt:002",
+  "parent_record_id": "screen_L1P1x2_rho1000_20260807:npt:001",
+  "stage": "npt",
+  "segment_no": 2,
+  "mode": "EXTEND",
+  "start_step": 1000000,
+  "target_step": 2000000,
+  "base_steps": 1000000,
+  "extension_steps": 2000000,
+  "target_total_steps": 3000000,
+  "technical_status": "PASS_COMPLETE",
+  "physics_status": "NOT_EVALUATED_AFTER_EXTENSION",
+  "analysis_status": "PENDING_EXTENSION_REANALYSIS",
+  "completion_mode": "RESUME_OBSERVED_COMPLETE",
+  "completion_attempt": null,
+  "completed_at": "2026-08-07T02:21:35+09:00",
+  "edr_range_ps": {
+    "first": 0.0,
+    "last": 3000.0,
+    "duration": 3000.0,
+    "base_duration": 1000.0,
+    "extension_duration": 2000.0,
+    "target_total_duration": 3000.0
+  },
+  "finished_mdrun_markers": 1,
+  "append_validation": {
+    "xtc": {
+      "mode": "full_byte_prefix",
+      "base_size_bytes": 9063804,
+      "base_sha256": "461f51f74878862d52a1d43274ca970a11a1d4b84ffbdd531778a3910dfc331c"
+    },
+    "edr": {
+      "mode": "exact_pre_boundary_plus_gromacs_boundary_comparison",
+      "energy_terms_compared": 45,
+      "base_frames": 1001,
+      "live_frames": 3001,
+      "frame_cadence_ps": 1.0,
+      "exact_pre_boundary_last_ps": 999.0,
+      "canonical_pre_boundary_sha256": "e4b676b319241203a3f4684b8621979804710f4214decd6d996530a0766a49ab",
+      "canonical_pre_boundary_size_bytes": 612704,
+      "boundary_ps": 1000.0,
+      "boundary_comparison": "gmx_check_native_default_tolerance_no_mismatch_lines"
+    },
+    "log": {
+      "mode": "checkpoint_restart_append_sequence",
+      "base_snapshot_finished_mdrun_markers": 1,
+      "live_finished_mdrun_markers": 1,
+      "restart_append_markers": 1,
+      "bad_markers": {
+        "fatal": 0,
+        "nan": 0,
+        "lincs": 0,
+        "segfault": 0
+      }
+    }
+  },
+  "checkpoint_in_sha256": "380dd0ff68b0cb547aadb759e58dcef2d756397ecb6d599d1d60fde3785e6d99",
+  "extension_manifest_sha256": "46d6005ec90dd534cbe0f9b6dff8f3d60300bd6edb6d7e86bbd9e715cdef8150",
+  "post_extension_sha256": {
+    "npt.cpt": {
+      "sha256": "d4039d2bc81cc60326e92884466951c76fddc0dad9fc9efb5831c7fb6b76ea49",
+      "size_bytes": 57196
+    },
+    "npt.edr": {
+      "sha256": "87d9c466ca265afd115a0373abf663d9d789d62a0e20257ed2581c937232d27e",
+      "size_bytes": 1837316
+    },
+    "npt.xtc": {
+      "sha256": "14b85abcaf9868e99cf58fc7e673ed4affc00e1bfd6b858ed7b86a631f6ee3da",
+      "size_bytes": 27167412
+    },
+    "npt.log": {
+      "sha256": "be246e42ac8a8145b1be0c14c03add948a2210c5a8957971b417b41cb5a3e5dd",
+      "size_bytes": 1844464
+    },
+    "npt.gro": {
+      "sha256": "25f46cd69d6957036e023f10a51887468e64d07af1833ad89a578845e71ed39a",
+      "size_bytes": 158744
+    },
+    "npt_ext001.tpr": {
+      "sha256": "2db0c5586340f7330da85694ef45275c0cd93579e6ea98a8f0d7a364e15eb8c1",
+      "size_bytes": 69564
+    }
+  },
+  "base_analysis_preserved_at": "base_snapshot/equilibration_metrics.json",
+  "not_verified": [
+    "stationarity after the 2 ns extension",
+    "equilibrium density",
+    "independent replicas",
+    "production readiness",
+    "transport properties",
+    "central registry linkage for npt:002"
+  ]
+}

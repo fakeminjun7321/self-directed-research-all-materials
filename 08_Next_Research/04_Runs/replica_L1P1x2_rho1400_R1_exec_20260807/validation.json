@@ -1,0 +1,30 @@
+{
+  "run_id": "replica_L1P1x2_rho1400_R1_exec_20260807",
+  "legacy_reference": "02_Processed_Data/MD_Runs/50ps_Practice/L2P2/topol.top",
+  "scaled_molecule_charges": {
+    "Li+": 0.75,
+    "c3c1pyrr+": 0.75,
+    "fsi-": -0.75
+  },
+  "full_molecule_charges": {
+    "Li+": 1.0,
+    "c3c1pyrr+": 1.0,
+    "fsi-": -1.0
+  },
+  "checks": {
+    "defaults_equal_legacy": true,
+    "active_atomtypes_equal_legacy": true,
+    "active_molecule_parameters_equal_legacy": true,
+    "molecule_counts_equal_legacy": true,
+    "molecule_counts_expected": true,
+    "full_to_scaled_charge_factor_0_75": true,
+    "scaled_molecule_charges_expected": true,
+    "system_total_charge_zero": true,
+    "packmol_element_order_exact": true,
+    "packmol_atom_count_2300": true,
+    "gro_residue_order_exact": true,
+    "gro_residue_counts": true
+  },
+  "all_passed": true,
+  "physics_status": "NOT_VERIFIED"
+}

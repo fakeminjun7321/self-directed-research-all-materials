@@ -1,0 +1,108 @@
+{
+  "schema_version": "cile-mac-storage-offload-v1",
+  "created_at": "2026-08-07T12:34:00+09:00",
+  "drive_folder": {
+    "name": "91_Mac_Storage_Offload/20260807",
+    "id": "1c1igOtCwHcCjBybwTcK7nBrw-ur7IH0T",
+    "url": "https://drive.google.com/drive/folders/1c1igOtCwHcCjBybwTcK7nBrw-ur7IH0T"
+  },
+  "scope": "Inactive backups, duplicate visualization packages, and regenerable sampled PDB files only",
+  "preserved_locally": [
+    "08_Next_Research/04_Runs",
+    "03_Analysis_Results/VMD_View/01_all_five_50ps_animation.pdb",
+    "03_Analysis_Results/VMD_View/03_P2_series_50ps_animation.pdb",
+    "02_Processed_Data/MD_Runs/**/original XTC, EDR, GRO, TOP, and scripts"
+  ],
+  "archives": [
+    {
+      "reassembled_name": "legacy_workspace_snapshot_20260527.zip",
+      "local_upload_source": "자율연구.zip",
+      "source_paths_to_remove_after_verification": ["자율연구.zip"],
+      "source_file_count": 1,
+      "source_size_bytes": 160925482,
+      "upload_size_bytes": 160925482,
+      "upload_sha256": "b2a3a53f8dcff2bfb131493b95319cb67c430426dc8145ce0a8fa40db933ce5b",
+      "upload_parts": [
+        {
+          "name": "legacy_workspace_snapshot_20260527.zip.part-aa",
+          "size_bytes": 90000000,
+          "sha256": "ca98b48e08d2a555cb30ff56aca14a4dc59ab8f407bc901079ae8c48450a9332",
+          "drive_id": "1E8ueMhutYdqt-KJr5fJLV2T4Gttz75cC"
+        },
+        {
+          "name": "legacy_workspace_snapshot_20260527.zip.part-ab",
+          "size_bytes": 70925482,
+          "sha256": "1967f694f26cab98cd8c94c1b681d247c50ae7fa4eea6bad39ca4d5e16fa296e",
+          "drive_id": "1ic_xenE_iTeEVa9QoL9ruYXOaWcfdOT4"
+        }
+      ],
+      "reassemble_command": "cat legacy_workspace_snapshot_20260527.zip.part-aa legacy_workspace_snapshot_20260527.zip.part-ab > legacy_workspace_snapshot_20260527.zip"
+    },
+    {
+      "reassembled_name": "99_Old_Backup_20260807.zip",
+      "local_upload_source": "09_Research_Environment/offload_staging/20260807/99_Old_Backup_20260807.zip",
+      "source_paths_to_remove_after_verification": ["99_Old_Backup"],
+      "source_file_count": 223,
+      "source_size_bytes": 288934846,
+      "upload_size_bytes": 159808581,
+      "upload_sha256": "410de2191838d5b4c4f8fe68f9579a98dd1114df440ec8b7e23c4bb976c24a91",
+      "upload_parts": [
+        {
+          "name": "99_Old_Backup_20260807.zip.part-aa",
+          "size_bytes": 90000000,
+          "sha256": "fd0833ada70af870362f93c44e8882440d83630973e41462ab614677b6b697aa",
+          "drive_id": "1gm3Qb03e1Q97XnkixwJQHo9flWZdLoaG"
+        },
+        {
+          "name": "99_Old_Backup_20260807.zip.part-ab",
+          "size_bytes": 69808581,
+          "sha256": "f4e8d7b56d32b219a021091e7d5f947381b0045c75c85df6d018beb2e703bb95",
+          "drive_id": "1Kr8gIjMlwSheW03HaecF2yqwTHeXkCI-"
+        }
+      ],
+      "reassemble_command": "cat 99_Old_Backup_20260807.zip.part-aa 99_Old_Backup_20260807.zip.part-ab > 99_Old_Backup_20260807.zip"
+    },
+    {
+      "upload_name": "VMD_duplicate_packages_20260807.zip",
+      "local_upload_source": "09_Research_Environment/offload_staging/20260807/VMD_duplicate_packages_20260807.zip",
+      "source_paths_to_remove_after_verification": [
+        "03_Analysis_Results/VMD_View/10_external_vmd_viewer_2026-05-18",
+        "03_Analysis_Results/VMD_View/20_portable_package"
+      ],
+      "source_file_count": 12,
+      "source_size_bytes": 160449877,
+      "upload_size_bytes": 39816810,
+      "upload_sha256": "f6e11eb7a422bca1be94098020022868eaa01269470e75b5783e2369b54c08f5",
+      "drive_id": "19SVCRVpAdPkrTVFjCsNEk1eY2VymPWyH"
+    },
+    {
+      "upload_name": "sampled_pdb_derived_20260807.zip",
+      "local_upload_source": "09_Research_Environment/offload_staging/20260807/sampled_pdb_derived_20260807.zip",
+      "source_paths_to_remove_after_verification": ["02_Processed_Data/**/*sampled*.pdb"],
+      "source_file_count": 10,
+      "source_size_bytes": 294675607,
+      "upload_size_bytes": 52095935,
+      "upload_sha256": "542460512490763990a5ea723df5f817e0e760daab46a4947f4699bbc987f7d8",
+      "drive_id": "1-YLfQAY2Sx9ImrHttUy_EvMBITfts4FS"
+    }
+  ],
+  "source_size_total_bytes": 904985812,
+  "upload_size_total_bytes": 412646808,
+  "remote_verification": {
+    "verified_at": "2026-08-07T12:38:04+09:00",
+    "status": "PASS_METADATA_AND_FOLDER_LIST_READBACK",
+    "file_count": 6,
+    "size_match": true,
+    "folder_match": true,
+    "sharing": "not_shared",
+    "can_download": true,
+    "drive_side_checksum_exposed": false
+  },
+  "local_deletion_gate": [
+    "all six binary upload actions return success",
+    "Drive metadata name and size match each local upload source or split part",
+    "all six binary files appear in the dated Drive folder",
+    "Drive list readback reports not_shared and downloadable"
+  ],
+  "restore": "Download the required ZIP, verify its local SHA-256 against this manifest, then extract it at the workspace root. The sampled PDB archive stores workspace-relative paths."
+}

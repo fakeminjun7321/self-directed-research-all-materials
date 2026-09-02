@@ -1,0 +1,20 @@
+# created by fftool
+seed 240101
+tolerance 2.0
+filetype xyz
+output simbox.xyz
+
+structure Li_pack.xyz
+  number 50
+  inside box 1.5000 1.5000 1.5000 29.3572 29.3572 29.3572
+end structure
+
+structure c3c1pyrr_pack.xyz
+  number 50
+  inside box 1.5000 1.5000 1.5000 29.3572 29.3572 29.3572
+end structure
+
+structure fsi_pack.xyz
+  number 100
+  inside box 1.5000 1.5000 1.5000 29.3572 29.3572 29.3572
+end structure
