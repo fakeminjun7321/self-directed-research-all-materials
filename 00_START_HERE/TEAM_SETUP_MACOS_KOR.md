@@ -32,7 +32,7 @@ df -h .
 
 ## 2. 프로젝트 폴더 받기
 
-GitHub 프로젝트 [자율연구](https://github.com/users/fakeminjun7321/projects/2)에 연결된 공개 저장소 [cile-md-2026](https://github.com/fakeminjun7321/cile-md-2026)에서 파일을 받는다. 다운로드에는 GitHub 로그인이나 접근 권한 신청이 필요하지 않다. 팀원용 경로는 다음처럼 단순하게 두는 편이 안전하다.
+GitHub 프로젝트 [자율연구](https://github.com/users/fakeminjun7321/projects/2)에 연결된 공개 저장소 [자율연구 전체 자료](https://github.com/fakeminjun7321/self-directed-research-all-materials)에서 파일을 받는다. 다운로드에는 GitHub 로그인이나 접근 권한 신청이 필요하지 않다. 팀원용 경로는 다음처럼 단순하게 두는 편이 안전하다.
 
 ```text
 ~/Research/cile-md
@@ -42,7 +42,7 @@ Git이 없으면 아래 3절을 먼저 진행한다. 아직 존재하지 않는 
 
 ```bash
 mkdir -p "$HOME/Research"
-git clone --recurse-submodules https://github.com/fakeminjun7321/cile-md-2026.git "$HOME/Research/cile-md"
+git clone --recurse-submodules https://github.com/fakeminjun7321/self-directed-research-all-materials.git "$HOME/Research/cile-md"
 ```
 
 GitHub CLI를 사용하는 clone 방법은 루트 `README.md`의 "파일 받기"를 참고한다. `--recurse-submodules`는 fftool을 함께 받기 위해 필요하다. GitHub Download ZIP에는 fftool의 실제 파일이 포함되지 않는다.
