@@ -95,13 +95,13 @@ Windows 탐색기 주소창에서 다음 경로로 WSL 파일에 접근할 수 �
 
 프로젝트를 `C:\` 아래에 두고 `/mnt/c/...`에서 직접 장시간 계산하지 않는다. WSL 홈에 복사해야 파일 입출력 성능과 Linux 권한 처리가 안정적이다.
 
-GitHub 프로젝트 [자율연구](https://github.com/users/fakeminjun7321/projects/2)에 연결된 비공개 저장소 [cile-md-2026](https://github.com/fakeminjun7321/cile-md-2026)에서 파일을 받는다. 저장소 접근 권한이 있는 계정으로 WSL의 Git HTTPS 인증을 설정한 뒤 **Ubuntu/WSL 터미널**에서 실행한다. 대상 폴더가 이미 있다면 다른 빈 경로를 사용한다.
+GitHub 프로젝트 [자율연구](https://github.com/users/fakeminjun7321/projects/2)에 연결된 공개 저장소 [cile-md-2026](https://github.com/fakeminjun7321/cile-md-2026)에서 파일을 받는다. 다운로드에는 GitHub 로그인이나 접근 권한 신청이 필요하지 않다. **Ubuntu/WSL 터미널**에서 다음 명령을 실행한다. 대상 폴더가 이미 있다면 다른 빈 경로를 사용한다.
 
 ```bash
 git clone --recurse-submodules https://github.com/fakeminjun7321/cile-md-2026.git "$HOME/cile-md"
 ```
 
-GitHub CLI를 사용하는 인증·clone 방법은 루트 `README.md`의 "파일 받기"를 참고한다. `--recurse-submodules`는 fftool을 함께 받기 위해 필요하다. GitHub Download ZIP에는 fftool의 실제 파일이 포함되지 않는다.
+GitHub CLI를 사용하는 clone 방법은 루트 `README.md`의 "파일 받기"를 참고한다. `--recurse-submodules`는 fftool을 함께 받기 위해 필요하다. GitHub Download ZIP에는 fftool의 실제 파일이 포함되지 않는다.
 
 trajectory·checkpoint·XVG·실행 로그·대형 애니메이션 PDB·백업 ZIP은 Git에 포함하지 않는다. 기존 결과의 재분석이나 VMD 애니메이션에 필요한 원자료는 별도로 전달받거나 생성해야 한다. clone만으로 과거 계산 결과 전체를 복원할 수는 없다.
 

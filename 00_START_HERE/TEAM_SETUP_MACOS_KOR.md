@@ -32,20 +32,20 @@ df -h .
 
 ## 2. 프로젝트 폴더 받기
 
-GitHub 프로젝트 [자율연구](https://github.com/users/fakeminjun7321/projects/2)에 연결된 비공개 저장소 [cile-md-2026](https://github.com/fakeminjun7321/cile-md-2026)에서 파일을 받는다. 저장소 접근 권한과 Git 인증이 필요하다. 팀원용 경로는 다음처럼 단순하게 두는 편이 안전하다.
+GitHub 프로젝트 [자율연구](https://github.com/users/fakeminjun7321/projects/2)에 연결된 공개 저장소 [cile-md-2026](https://github.com/fakeminjun7321/cile-md-2026)에서 파일을 받는다. 다운로드에는 GitHub 로그인이나 접근 권한 신청이 필요하지 않다. 팀원용 경로는 다음처럼 단순하게 두는 편이 안전하다.
 
 ```text
 ~/Research/cile-md
 ```
 
-Git이 없으면 아래 3절을 먼저 진행한다. Git HTTPS 인증을 설정한 뒤, 아직 존재하지 않는 대상 폴더로 clone한다.
+Git이 없으면 아래 3절을 먼저 진행한다. 아직 존재하지 않는 대상 폴더로 clone한다.
 
 ```bash
 mkdir -p "$HOME/Research"
 git clone --recurse-submodules https://github.com/fakeminjun7321/cile-md-2026.git "$HOME/Research/cile-md"
 ```
 
-GitHub CLI를 사용하는 인증·clone 방법은 루트 `README.md`의 "파일 받기"를 참고한다. `--recurse-submodules`는 fftool을 함께 받기 위해 필요하다. GitHub Download ZIP에는 fftool의 실제 파일이 포함되지 않는다.
+GitHub CLI를 사용하는 clone 방법은 루트 `README.md`의 "파일 받기"를 참고한다. `--recurse-submodules`는 fftool을 함께 받기 위해 필요하다. GitHub Download ZIP에는 fftool의 실제 파일이 포함되지 않는다.
 
 trajectory·checkpoint·XVG·실행 로그·대형 애니메이션 PDB·백업 ZIP은 Git에 포함하지 않는다. 기존 결과의 재분석이나 VMD 애니메이션에 필요한 원자료는 별도로 전달받거나 생성해야 한다. clone만으로 과거 계산 결과 전체를 복원할 수는 없다.
 

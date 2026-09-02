@@ -4,7 +4,7 @@ LiFSI/Pyr13FSI 이온성 액체 전해질의 분자동역학 연구 작업 공�
 
 - GitHub 프로젝트: [자율연구](https://github.com/users/fakeminjun7321/projects/2)
 - 연결 저장소: [fakeminjun7321/cile-md-2026](https://github.com/fakeminjun7321/cile-md-2026)
-- 공개 범위: 프로젝트와 저장소 모두 **비공개**입니다. 접근 권한이 있는 GitHub 계정으로 로그인해야 합니다.
+- 공개 범위: 프로젝트와 저장소 모두 **공개**입니다. 로그인 없이 열람하고 clone할 수 있습니다.
 
 > **진행 중인 연구입니다.** 기존 50 ps 계산은 연습·탐색 자료이며 최종 물성값으로 해석하지 않습니다. 현재 보관된 후속 연구 판정은 `ONE_NS_REPLICA_UNIFORM_EXTENSION_REQUIRED`이고, `equilibrium_validated=false`, `production_ready=false`입니다. GitHub 게시나 파일 다운로드 성공은 물리적 타당성 또는 다른 컴퓨터에서의 재현성을 검증하지 않습니다.
 
@@ -19,18 +19,17 @@ LiFSI/Pyr13FSI 이온성 액체 전해질의 분자동역학 연구 작업 공�
 
 ## 파일 받기
 
-Git과 GitHub CLI가 설치된 터미널에서, 저장소 접근 권한이 있는 계정으로 인증한 뒤 실행합니다. GitHub CLI가 없다면 저장소의 Code 메뉴에 표시되는 HTTPS 또는 SSH 주소와 해당 인증 방법을 사용할 수 있습니다.
-
-```bash
-gh auth login
-gh repo clone fakeminjun7321/cile-md-2026 cile-md -- --recurse-submodules
-cd cile-md
-```
-
-이미 Git HTTPS 인증이 설정되어 있다면 다음 명령도 사용할 수 있습니다.
+Git이 설치된 터미널에서 다음 명령으로 받습니다. 공개 저장소이므로 다운로드에 GitHub 로그인이나 접근 권한 신청은 필요하지 않습니다.
 
 ```bash
 git clone --recurse-submodules https://github.com/fakeminjun7321/cile-md-2026.git cile-md
+cd cile-md
+```
+
+GitHub CLI를 이미 사용하고 있다면 다음 명령도 사용할 수 있습니다.
+
+```bash
+gh repo clone fakeminjun7321/cile-md-2026 cile-md -- --recurse-submodules
 ```
 
 clone 대상 경로에는 기존 연구 폴더를 지정하지 않습니다. 원자료 제외 범위는 아래를 확인합니다.
